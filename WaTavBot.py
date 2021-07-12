@@ -1210,48 +1210,7 @@ def heroe(update: Update, context: CallbackContext):
     player = PlayerDB[str(user.id)]
     level = player["level"] 
     exp_niveles = NivelesBD[level+1]
-     
-    p_at = 0 # ObjetosDB[player["arma_p"]]["atributos"]["ataque"]
-    p_de = 0 # ObjetosDB[player["arma_p"]]["atributos"]["defensa"]
-    s_at = 0 # ObjetosDB[player["arma_s"]]["atributos"]["ataque"]
-    s_de = 0 # ObjetosDB[player["arma_s"]]["atributos"]["defensa"]
-    ca_at = 0 # ObjetosDB[player["casco"]]["atributos"]["ataque"]
-    ca_de = 0 # ObjetosDB[player["casco"]]["atributos"]["defensa"]
-    gu_at = 0 # ObjetosDB[player["guantes"]]["atributos"]["ataque"]
-    gu_de = 0 # ObjetosDB[player["guantes"]]["atributos"]["defensa"]
-    ar_at = 0 # ObjetosDB[player["armadura"]]["atributos"]["ataque"]
-    ar_de = 0 # ObjetosDB[player["armadura"]]["atributos"]["defensa"]
-    bo_at = 0 # ObjetosDB[player["botas"]]["atributos"]["ataque"]
-    bo_de = 0 # ObjetosDB[player["botas"]]["atributos"]["defensa"]
-    es_at = 0 #ObjetosDB[player["especial"]]["atributos"]["ataque"]  
-    es_de = 0 #ObjetosDB[player["especial"]]["atributos"]["defensa"]
-    an_at = 0 #ObjetosDB[player["anillo"]]["atributos"]["ataque"]
-    an_de = 0 #ObjetosDB[player["anillo"]]["atributos"]["defensa"]
-    co_at = 0 #ObjetosDB[player["collar"]]["atributos"]["ataque"]
-    co_de = 0 #ObjetosDB[player["collar"]]["atributos"]["defensa"]
-    
-    total_ataq = p_at+s_at+ca_at+gu_at+ar_at+bo_at+es_at+an_at+co_at
-    total_def = p_de+s_de+ca_de+gu_de+ar_de+bo_de+es_de+an_de+co_de
-    total_verfi = total_def + total_ataq
-    
-    if(total_verfi <= 0): 
-        total_equi = "["   
-        total_a="-"
-        total_d = "]"
-
-    else:
-        total_equi=""
-        if(total_ataq == 0):
-            total_a=""
-        else:
-            
-            total_a = "+" + str(total_ataq) + "⚔️"
          
-        if(total_def == 0):
-            total_d = ""
-        else: 
-            total_d= "+" + str(total_def) + "🛡"
-    
     
     bolso_arm = len(player["bolso_arm"])
     if(bolso_arm == 0):
@@ -1259,51 +1218,41 @@ def heroe(update: Update, context: CallbackContext):
     else:
         cantid_armas = bolso_arm    
 
-    if(player["bol_oro"] != 0):
-        oro_bo=str('👝') + str(player["bol_oro"])
-    else:
-        oro_bo=""
     
-    text=str("\n\n {name}".format(name=user.first_name)
-        +"\n🏅Nivel: {level}".format(level=str(player["level"]))        
-        +"\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
-        +"🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
-        +"\n🔥Exp: {exp}".format(exp=str(player["exp"])) 
-        +"/{exp_niv}".format(exp_niv=str(exp_niveles))
-        +"\n❤️Vida: {vdmin}".format(vdmin=str(player["vida_min"]))
-        +"/{vdmax}".format(vdmax=str(player["vida_max"]))
+        text="\n{name}".format(name=user.first_name)
+        text+="\n🏅Nivel: {level}".format(level=str(player["level"]))        
+        text+="\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
+        text+="🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
+        text+="\n🔥Exp: {exp}".format(exp=str(player["exp"])) 
+        text+="/{exp_niv}".format(exp_niv=str(exp_niveles))
+        text+="\n❤️Vida: {vdmin}".format(vdmin=str(player["vida_min"]))
+        text+="/{vdmax}".format(vdmax=str(player["vida_max"]))        
+        text+="\n🔋Resistencia:{rsmin}".format(rsmin=str(player["resis_min"]))
+        text+="/{rsmax}".format(rsmax=str(player["resis_max"]))
+        if(player["mana_max"]>0):
+            text+="\n💧Mana:{mnamin}".format(mnamin=str(player["mana_min"]))
+            text+="/{mnamax}".format(mnamax=str(player["mana_max"]))          
+        text+="\n💰{oro}".format(oro=player["oro"])
+        if(player["bol_oro"] > 0):
+            text+="👝{bol_oro}".format(bol_oro=str(player["bol_oro"]))
+        text+="💎{gemas}".format(gemas=player["gemas"])
         
-        +"\n🔋Resistencia:{rsmin}".format(rsmin=str(player["resis_min"]))
-        +"/{rsmax}".format(rsmax=str(player["resis_max"]))
+        text+="\n📚Especializaciónes:-"
+        text+="\n🎉Logro: /ach"
+        text+="\n⚒Clase Info: /class"
+        text+="\n🚹Male"
         
-        +"\n💧Mana:{mnamin}".format(mnamin=str(player["mana_min"]))
-        +"/{mnamax}".format(mnamax=str(player["mana_max"]))
-          
-        +"\n💰{oro}".format(oro=player["oro"])
-        +"{bol_oro}".format(bol_oro=str(oro_bo))
-        +"💎{gemas}".format(gemas=player["gemas"])
-        +"\n\n🎽Euipamiento: {t0}{t}{td}".format(t=total_a,td=total_d,t0=total_equi)
-        +"\n🎒Balso: {total}".format(total=cantid_armas)
-        +"/{bolso} ".format(bolso=player["bolso"])
-        +"/inv"
-        # +"Mascota:{money}".format(money=player["money"])
-        +"\n\nEstado:\n{estado}".format(estado=player["estado"])
-        +"\n\nMás: /heroe"
-        #  +"\n\n🎒 Equipo:\n"
-        #  +"\t"*4+"► Principal: {main}\n".format(main=WeaponDB[player["mainW"]]["name"])
-        #  +"\t"*4+"► Offhand: {offh}".format(offh=offhw)
-        )
-    IKB = KeyboardButton
-    reply_markup = ReplyKeyboardMarkup(
-        [
-            [
-                IKB("🗡Armas"),
-                IKB("↩️Volver")
-            ]
-        ],
-        resize_keyboard=True,
-    )
-    # reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+        text+="\n\n✨Efectos: /effects"
+        # +"Mascota:{money}".format(money=player["money"])      
+        
+        text+="\n\n🎽Euipamiento: "
+        
+        text+="\n\n🎒Balso: {total}".format(total=cantid_armas)
+        text+="/{bolso} ".format(bolso=player["bolso"])
+        text+="/inv"
+        text+="\n\n📦Almacen: /stock"
+
+    reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
 
     update.message.reply_text(
         text=text,
