@@ -1,0 +1,164 @@
+[{
+        "id": 301,
+        "nombre": "Orden Del Pionero",
+        "alias": [
+            "Orden Del Pionero"
+        ],
+        "tipo": "especial",
+        "costo": 0.1,
+        "peso": 0.1,
+        "envolver": 0.1,
+        "atributos": {
+            "suerte": 3
+        }
+    },
+    {
+        "id": 305,
+        "nombre": "🎩Cilindro",
+        "alias": [
+            "🎩Cilindro",
+            "🎩Transpondedor tipo G"
+        ],
+        "tipo": "casco",
+        "costo": 4,
+        "peso": 10,
+        "envolver": 1,
+        "atributos": {}
+    },
+    {
+        "id": 306,
+        "nombre": "👒 Sombrero de señora",
+        "alias": [
+            "👒 Sombrero de señora",
+            "👒 Transpondedor tipo L"
+        ],
+        "tipo": "casco",
+        "costo": 4,
+        "peso": 10,
+        "envolver": 1,
+        "atributos": {}
+    },
+    {
+        "id": 307,
+        "nombre": "Pata de conejo",
+        "alias": [
+            "Pata de conejo",
+            "Boquillas mejoradas"
+        ],
+        "tipo": "especial",
+        "costo": 4,
+        "peso": 10,
+        "envolver": 1,
+        "atributos": {
+            "suerte": 1
+        }
+    },
+    {
+        "id": 308,
+        "nombre": "Cantimplora",
+        "alias": [
+            "Cantimplora",
+            "Regenerador"
+        ],
+        "tipo": "especial",
+        "costo": 4,
+        "peso": 10,
+        "envolver": 1,
+        "atributos": {
+            "resistencia": 1
+        }
+    },
+    {
+        "id": 401,
+        "nombre": "Poción + 1⚔",
+        "alias": [
+            "Poción + 1⚔"
+        ],
+        "tipo": "especial"
+    },
+    {
+        "id": 402,
+        "nombre": "Poción + 1🛡",
+        "alias": [
+            "Poción + 1🛡"
+        ],
+        "tipo": "especial"
+    },
+    {
+        "id": 403,
+        "nombre": "Poción de revitalización de mascotas",
+        "alias": [
+            "Poción de revitalización de mascotas"
+        ],
+        "tipo": "especial"
+    },
+    {
+        "id": 404,
+        "nombre": "🗝 Clave",
+        "alias": [
+            "🗝 Clave",
+            "💳 Pase-chip"
+        ],
+        "tipo": "especial"
+    },
+    {
+        "id": 501,
+        "nombre": "🎟Cupón de cerdo",
+        "alias": [
+            "🎟Cupón de cerdo"
+        ],
+        "tipo": "ticket",
+        "costo": 0,
+        "peso": 0
+    },
+    {
+        "id": 502,
+        "nombre": "🎟Cupón de ganso",
+        "alias": [
+            "🎟Cupón de ganso"
+        ],
+        "tipo": "ticket",
+        "costo": 0,
+        "peso": 0
+    },
+    {
+        "id": 503,
+        "nombre": "🎟Cupón de caballo",
+        "alias": [
+            "🎟Cupón de caballo"
+        ],
+        "tipo": "ticket",
+        "costo": 0,
+        "peso": 0
+    },
+    {
+        "id": 504,
+        "nombre": "🎟Cupón de burro",
+        "alias": [
+            "🎟Cupón de burro"
+        ],
+        "tipo": "ticket",
+        "costo": 0,
+        "peso": 0
+    },
+    {
+        "id": 505,
+        "nombre": "🎟Cupón de Ewok",
+        "alias": [
+            "🎟Cupón de Ewok"
+        ],
+        "tipo": "ticket",
+        "costo": 0,
+        "peso": 0
+    },
+    {
+        "id": 506,
+        "nombre": "🎟Cupón de Taunton",
+        "alias": [
+            "🎟Cupón de Taunton"
+        ],
+        "tipo": "ticket",
+        "costo": 0,
+        "peso": 0
+    }
+]

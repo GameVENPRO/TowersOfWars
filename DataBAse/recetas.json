@@ -1,0 +1,1154 @@
+[{
+        "RecetaId": 101,
+        "name": "Acero",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 107,
+                "count": 3
+            },
+            {
+                "id": 108,
+                "count": 3
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 102,
+        "nombre": "Piel",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+            "id": 103,
+            "count": 3
+        }],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 103,
+        "nombre": "Cox",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 105,
+                "count": 2
+            },
+            {
+                "id": 106,
+                "count": 2
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 104,
+        "name": "Polvo de hueso",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+            "id": 104,
+            "count": 5
+        }],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 105,
+        "name": "Cuerda",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+            "id": 102,
+            "count": 4
+        }],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 106,
+        "name": "Polvo refinado",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 107,
+                "count": 2
+            },
+            {
+                "id": 113,
+                "count": 1
+            },
+            {
+                "id": 121,
+                "count": 2
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 107,
+        "name": "Aleación de plata",
+        "tipo": "recurso",
+        "nivel": 2,
+        "ingredientes": [{
+                "id": 110,
+                "count": 1
+            },
+            {
+                "id": 119,
+                "count": 1
+            },
+            {
+                "id": 124,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 108,
+        "nombre": "Chapa",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 102,
+                "count": 6
+            },
+            {
+                "id": 107,
+                "count": 6
+            },
+            {
+                "id": 108,
+                "count": 6
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 109,
+        "name": "Palanquilla de acero",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 107,
+                "count": 3
+            },
+            {
+                "id": 108,
+                "count": 3
+            },
+            {
+                "id": 122,
+                "count": 3
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 110,
+        "name": "Encaje",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 101,
+                "count": 3
+            },
+            {
+                "id": 122,
+                "count": 3
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 111,
+        "name": "Hilo de acero",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 101,
+                "count": 10
+            },
+            {
+                "id": 119,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 112,
+        "name": "Fibra metálica",
+        "tipo": "recurso",
+        "nivel": 2,
+        "ingredientes": [{
+                "id": 110,
+                "count": 6
+            },
+            {
+                "id": 129,
+                "count": 9
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 113,
+        "name": "Cuero tratado",
+        "tipo": "recurso",
+        "nivel": 2,
+        "ingredientes": [{
+                "id": 105,
+                "count": 3
+            },
+            {
+                "id": 120,
+                "count": 3
+            },
+            {
+                "id": 129,
+                "count": 3
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 114,
+        "name": "Espada berserker",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 123,
+                "count": 41
+            },
+            {
+                "id": 125,
+                "count": 27
+            },
+            {
+                "id": 126,
+                "count": 41
+            },
+            {
+                "id": 127,
+                "count": 3
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 115,
+        "name": "Chaqueta de cazador",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 128,
+                "count": 12
+            },
+            {
+                "id": 130,
+                "count": 24
+            },
+            {
+                "id": 131,
+                "count": 48
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 116,
+        "name": "Sombrero de cazador",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 128,
+                "count": 9
+            },
+            {
+                "id": 130,
+                "count": 18
+            },
+            {
+                "id": 131,
+                "count": 36
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 117,
+        "name": "Botas de cazador",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 128,
+                "count": 6
+            },
+            {
+                "id": 130,
+                "count": 12
+            },
+            {
+                "id": 131,
+                "count": 24
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 118,
+        "name": "Pulseras de cazador",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 125,
+                "count": 4
+            },
+            {
+                "id": 128,
+                "count": 6
+            },
+            {
+                "id": 130,
+                "count": 12
+            },
+            {
+                "id": 131,
+                "count": 20
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 119,
+        "nombre": "Guardián",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 102,
+                "count": 1000
+            },
+            {
+                "id": 123,
+                "count": 19
+            },
+            {
+                "id": 125,
+                "count": 14
+            },
+            {
+                "id": 126,
+                "count": 19
+            },
+            {
+                "id": 127,
+                "count": 2
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 120,
+        "name": "Espacio en blanco plateado",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 110,
+                "count": 5
+            },
+            {
+                "id": 122,
+                "count": 2
+            },
+            {
+                "id": 123,
+                "count": 3
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 121,
+        "name": "Pieza de herrero",
+        "tipo": "recurso",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 112,
+                "count": 6
+            },
+            {
+                "id": 124,
+                "count": 3
+            },
+            {
+                "id": 132,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 122,
+        "name": "Armadura de guardián",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 124,
+                "count": 9
+            },
+            {
+                "id": 125,
+                "count": 24
+            },
+            {
+                "id": 133,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 123,
+        "name": "Yelmo del guardián",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 125,
+                "count": 12
+            },
+            {
+                "id": 131,
+                "count": 18
+            },
+            {
+                "id": 133,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 124,
+        "name": "Botas de guardián",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 123,
+                "count": 6
+            },
+            {
+                "id": 125,
+                "count": 24
+            },
+            {
+                "id": 132,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 125,
+        "name": "Guantes de guardián",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 123,
+                "count": 6
+            },
+            {
+                "id": 125,
+                "count": 20
+            },
+            {
+                "id": 131,
+                "count": 4
+            },
+            {
+                "id": 132,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 126,
+        "name": "Escudo guardián",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 123,
+                "count": 3
+            },
+            {
+                "id": 125,
+                "count": 12
+            },
+            {
+                "id": 126,
+                "count": 6
+            },
+            {
+                "id": 132,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 127,
+        "name": "Stock de artesano",
+        "tipo": "recurso",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 114,
+                "count": 9
+            },
+            {
+                "id": 124,
+                "count": 3
+            },
+            {
+                "id": 127,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 128,
+        "name": "Aleación de mithril",
+        "tipo": "recurso",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 112,
+                "count": 1
+            },
+            {
+                "id": 119,
+                "count": 1
+            },
+            {
+                "id": 124,
+                "count": 2
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 129,
+        "nombre": "Excalibur",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 117,
+                "count": 5
+            },
+            {
+                "id": 123,
+                "count": 51
+            },
+            {
+                "id": 126,
+                "count": 51
+            },
+            {
+                "id": 138,
+                "count": 5
+            },
+            {
+                "id": 143,
+                "count": 1
+            },
+            {
+                "id": 145,
+                "count": 2
+            },
+            {
+                "id": 146,
+                "count": 31
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 130,
+        "nombre": "Tridente",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 102,
+                "count": 1200
+            },
+            {
+                "id": 117,
+                "count": 5
+            },
+            {
+                "id": 123,
+                "count": 23
+            },
+            {
+                "id": 126,
+                "count": 23
+            },
+            {
+                "id": 139,
+                "count": 5
+            },
+            {
+                "id": 144,
+                "count": 1
+            },
+            {
+                "id": 145,
+                "count": 1
+            },
+            {
+                "id": 146,
+                "count": 14
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 131,
+        "name": "Elección del minero",
+        "tipo": "elemento",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 102,
+                "count": 5
+            },
+            {
+                "id": 105,
+                "count": 5
+            },
+            {
+                "id": 108,
+                "count": 5
+            },
+            {
+                "id": 127,
+                "count": 1
+            },
+            {
+                "id": 167,
+                "count": 3
+            },
+            {
+                "id": 170,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 132,
+        "name": "Martillo de los enanos",
+        "tipo": "elemento",
+        "nivel": 2,
+        "ingredientes": [{
+                "id": 102,
+                "count": 300
+            },
+            {
+                "id": 123,
+                "count": 21
+            },
+            {
+                "id": 125,
+                "count": 17
+            },
+            {
+                "id": 126,
+                "count": 21
+            },
+            {
+                "id": 127,
+                "count": 2
+            },
+            {
+                "id": 168,
+                "count": 5
+            },
+            {
+                "id": 171,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 133,
+        "name": "Bonecrusher",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 102,
+                "count": 400
+            },
+            {
+                "id": 117,
+                "count": 5
+            },
+            {
+                "id": 118,
+                "count": 10
+            },
+            {
+                "id": 123,
+                "count": 26
+            },
+            {
+                "id": 126,
+                "count": 26
+            },
+            {
+                "id": 145,
+                "count": 1
+            },
+            {
+                "id": 146,
+                "count": 17
+            },
+            {
+                "id": 169,
+                "count": 5
+            },
+            {
+                "id": 172,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 134,
+        "name": "Daga del cazador",
+        "tipo": "elemento",
+        "nivel": 3,
+        "ingredientes": [{
+                "id": 117,
+                "count": 2
+            },
+            {
+                "id": 118,
+                "count": 5
+            },
+            {
+                "id": 123,
+                "count": 3
+            },
+            {
+                "id": 125,
+                "count": 12
+            },
+            {
+                "id": 126,
+                "count": 6
+            },
+            {
+                "id": 127,
+                "count": 1
+            },
+            {
+                "id": 165,
+                "count": 3
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 135,
+        "name": "Daga del demonio",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 117,
+                "count": 4
+            },
+            {
+                "id": 118,
+                "count": 7
+            },
+            {
+                "id": 123,
+                "count": 6
+            },
+            {
+                "id": 126,
+                "count": 9
+            },
+            {
+                "id": 145,
+                "count": 1
+            },
+            {
+                "id": 146,
+                "count": 15
+            },
+            {
+                "id": 166,
+                "count": 3
+            },
+            {
+                "id": 174,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 136,
+        "name": "Paladin Armor",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 115,
+                "count": 9
+            },
+            {
+                "id": 116,
+                "count": 15
+            },
+            {
+                "id": 124,
+                "count": 12
+            },
+            {
+                "id": 133,
+                "count": 2
+            },
+            {
+                "id": 140,
+                "count": 10
+            },
+            {
+                "id": 146,
+                "count": 27
+            },
+            {
+                "id": 152,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 137,
+        "name": "Casco de Paladín",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 115,
+                "count": 6
+            },
+            {
+                "id": 116,
+                "count": 9
+            },
+            {
+                "id": 131,
+                "count": 21
+            },
+            {
+                "id": 133,
+                "count": 1
+            },
+            {
+                "id": 146,
+                "count": 15
+            },
+            {
+                "id": 148,
+                "count": 12
+            },
+            {
+                "id": 153,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 138,
+        "name": "Botas de Paladín",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 115,
+                "count": 3
+            },
+            {
+                "id": 116,
+                "count": 6
+            },
+            {
+                "id": 123,
+                "count": 9
+            },
+            {
+                "id": 133,
+                "count": 1
+            },
+            {
+                "id": 146,
+                "count": 24
+            },
+            {
+                "id": 149,
+                "count": 12
+            },
+            {
+                "id": 154,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 139,
+        "name": "Guantes de paladín",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 115,
+                "count": 3
+            },
+            {
+                "id": 116,
+                "count": 6
+            },
+            {
+                "id": 123,
+                "count": 9
+            },
+            {
+                "id": 131,
+                "count": 6
+            },
+            {
+                "id": 133,
+                "count": 1
+            },
+            {
+                "id": 146,
+                "count": 22
+            },
+            {
+                "id": 150,
+                "count": 12
+            },
+            {
+                "id": 155,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 140,
+        "name": "Escudo del paladín",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 115,
+                "count": 1
+            },
+            {
+                "id": 116,
+                "count": 3
+            },
+            {
+                "id": 123,
+                "count": 6
+            },
+            {
+                "id": 126,
+                "count": 9
+            },
+            {
+                "id": 132,
+                "count": 3
+            },
+            {
+                "id": 146,
+                "count": 17
+            },
+            {
+                "id": 151,
+                "count": 12
+            },
+            {
+                "id": 156,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 141,
+        "name": "Chaqueta de demonio",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 115,
+                "count": 9
+            },
+            {
+                "id": 116,
+                "count": 15
+            },
+            {
+                "id": 128,
+                "count": 15
+            },
+            {
+                "id": 130,
+                "count": 27
+            },
+            {
+                "id": 131,
+                "count": 52
+            },
+            {
+                "id": 157,
+                "count": 10
+            },
+            {
+                "id": 161,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 142,
+        "name": "Sombrero de demonio",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 115,
+                "count": 6
+            },
+            {
+                "id": 116,
+                "count": 9
+            },
+            {
+                "id": 128,
+                "count": 15
+            },
+            {
+                "id": 130,
+                "count": 24
+            },
+            {
+                "id": 131,
+                "count": 32
+            },
+            {
+                "id": 158,
+                "count": 12
+            },
+            {
+                "id": 162,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 143,
+        "name": "Botas de demonio",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 115,
+                "count": 3
+            },
+            {
+                "id": 116,
+                "count": 6
+            },
+            {
+                "id": 128,
+                "count": 9
+            },
+            {
+                "id": 130,
+                "count": 18
+            },
+            {
+                "id": 131,
+                "count": 28
+            },
+            {
+                "id": 159,
+                "count": 12
+            },
+            {
+                "id": 163,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 144,
+        "name": "Pulseras del demonio",
+        "tipo": "elemento",
+        "nivel": 4,
+        "ingredientes": [{
+                "id": 115,
+                "count": 3
+            },
+            {
+                "id": 116,
+                "count": 6
+            },
+            {
+                "id": 128,
+                "count": 9
+            },
+            {
+                "id": 130,
+                "count": 18
+            },
+            {
+                "id": 131,
+                "count": 24
+            },
+            {
+                "id": 146,
+                "count": 4
+            },
+            {
+                "id": 160,
+                "count": 12
+            },
+            {
+                "id": 164,
+                "count": 1
+            }
+        ],
+        "Estado": "Confirmado"
+    },
+    {
+        "RecetaId": 145,
+        "name": "Material de embalaje",
+        "tipo": "recurso",
+        "nivel": 1,
+        "ingredientes": [{
+                "id": 109,
+                "count": 4
+            },
+            {
+                "id": 128,
+                "count": 2
+            }
+        ],
+        "Estado": "Confirmado"
+    }
+]

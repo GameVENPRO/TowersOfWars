@@ -1,0 +1,401 @@
+{
+
+    "sword": [{
+            "id": "sword1",
+            "item_id": 100,
+            "name": "Меч Ученика",
+            "cost": 3,
+            "attack": 1
+        },
+        {
+            "id": "sword2",
+            "item_id": 101,
+            "name": "Короткий меч",
+            "cost": 30,
+            "attack": 3
+        },
+        {
+            "id": "sword3",
+            "item_id": 102,
+            "name": "Длинный меч",
+            "cost": 244,
+            "attack": 6
+        },
+        {
+            "id": "sword4",
+            "item_id": 103,
+            "name": "Меч Вдовы",
+            "cost": 645,
+            "attack": 10
+        },
+        {
+            "id": "sword5",
+            "item_id": 104,
+            "name": "Меч Рыцаря",
+            "cost": 1440,
+            "attack": 16
+        },
+        {
+            "id": "sword6",
+            "item_id": 105,
+            "name": "Эльфийский меч",
+            "cost": 1800,
+            "attack": 18,
+            "defence": 2
+        },
+        {
+            "id": "sword7",
+            "item_id": 106,
+            "name": "Рапира",
+            "cost": 3100,
+            "attack": 22
+        },
+        {
+            "id": "",
+            "item_id": 107,
+            "name": "Меч берсеркера",
+            "cost": 4150,
+            "attack": 25,
+            "requires": {
+                "level": 20,
+                "attack": 10
+            }
+        }
+    ],
+    "spear": [{
+            "id": "spear1",
+            "item_id": 108,
+            "name": "Короткое копье",
+            "cost": 55,
+            "attack": 3,
+            "defence": 1
+        },
+        {
+            "id": "spear2",
+            "item_id": 109,
+            "name": "Длинное копье",
+            "cost": 976,
+            "attack": 13,
+            "defence": 3
+        },
+        {
+            "id": "spear3",
+            "item_id": 110,
+            "name": "Эльфийское копье",
+            "cost": 1414,
+            "attack": 14,
+            "defence": 9
+        },
+        {
+            "id": "",
+            "item_id": 111,
+            "name": "Хранитель",
+            "cost": 5270,
+            "attack": 17,
+            "defence": 15,
+            "requires": {
+                "level": 20,
+                "defence": 10
+            }
+        }
+    ],
+    "dagger": [{
+            "id": "dagger1",
+            "item_id": 112,
+            "name": "Кухонный нож",
+            "cost": 3,
+            "attack": 1
+        },
+        {
+            "id": "dagger2",
+            "item_id": 113,
+            "name": "Боевой нож",
+            "cost": 103,
+            "attack": 3,
+            "requires": {
+                "attack": 3
+            }
+        },
+        {
+            "id": "dagger3",
+            "item_id": 114,
+            "name": "Кинжал",
+            "cost": 498,
+            "attack": 7,
+            "requires": {
+                "attack": 10
+            }
+        }
+    ],
+    "shield": [{
+            "id": "shield1",
+            "item_id": 212,
+            "name": "Деревянный щит",
+            "cost": 3,
+            "defence": 1
+        },
+        {
+            "id": "shield2",
+            "item_id": 213,
+            "name": "Щит скелета",
+            "cost": 50,
+            "defence": 2
+        },
+        {
+            "id": "shield3",
+            "item_id": 214,
+            "name": "Бронзовый щит",
+            "cost": 103,
+            "defence": 3
+        },
+        {
+            "id": "shield4",
+            "item_id": 215,
+            "name": "Серебряный щит",
+            "cost": 311,
+            "defence": 5
+        },
+        {
+            "id": "shield5",
+            "item_id": 216,
+            "name": "Мифриловый щит",
+            "cost": 498,
+            "defence": 7
+        },
+        {
+            "id": "",
+            "item_id": 217,
+            "name": "Щит хранителя",
+            "cost": 790,
+            "attack": 1,
+            "defence": 9
+        }
+    ],
+    "gloves": [{
+            "id": "gloves1",
+            "item_id": 225,
+            "name": "Браслеты",
+            "cost": 1,
+            "defence": 1
+        },
+        {
+            "id": "gloves2",
+            "item_id": 226,
+            "name": "Кожаные перчатки",
+            "cost": 43,
+            "defence": 2
+        },
+        {
+            "id": "gloves3",
+            "item_id": 227,
+            "name": "Стальные перчатки",
+            "cost": 92,
+            "defence": 3
+        },
+        {
+            "id": "gloves4",
+            "item_id": 228,
+            "name": "Серебряные перчатки",
+            "cost": 285,
+            "defence": 4
+        },
+        {
+            "id": "gloves5",
+            "item_id": 229,
+            "name": "Мифриловые перчатки",
+            "cost": 370,
+            "defence": 6
+        },
+        {
+            "id": "",
+            "item_id": 230,
+            "name": "Браслеты охотника",
+            "cost": 0,
+            "attack": 3,
+            "defence": 3
+        },
+        {
+            "id": "",
+            "item_id": 231,
+            "name": "Перчатки хранителя",
+            "cost": 520,
+            "defence": 7
+        }
+    ],
+    "boots": [{
+            "id": "boots1",
+            "item_id": 218,
+            "name": "Сандалии",
+            "cost": 1,
+            "defence": 1
+        },
+        {
+            "id": "boots2",
+            "item_id": 219,
+            "name": "Кожаные сапоги",
+            "cost": 43,
+            "defence": 2
+        },
+        {
+            "id": "boots3",
+            "item_id": 220,
+            "name": "Стальные сапоги",
+            "cost": 92,
+            "defence": 3
+        },
+        {
+            "id": "boots4",
+            "item_id": 221,
+            "name": "Серебряные сапоги",
+            "cost": 285,
+            "defence": 4
+        },
+        {
+            "id": "boots5",
+            "item_id": 222,
+            "name": "Мифриловые сапоги",
+            "cost": 370,
+            "defence": 6
+        },
+        {
+            "id": "",
+            "item_id": 223,
+            "name": "Ботинки охотника",
+            "cost": 0,
+            "attack": 3,
+            "defence": 3
+        }
+    ],
+    "armor": [{
+            "id": "armor1",
+            "item_id": 200,
+            "name": "Плотная куртка",
+            "cost": 3,
+            "defence": 2
+        },
+        {
+            "id": "armor2",
+            "item_id": 201,
+            "name": "Кожаный доспех",
+            "cost": 30,
+            "defence": 4
+        },
+        {
+            "id": "armor3",
+            "item_id": 202,
+            "name": "Стальная броня",
+            "cost": 330,
+            "defence": 8
+        },
+        {
+            "id": "armor4",
+            "item_id": 203,
+            "name": "Мифриловая броня",
+            "cost": 430,
+            "attack": 1,
+            "defence": 9
+        },
+        {
+            "id": "",
+            "item_id": 204,
+            "name": "Куртка охотника",
+            "cost": 0,
+            "attack": 3,
+            "defence": 7
+        },
+        {
+            "id": "",
+            "item_id": 204,
+            "name": "Броня хранителя",
+            "cost": 810,
+            "attack": 1,
+            "defence": 12
+        }
+    ],
+    "helmet": [{
+            "id": "helmet1",
+            "item_id": 206,
+            "name": "Шляпа",
+            "cost": 1,
+            "defence": 1
+        },
+        {
+            "id": "helmet2",
+            "item_id": 207,
+            "name": "Стальной шлем",
+            "cost": 35,
+            "defence": 2
+        },
+        {
+            "id": "helmet3",
+            "item_id": 208,
+            "name": "Серебряный шлем",
+            "cost": 80,
+            "defence": 3
+        },
+        {
+            "id": "helmet4",
+            "item_id": 209,
+            "name": "Мифриловый шлем",
+            "cost": 317,
+            "defence": 5
+        },
+        {
+            "id": "",
+            "item_id": 210,
+            "name": "Шапка охотника",
+            "cost": 0,
+            "attack": 3,
+            "defence": 3
+        },
+        {
+            "id": "",
+            "item_id": 0,
+            "name": "Шлем хранителя",
+            "cost": 530,
+            "attack": 1,
+            "defence": 6
+        }
+    ],
+    "other": [{
+            "id": "",
+            "item_id": 307,
+            "name": "Кроличья лапка",
+            "cost": 1,
+            "luck": 1
+        },
+        {
+            "id": "",
+            "item_id": 308,
+            "name": "Фляга",
+            "cost": 1,
+            "endurance": 1
+        },
+        {
+            "id": "",
+            "item_id": 0,
+            "name": "🗝 Ключ",
+            "cost": 0
+        },
+        {
+            "id": "",
+            "item_id": 305,
+            "name": "🎩Цилиндр",
+            "cost": 1
+        },
+        {
+            "id": "",
+            "item_id": 0,
+            "name": "Зелье",
+            "cost": 1,
+            "attack": 1
+        },
+        {
+            "id": "",
+            "item_id": 0,
+            "name": "⚜Печать власти",
+            "cost": 0
+        }
+    ]
+
+}

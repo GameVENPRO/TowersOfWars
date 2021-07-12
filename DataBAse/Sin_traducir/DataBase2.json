@@ -1,0 +1,3072 @@
+{
+  "Last_server_restart" : {
+    "hora" : "05/07/2021 20:34:03",
+    "signum" : "2"
+  },
+  "items" : [ {
+    "aliases" : [ "Меч Ученика", "Авиационная пушка" ],
+    "attributes" : {
+      "attack" : 1
+    },
+    "commands" : {
+      "buy" : "/buy_sword1"
+    },
+    "cost" : 3,
+    "id" : 100,
+    "name" : "Меч Ученика",
+    "type" : "sword",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Короткий меч", "Лазерный резак" ],
+    "attributes" : {
+      "attack" : 3
+    },
+    "commands" : {
+      "buy" : "/buy_sword2"
+    },
+    "cost" : 30,
+    "id" : 101,
+    "name" : "Короткий меч",
+    "type" : "sword",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Длинный меч", "Плазмоган" ],
+    "attributes" : {
+      "attack" : 6
+    },
+    "commands" : {
+      "buy" : "/buy_sword3"
+    },
+    "cost" : 244,
+    "id" : 102,
+    "name" : "Длинный меч",
+    "type" : "sword",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Меч Вдовы", "Ионная пушка" ],
+    "attributes" : {
+      "attack" : 10
+    },
+    "commands" : {
+      "buy" : "/buy_sword4"
+    },
+    "cost" : 645,
+    "id" : 103,
+    "name" : "Меч Вдовы",
+    "type" : "sword",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Меч Рыцаря", "Мазер type USS" ],
+    "attributes" : {
+      "attack" : 16
+    },
+    "commands" : {
+      "buy" : "/buy_sword5"
+    },
+    "cost" : 1440,
+    "id" : 104,
+    "name" : "Меч Рыцаря",
+    "type" : "sword",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Эльфийский меч", "Установка B.F.G-9000" ],
+    "attributes" : {
+      "attack" : 18,
+      "defense" : 2
+    },
+    "commands" : {
+      "buy" : "/buy_sword6"
+    },
+    "cost" : 1800,
+    "id" : 105,
+    "name" : "Эльфийский меч",
+    "type" : "sword",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Рапира", "Установка type D.E.A.D." ],
+    "attributes" : {
+      "attack" : 22
+    },
+    "commands" : {
+      "buy" : "/buy_sword7"
+    },
+    "cost" : 3100,
+    "id" : 106,
+    "name" : "Рапира",
+    "type" : "sword",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Меч берсеркера", "Аннигилятор" ],
+    "attributes" : {
+      "attack" : 25
+    },
+    "cost" : 4150,
+    "id" : 107,
+    "name" : "Меч берсеркера",
+    "recipeId" : 114,
+    "restrictions" : {
+      "attack" : 10,
+      "level" : 20
+    },
+    "type" : "sword",
+    "weight" : 150,
+    "wrap" : 2
+  }, {
+    "aliases" : [ "Короткое копье", "Ракетница" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 1
+    },
+    "commands" : {
+      "buy" : "/buy_spear1"
+    },
+    "cost" : 55,
+    "id" : 108,
+    "name" : "Короткое копье",
+    "type" : "spear",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Длинное копье", "Ракетный комплекс" ],
+    "attributes" : {
+      "attack" : 13,
+      "defense" : 3
+    },
+    "commands" : {
+      "buy" : "/buy_spear2"
+    },
+    "cost" : 976,
+    "id" : 109,
+    "name" : "Длинное копье",
+    "type" : "spear",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Эльфийское копье", "Комплекс \"Каратель\"" ],
+    "attributes" : {
+      "attack" : 14,
+      "defense" : 9
+    },
+    "commands" : {
+      "buy" : "/buy_spear3"
+    },
+    "cost" : 1414,
+    "id" : 110,
+    "name" : "Эльфийское копье",
+    "type" : "spear",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Хранитель", "Комплекс Судного дня" ],
+    "attributes" : {
+      "attack" : 17,
+      "defense" : 15
+    },
+    "cost" : 5270,
+    "id" : 111,
+    "name" : "Хранитель",
+    "recipeId" : 119,
+    "restrictions" : {
+      "defense" : 10,
+      "level" : 20
+    },
+    "type" : "spear",
+    "weight" : 180,
+    "wrap" : 2
+  }, {
+    "aliases" : [ "Кухонный нож", "Дроид-защитник type R2D2" ],
+    "attributes" : {
+      "attack" : 1
+    },
+    "commands" : {
+      "buy" : "/buy_dagger1"
+    },
+    "cost" : 3,
+    "id" : 112,
+    "name" : "Кухонный нож",
+    "type" : "dagger",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Боевой нож", "Боевой дроид type 草薙 素子" ],
+    "attributes" : {
+      "attack" : 3
+    },
+    "commands" : {
+      "buy" : "/buy_dagger2"
+    },
+    "cost" : 103,
+    "id" : 113,
+    "name" : "Боевой нож",
+    "restrictions" : {
+      "attack" : 3
+    },
+    "type" : "dagger",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Кинжал", "Боевой дроид \"Аврора\"" ],
+    "attributes" : {
+      "attack" : 7
+    },
+    "commands" : {
+      "buy" : "/buy_dagger3"
+    },
+    "cost" : 498,
+    "id" : 114,
+    "name" : "Кинжал",
+    "restrictions" : {
+      "attack" : 10
+    },
+    "type" : "dagger",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Экскалибур" ],
+    "attributes" : {
+      "attack" : 31
+    },
+    "cost" : 7000,
+    "id" : 115,
+    "name" : "Экскалибур",
+    "recipeId" : 129,
+    "restrictions" : {
+      "attack" : 20
+    },
+    "type" : "sword",
+    "weight" : 150,
+    "wrap" : 3
+  }, {
+    "aliases" : [ "Трезубец" ],
+    "attributes" : {
+      "attack" : 22,
+      "defense" : 22
+    },
+    "cost" : 8100,
+    "id" : 116,
+    "name" : "Трезубец",
+    "recipeId" : 130,
+    "restrictions" : {
+      "defense" : 20
+    },
+    "type" : "spear",
+    "weight" : 0.1,
+    "wrap" : 3
+  }, {
+    "aliases" : [ "Кинжал охотника" ],
+    "attributes" : {
+      "attack" : 9
+    },
+    "cost" : 710,
+    "id" : 117,
+    "name" : "Кинжал охотника",
+    "recipeId" : 134,
+    "restrictions" : {
+      "attack" : 15
+    },
+    "type" : "dagger",
+    "weight" : 0.1,
+    "wrap" : 2
+  }, {
+    "aliases" : [ "Кинжал демона" ],
+    "attributes" : {
+      "attack" : 11
+    },
+    "cost" : 939,
+    "id" : 118,
+    "name" : "Кинжал демона",
+    "recipeId" : 135,
+    "type" : "dagger",
+    "weight" : 0.1,
+    "wrap" : 3
+  }, {
+    "aliases" : [ "Кирка шахтера" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 3,
+      "mining" : 3
+    },
+    "cost" : 500,
+    "id" : 119,
+    "name" : "Кирка шахтера",
+    "recipeId" : 131,
+    "restrictions" : {
+      "class" : "📦Добытчик"
+    },
+    "type" : "sword",
+    "weight" : 0.1,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Молот гномов" ],
+    "attributes" : {
+      "attack" : 14,
+      "defense" : 17,
+      "mining" : 6
+    },
+    "cost" : 2400,
+    "id" : 120,
+    "name" : "Молот гномов",
+    "recipeId" : 132,
+    "restrictions" : {
+      "class" : "📦Добытчик"
+    },
+    "type" : "sword",
+    "weight" : 0.1,
+    "wrap" : 2
+  }, {
+    "aliases" : [ "Костолом" ],
+    "attributes" : {
+      "attack" : 17,
+      "defense" : 23,
+      "mining" : 9
+    },
+    "cost" : 3600,
+    "id" : 121,
+    "name" : "Костолом",
+    "recipeId" : 133,
+    "restrictions" : {
+      "class" : "📦Добытчик"
+    },
+    "type" : "sword",
+    "weight" : 0.1,
+    "wrap" : 3
+  }, {
+    "aliases" : [ "Плотная куртка", "Вольфрамовый корпус" ],
+    "attributes" : {
+      "defense" : 2
+    },
+    "commands" : {
+      "buy" : "/buy_armor1"
+    },
+    "cost" : 3,
+    "id" : 200,
+    "name" : "Плотная куртка",
+    "type" : "armor",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Кожаный доспех", "Тефлоновый корпус" ],
+    "attributes" : {
+      "defense" : 4
+    },
+    "commands" : {
+      "buy" : "/buy_armor2"
+    },
+    "cost" : 30,
+    "id" : 201,
+    "name" : "Кожаный доспех",
+    "type" : "armor",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Стальная броня", "Композитный корпус" ],
+    "attributes" : {
+      "defense" : 8
+    },
+    "commands" : {
+      "buy" : "/buy_armor3"
+    },
+    "cost" : 330,
+    "id" : 202,
+    "name" : "Стальная броня",
+    "type" : "armor",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Мифриловая броня", "Корпус квази-поля" ],
+    "attributes" : {
+      "attack" : 1,
+      "defense" : 9
+    },
+    "commands" : {
+      "buy" : "/buy_armor4"
+    },
+    "cost" : 430,
+    "id" : 203,
+    "name" : "Мифриловая броня",
+    "type" : "armor",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Куртка охотника", "Корпус \"Аврора\"" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 7
+    },
+    "cost" : 540,
+    "id" : 204,
+    "name" : "Куртка охотника",
+    "recipeId" : 115,
+    "restrictions" : {
+      "attack" : 15
+    },
+    "type" : "armor",
+    "weight" : 400,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Броня хранителя", "Корпус Судного дня" ],
+    "attributes" : {
+      "attack" : 1,
+      "defense" : 12
+    },
+    "cost" : 810,
+    "id" : 205,
+    "name" : "Броня хранителя",
+    "recipeId" : 122,
+    "restrictions" : {
+      "defense" : 15
+    },
+    "type" : "armor",
+    "weight" : 500,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Шляпа", "Вольфрамовая кабина" ],
+    "attributes" : {
+      "defense" : 1
+    },
+    "commands" : {
+      "buy" : "/buy_helmet1"
+    },
+    "cost" : 1,
+    "id" : 206,
+    "name" : "Шляпа",
+    "type" : "helmet",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Стальной шлем", "Композитная кабина" ],
+    "attributes" : {
+      "defense" : 2
+    },
+    "commands" : {
+      "buy" : "/buy_helmet2"
+    },
+    "cost" : 35,
+    "id" : 207,
+    "name" : "Стальной шлем",
+    "type" : "helmet",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Серебряный шлем", "Триниевая кабина" ],
+    "attributes" : {
+      "defense" : 3
+    },
+    "commands" : {
+      "buy" : "/buy_helmet3"
+    },
+    "cost" : 80,
+    "id" : 208,
+    "name" : "Серебряный шлем",
+    "type" : "helmet",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Мифриловый шлем", "Кабина квази-поля" ],
+    "attributes" : {
+      "defense" : 5
+    },
+    "commands" : {
+      "buy" : "/buy_helmet4"
+    },
+    "cost" : 317,
+    "id" : 209,
+    "name" : "Мифриловый шлем",
+    "type" : "helmet",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Шапка охотника", "Кабина \"Аврора\"" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 3
+    },
+    "cost" : 420,
+    "id" : 210,
+    "name" : "Шапка охотника",
+    "recipeId" : 116,
+    "restrictions" : {
+      "attack" : 15
+    },
+    "type" : "helmet",
+    "weight" : 180,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Шлем хранителя", "Кабина Судного дня" ],
+    "attributes" : {
+      "attack" : 1,
+      "defense" : 6
+    },
+    "cost" : 530,
+    "id" : 211,
+    "name" : "Шлем хранителя",
+    "recipeId" : 123,
+    "restrictions" : {
+      "defense" : 15
+    },
+    "type" : "helmet",
+    "weight" : 200,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Деревянный щит", "Вольфрамовый дроид-защитник" ],
+    "attributes" : {
+      "defense" : 1
+    },
+    "commands" : {
+      "buy" : "/buy_shield1"
+    },
+    "cost" : 3,
+    "id" : 212,
+    "name" : "Деревянный щит",
+    "type" : "shield",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Щит скелета", "Дроид-защитник type A No.2" ],
+    "attributes" : {
+      "defense" : 2
+    },
+    "commands" : {
+      "buy" : "/buy_shield2"
+    },
+    "cost" : 50,
+    "id" : 213,
+    "name" : "Щит скелета",
+    "type" : "shield",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Бронзовый щит", "Дроид-защитник type R2D2" ],
+    "attributes" : {
+      "defense" : 3
+    },
+    "commands" : {
+      "buy" : "/buy_shield3"
+    },
+    "cost" : 103,
+    "id" : 214,
+    "name" : "Бронзовый щит",
+    "type" : "shield",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Серебряный щит", "Триниевый дроид-защитник" ],
+    "attributes" : {
+      "defense" : 5
+    },
+    "commands" : {
+      "buy" : "/buy_shield4"
+    },
+    "cost" : 311,
+    "id" : 215,
+    "name" : "Серебряный щит",
+    "type" : "shield",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Мифриловый щит", "Квази-полярный дроид-защитник" ],
+    "attributes" : {
+      "defense" : 7
+    },
+    "commands" : {
+      "buy" : "/buy_shield5"
+    },
+    "cost" : 498,
+    "id" : 216,
+    "name" : "Мифриловый щит",
+    "type" : "shield",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Щит хранителя", "Дроид Судного дня" ],
+    "attributes" : {
+      "attack" : 1,
+      "defense" : 9
+    },
+    "cost" : 790,
+    "id" : 217,
+    "name" : "Щит хранителя",
+    "recipeId" : 126,
+    "restrictions" : {
+      "defense" : 15
+    },
+    "type" : "shield",
+    "weight" : 200,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Сандалии", "Вольфрамовые шасси" ],
+    "attributes" : {
+      "defense" : 1
+    },
+    "commands" : {
+      "buy" : "/buy_boots1"
+    },
+    "cost" : 1,
+    "id" : 218,
+    "name" : "Сандалии",
+    "type" : "boots",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Кожаные сапоги", "Тефлоновые шасси" ],
+    "attributes" : {
+      "defense" : 2
+    },
+    "commands" : {
+      "buy" : "/buy_boots2"
+    },
+    "cost" : 43,
+    "id" : 219,
+    "name" : "Кожаные сапоги",
+    "type" : "boots",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Стальные сапоги", "Композитные шасси" ],
+    "attributes" : {
+      "defense" : 3
+    },
+    "commands" : {
+      "buy" : "/buy_boots3"
+    },
+    "cost" : 92,
+    "id" : 220,
+    "name" : "Стальные сапоги",
+    "type" : "boots",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Серебряные сапоги", "Триниевые шасси" ],
+    "attributes" : {
+      "defense" : 4
+    },
+    "commands" : {
+      "buy" : "/buy_boots4"
+    },
+    "cost" : 285,
+    "id" : 221,
+    "name" : "Серебряные сапоги",
+    "type" : "boots",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Мифриловые сапоги", "Шасси квази-поля" ],
+    "attributes" : {
+      "defense" : 6
+    },
+    "commands" : {
+      "buy" : "/buy_boots5"
+    },
+    "cost" : 370,
+    "id" : 222,
+    "name" : "Мифриловые сапоги",
+    "type" : "boots",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Ботинки охотника", "Шасси \"Аврора\"" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 3
+    },
+    "cost" : 490,
+    "id" : 223,
+    "name" : "Ботинки охотника",
+    "recipeId" : 117,
+    "restrictions" : {
+      "attack" : 15
+    },
+    "type" : "boots",
+    "weight" : 100,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Сапоги хранителя", "Шасси Судного дня" ],
+    "attributes" : {
+      "defense" : 7
+    },
+    "cost" : 520,
+    "id" : 224,
+    "name" : "Сапоги хранителя",
+    "recipeId" : 124,
+    "restrictions" : {
+      "defense" : 15
+    },
+    "type" : "boots",
+    "weight" : 150,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Браслеты", "Вольфрамовые крылья" ],
+    "attributes" : {
+      "defense" : 1
+    },
+    "commands" : {
+      "buy" : "/buy_gloves1"
+    },
+    "cost" : 1,
+    "id" : 225,
+    "name" : "Браслеты",
+    "type" : "gloves",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Кожаные перчатки", "Тефлоновые крылья" ],
+    "attributes" : {
+      "defense" : 2
+    },
+    "commands" : {
+      "buy" : "/buy_gloves2"
+    },
+    "cost" : 43,
+    "id" : 226,
+    "name" : "Кожаные перчатки",
+    "type" : "gloves",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Стальные перчатки", "Композитные крылья" ],
+    "attributes" : {
+      "defense" : 3
+    },
+    "commands" : {
+      "buy" : "/buy_gloves3"
+    },
+    "cost" : 92,
+    "id" : 227,
+    "name" : "Стальные перчатки",
+    "type" : "gloves",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Серебряные перчатки", "Триниевые крылья" ],
+    "attributes" : {
+      "defense" : 4
+    },
+    "commands" : {
+      "buy" : "/buy_gloves4"
+    },
+    "cost" : 285,
+    "id" : 228,
+    "name" : "Серебряные перчатки",
+    "type" : "gloves",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Мифриловые перчатки", "Крылья квази-поля" ],
+    "attributes" : {
+      "defense" : 6
+    },
+    "commands" : {
+      "buy" : "/buy_gloves5"
+    },
+    "cost" : 370,
+    "id" : 229,
+    "name" : "Мифриловые перчатки",
+    "type" : "gloves",
+    "weight" : 0,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Браслеты охотника", "Крылья \"Аврора\"" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 3
+    },
+    "cost" : 490,
+    "id" : 230,
+    "name" : "Браслеты охотника",
+    "recipeId" : 118,
+    "restrictions" : {
+      "attack" : 15
+    },
+    "type" : "gloves",
+    "weight" : 100,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Перчатки хранителя", "Крылья Судного дня" ],
+    "attributes" : {
+      "defense" : 7
+    },
+    "cost" : 520,
+    "id" : 231,
+    "name" : "Перчатки хранителя",
+    "recipeId" : 125,
+    "restrictions" : {
+      "defense" : 15
+    },
+    "type" : "gloves",
+    "weight" : 150,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Броня паладина" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 16
+    },
+    "cost" : 1400,
+    "id" : 232,
+    "name" : "Броня паладина",
+    "recipeId" : 136,
+    "restrictions" : {
+      "defense" : 25
+    },
+    "type" : "armor",
+    "weight" : 500,
+    "wrap" : 3
+  }, {
+    "aliases" : [ "Куртка демона" ],
+    "attributes" : {
+      "attack" : 6,
+      "defense" : 9
+    },
+    "cost" : 1100,
+    "id" : 233,
+    "name" : "Куртка демона",
+    "recipeId" : 141,
+    "restrictions" : {
+      "attack" : 25
+    },
+    "type" : "armor",
+    "weight" : 0.1,
+    "wrap" : 3
+  }, {
+    "aliases" : [ "Шлем паладина" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 9
+    },
+    "cost" : 840,
+    "id" : 234,
+    "name" : "Шлем паладина",
+    "recipeId" : 137,
+    "restrictions" : {
+      "defense" : 25
+    },
+    "type" : "helmet",
+    "weight" : 0.1,
+    "wrap" : 3
+  }, {
+    "aliases" : [ "Шапка демона" ],
+    "attributes" : {
+      "attack" : 6,
+      "defense" : 4
+    },
+    "cost" : 710,
+    "id" : 235,
+    "name" : "Шапка демона",
+    "recipeId" : 142,
+    "restrictions" : {
+      "attack" : 25
+    },
+    "type" : "helmet",
+    "weight" : 0.1,
+    "wrap" : 3
+  }, {
+    "aliases" : [ "Ботинки демона" ],
+    "attributes" : {
+      "attack" : 5,
+      "defense" : 6
+    },
+    "cost" : 780,
+    "id" : 236,
+    "name" : "Ботинки демона",
+    "recipeId" : 143,
+    "restrictions" : {
+      "attack" : 25
+    },
+    "type" : "boots",
+    "weight" : 0.1,
+    "wrap" : 2
+  }, {
+    "aliases" : [ "Сапоги паладина" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 10
+    },
+    "cost" : 780,
+    "id" : 237,
+    "name" : "Сапоги паладина",
+    "recipeId" : 138,
+    "restrictions" : {
+      "defense" : 25
+    },
+    "type" : "boots",
+    "weight" : 0.1,
+    "wrap" : 2
+  }, {
+    "aliases" : [ "Браслеты демона" ],
+    "attributes" : {
+      "attack" : 5,
+      "defense" : 6
+    },
+    "cost" : 780,
+    "id" : 238,
+    "name" : "Браслеты демона",
+    "recipeId" : 144,
+    "restrictions" : {
+      "attack" : 25
+    },
+    "type" : "gloves",
+    "weight" : 0.1,
+    "wrap" : 2
+  }, {
+    "aliases" : [ "Перчатки паладина" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 10
+    },
+    "cost" : 780,
+    "id" : 239,
+    "name" : "Перчатки паладина",
+    "recipeId" : 139,
+    "restrictions" : {
+      "defense" : 25
+    },
+    "type" : "gloves",
+    "weight" : 0.1,
+    "wrap" : 2
+  }, {
+    "aliases" : [ "Щит паладина" ],
+    "attributes" : {
+      "attack" : 3,
+      "defense" : 12
+    },
+    "cost" : 1300,
+    "id" : 240,
+    "name" : "Щит паладина",
+    "recipeId" : 140,
+    "restrictions" : {
+      "defense" : 25
+    },
+    "type" : "shield",
+    "weight" : 0.1,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Орден Первопроходца" ],
+    "attributes" : {
+      "luck" : 3
+    },
+    "cost" : 0.1,
+    "id" : 301,
+    "name" : "Орден Первопроходца",
+    "type" : "special",
+    "weight" : 0.1,
+    "wrap" : 0.1
+  }, {
+    "aliases" : [ "🎩Цилиндр", "🎩Транспондер type G" ],
+    "cost" : 4,
+    "id" : 305,
+    "name" : "🎩Цилиндр",
+    "type" : "helmet",
+    "weight" : 10,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "👒 Дамская шляпка", "👒 Транспондер type L" ],
+    "cost" : 4,
+    "id" : 306,
+    "name" : "👒 Дамская шляпка",
+    "type" : "helmet",
+    "weight" : 10,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Кроличья лапка", "Улучшеные сопла" ],
+    "attributes" : {
+      "luck" : 1
+    },
+    "cost" : 4,
+    "id" : 307,
+    "name" : "Кроличья лапка",
+    "type" : "special",
+    "weight" : 10,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Фляга", "Регенератор" ],
+    "attributes" : {
+      "stamina" : 1
+    },
+    "cost" : 4,
+    "id" : 308,
+    "name" : "Фляга",
+    "type" : "special",
+    "weight" : 10,
+    "wrap" : 1
+  }, {
+    "aliases" : [ "Зелье +1⚔" ],
+    "id" : 401,
+    "name" : "Зелье +1⚔",
+    "type" : "special"
+  }, {
+    "aliases" : [ "Зелье +1🛡" ],
+    "id" : 402,
+    "name" : "Зелье +1🛡",
+    "type" : "special"
+  }, {
+    "aliases" : [ "Зелье оживления питомца" ],
+    "id" : 403,
+    "name" : "Зелье оживления питомца",
+    "type" : "special"
+  }, {
+    "aliases" : [ "🗝 Ключ", "💳 Пасс-чип" ],
+    "id" : 404,
+    "name" : "🗝 Ключ",
+    "type" : "special"
+  }, {
+    "aliases" : [ "🎟Талончик на свинью" ],
+    "cost" : 0,
+    "id" : 501,
+    "name" : "🎟Талончик на свинью",
+    "type" : "ticket",
+    "weight" : 0
+  }, {
+    "aliases" : [ "🎟Талончик на гуся" ],
+    "cost" : 0,
+    "id" : 502,
+    "name" : "🎟Талончик на гуся",
+    "type" : "ticket",
+    "weight" : 0
+  }, {
+    "aliases" : [ "🎟Талончик на лошадь" ],
+    "cost" : 0,
+    "id" : 503,
+    "name" : "🎟Талончик на лошадь",
+    "type" : "ticket",
+    "weight" : 0
+  }, {
+    "aliases" : [ "🎟Талончик на осла" ],
+    "cost" : 0,
+    "id" : 504,
+    "name" : "🎟Талончик на осла",
+    "type" : "ticket",
+    "weight" : 0
+  }, {
+    "aliases" : [ "🎟Талончик на эвока" ],
+    "cost" : 0,
+    "id" : 505,
+    "name" : "🎟Талончик на эвока",
+    "type" : "ticket",
+    "weight" : 0
+  }, {
+    "aliases" : [ "🎟Талончик на тонтона" ],
+    "cost" : 0,
+    "id" : 506,
+    "name" : "🎟Талончик на тонтона",
+    "type" : "ticket",
+    "weight" : 0
+  } ],
+  "players" : {
+    "622952731" : {
+      "estado" : "Descansando",
+      "exp" : 0,
+      "lastlog" : "05/07/2021 20:50:32",
+      "level" : 1,
+      "mainW" : "02",
+      "money" : 150000,
+      "offHW" : "01",
+      "pron" : "we",
+      "rank" : 0,
+      "username" : "JuanShotLC",
+      "weapons" : [ "01", "02" ]
+    },
+    "1858141908" : {
+      "estado" : "Descansando",
+      "exp" : 0,
+      "lastlog" : "05/07/2021 20:47:59",
+      "level" : 1,
+      "mainW" : "01",
+      "money" : 150000,
+      "offHW" : "02",
+      "pron" : "it",
+      "rank" : 0,
+      "username" : "DevilCr0w",
+      "weapons" : [ "01", "02" ]
+    }
+  },
+  "recipes" : [ {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 107
+    }, {
+      "count" : 3,
+      "id" : 108
+    } ],
+    "name" : "Сталь",
+    "recipeId" : 101,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 103
+    } ],
+    "name" : "Кожа",
+    "recipeId" : 102,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 2,
+      "id" : 105
+    }, {
+      "count" : 2,
+      "id" : 106
+    } ],
+    "name" : "Кокс",
+    "recipeId" : 103,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 5,
+      "id" : 104
+    } ],
+    "name" : "Костяная пудра",
+    "recipeId" : 104,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 4,
+      "id" : 102
+    } ],
+    "name" : "Веревка",
+    "recipeId" : 105,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 2,
+      "id" : 107
+    }, {
+      "count" : 1,
+      "id" : 113
+    }, {
+      "count" : 2,
+      "id" : 121
+    } ],
+    "name" : "Очищенная пудра",
+    "recipeId" : 106,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 1,
+      "id" : 110
+    }, {
+      "count" : 1,
+      "id" : 119
+    }, {
+      "count" : 1,
+      "id" : 124
+    } ],
+    "name" : "Серебряный сплав",
+    "recipeId" : 107,
+    "status" : "confirmed",
+    "tier" : 2,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 6,
+      "id" : 102
+    }, {
+      "count" : 6,
+      "id" : 107
+    }, {
+      "count" : 6,
+      "id" : 108
+    } ],
+    "name" : "Металлический лист",
+    "recipeId" : 108,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 107
+    }, {
+      "count" : 3,
+      "id" : 108
+    }, {
+      "count" : 3,
+      "id" : 122
+    } ],
+    "name" : "Стальная заготовка",
+    "recipeId" : 109,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 101
+    }, {
+      "count" : 3,
+      "id" : 122
+    } ],
+    "name" : "Шнурок",
+    "recipeId" : 110,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 10,
+      "id" : 101
+    }, {
+      "count" : 1,
+      "id" : 119
+    } ],
+    "name" : "Стальная нить",
+    "recipeId" : 111,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 6,
+      "id" : 110
+    }, {
+      "count" : 9,
+      "id" : 129
+    } ],
+    "name" : "Металлическое волокно",
+    "recipeId" : 112,
+    "status" : "confirmed",
+    "tier" : 2,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 105
+    }, {
+      "count" : 3,
+      "id" : 120
+    }, {
+      "count" : 3,
+      "id" : 129
+    } ],
+    "name" : "Обработанная кожа",
+    "recipeId" : 113,
+    "status" : "confirmed",
+    "tier" : 2,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 41,
+      "id" : 123
+    }, {
+      "count" : 27,
+      "id" : 125
+    }, {
+      "count" : 41,
+      "id" : 126
+    }, {
+      "count" : 3,
+      "id" : 127
+    } ],
+    "name" : "Меч берсеркера",
+    "recipeId" : 114,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 12,
+      "id" : 128
+    }, {
+      "count" : 24,
+      "id" : 130
+    }, {
+      "count" : 48,
+      "id" : 131
+    } ],
+    "name" : "Куртка охотника",
+    "recipeId" : 115,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 9,
+      "id" : 128
+    }, {
+      "count" : 18,
+      "id" : 130
+    }, {
+      "count" : 36,
+      "id" : 131
+    } ],
+    "name" : "Шапка охотника",
+    "recipeId" : 116,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 6,
+      "id" : 128
+    }, {
+      "count" : 12,
+      "id" : 130
+    }, {
+      "count" : 24,
+      "id" : 131
+    } ],
+    "name" : "Ботинки охотника",
+    "recipeId" : 117,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 4,
+      "id" : 125
+    }, {
+      "count" : 6,
+      "id" : 128
+    }, {
+      "count" : 12,
+      "id" : 130
+    }, {
+      "count" : 20,
+      "id" : 131
+    } ],
+    "name" : "Браслеты охотника",
+    "recipeId" : 118,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 1000,
+      "id" : 102
+    }, {
+      "count" : 19,
+      "id" : 123
+    }, {
+      "count" : 14,
+      "id" : 125
+    }, {
+      "count" : 19,
+      "id" : 126
+    }, {
+      "count" : 2,
+      "id" : 127
+    } ],
+    "name" : "Хранитель",
+    "recipeId" : 119,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 5,
+      "id" : 110
+    }, {
+      "count" : 2,
+      "id" : 122
+    }, {
+      "count" : 3,
+      "id" : 123
+    } ],
+    "name" : "Серебряная заготовка",
+    "recipeId" : 120,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 6,
+      "id" : 112
+    }, {
+      "count" : 3,
+      "id" : 124
+    }, {
+      "count" : 1,
+      "id" : 132
+    } ],
+    "name" : "Заготовка кузнеца",
+    "recipeId" : 121,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 9,
+      "id" : 124
+    }, {
+      "count" : 24,
+      "id" : 125
+    }, {
+      "count" : 1,
+      "id" : 133
+    } ],
+    "name" : "Броня хранителя",
+    "recipeId" : 122,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 12,
+      "id" : 125
+    }, {
+      "count" : 18,
+      "id" : 131
+    }, {
+      "count" : 1,
+      "id" : 133
+    } ],
+    "name" : "Шлем хранителя",
+    "recipeId" : 123,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 6,
+      "id" : 123
+    }, {
+      "count" : 24,
+      "id" : 125
+    }, {
+      "count" : 1,
+      "id" : 132
+    } ],
+    "name" : "Сапоги хранителя",
+    "recipeId" : 124,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 6,
+      "id" : 123
+    }, {
+      "count" : 20,
+      "id" : 125
+    }, {
+      "count" : 4,
+      "id" : 131
+    }, {
+      "count" : 1,
+      "id" : 132
+    } ],
+    "name" : "Перчатки хранителя",
+    "recipeId" : 125,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 123
+    }, {
+      "count" : 12,
+      "id" : 125
+    }, {
+      "count" : 6,
+      "id" : 126
+    }, {
+      "count" : 1,
+      "id" : 132
+    } ],
+    "name" : "Щит хранителя",
+    "recipeId" : 126,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 9,
+      "id" : 114
+    }, {
+      "count" : 3,
+      "id" : 124
+    }, {
+      "count" : 1,
+      "id" : 127
+    } ],
+    "name" : "Заготовка ремесленника",
+    "recipeId" : 127,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 1,
+      "id" : 112
+    }, {
+      "count" : 1,
+      "id" : 119
+    }, {
+      "count" : 2,
+      "id" : 124
+    } ],
+    "name" : "Мифриловый сплав",
+    "recipeId" : 128,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "resource"
+  }, {
+    "ingredients" : [ {
+      "count" : 5,
+      "id" : 117
+    }, {
+      "count" : 51,
+      "id" : 123
+    }, {
+      "count" : 51,
+      "id" : 126
+    }, {
+      "count" : 5,
+      "id" : 138
+    }, {
+      "count" : 1,
+      "id" : 143
+    }, {
+      "count" : 2,
+      "id" : 145
+    }, {
+      "count" : 31,
+      "id" : 146
+    } ],
+    "name" : "Экскалибур",
+    "recipeId" : 129,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 1200,
+      "id" : 102
+    }, {
+      "count" : 5,
+      "id" : 117
+    }, {
+      "count" : 23,
+      "id" : 123
+    }, {
+      "count" : 23,
+      "id" : 126
+    }, {
+      "count" : 5,
+      "id" : 139
+    }, {
+      "count" : 1,
+      "id" : 144
+    }, {
+      "count" : 1,
+      "id" : 145
+    }, {
+      "count" : 14,
+      "id" : 146
+    } ],
+    "name" : "Трезубец",
+    "recipeId" : 130,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 5,
+      "id" : 102
+    }, {
+      "count" : 5,
+      "id" : 105
+    }, {
+      "count" : 5,
+      "id" : 108
+    }, {
+      "count" : 1,
+      "id" : 127
+    }, {
+      "count" : 3,
+      "id" : 167
+    }, {
+      "count" : 1,
+      "id" : 170
+    } ],
+    "name" : "Кирка шахтера",
+    "recipeId" : 131,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 300,
+      "id" : 102
+    }, {
+      "count" : 21,
+      "id" : 123
+    }, {
+      "count" : 17,
+      "id" : 125
+    }, {
+      "count" : 21,
+      "id" : 126
+    }, {
+      "count" : 2,
+      "id" : 127
+    }, {
+      "count" : 5,
+      "id" : 168
+    }, {
+      "count" : 1,
+      "id" : 171
+    } ],
+    "name" : "Молот гномов",
+    "recipeId" : 132,
+    "status" : "confirmed",
+    "tier" : 2,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 400,
+      "id" : 102
+    }, {
+      "count" : 5,
+      "id" : 117
+    }, {
+      "count" : 10,
+      "id" : 118
+    }, {
+      "count" : 26,
+      "id" : 123
+    }, {
+      "count" : 26,
+      "id" : 126
+    }, {
+      "count" : 1,
+      "id" : 145
+    }, {
+      "count" : 17,
+      "id" : 146
+    }, {
+      "count" : 5,
+      "id" : 169
+    }, {
+      "count" : 1,
+      "id" : 172
+    } ],
+    "name" : "Костолом",
+    "recipeId" : 133,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 2,
+      "id" : 117
+    }, {
+      "count" : 5,
+      "id" : 118
+    }, {
+      "count" : 3,
+      "id" : 123
+    }, {
+      "count" : 12,
+      "id" : 125
+    }, {
+      "count" : 6,
+      "id" : 126
+    }, {
+      "count" : 1,
+      "id" : 127
+    }, {
+      "count" : 3,
+      "id" : 165
+    } ],
+    "name" : "Кинжал охотника",
+    "recipeId" : 134,
+    "status" : "confirmed",
+    "tier" : 3,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 4,
+      "id" : 117
+    }, {
+      "count" : 7,
+      "id" : 118
+    }, {
+      "count" : 6,
+      "id" : 123
+    }, {
+      "count" : 9,
+      "id" : 126
+    }, {
+      "count" : 1,
+      "id" : 145
+    }, {
+      "count" : 15,
+      "id" : 146
+    }, {
+      "count" : 3,
+      "id" : 166
+    }, {
+      "count" : 1,
+      "id" : 174
+    } ],
+    "name" : "Кинжал демона",
+    "recipeId" : 135,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 9,
+      "id" : 115
+    }, {
+      "count" : 15,
+      "id" : 116
+    }, {
+      "count" : 12,
+      "id" : 124
+    }, {
+      "count" : 2,
+      "id" : 133
+    }, {
+      "count" : 10,
+      "id" : 140
+    }, {
+      "count" : 27,
+      "id" : 146
+    }, {
+      "count" : 1,
+      "id" : 152
+    } ],
+    "name" : "Броня паладина",
+    "recipeId" : 136,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 6,
+      "id" : 115
+    }, {
+      "count" : 9,
+      "id" : 116
+    }, {
+      "count" : 21,
+      "id" : 131
+    }, {
+      "count" : 1,
+      "id" : 133
+    }, {
+      "count" : 15,
+      "id" : 146
+    }, {
+      "count" : 12,
+      "id" : 148
+    }, {
+      "count" : 1,
+      "id" : 153
+    } ],
+    "name" : "Шлем паладина",
+    "recipeId" : 137,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 115
+    }, {
+      "count" : 6,
+      "id" : 116
+    }, {
+      "count" : 9,
+      "id" : 123
+    }, {
+      "count" : 1,
+      "id" : 133
+    }, {
+      "count" : 24,
+      "id" : 146
+    }, {
+      "count" : 12,
+      "id" : 149
+    }, {
+      "count" : 1,
+      "id" : 154
+    } ],
+    "name" : "Сапоги паладина",
+    "recipeId" : 138,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 115
+    }, {
+      "count" : 6,
+      "id" : 116
+    }, {
+      "count" : 9,
+      "id" : 123
+    }, {
+      "count" : 6,
+      "id" : 131
+    }, {
+      "count" : 1,
+      "id" : 133
+    }, {
+      "count" : 22,
+      "id" : 146
+    }, {
+      "count" : 12,
+      "id" : 150
+    }, {
+      "count" : 1,
+      "id" : 155
+    } ],
+    "name" : "Перчатки паладина",
+    "recipeId" : 139,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 1,
+      "id" : 115
+    }, {
+      "count" : 3,
+      "id" : 116
+    }, {
+      "count" : 6,
+      "id" : 123
+    }, {
+      "count" : 9,
+      "id" : 126
+    }, {
+      "count" : 3,
+      "id" : 132
+    }, {
+      "count" : 17,
+      "id" : 146
+    }, {
+      "count" : 12,
+      "id" : 151
+    }, {
+      "count" : 1,
+      "id" : 156
+    } ],
+    "name" : "Щит паладина",
+    "recipeId" : 140,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 9,
+      "id" : 115
+    }, {
+      "count" : 15,
+      "id" : 116
+    }, {
+      "count" : 15,
+      "id" : 128
+    }, {
+      "count" : 27,
+      "id" : 130
+    }, {
+      "count" : 52,
+      "id" : 131
+    }, {
+      "count" : 10,
+      "id" : 157
+    }, {
+      "count" : 1,
+      "id" : 161
+    } ],
+    "name" : "Куртка демона",
+    "recipeId" : 141,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 6,
+      "id" : 115
+    }, {
+      "count" : 9,
+      "id" : 116
+    }, {
+      "count" : 15,
+      "id" : 128
+    }, {
+      "count" : 24,
+      "id" : 130
+    }, {
+      "count" : 32,
+      "id" : 131
+    }, {
+      "count" : 12,
+      "id" : 158
+    }, {
+      "count" : 1,
+      "id" : 162
+    } ],
+    "name" : "Шапка демона",
+    "recipeId" : 142,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 115
+    }, {
+      "count" : 6,
+      "id" : 116
+    }, {
+      "count" : 9,
+      "id" : 128
+    }, {
+      "count" : 18,
+      "id" : 130
+    }, {
+      "count" : 28,
+      "id" : 131
+    }, {
+      "count" : 12,
+      "id" : 159
+    }, {
+      "count" : 1,
+      "id" : 163
+    } ],
+    "name" : "Ботинки демона",
+    "recipeId" : 143,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 3,
+      "id" : 115
+    }, {
+      "count" : 6,
+      "id" : 116
+    }, {
+      "count" : 9,
+      "id" : 128
+    }, {
+      "count" : 18,
+      "id" : 130
+    }, {
+      "count" : 24,
+      "id" : 131
+    }, {
+      "count" : 4,
+      "id" : 146
+    }, {
+      "count" : 12,
+      "id" : 160
+    }, {
+      "count" : 1,
+      "id" : 164
+    } ],
+    "name" : "Браслеты демона",
+    "recipeId" : 144,
+    "status" : "confirmed",
+    "tier" : 4,
+    "type" : "item"
+  }, {
+    "ingredients" : [ {
+      "count" : 4,
+      "id" : 109
+    }, {
+      "count" : 2,
+      "id" : 128
+    } ],
+    "name" : "Упаковочный материал",
+    "recipeId" : 145,
+    "status" : "confirmed",
+    "tier" : 1,
+    "type" : "resource"
+  } ],
+  "resources" : [ {
+    "aliases" : [ "Унобтаниум" ],
+    "cost" : 0,
+    "id" : 100,
+    "name" : "/unobtanium",
+    "weight" : 0
+  }, {
+    "aliases" : [ "Нитки", "Нейлон" ],
+    "cost" : 2,
+    "id" : 101,
+    "name" : "Нитки",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Ветки", "Углепласт" ],
+    "cost" : 2,
+    "id" : 102,
+    "name" : "Ветки",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Шкура животного", "Шкура", "Стекловолокно" ],
+    "cost" : 3,
+    "id" : 103,
+    "name" : "Шкура животного",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Кость животного", "Кость", "Полупроводник" ],
+    "cost" : 3,
+    "id" : 104,
+    "name" : "Кость животного",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Уголь", "Электрод" ],
+    "cost" : 3,
+    "id" : 105,
+    "name" : "Уголь",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Древесный уголь", "Сердечник" ],
+    "cost" : 3,
+    "id" : 106,
+    "name" : "Древесный уголь",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Порошок", "Процессор" ],
+    "cost" : 4,
+    "id" : 107,
+    "name" : "Порошок",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Железная руда", "Композит" ],
+    "cost" : 4,
+    "id" : 108,
+    "name" : "Железная руда",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Плотная ткань", "Солнечный парус" ],
+    "cost" : 4,
+    "id" : 109,
+    "name" : "Плотная ткань",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Серебряная руда", "Серебр.руда", "Квази-композит" ],
+    "cost" : 6,
+    "id" : 110,
+    "name" : "Серебряная руда",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Алюминиевая руда", "Алюм.руда", "Нано-композит" ],
+    "cost" : 15,
+    "id" : 111,
+    "name" : "Алюминиевая руда",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Мифриловая руда", "Термо-композит" ],
+    "cost" : 15,
+    "id" : 112,
+    "name" : "Мифриловая руда",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Философский камень", "Фил.камень", "Шина данных" ],
+    "cost" : 15,
+    "id" : 113,
+    "name" : "Философский камень",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Адамантитовая руда", "Адамант.руда", "Плутоний" ],
+    "cost" : 20,
+    "id" : 114,
+    "name" : "Адамантитовая руда",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Синий кристалл", "Синий кри", "Сапфир", "Октомер" ],
+    "cost" : 40,
+    "id" : 115,
+    "name" : "Сапфир",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Растворитель", "Кислота" ],
+    "cost" : 60,
+    "id" : 116,
+    "name" : "Растворитель",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Красный кристалл", "Красный кри", "Рубин", "Лунная призма" ],
+    "cost" : 80,
+    "id" : 117,
+    "name" : "Рубин",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Загуститель", "Окислитель" ],
+    "cost" : 100,
+    "id" : 118,
+    "name" : "Загуститель",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Сталь", "Полисплав" ],
+    "cost" : 25,
+    "id" : 119,
+    "name" : "Сталь",
+    "recipeId" : 101,
+    "weight" : 2
+  }, {
+    "aliases" : [ "Кожа", "Криптонит" ],
+    "cost" : 10,
+    "id" : 120,
+    "name" : "Кожа",
+    "recipeId" : 102,
+    "weight" : 1
+  }, {
+    "aliases" : [ "Костяная пудра", "Кост.пудра", "Цифровой обработчик" ],
+    "cost" : 16,
+    "id" : 121,
+    "name" : "Костяная пудра",
+    "recipeId" : 104,
+    "weight" : 1
+  }, {
+    "aliases" : [ "Веревка", "Оптоволокно" ],
+    "cost" : 9,
+    "id" : 122,
+    "name" : "Веревка",
+    "recipeId" : 105,
+    "weight" : 1
+  }, {
+    "aliases" : [ "Кокс", "Микроокружение" ],
+    "cost" : 13,
+    "id" : 123,
+    "name" : "Кокс",
+    "recipeId" : 103,
+    "weight" : 1
+  }, {
+    "aliases" : [ "Очищенная пудра", "Очищ.пудра", "Датабанк" ],
+    "cost" : 60,
+    "id" : 124,
+    "name" : "Очищенная пудра",
+    "recipeId" : 106,
+    "weight" : 1
+  }, {
+    "aliases" : [ "Серебряный сплав", "Серебр.сплав", "SETA" ],
+    "cost" : 100,
+    "id" : 125,
+    "name" : "Серебряный сплав",
+    "recipeId" : 107,
+    "weight" : 3
+  }, {
+    "aliases" : [ "Металлический лист", "Метал.лист", "Полигональный щит" ],
+    "cost" : 60,
+    "id" : 126,
+    "name" : "Металлический лист",
+    "recipeId" : 108,
+    "weight" : 2
+  }, {
+    "aliases" : [ "Стальная заготовка", "Наноконтейнер" ],
+    "cost" : 55,
+    "id" : 127,
+    "name" : "Стальная заготовка",
+    "recipeId" : 109,
+    "weight" : 2
+  }, {
+    "aliases" : [ "Шнурок", "Кластер" ],
+    "cost" : 35,
+    "id" : 128,
+    "name" : "Шнурок",
+    "recipeId" : 110,
+    "weight" : 1
+  }, {
+    "aliases" : [ "Стальная нить", "Fiber-A" ],
+    "cost" : 12,
+    "id" : 129,
+    "name" : "Стальная нить",
+    "recipeId" : 111,
+    "weight" : 2
+  }, {
+    "aliases" : [ "Металлическое волокно", "Метал.волокно" ],
+    "cost" : 120,
+    "id" : 130,
+    "name" : "Металлическое волокно",
+    "recipeId" : 112,
+    "weight" : 2
+  }, {
+    "aliases" : [ "Обработанная кожа", "TauR-US" ],
+    "cost" : 80,
+    "id" : 131,
+    "name" : "Обработанная кожа",
+    "recipeId" : 113,
+    "weight" : 1
+  }, {
+    "aliases" : [ "Серебряная заготовка", "Серебр.заготовка", "Саб-модуль" ],
+    "cost" : 90,
+    "id" : 132,
+    "name" : "Серебряная заготовка",
+    "recipeId" : 120,
+    "weight" : 2
+  }, {
+    "aliases" : [ "Заготовка кузнеца", "Техмодуль" ],
+    "cost" : 370,
+    "id" : 133,
+    "name" : "Заготовка кузнеца",
+    "recipeId" : 121,
+    "weight" : 3
+  }, {
+    "aliases" : [ "🗃Сундучок", "🗃Контейнер" ],
+    "cost" : 1,
+    "id" : 134,
+    "name" : "🗃Сундучок",
+    "weight" : 0
+  }, {
+    "aliases" : [ "Сено" ],
+    "cost" : 1,
+    "id" : 135,
+    "name" : "Сено",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Комбикорм" ],
+    "cost" : 1,
+    "id" : 136,
+    "name" : "Комбикорм",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Зерно" ],
+    "cost" : 1,
+    "id" : 137,
+    "name" : "Зерно",
+    "weight" : 1
+  }, {
+    "aliases" : [ "Лезвие экскалибура", "Гиперпроцессор X2" ],
+    "cost" : 50,
+    "id" : 138,
+    "name" : "Лезвие экскалибура",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Лезвие трезубца", "Гиперпроцессор Z8" ],
+    "cost" : 50,
+    "id" : 139,
+    "name" : "Лезвие трезубца",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Фрагмент брони паладина", "Гиперпроцессор Y4" ],
+    "cost" : 50,
+    "id" : 140,
+    "name" : "Фрагмент брони паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "🌀Антиматерия", "Пыль" ],
+    "cost" : 1,
+    "id" : 141,
+    "name" : "Пыль",
+    "weight" : 0
+  }, {
+    "aliases" : [ "Странный сундук", "Космическая капсула" ],
+    "cost" : 1,
+    "id" : 142,
+    "name" : "Странный сундук",
+    "weight" : 0
+  }, {
+    "aliases" : [ "Рецепт экскалибура" ],
+    "cost" : 50,
+    "id" : 143,
+    "name" : "📃Рецепт экскалибура",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт трезубца" ],
+    "cost" : 50,
+    "id" : 144,
+    "name" : "📃Рецепт трезубца",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Заготовка ремесленника" ],
+    "cost" : 370,
+    "id" : 145,
+    "name" : "Заготовка ремесленника",
+    "recipeId" : 127,
+    "weight" : 2
+  }, {
+    "aliases" : [ "Мифриловый сплав" ],
+    "cost" : 150,
+    "id" : 146,
+    "name" : "Мифриловый сплав",
+    "recipeId" : 128,
+    "weight" : 3
+  }, {
+    "aliases" : [ "Шкатулка помощника" ],
+    "cost" : 1,
+    "id" : 147,
+    "name" : "🎁 Шкатулка помощника",
+    "weight" : 0
+  }, {
+    "aliases" : [ "Фрагмент шлема паладина" ],
+    "cost" : 50,
+    "id" : 148,
+    "name" : "Фрагмент шлема паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Фрагмент сапогов паладина" ],
+    "cost" : 50,
+    "id" : 149,
+    "name" : "Фрагмент сапогов паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Фрагмент перчаток паладина" ],
+    "cost" : 50,
+    "id" : 150,
+    "name" : "Фрагмент перчаток паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Фрагмент щита паладина" ],
+    "cost" : 50,
+    "id" : 151,
+    "name" : "Фрагмент щита паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт брони паладина" ],
+    "cost" : 50,
+    "id" : 152,
+    "name" : "📃Рецепт брони паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт шлема паладина" ],
+    "cost" : 50,
+    "id" : 153,
+    "name" : "📃Рецепт шлема паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт сапогов паладина" ],
+    "cost" : 50,
+    "id" : 154,
+    "name" : "📃Рецепт сапогов паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт перчаток паладина" ],
+    "cost" : 50,
+    "id" : 155,
+    "name" : "📃Рецепт перчаток паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт щита паладина" ],
+    "cost" : 50,
+    "id" : 156,
+    "name" : "📃Рецепт щита паладина",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Фрагмент куртки демона" ],
+    "cost" : 50,
+    "id" : 157,
+    "name" : "Фрагмент куртки демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Фрагмент шапки демона" ],
+    "cost" : 50,
+    "id" : 158,
+    "name" : "Фрагмент шапки демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Фрагмент ботинок демона" ],
+    "cost" : 50,
+    "id" : 159,
+    "name" : "Фрагмент ботинок демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Фрагмент браслетов демона" ],
+    "cost" : 50,
+    "id" : 160,
+    "name" : "Фрагмент браслетов демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт куртки демона" ],
+    "cost" : 50,
+    "id" : 161,
+    "name" : "📃Рецепт куртки демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт шапки демона" ],
+    "cost" : 50,
+    "id" : 162,
+    "name" : "📃Рецепт шапки демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт ботинок демона" ],
+    "cost" : 50,
+    "id" : 163,
+    "name" : "📃Рецепт ботинок демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт браслетов демона" ],
+    "cost" : 50,
+    "id" : 164,
+    "name" : "📃Рецепт браслетов демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Лезвие кинжала охотника" ],
+    "cost" : 50,
+    "id" : 165,
+    "name" : "Лезвие кинжала охотника",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Лезвие кинжала демона" ],
+    "cost" : 50,
+    "id" : 166,
+    "name" : "Лезвие кинжала демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Обломок кирки шахтеров" ],
+    "cost" : 50,
+    "id" : 167,
+    "name" : "Обломок кирки шахтеров",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Обломок молота гномов" ],
+    "cost" : 50,
+    "id" : 168,
+    "name" : "Обломок молота гномов",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Обломок костолома" ],
+    "cost" : 50,
+    "id" : 169,
+    "name" : "Обломок костолома",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт кирки шахтеров" ],
+    "cost" : 50,
+    "id" : 170,
+    "name" : "📃Рецепт кирки шахтеров",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт молота гномов" ],
+    "cost" : 50,
+    "id" : 171,
+    "name" : "📃Рецепт молота гномов",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт костолома" ],
+    "cost" : 50,
+    "id" : 172,
+    "name" : "📃Рецепт костолома",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт кинжала охотника" ],
+    "cost" : 50,
+    "id" : 173,
+    "name" : "📃Рецепт кинжала охотника",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Рецепт кинжала демона" ],
+    "cost" : 50,
+    "id" : 174,
+    "name" : "📃Рецепт кинжала демона",
+    "weight" : 2
+  }, {
+    "aliases" : [ "Упаковочный материал" ],
+    "cost" : 1,
+    "id" : 175,
+    "name" : "Упаковочный материал",
+    "recipeId" : 145,
+    "weight" : 1
+  } ],
+  "store" : {
+    "armor" : [ {
+      "cost" : 3,
+      "defence" : 2,
+      "id" : "armor1",
+      "item_id" : 200,
+      "name" : "Плотная куртка"
+    }, {
+      "cost" : 30,
+      "defence" : 4,
+      "id" : "armor2",
+      "item_id" : 201,
+      "name" : "Кожаный доспех"
+    }, {
+      "cost" : 330,
+      "defence" : 8,
+      "id" : "armor3",
+      "item_id" : 202,
+      "name" : "Стальная броня"
+    }, {
+      "attack" : 1,
+      "cost" : 430,
+      "defence" : 9,
+      "id" : "armor4",
+      "item_id" : 203,
+      "name" : "Мифриловая броня"
+    }, {
+      "attack" : 3,
+      "cost" : 0,
+      "defence" : 7,
+      "id" : "",
+      "item_id" : 204,
+      "name" : "Куртка охотника"
+    }, {
+      "attack" : 1,
+      "cost" : 810,
+      "defence" : 12,
+      "id" : "",
+      "item_id" : 204,
+      "name" : "Броня хранителя"
+    } ],
+    "boots" : [ {
+      "cost" : 1,
+      "defence" : 1,
+      "id" : "boots1",
+      "item_id" : 218,
+      "name" : "Сандалии"
+    }, {
+      "cost" : 43,
+      "defence" : 2,
+      "id" : "boots2",
+      "item_id" : 219,
+      "name" : "Кожаные сапоги"
+    }, {
+      "cost" : 92,
+      "defence" : 3,
+      "id" : "boots3",
+      "item_id" : 220,
+      "name" : "Стальные сапоги"
+    }, {
+      "cost" : 285,
+      "defence" : 4,
+      "id" : "boots4",
+      "item_id" : 221,
+      "name" : "Серебряные сапоги"
+    }, {
+      "cost" : 370,
+      "defence" : 6,
+      "id" : "boots5",
+      "item_id" : 222,
+      "name" : "Мифриловые сапоги"
+    }, {
+      "attack" : 3,
+      "cost" : 0,
+      "defence" : 3,
+      "id" : "",
+      "item_id" : 223,
+      "name" : "Ботинки охотника"
+    } ],
+    "dagger" : [ {
+      "attack" : 1,
+      "cost" : 3,
+      "id" : "dagger1",
+      "item_id" : 112,
+      "name" : "Кухонный нож"
+    }, {
+      "attack" : 3,
+      "cost" : 103,
+      "id" : "dagger2",
+      "item_id" : 113,
+      "name" : "Боевой нож",
+      "requires" : {
+        "attack" : 3
+      }
+    }, {
+      "attack" : 7,
+      "cost" : 498,
+      "id" : "dagger3",
+      "item_id" : 114,
+      "name" : "Кинжал",
+      "requires" : {
+        "attack" : 10
+      }
+    } ],
+    "gloves" : [ {
+      "cost" : 1,
+      "defence" : 1,
+      "id" : "gloves1",
+      "item_id" : 225,
+      "name" : "Браслеты"
+    }, {
+      "cost" : 43,
+      "defence" : 2,
+      "id" : "gloves2",
+      "item_id" : 226,
+      "name" : "Кожаные перчатки"
+    }, {
+      "cost" : 92,
+      "defence" : 3,
+      "id" : "gloves3",
+      "item_id" : 227,
+      "name" : "Стальные перчатки"
+    }, {
+      "cost" : 285,
+      "defence" : 4,
+      "id" : "gloves4",
+      "item_id" : 228,
+      "name" : "Серебряные перчатки"
+    }, {
+      "cost" : 370,
+      "defence" : 6,
+      "id" : "gloves5",
+      "item_id" : 229,
+      "name" : "Мифриловые перчатки"
+    }, {
+      "attack" : 3,
+      "cost" : 0,
+      "defence" : 3,
+      "id" : "",
+      "item_id" : 230,
+      "name" : "Браслеты охотника"
+    }, {
+      "cost" : 520,
+      "defence" : 7,
+      "id" : "",
+      "item_id" : 231,
+      "name" : "Перчатки хранителя"
+    } ],
+    "helmet" : [ {
+      "cost" : 1,
+      "defence" : 1,
+      "id" : "helmet1",
+      "item_id" : 206,
+      "name" : "Шляпа"
+    }, {
+      "cost" : 35,
+      "defence" : 2,
+      "id" : "helmet2",
+      "item_id" : 207,
+      "name" : "Стальной шлем"
+    }, {
+      "cost" : 80,
+      "defence" : 3,
+      "id" : "helmet3",
+      "item_id" : 208,
+      "name" : "Серебряный шлем"
+    }, {
+      "cost" : 317,
+      "defence" : 5,
+      "id" : "helmet4",
+      "item_id" : 209,
+      "name" : "Мифриловый шлем"
+    }, {
+      "attack" : 3,
+      "cost" : 0,
+      "defence" : 3,
+      "id" : "",
+      "item_id" : 210,
+      "name" : "Шапка охотника"
+    }, {
+      "attack" : 1,
+      "cost" : 530,
+      "defence" : 6,
+      "id" : "",
+      "item_id" : 0,
+      "name" : "Шлем хранителя"
+    } ],
+    "other" : [ {
+      "cost" : 1,
+      "id" : "",
+      "item_id" : 307,
+      "luck" : 1,
+      "name" : "Кроличья лапка"
+    }, {
+      "cost" : 1,
+      "endurance" : 1,
+      "id" : "",
+      "item_id" : 308,
+      "name" : "Фляга"
+    }, {
+      "cost" : 0,
+      "id" : "",
+      "item_id" : 0,
+      "name" : "🗝 Ключ"
+    }, {
+      "cost" : 1,
+      "id" : "",
+      "item_id" : 305,
+      "name" : "🎩Цилиндр"
+    }, {
+      "attack" : 1,
+      "cost" : 1,
+      "id" : "",
+      "item_id" : 0,
+      "name" : "Зелье"
+    }, {
+      "cost" : 0,
+      "id" : "",
+      "item_id" : 0,
+      "name" : "⚜Печать власти"
+    } ],
+    "shield" : [ {
+      "cost" : 3,
+      "defence" : 1,
+      "id" : "shield1",
+      "item_id" : 212,
+      "name" : "Деревянный щит"
+    }, {
+      "cost" : 50,
+      "defence" : 2,
+      "id" : "shield2",
+      "item_id" : 213,
+      "name" : "Щит скелета"
+    }, {
+      "cost" : 103,
+      "defence" : 3,
+      "id" : "shield3",
+      "item_id" : 214,
+      "name" : "Бронзовый щит"
+    }, {
+      "cost" : 311,
+      "defence" : 5,
+      "id" : "shield4",
+      "item_id" : 215,
+      "name" : "Серебряный щит"
+    }, {
+      "cost" : 498,
+      "defence" : 7,
+      "id" : "shield5",
+      "item_id" : 216,
+      "name" : "Мифриловый щит"
+    }, {
+      "attack" : 1,
+      "cost" : 790,
+      "defence" : 9,
+      "id" : "",
+      "item_id" : 217,
+      "name" : "Щит хранителя"
+    } ],
+    "spear" : [ {
+      "attack" : 3,
+      "cost" : 55,
+      "defence" : 1,
+      "id" : "spear1",
+      "item_id" : 108,
+      "name" : "Короткое копье"
+    }, {
+      "attack" : 13,
+      "cost" : 976,
+      "defence" : 3,
+      "id" : "spear2",
+      "item_id" : 109,
+      "name" : "Длинное копье"
+    }, {
+      "attack" : 14,
+      "cost" : 1414,
+      "defence" : 9,
+      "id" : "spear3",
+      "item_id" : 110,
+      "name" : "Эльфийское копье"
+    }, {
+      "attack" : 17,
+      "cost" : 5270,
+      "defence" : 15,
+      "id" : "",
+      "item_id" : 111,
+      "name" : "Хранитель",
+      "requires" : {
+        "defence" : 10,
+        "level" : 20
+      }
+    } ],
+    "sword" : [ {
+      "attack" : 1,
+      "cost" : 3,
+      "id" : "sword1",
+      "item_id" : 100,
+      "name" : "Меч Ученика"
+    }, {
+      "attack" : 3,
+      "cost" : 30,
+      "id" : "sword2",
+      "item_id" : 101,
+      "name" : "Короткий меч"
+    }, {
+      "attack" : 6,
+      "cost" : 244,
+      "id" : "sword3",
+      "item_id" : 102,
+      "name" : "Длинный меч"
+    }, {
+      "attack" : 10,
+      "cost" : 645,
+      "id" : "sword4",
+      "item_id" : 103,
+      "name" : "Меч Вдовы"
+    }, {
+      "attack" : 16,
+      "cost" : 1440,
+      "id" : "sword5",
+      "item_id" : 104,
+      "name" : "Меч Рыцаря"
+    }, {
+      "attack" : 18,
+      "cost" : 1800,
+      "defence" : 2,
+      "id" : "sword6",
+      "item_id" : 105,
+      "name" : "Эльфийский меч"
+    }, {
+      "attack" : 22,
+      "cost" : 3100,
+      "id" : "sword7",
+      "item_id" : 106,
+      "name" : "Рапира"
+    }, {
+      "attack" : 25,
+      "cost" : 4150,
+      "id" : "",
+      "item_id" : 107,
+      "name" : "Меч берсеркера",
+      "requires" : {
+        "attack" : 10,
+        "level" : 20
+      }
+    } ]
+  },
+  "weapons" : {
+    "01" : {
+      "atk" : 1,
+      "crit" : 1,
+      "def" : 1,
+      "dual" : "False",
+      "ev" : 1,
+      "g_type" : "sword",
+      "lore" : "lore OEEE",
+      "name" : "Iron Sword",
+      "price" : 0,
+      "spe" : 0.5,
+      "type" : "sword"
+    },
+    "02" : {
+      "atk" : 1.7,
+      "crit" : 1.4,
+      "dual" : true,
+      "ev" : 0.001,
+      "g_type" : "axe",
+      "lore" : "Puto",
+      "name" : "Executioner Greataxe",
+      "price" : 150,
+      "spe" : 0.15,
+      "type" : "greataxe"
+    },
+    "03" : {
+      "atk" : 1.1,
+      "crit" : 1.45,
+      "def" : 0.4,
+      "dual" : "False",
+      "ev" : 0.05,
+      "g_type" : "sword",
+      "lore" : "Light and long silver plated sword, special for werewolf hunting. On the ol days, people at villages were oftenghast by werewolves, and because of that, hunters started plating their swords on silver, so they could kill them with ease. This sword is a relic from those times, but is still suitable for short distance combat.",
+      "name" : "Silver Sword",
+      "price" : 50,
+      "spe" : 0.65,
+      "type" : "sword"
+    },
+    "04" : {
+      "atk" : 1.6,
+      "crit" : 1.4,
+      "def" : 0.7,
+      "dual" : "True",
+      "ev" : 0.04,
+      "g_type" : "sword",
+      "lore" : "An extremely large and heavy sword which requires both hands to be handled, most commonly used on ceremonies than combat due to its tremendous weight.Being the hallmark weapon for mercenaries long before, the Doppelhänder became famous due to its extreme power, useful for breaking enemies bones and throwing them through the air, rather than slicing them in half. But it eventually stopped being used due its lack of practicality on the battlefield.",
+      "name" : "Doppelhänder",
+      "price" : 150,
+      "spe" : 0.2,
+      "type" : "greatsword"
+    },
+    "05" : {
+      "atk" : 0.8,
+      "crit" : 1.8,
+      "def" : 0.3,
+      "dual" : "False",
+      "ev" : 0.1,
+      "g_type" : "sword",
+      "lore" : "A short curved sword, popular among pirates.A pirate would never leave harbor without one of these, for a Cutlass is always their best friend. Not a very strong weapon, but due ti its light weight and shape, lets the user to connect many hits one after another, causing lots of damage on the foe in little time...If the user has good dexterity, of course.",
+      "name" : "Cutlass",
+      "price" : 50,
+      "spe" : 1,
+      "type" : "curved sword"
+    },
+    "06" : {
+      "atk" : 0.6,
+      "crit" : 1.7,
+      "def" : 0.05,
+      "dual" : "False",
+      "ev" : 0.03,
+      "g_type" : "dagger",
+      "lore" : "This wide single-edged shortsword is the favorite of lowly thieves and bandits. Primarily a slicing weapon, but highly effective when used for critical hits",
+      "name" : "Bandits Knife ",
+      "price" : 50,
+      "spe" : 0.6,
+      "type" : ""
+    },
+    "07" : {
+      "atk" : 0.25,
+      "crit" : 2.5,
+      "def" : 0,
+      "dual" : "False",
+      "ev" : 0,
+      "g_type" : "dagger",
+      "lore" : "Dagger intended more for defense than attack. A counterattack with this dagger in perfect timing, lets the user stop attacks and gives the opportunity to riposte with their main hand weapon. Otherwise, if the attack is not stopped, the user will remain vulnerable to their foe.",
+      "name" : "Parrying Dagger",
+      "price" : 80,
+      "spe" : 1,
+      "type" : "parrying dagger"
+    },
+    "08" : {
+      "atk" : 1,
+      "crit" : 1.45,
+      "def" : 0.2,
+      "dual" : "False",
+      "ev" : 0.02,
+      "g_type" : "dagger",
+      "lore" : "Sharp curved dagger, one of the rare dragon weapons, was created from an everlasting dragon claw.D uring the Age of Ancients, the Dragons were the everlasting rulers of the world until the Lords rose and challenged them. In the end, the Dragons were nearly driven to extinction, beginning a new era known as the Age of Fire",
+      "name" : "Dragon Claw",
+      "price" : 100,
+      "spe" : 1,
+      "type" : "karambit"
+    },
+    "09" : {
+      "atk" : 1.2,
+      "crit" : 1.4,
+      "def" : 0.1,
+      "dual" : "False",
+      "ev" : 0.01,
+      "g_type" : "axe",
+      "lore" : "Silver plated hand axe, light weighted and does a respectable amount of damage. Not only the guards of the villages had to be aware of werewolves, but also lumberjacks,who worked all day long in the woods, had to take action on the constant attacks of those damned beasts. This tool is proof of those actions that were taken in this regard.",
+      "name" : "Silver Axe",
+      "price" : 75,
+      "spe" : 0.3,
+      "type" : ""
+    },
+    "10" : {
+      "atk" : 1.7,
+      "crit" : 1.4,
+      "def" : 0.2,
+      "dual" : "True",
+      "ev" : 0.001,
+      "g_type" : "axe",
+      "lore" : "With a huge mass on its head, and a sharp edge by only one side, this axe is definitely not inteded for combat, but surely can deal a huge amount of damage. Sometimes, when a crime is unforgivable, the punishment is death. And for this matters, the sharp edge and great weight of this axe can provide a clean and fast beheading.",
+      "name" : "Executioner Greataxe",
+      "price" : 150,
+      "spe" : 0.15,
+      "type" : "greataxe"
+    },
+    "11" : {
+      "atk" : 1.15,
+      "crit" : 1.4,
+      "def" : 0.4,
+      "dual" : "False",
+      "ev" : 0.04,
+      "g_type" : "axe",
+      "lore" : "Standard battle axe. Inflicts regular damage, making it effective in various situations.Powerful attack due to its weight, but one wrong swing leaves the wielder wide open, so timing and proximity to the enemy must be judged carefully.",
+      "name" : "Battle Axe",
+      "price" : 100,
+      "spe" : 0.6,
+      "type" : "axe"
+    },
+    "12" : {
+      "atk" : 1.1,
+      "crit" : 1.45,
+      "def" : 0.7,
+      "dual" : "True",
+      "ev" : 0.1,
+      "g_type" : "polearm",
+      "lore" : "Long-hilted weapon mixing spear and axe is difficult to handle, requiring both strength and dexterity. Designed for the royal guard of a diistant kingdom. The Halberd has two elementary attacks: Spear-like thrusting and large sweeping swings. However, one False swing and the wielder is left wide open.",
+      "name" : "Royal Halberd",
+      "price" : 100,
+      "spe" : 0.5,
+      "type" : "halberd"
+    },
+    "13" : {
+      "atk" : 1.5,
+      "crit" : 1.45,
+      "def" : 0.2,
+      "dual" : "True",
+      "ev" : 0.03,
+      "g_type" : "polearm",
+      "lore" : "It is customary to use in jousting, allowing the knight to rely on the strength of his horse to score accurate blows. However, a man of sufficient strength could make good use of this weapon, even on foot.",
+      "name" : "Grand Lance",
+      "price" : 160,
+      "spe" : 0.15,
+      "type" : "lance"
+    },
+    "14" : {
+      "atk" : 0.8,
+      "crit" : 2,
+      "def" : 0.4,
+      "dual" : "False",
+      "ev" : 0.7,
+      "g_type" : "polearm",
+      "lore" : "Primitive weapon, mainly used for hunting by the ancient nomads. Despite its simple aspect, it could take over a sabertooth in just one accurate blow.",
+      "name" : "Hunting Spear",
+      "price" : 100,
+      "spe" : 0.7,
+      "type" : "spear"
+    },
+    "15" : {
+      "atk" : 1.15,
+      "crit" : 1.65,
+      "def" : 0.6,
+      "dual" : "True",
+      "ev" : 0.1,
+      "g_type" : "polearm",
+      "lore" : "",
+      "name" : "Headhunter",
+      "price" : 130,
+      "spe" : 0.9,
+      "type" : "scythe"
+    },
+    "16" : {
+      "atk" : 0.4,
+      "crit" : 1.1,
+      "def" : 0.8,
+      "dual" : "False",
+      "ev" : 0.05,
+      "g_type" : "hammer",
+      "lore" : "Intended as cookware, not as a weapon for combat.However, it provides decent protection against many weapons,due to the sturdy material it is made of. Also, it has been proven to be quite effective for killing the undead.",
+      "name" : "Frying Pan",
+      "price" : 20,
+      "spe" : 0.5,
+      "type" : "Cookware"
+    },
+    "39" : {
+      "atk" : 1.2,
+      "crit" : 1.5,
+      "def" : 0.4,
+      "dual" : "True",
+      "ev" : 0.1,
+      "g_type" : "sword",
+      "lore" : "Unique Katana, lightweight and a long curved single-edged blade, crafted with a peculiar yet refined technique. Must be held with both hands.The finely-sharpened blade of a katana slices with unmistakable smoothness, but should be wielded with caution, as its delicate constitution means its easily worn.",
+      "name" : "Katana",
+      "price" : 80,
+      "spe" : 1,
+      "type" : "katana"
+    },
+    "200" : {
+      "atk" : 1.15,
+      "crit" : 1.4,
+      "def" : 0.5,
+      "dual" : "False",
+      "ev" : 0.05,
+      "g_type" : "hammer",
+      "lore" : "El martillo de un trabajador, forjado para las herrerías, puede moldear fácilmente hierro y acero. No está pensado para el combate, pero puede romper fácilmente una armadura común.  Los trabajadores de la industria pesada hicieron posible el rápido crecimiento de su país, social y económicamente... Uno se pregunta, ¿qué podría haber salido mal en su sociedad?",
+      "name" : "Worker Hammer",
+      "price" : 0,
+      "spe" : 0.5,
+      "type" : "hammer"
+    },
+    "201" : {
+      "atk" : 1.0,
+      "crit" : 1.4,
+      "def" : 0.6,
+      "dual" : "False",
+      "ev" : 0.05,
+      "g_type" : "dagger",
+      "lore" : "Hoz de hierro destinada a la cosecha, no a la batalla. Los campesinos trabajarían todo el día bajo la dura luz del sol, para mantener las reservas de alimentos llenas, para la comunidad.",
+      "name" : "Peasant Sickle",
+      "price" : 0,
+      "spe" : 0.8,
+      "type" : "sickle"
+    }
+  }
+}

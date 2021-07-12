@@ -1,0 +1,757 @@
+[{
+        "id": 100,
+        "nombre": "unobtanium",
+        "alias": [
+            "Unobtanium"
+        ],
+        "costo": 0,
+        "peso": 0
+    },
+    {
+        "id": 101,
+        "nombre": "Temas",
+        "alias": [
+            "Hilo",
+            "Nylon"
+        ],
+        "costo": 2,
+        "peso": 1
+    },
+    {
+        "id": 102,
+        "nombre": "Ramas",
+        "alias": [
+            "Ramas",
+            "Fibra de carbono"
+        ],
+        "costo": 2,
+        "peso": 1
+    },
+    {
+        "id": 103,
+        "nombre": "Piel de animal",
+        "alias": [
+            "Piel de animal",
+            "Piel",
+            "Fibra de vidrio"
+        ],
+        "costo": 3,
+        "peso": 1
+    },
+    {
+        "id": 104,
+        "nombre": "Hueso de animal",
+        "alias": [
+            "Hueso animal",
+            "Hueso",
+            "Semiconductor"
+        ],
+        "costo": 3,
+        "peso": 1
+    },
+    {
+        "id": 105,
+        "nombre": "Carbón",
+        "alias": [
+            "Carbón",
+            "Electrodo"
+        ],
+        "costo": 3,
+        "peso": 1
+    },
+    {
+        "id": 106,
+        "nombre": "Carboncillo",
+        "alias": [
+            "Charcoal",
+            "Core"
+        ],
+        "costo": 3,
+        "peso": 1
+    },
+    {
+        "id": 107,
+        "nombre": "Polvo",
+        "alias": [
+            "Polvo",
+            "Procesador"
+        ],
+        "costo": 4,
+        "peso": 1
+    },
+    {
+        "id": 108,
+        "nombre": "Mineral de hierro",
+        "alias": [
+            "Mineral de hierro",
+            "Compuesto"
+        ],
+        "costo": 4,
+        "peso": 2
+    },
+    {
+        "id": 109,
+        "nombre": "Tejido grueso",
+        "alias": [
+            "Paño grueso",
+            "Vela solar"
+        ],
+        "costo": 4,
+        "peso": 1
+    },
+    {
+        "id": 110,
+        "nombre": "Silver Ore",
+        "alias": [
+            "Mineral de plata",
+            "Serebr.ruda",
+            "Cuasi-compuesto"
+        ],
+        "costo": 6,
+        "peso": 2
+    },
+    {
+        "id": 111,
+        "nombre": "Mineral de aluminio",
+        "alias": [
+            "Mineral de aluminio",
+            "Alum.ruda",
+            "Nanocompuesto"
+        ],
+        "costo": 15,
+        "peso": 2
+    },
+    {
+        "id": 112,
+        "nombre": "Mineral de mithril",
+        "alias": [
+            "Mineral de mithril",
+            "Termocompuesto"
+        ],
+        "costo": 15,
+        "peso": 2
+    },
+    {
+        "id": 113,
+        "nombre": "Piedra filosofal",
+        "alias": [
+            "Piedra filosofal",
+            "Piedra filosofal",
+            "Bus de datos"
+        ],
+        "costo": 15,
+        "peso": 1
+    },
+    {
+        "id": 114,
+        "nombre": "Mineral de adamantita",
+        "alias": [
+            "Mineral de adamantita",
+            "Adamant.ruda",
+            "Plutonio"
+        ],
+        "costo": 20,
+        "peso": 2
+    },
+    {
+        "id": 115,
+        "nombre": "Zafiro",
+        "alias": [
+            "Blue Crystal",
+            "Blue Cree",
+            "Sapphire",
+            "Octomer"
+        ],
+        "costo": 40,
+        "peso": 2
+    },
+    {
+        "id": 116,
+        "nombre": "Más fino",
+        "alias": [
+            "Disolvente",
+            "Ácido"
+        ],
+        "costo": 60,
+        "peso": 2
+    },
+    {
+        "id": 117,
+        "nombre": "Ruby",
+        "alias": [
+            "Cristal rojo",
+            "Cree rojo",
+            "Rubí",
+            "Prisma lunar"
+        ],
+        "costo": 80,
+        "peso": 2
+    },
+    {
+        "id": 118,
+        "nombre": "Espesante",
+        "alias": [
+            "Espesante",
+            "Oxidante"
+        ],
+        "costo": 100,
+        "peso": 2
+    },
+    {
+        "id": 119,
+        "nombre": "Acero",
+        "alias": [
+            "Acero",
+            "Polysplav"
+        ],
+        "costo": 25,
+        "peso": 2,
+        "RecetaId": 101
+    },
+    {
+        "id": 120,
+        "nombre": "Piel",
+        "alias": [
+            "Piel",
+            "Kriptonita"
+        ],
+        "costo": 10,
+        "peso": 1,
+        "RecetaId": 102
+    },
+    {
+        "id": 121,
+        "nombre": "Polvo de hueso",
+        "alias": [
+            "Polvo de hueso",
+            "Polvo de hueso",
+            "Procesador digital"
+        ],
+        "costo": 16,
+        "peso": 1,
+        "RecetaId": 104
+    },
+    {
+        "id": 122,
+        "nombre": "Cuerda",
+        "alias": [
+            "Cuerda",
+            "Fibra óptica"
+        ],
+        "costo": 9,
+        "peso": 1,
+        "RecetaId": 105
+    },
+    {
+        "id": 123,
+        "nombre": "Cox",
+        "alias": [
+            "Coca-Cola",
+            "Microambiente"
+        ],
+        "costo": 13,
+        "peso": 1,
+        "RecetaId": 103
+    },
+    {
+        "id": 124,
+        "nombre": "Polvo refinado",
+        "alias": [
+            "Polvo refinado",
+            "Polvo refinado",
+            "Banco de datos"
+        ],
+        "costo": 60,
+        "peso": 1,
+        "RecetaId": 106
+    },
+    {
+        "id": 125,
+        "nombre": "Aleación de plata",
+        "alias": [
+            "Aleación de plata",
+            "Aleación de plata",
+            "SETA"
+        ],
+        "costo": 100,
+        "peso": 3,
+        "RecetaId": 107
+    },
+    {
+        "id": 126,
+        "nombre": "Chapa",
+        "alias": [
+            "Chapa",
+            "Chapa",
+            "Escudo poligonal"
+        ],
+        "costo": 60,
+        "peso": 2,
+        "RecetaId": 108
+    },
+    {
+        "id": 127,
+        "nombre": "Palanquilla de acero",
+        "alias": [
+            "Palanquilla de acero",
+            "Nanocontenedor"
+        ],
+        "costo": 55,
+        "peso": 2,
+        "RecetaId": 109
+    },
+    {
+        "id": 128,
+        "nombre": "Encaje",
+        "alias": [
+            "Encaje",
+            "Clúster"
+        ],
+        "costo": 35,
+        "peso": 1,
+        "RecetaId": 110
+    },
+    {
+        "id": 129,
+        "nombre": "Hilo de acero",
+        "alias": [
+            "Hilo de acero",
+            "Fibra-A"
+        ],
+        "costo": 12,
+        "peso": 2,
+        "RecetaId": 111
+    },
+    {
+        "id": 130,
+        "nombre": "Fibra metálica",
+        "alias": [
+            "Fibra metálica",
+            "Fibra metálica"
+        ],
+        "costo": 120,
+        "peso": 2,
+        "RecetaId": 112
+    },
+    {
+        "id": 131,
+        "nombre": "Cuero tratado",
+        "alias": [
+            "Cuero tratado",
+            "TauR-US"
+        ],
+        "costo": 80,
+        "peso": 1,
+        "RecetaId": 113
+    },
+    {
+        "id": 132,
+        "nombre": "Espacio en blanco plateado",
+        "alias": [
+            "Plata en blanco",
+            "Plata en blanco",
+            "Submódulo"
+        ],
+        "costo": 90,
+        "peso": 2,
+        "RecetaId": 120
+    },
+    {
+        "id": 133,
+        "nombre": "Pieza de herrero",
+        "alias": [
+            "Pieza de herrero",
+            "Techmodul"
+        ],
+        "costo": 370,
+        "peso": 3,
+        "RecetaId": 121
+    },
+    {
+        "id": 134,
+        "nombre": "🗃Stock",
+        "alias": [
+            "🗃Stock",
+            "🗃Container"
+        ],
+        "costo": 1,
+        "peso": 0
+    },
+    {
+        "id": 135,
+        "nombre": "Hay",
+        "alias": [
+            "Hay"
+        ],
+        "costo": 1,
+        "peso": 1
+    },
+    {
+        "id": 136,
+        "nombre": "Pienso compuesto",
+        "alias": [
+            "Pienso compuesto"
+        ],
+        "costo": 1,
+        "peso": 1
+    },
+    {
+        "id": 137,
+        "nombre": "Grano",
+        "alias": [
+            "Grano"
+        ],
+        "costo": 1,
+        "peso": 1
+    },
+    {
+        "id": 138,
+        "nombre": "Hoja Excalibur",
+        "alias": [
+            "Hoja Excalibur",
+            "Hiperprocesador X2"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 139,
+        "nombre": "Hoja tridente",
+        "alias": [
+            "Hoja Trident",
+            "Hiperprocesador Z8"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 140,
+        "nombre": "Fragmento de armadura de paladín",
+        "alias": [
+            "Fragmento de armadura de paladín",
+            "Hiperprocesador Y4"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 141,
+        "nombre": "Polvo",
+        "alias": [
+            "🌀Antimateria",
+            "Polvo"
+        ],
+        "costo": 1,
+        "peso": 0
+    },
+    {
+        "id": 142,
+        "nombre": "Cofre extraño",
+        "alias": [
+            "Cofre extraño",
+            "Cápsula espacial"
+        ],
+        "costo": 1,
+        "peso": 0
+    },
+    {
+        "id": 143,
+        "nombre": "Receta 📃Excalibur",
+        "alias": [
+            "receta Excalibur"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 144,
+        "nombre": "📃Receta del tridente",
+        "alias": [
+            "Receta del tridente"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 145,
+        "nombre": "Stock de artesano",
+        "alias": [
+            "Stock de artesano"
+        ],
+        "costo": 370,
+        "peso": 2,
+        "RecetaId": 127
+    },
+    {
+        "id": 146,
+        "nombre": "Aleación de mithril",
+        "alias": [
+            "Aleación de mithril"
+        ],
+        "costo": 150,
+        "peso": 3,
+        "RecetaId": 128
+    },
+    {
+        "id": 147,
+        "nombre": "🎁 Caja del asistente",
+        "alias": [
+            "Assistant's Box"
+        ],
+        "costo": 1,
+        "peso": 0
+    },
+    {
+        "id": 148,
+        "nombre": "Fragmento de casco de Paladín",
+        "aliases": [
+            "Fragmento de casco de paladín"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 149,
+        "nombre": "Fragmento de las botas de paladín",
+        "alias": [
+            "Fragmento de botas de paladín"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 150,
+        "nombre": "Fragmento de guantes de paladín",
+        "alias": [
+            "Fragmento de guantes de paladín"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 151,
+        "nombre": "Fragmento del escudo del paladín",
+        "alias": [
+            "Fragmento del escudo del paladín"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 152,
+        "nombre": "📃 Receta de armadura de paladín",
+        "alias": [
+            "Receta para armadura de paladín"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 153,
+        "nombre": "📃 Receta del casco de paladín",
+        "alias": [
+            "Receta para el casco de paladín"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 154,
+        "nombre": "📃 Receta de botas de paladín",
+        "aliases": [
+            "Receta para botas de paladín"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 155,
+        "nombre": "📃 Receta de guantes de paladín",
+        "aliases": [
+            "Receta para guantes de paladín"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 156,
+        "nombre": "📃 Receta de escudo de paladín",
+        "aliases": [
+            "Receta del escudo de paladín"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 157,
+        "nombre": "Fragmento de la chaqueta del demonio",
+        "alias": [
+            "Fragmento de chaqueta de demonio"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 158,
+        "nombre": "Fragmento de la cabeza del demonio",
+        "alias": [
+            "Fragmento del sombrero del demonio"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 159,
+        "nombre": "Fragmento de botas de demonio",
+        "alias": [
+            "Fragmento de las botas del demonio"
+        ],
+        "costo": 50,
+        "peso ": 2
+    },
+    {
+        "id": 160,
+        "nombre": "Fragmento de brazaletes de demonio",
+        "alias": [
+            "Fragmento de brazaletes del demonio"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 161,
+        "nombre": "📃 Receta de chaqueta demoníaca",
+        "alias": [
+            "Receta de la chaqueta de demonio"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 162,
+        "nombre": "📃 Receta del sombrero de demonio",
+        "alias": [
+            "Receta del sombrero de demonio"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 163,
+        "nombre": "📃 Receta de botas demoníacas",
+        "alias": [
+            "Receta para botas demoníacas"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 164,
+        "nombre": "📃Receta para brazaletes de demonio",
+        "alias": [
+            "Receta para brazaletes de demonio"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 165,
+        "nombre": "Hoja de la daga del cazador",
+        "alias": [
+            "Hunter's Dagger Blade"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 166,
+        "nombre": "Hoja de la daga del demonio",
+        "alias": [
+            "Hoja de la daga del demonio"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 167,
+        "nombre": "Fragmento de pico de minero",
+        "alias": [
+            "Pieza de piqueta de minero"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 168,
+        "nombre": "Fragmento de martillo enano",
+        "alias": [
+            "Trozo de martillo enano"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 169,
+        "nombre": "Fragmento rompehuesos",
+        "alias": [
+            "Fragmento rompehuesos"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 170,
+        "nombre": "📃Receta de piqueta de minero",
+        "alias": [
+            "Receta del pico de minero"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 171,
+        "nombre": "📃Receta de martillo enano",
+        "aliases": [
+            "Receta para un martillo enano"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 172,
+        "nombre": "📃Receta rompehuesos",
+        "alias": [
+            "Receta rompehuesos"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 173,
+        "nombre": "📃 Receta de Hunter Dagger",
+        "alias": [
+            "Receta de la daga del cazador"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 174,
+        "nombre": "📃Demon Dagger Recipe",
+        "alias": [
+            "Receta de la daga demoníaca"
+        ],
+        "costo": 50,
+        "peso": 2
+    },
+    {
+        "id": 175,
+        "nombre": "Material de embalaje",
+        "alias": [
+            "Material de embalaje"
+        ],
+        "costo": 1,
+        "peso": 1,
+        "RecetaId": 145
+    }
+]
