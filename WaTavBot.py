@@ -45,8 +45,6 @@ Fire = Fire()
 
 PlayerDB = Fire.get("/players",None)
 # print(str(PlayerDB))
-WeaponDB = Fire.get("/weapons",None)
-# print(str(WeaponDB))
 NivelesBD = Fire.get("/niveles_exp",None)
 # print(str(NivelesBD))
 ObjetosDB = Fire.get("/objetos",None)
@@ -85,18 +83,18 @@ class kb:
         elif(op == 'hits'):
             keyboard = [
                 [
-                    IKB("🗡Head", callback_data="{\"op\":\"batt|mov:ah\",\"room\":\"%s\",\"host\":\"%s\"}"%(args)),
-                    IKB("🛡Head", callback_data="{\"op\":\"batt|mov:dh\",\"room\":\"%s\",\"host\":\"%s\"}"%(args))
+                    IKB("🗡Cabeza", callback_data="{\"op\":\"batt|mov:ah\",\"room\":\"%s\",\"host\":\"%s\"}"%(args)),
+                    IKB("🛡Cabeza", callback_data="{\"op\":\"batt|mov:dh\",\"room\":\"%s\",\"host\":\"%s\"}"%(args))
                 ],
 
                 [
-                    IKB("🗡Body", callback_data="{\"op\":\"batt|mov:ab\",\"room\":\"%s\",\"host\":\"%s\"}"%(args)),
-                    IKB("🛡Body", callback_data="{\"op\":\"batt|mov:db\",\"room\":\"%s\",\"host\":\"%s\"}"%(args))
+                    IKB("🗡Cuerpo", callback_data="{\"op\":\"batt|mov:ab\",\"room\":\"%s\",\"host\":\"%s\"}"%(args)),
+                    IKB("🛡Cuerpo", callback_data="{\"op\":\"batt|mov:db\",\"room\":\"%s\",\"host\":\"%s\"}"%(args))
                 ],
 
                 [
-                    IKB("🗡Legs", callback_data="{\"op\":\"batt|mov:al\",\"room\":\"%s\",\"host\":\"%s\"}"%(args)),
-                    IKB("🛡Legs", callback_data="{\"op\":\"batt|mov:dl\",\"room\":\"%s\",\"host\":\"%s\"}"%(args))
+                    IKB("🗡Pierna", callback_data="{\"op\":\"batt|mov:al\",\"room\":\"%s\",\"host\":\"%s\"}"%(args)),
+                    IKB("🛡Pierna", callback_data="{\"op\":\"batt|mov:dl\",\"room\":\"%s\",\"host\":\"%s\"}"%(args))
                 ],
             ]
         elif(op == 'wtypes'):
@@ -154,11 +152,11 @@ class Player:
     def weapAssign(self):
         global PlayerDB
         if(str(self.id) in list(PlayerDB.keys())):
-            self.mainW = WeaponDB[PlayerDB[str(self.id)]["mainW"]]
-            self.offHW = WeaponDB[PlayerDB[str(self.id)]["offHW"]]
+            self.mainW = TiendaDB[PlayerDB[str(self.id)]["mainW"]]
+            self.offHW = TiendaDB[PlayerDB[str(self.id)]["offHW"]]
         else:
-            self.mainW = WeaponDB['01']
-            self.offHW = WeaponDB['02']
+            self.mainW = TiendaDB['01']
+            self.offHW = TiendaDB['02']
         return
 
     def genAssign(self):
@@ -899,11 +897,11 @@ def reload(update: Update, context: CallbackContext):
     user = update.message.from_user
     if(user.id == 622952731):
         def reloadTask():
-            global PlayerDB,WeaponDB
+            global PlayerDB,NivelesBD,ObjetosDB,TiendaDB
             PlayerDB = Fire.get("/players",None)
-            WeaponDB = Fire.get("/weapons",None)
             NivelesBD = Fire.get("/niveles_exp",None)
             ObjetosDB = Fire.get("/objetos",None)
+            TiendaDB = Fire.get("/tienda",None)
             context.bot.send_message(
                 chat_id = user.id,
                 text="<code>¡Recargado!</code>",
@@ -1101,90 +1099,51 @@ def me(update: Update, context: CallbackContext):
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
     level = player["level"] 
-    exp_niveles = NivelesBD[level+1]
-     
-    p_at = 0 # ObjetosDB[player["arma_p"]]["atributos"]["ataque"]
-    p_de = 0 # ObjetosDB[player["arma_p"]]["atributos"]["defensa"]
-    s_at = 0 # ObjetosDB[player["arma_s"]]["atributos"]["ataque"]
-    s_de = 0 # ObjetosDB[player["arma_s"]]["atributos"]["defensa"]
-    ca_at = 0 # ObjetosDB[player["casco"]]["atributos"]["ataque"]
-    ca_de = 0 # ObjetosDB[player["casco"]]["atributos"]["defensa"]
-    gu_at = 0 # ObjetosDB[player["guantes"]]["atributos"]["ataque"]
-    gu_de = 0 # ObjetosDB[player["guantes"]]["atributos"]["defensa"]
-    ar_at = 0 # ObjetosDB[player["armadura"]]["atributos"]["ataque"]
-    ar_de = 0 # ObjetosDB[player["armadura"]]["atributos"]["defensa"]
-    bo_at = 0 # ObjetosDB[player["botas"]]["atributos"]["ataque"]
-    bo_de = 0 # ObjetosDB[player["botas"]]["atributos"]["defensa"]
-    es_at = 0 #ObjetosDB[player["especial"]]["atributos"]["ataque"]  
-    es_de = 0 #ObjetosDB[player["especial"]]["atributos"]["defensa"]
-    an_at = 0 #ObjetosDB[player["anillo"]]["atributos"]["ataque"]
-    an_de = 0 #ObjetosDB[player["anillo"]]["atributos"]["defensa"]
-    co_at = 0 #ObjetosDB[player["collar"]]["atributos"]["ataque"]
-    co_de = 0 #ObjetosDB[player["collar"]]["atributos"]["defensa"]
-    
-    total_ataq = p_at+s_at+ca_at+gu_at+ar_at+bo_at+es_at+an_at+co_at
-    total_def = p_de+s_de+ca_de+gu_de+ar_de+bo_de+es_de+an_de+co_de
-    total_verfi = total_def + total_ataq
-    
-    if(total_verfi <= 0): 
-        total_equi = "["   
-        total_a="-"
-        total_d = "]"
-
-    else:
-        total_equi=""
-        if(total_ataq == 0):
-            total_a=""
-        else:
-            
-            total_a = "+" + str(total_ataq) + "⚔️"
-         
-        if(total_def == 0):
-            total_d = ""
-        else: 
-            total_d= "+" + str(total_def) + "🛡"
-    
+    exp_niveles = NivelesBD[level+1]       
     
     bolso_arm = len(player["bolso_arm"])
     if(bolso_arm == 0):
         cantid_armas = "0" 
     else:
         cantid_armas = bolso_arm    
-
-    if(player["bol_oro"] != 0):
-        oro_bo=str('👝') + str(player["bol_oro"])
-    else:
-        oro_bo=""
     
-    text=str("\n\n {name}".format(name=user.first_name)
-        +"\n🏅Nivel: {level}".format(level=str(player["level"]))        
-        +"\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
-        +"🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
-        +"\n🔥Exp: {exp}".format(exp=str(player["exp"])) 
-        +"/{exp_niv}".format(exp_niv=str(exp_niveles))
-        +"\n❤️Vida: {vdmin}".format(vdmin=str(player["vida_min"]))
-        +"/{vdmax}".format(vdmax=str(player["vida_max"]))
-        
-        +"\n🔋Resistencia:{rsmin}".format(rsmin=str(player["resis_min"]))
-        +"/{rsmax}".format(rsmax=str(player["resis_max"]))
-        
-        +"\n💧Mana:{mnamin}".format(mnamin=str(player["mana_min"]))
-        +"/{mnamax}".format(mnamax=str(player["mana_max"]))
-          
-        +"\n💰{oro}".format(oro=player["oro"])
-        +"{bol_oro}".format(bol_oro=str(oro_bo))
-        +"💎{gemas}".format(gemas=player["gemas"])
-        +"\n\n🎽Euipamiento: {t0}{t}{td}".format(t=total_a,td=total_d,t0=total_equi)
-        +"\n🎒Balso: {total}".format(total=cantid_armas)
-        +"/{bolso} ".format(bolso=player["bolso"])
-        +"/inv"
+
+        text="\n🌟Congratulations Felicitaciones! Nuevo nivel!🌟"
+        text+="\n\nAsignar puntos /level_up"
+        text+="\nBatlla"
+        text+="\n\n🦅🌑"
+        text+="[]Clan!"
+        text+="{name}".format(name=user.first_name)
+        text+="ClaseAqui"
+        text+="del"
+        text+="Castillo"
+        text+="\n🏅Nivel: {level}".format(level=str(player["level"]))        
+        text+="\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
+        text+="🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
+        text+="\n🔥Exp: {exp}".format(exp=str(player["exp"])) 
+        text+="/{exp_niv}".format(exp_niv=str(exp_niveles))
+        text+="\n❤️Vida: {vdmin}".format(vdmin=str(player["vida_min"]))
+        text+="/{vdmax}".format(vdmax=str(player["vida_max"]))        
+        text+="\n🔋Resistencia:{rsmin}".format(rsmin=str(player["resis_min"]))
+        text+="/{rsmax}".format(rsmax=str(player["resis_max"]))
+        if(player["mana_max"]>0):
+            text+="\n💧Mana:{mnamin}".format(mnamin=str(player["mana_min"]))
+            text+="/{mnamax}".format(mnamax=str(player["mana_max"]))          
+        text+="\n💰{oro}".format(oro=player["oro"])
+        if(player["bol_oro"] > 0):
+            text+="👝{bol_oro}".format(bol_oro=str(player["bol_oro"]))
+        text+="💎{gemas}".format(gemas=player["gemas"])
+        text+="\n\n🎽Euipamiento:"
+        text+="\n🎒Balso: {total}".format(total=cantid_armas)
+        text+="/{bolso} ".format(bolso=player["bolso"])
+        text+="/inv"
         # +"Mascota:{money}".format(money=player["money"])
-        +"\n\nEstado:\n{estado}".format(estado=player["estado"])
-        +"\n\nMás: /heroe"
+        text+="\n\nEstado:\n{estado}".format(estado=player["estado"])
+        text+="\n\nMás: /heroe"
         #  +"\n\n🎒 Equipo:\n"
-        #  +"\t"*4+"► Principal: {main}\n".format(main=WeaponDB[player["mainW"]]["name"])
+        #  +"\t"*4+"► Principal: {main}\n".format(main=TiendaDB[player["mainW"]]["name"])
         #  +"\t"*4+"► Offhand: {offh}".format(offh=offhw)
-        )
+        
     IKB = KeyboardButton
     reply_markup = ReplyKeyboardMarkup(
         [
@@ -1453,22 +1412,79 @@ def buy(update: Update, context: CallbackContext):
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
     weapon = update.message.text.replace("/buy_","")
-
-    if(weapon not in player["bolso_arm"]):
-        if(int(player["oro"]) >= int(TiendaDB[weapon]["precio"])):            
-            player["bolso_arm"].append(weapon)
-            wps = player["bolso_arm"]
-            oro = str(int(PlayerDB[str(user.id)]["oro"]) - int(TiendaDB[weapon]["precio"]))
-            upload(player=str(user.id),concept=("bolso_arm","oro"),value=(wps,oro))
-            text = "Ja, ja! Este <b>{weapon}</b> te queda muy bien, amigo! \nUtilizar sabiamente!".format(weapon = TiendaDB[weapon]["nombre"])
-        else:
-            text = "Lo siento amigo, pero parece que no puedes permitirte este artículo."
-        update.message.reply_text(
-                                    text=text,
-                                    parse_mode=ParseMode.HTML
-                                )
+    try: 
+        if(weapon not in player["bolso_arm"]):
+            if(int(player["oro"]) >= int(TiendaDB[weapon]["precio"])):            
+                # player["bolso_arm"].append(weapon)
+                wps = player["bolso_arm"]
+                oro = str(int(PlayerDB[str(user.id)]["oro"]) - int(TiendaDB[weapon]["precio"]))
+                upload(player=str(user.id),concept=("bolso_arm","oro"),value=(wps,oro))
+                Newcompra(user=user.id,items=weapon)            
+                text = "Ja, ja! Este <b>{weapon}</b> te queda muy bien, amigo! \nUtilizar sabiamente!".format(weapon = TiendaDB[weapon]["nombre"])
+            else:
+                text = "Lo siento amigo, pero parece que no puedes permitirte este artículo."
+        
+            update.message.reply_text(
+                                        text=text,
+                                        parse_mode=ParseMode.HTML
+                                    )
+    except Exception as e:
+            error(update,e)
     else:
         return
+    return
+
+def Newcompra(user,items):
+    global PlayerDB,TiendaDB
+    
+    info = {
+        "id": TiendaDB[items]["id"],
+        "nombre": TiendaDB[items]["nombre"],
+        "historia": TiendaDB[items]["historia"],
+        "tipo": TiendaDB[items]["tipo"],
+        "g_type": TiendaDB[items]["g_type"],
+        "peso": TiendaDB[items]["peso"],
+        "tier": TiendaDB[items]["tier"],
+        "envolver": TiendaDB[items]["envolver"],
+        "evento_item": TiendaDB[items]["evento_item"],
+        "fabricable": TiendaDB[items]["fabricable"],
+        "intercanbio": TiendaDB[items]["intercanbio"],
+        "precio": TiendaDB[items]["precio"],
+        "venta": TiendaDB[items]["venta"],
+        "atributos": {
+            "ataque": TiendaDB[items]["atributos"]["ataque"],
+            "defensa": TiendaDB[items]["atributos"]["defensa"],
+            "mana": TiendaDB[items]["atributos"]["mana"],
+            "habilidad": TiendaDB[items]["atributos"]["habilidad"],
+            "nivel": TiendaDB[items]["atributos"]["nivel"],
+            "reforsado": {
+                "1": {
+                    "nivel": 1,
+                    "ataque": 0,
+                    "ataque_total": 0
+                },
+                "2": {
+                    "nivel": 2,
+                    "ataque": 0,
+                    "ataque_total": 0
+                },
+                "3": {
+                    "nivel": 3,
+                    "ataque": 0,
+                    "ataque_total": 0
+                },
+                "4": {
+                    "nivel": 4,
+                    "ataque": 0,
+                    "ataque_total": 0
+                }
+
+            }
+        }
+    }
+    Fire.put("/players",user,"/bolso_arm",items,"/",info)
+    PlayerDB[str(user)]["bolso_arm"] = info
+    print(PlayerDB[str(user)]["bolso_arm"])
     return
 
 def winfo(update: Update, context: CallbackContext):
@@ -1646,24 +1662,24 @@ def equip(update: Update, context: CallbackContext):
 
 def wpassign(weapon,user):
     slot = ""
-    if(WeaponDB[weapon]["type"] in ["dagger","shield"]):
+    if(TiendaDB[weapon]["type"] in ["dagger","shield"]):
         slot = "offHW"
     else:
         slot = "mainW"
 
     if(slot == "mainW"):
-        if(WeaponDB[weapon]["dual"] == True):
+        if(TiendaDB[weapon]["dual"] == True):
             """Cambian ambos slots"""
             upload(player=str(user.id),concept=("mainW","offHW"),value=(weapon,"999"))
         else:
-            if(WeaponDB[PlayerDB[str(user.id)]["mainW"]]["dual"] == True):
+            if(TiendaDB[PlayerDB[str(user.id)]["mainW"]]["dual"] == True):
                 """Asigna el arma, y Wooden Shield, respectivamente"""
                 upload(player=str(user.id),concept=("mainW","offHW"),value=(weapon,"02"))
             else:
                 """Cambia normalmente"""
                 upload(player=str(user.id),concept=("mainW"),value=(weapon))
     else:
-        if(WeaponDB[PlayerDB[str(user.id)]["mainW"]]["dual"] == True):
+        if(TiendaDB[PlayerDB[str(user.id)]["mainW"]]["dual"] == True):
             """Asigna Iron Sword como principal y la secundaria normalmente"""
             upload(player=str(user.id),concept=("mainW","offHW"),value=("01",weapon))
         else:
