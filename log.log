@@ -852,3 +852,351 @@ Notas: put() got multiple values for argument &#x27;connection&#x27;
 INFO:[12/07/2021 23:17:15] Received signal 2 (SIGINT), stopping...
 INFO:[12/07/2021 23:17:15] Scheduler has been shut down
 WARNING:[12/07/2021 23:17:15] Exiting immediately!
+INFO:[13/07/2021 19:26:18] Scheduler started
+ERROR:[13/07/2021 19:26:32] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1278, in tiempo
+    text+= time.Now()
+AttributeError: 'builtin_function_or_method' object has no attribute 'Now'
+INFO:[13/07/2021 19:26:50] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 19:26:50] Scheduler has been shut down
+WARNING:[13/07/2021 19:26:50] Exiting immediately!
+INFO:[13/07/2021 19:26:58] Scheduler started
+INFO:[13/07/2021 19:27:42] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 19:27:42] Scheduler has been shut down
+WARNING:[13/07/2021 19:27:42] Exiting immediately!
+INFO:[13/07/2021 19:27:50] Scheduler started
+ERROR:[13/07/2021 19:27:55] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1318, in tiempo
+    elif (time >= "19:00"):
+TypeError: '>=' not supported between instances of 'builtin_function_or_method' and 'str'
+INFO:[13/07/2021 19:30:15] Scheduler started
+INFO:[13/07/2021 19:30:57] Scheduler started
+INFO:[13/07/2021 19:31:07] Scheduler started
+INFO:[13/07/2021 19:31:33] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 19:31:33] Scheduler has been shut down
+WARNING:[13/07/2021 19:31:34] Exiting immediately!
+INFO:[13/07/2021 19:31:41] Scheduler started
+INFO:[13/07/2021 19:33:44] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 19:33:44] Scheduler has been shut down
+INFO:[13/07/2021 20:22:41] Scheduler started
+INFO:[13/07/2021 20:23:33] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 20:23:33] Scheduler has been shut down
+WARNING:[13/07/2021 20:23:34] Exiting immediately!
+INFO:[13/07/2021 20:23:42] Scheduler started
+INFO:[13/07/2021 20:27:32] Scheduler started
+ERROR:[13/07/2021 20:27:34] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1276, in tiempo
+    Now = str(datetime.datetime.now().time().replace(microsecond=0))
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+INFO:[13/07/2021 20:29:15] Scheduler started
+ERROR:[13/07/2021 20:29:16] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[13/07/2021 20:29:16] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:[13/07/2021 20:31:37] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 20:31:37] Scheduler has been shut down
+WARNING:[13/07/2021 20:31:38] Exiting immediately!
+INFO:[13/07/2021 20:31:49] Scheduler started
+INFO:[13/07/2021 20:42:48] Scheduler started
+ERROR:[13/07/2021 20:42:50] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1330, in tiempo
+    text+= "\nh}".format(h=completa)
+ValueError: Single '}' encountered in format string
+INFO:[13/07/2021 20:43:29] Scheduler started
+INFO:[13/07/2021 20:44:00] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 20:44:00] Scheduler has been shut down
+WARNING:[13/07/2021 20:44:00] Exiting immediately!
+INFO:[13/07/2021 20:44:12] Scheduler started
+INFO:[13/07/2021 20:44:18] Scheduler started
+INFO:[13/07/2021 20:45:52] Scheduler started
+INFO:[13/07/2021 20:47:04] Scheduler started
+INFO:[13/07/2021 20:50:42] Scheduler started
+INFO:[13/07/2021 20:56:23] Scheduler started
+INFO:[13/07/2021 20:59:25] Scheduler started
+ERROR:[13/07/2021 20:59:26] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1407, in castillo
+    print(tiempo())
+TypeError: tiempo() missing 2 required positional arguments: 'update' and 'context'
+INFO:[13/07/2021 21:01:09] Scheduler started
+INFO:[13/07/2021 21:04:48] Scheduler started
+INFO:[13/07/2021 21:05:29] Scheduler started
+INFO:[13/07/2021 21:06:31] Scheduler started
+INFO:[13/07/2021 21:12:46] Scheduler started
+INFO:[13/07/2021 21:13:53] Scheduler started
+INFO:[13/07/2021 21:14:53] Scheduler started
+ERROR:[13/07/2021 21:14:58] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1278, in tiempo
+    Noww = str(datetime.replace(second=0, microsecond=0))
+TypeError: unbound method datetime.replace() needs an argument
+INFO:[13/07/2021 21:15:21] Scheduler started
+ERROR:[13/07/2021 21:15:22] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1278, in tiempo
+    Noww = str(time.replace(second=0, microsecond=0))
+AttributeError: 'builtin_function_or_method' object has no attribute 'replace'
+INFO:[13/07/2021 21:15:34] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 21:15:34] Scheduler has been shut down
+WARNING:[13/07/2021 21:15:34] Exiting immediately!
+INFO:[13/07/2021 21:16:36] Scheduler started
+INFO:[13/07/2021 21:17:29] Scheduler started
+ERROR:[13/07/2021 21:17:32] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1278, in tiempo
+    Noww = str(datetime.now().time().replace(second=00, microsecond=0).replace(":00",""))
+TypeError: an integer is required (got type str)
+INFO:[13/07/2021 21:19:51] Scheduler started
+INFO:[13/07/2021 21:21:39] Scheduler started
+INFO:[13/07/2021 21:28:17] Scheduler started
+ERROR:[13/07/2021 21:28:20] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1332, in tiempo
+    text+= "\n{h}".format(h=time.strftime("%H:%M"))
+AttributeError: 'builtin_function_or_method' object has no attribute 'strftime'
+INFO:[13/07/2021 21:29:02] Scheduler started
+INFO:[13/07/2021 21:31:02] Scheduler started
+INFO:[13/07/2021 22:10:34] Scheduler started
+INFO:[13/07/2021 22:11:58] Scheduler started
+INFO:[13/07/2021 22:14:01] Scheduler started
+INFO:[13/07/2021 22:20:53] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 22:20:53] Scheduler has been shut down
+WARNING:[13/07/2021 22:20:53] Exiting immediately!
+INFO:[13/07/2021 22:21:11] Scheduler started
+INFO:[13/07/2021 22:22:13] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 22:22:13] Scheduler has been shut down
+WARNING:[13/07/2021 22:22:16] Exiting immediately!
+INFO:[13/07/2021 22:22:29] Scheduler started
+ERROR:[13/07/2021 22:22:56] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1461, in castillo
+    text+="{t}".format(t=tiempo_2(text))
+TypeError: tiempo_2() takes 0 positional arguments but 1 was given
+INFO:[13/07/2021 22:23:56] Scheduler started
+INFO:[13/07/2021 22:30:50] Scheduler started
+ERROR:[13/07/2021 22:30:59] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 945, in dice
+    data = json.loads(query.data)
+AttributeError: 'NoneType' object has no attribute 'data'
+INFO:[13/07/2021 22:34:57] Scheduler started
+INFO:[13/07/2021 22:44:43] Scheduler started
+WARNING:[13/07/2021 22:45:06] Actualizar: 
+│
+├update_id: 994731179
+└message:
+⠀├message_id: 4872
+⠀├date: 1626230706
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1534
+
+Notas: put() got multiple values for argument &#x27;connection&#x27;
+INFO:[13/07/2021 23:06:01] Scheduler started
+ERROR:[13/07/2021 23:06:18] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1263, in tiempo
+    now = datetime.now() * 3 - 33281420544
+TypeError: unsupported operand type(s) for *: 'datetime.datetime' and 'int'
+INFO:[13/07/2021 23:09:29] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 23:09:29] Scheduler has been shut down
+WARNING:[13/07/2021 23:09:30] Exiting immediately!
+INFO:[13/07/2021 23:09:38] Scheduler started
+ERROR:[13/07/2021 23:09:43] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1264, in tiempo
+    now = int(datetime.datetime.now()) * 3 - 33281420544
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'datetime.datetime'
+INFO:[13/07/2021 23:11:01] Received signal 2 (SIGINT), stopping...
+INFO:[13/07/2021 23:11:01] Scheduler has been shut down
+WARNING:[13/07/2021 23:11:01] Exiting immediately!
+INFO:[13/07/2021 23:11:21] Scheduler started
+ERROR:[13/07/2021 23:11:54] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1264, in tiempo
+    now = time * 3 - 33281420544
+TypeError: unsupported operand type(s) for *: 'module' and 'int'
+INFO:[13/07/2021 23:19:27] Scheduler started
+INFO:[13/07/2021 23:22:46] Scheduler started
+INFO:[13/07/2021 23:25:45] Scheduler started
+INFO:[13/07/2021 23:30:38] Scheduler started
+ERROR:[13/07/2021 23:30:49] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in tiempo
+    future = datetime.datetime.utcnow() * 3
+TypeError: unsupported operand type(s) for *: 'datetime.datetime' and 'int'
+INFO:[13/07/2021 23:34:31] Scheduler started
+INFO:[13/07/2021 23:35:05] Scheduler started
+INFO:[13/07/2021 23:36:07] Scheduler started
+INFO:[13/07/2021 23:37:40] Scheduler started
+INFO:[13/07/2021 23:38:53] Scheduler started
+INFO:[13/07/2021 23:39:39] Scheduler started
+ERROR:[13/07/2021 23:39:40] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in tiempo
+    future = datetime.datetime.utcnow() - datetime.timedelta(hours=1*3 - 33281420544
+OverflowError: days=-1386725856; must have magnitude <= 999999999
+INFO:[13/07/2021 23:40:14] Scheduler started
+INFO:[13/07/2021 23:40:58] Scheduler started
+INFO:[13/07/2021 23:41:19] Scheduler started
+INFO:[13/07/2021 23:41:35] Scheduler started
+INFO:[13/07/2021 23:41:57] Scheduler started
+INFO:[13/07/2021 23:42:42] Scheduler started
+INFO:[13/07/2021 23:42:59] Scheduler started
+INFO:[13/07/2021 23:43:27] Scheduler started
+INFO:[13/07/2021 23:43:49] Scheduler started
+INFO:[13/07/2021 23:44:04] Scheduler started
+INFO:[13/07/2021 23:44:41] Scheduler started
+INFO:[13/07/2021 23:45:10] Scheduler started
+INFO:[13/07/2021 23:45:25] Scheduler started
+INFO:[13/07/2021 23:45:42] Scheduler started
+INFO:[13/07/2021 23:46:07] Scheduler started
+INFO:[13/07/2021 23:46:36] Scheduler started
+INFO:[13/07/2021 23:47:08] Scheduler started
+INFO:[13/07/2021 23:47:27] Scheduler started
+INFO:[13/07/2021 23:47:57] Scheduler started
+INFO:[13/07/2021 23:48:32] Scheduler started
+INFO:[13/07/2021 23:49:00] Scheduler started
+INFO:[13/07/2021 23:49:50] Scheduler started
+INFO:[13/07/2021 23:50:12] Scheduler started

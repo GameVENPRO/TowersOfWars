@@ -25,7 +25,7 @@ BACK
 #Librerías de utilidades
 import json
 from random import randint as rng,choice
-from time import sleep
+from time import sleep, time
 import miscellaneous as misc
 import Braile as br
 import FullWidth as fw
@@ -33,6 +33,8 @@ from tree import tree as tree
 import math
 from datetime import datetime
 import signal
+import time
+import datetime
 
 #Otras librerías para el desarrollo
 from uuid import uuid4
@@ -807,18 +809,7 @@ def reg(update: Update, context: CallbackContext):
             namename = "Comrade"
         else:
             namename = user.first_name
-        text = str('<i>Tu nombre es... Ya veo. Mucho gusto, {name}!\n\n'.format(name=namename)
-            +"Toma, toma un trago, cortesía de la casa. Si te gusta, siempre puedes volver y tomar una Cerveza por solo 5💰."
-            +" Quién sabe? Tal vez puedas hacer nuevos amigos mientras bebes..."
-            +"\n\nTambién tenemos ⚔️Duelos en la parte posterior, siempre puede venir y tomar un desafío con otro viajero,"
-            +" o puedes pelear con un amigo, todo lo que tienes que hacer es escribir: </i>\n\n@Torre_RPGBot + <code>espacio</code>\n\n<i>En cualquier ventana de chat,"
-            +" y pulsando el botón ⚔️Duelos, podrás desafiar a cualquier amigo que quieras, incluso si ni siquiera han visitado la taberna antes..."
-            +"\nHuh! ¿Qué es una ventana de chat, por cierto?"
-            +"\n\nDe todos modos, también puedes jugar a los 🎲Dados en nuestras mesas de juego. También con un extraño, o llámalo a través de un mensaje en línea de la misma manera que los duelos con amigos:"
-            +"</i>\n\n@Torre_RPGBot + <code>space</code>\n\n<i> y presionando el botón 🎲Dice Dados."
-            +"\n\nPor último, en la parte posterior, junto a la cancha de duelo, hay un 🏰Castillo, que forja y vende armas de la mejor calidad."
-            +" Allí puedes comprar cualquier cosa que se ajuste mejor a tu estilo de combate."
-            +"\n\nSin nada más que decir, póngase cómodo, y disfrute del ambiente y la compañía con una buena bebida!</i>")
+        text = '<i>Tu nombre es... Ya veo. Mucho gusto, {name}!\n\n'.format(name=namename)
         try:
             context.bot.edit_message_reply_markup(
                 chat_id=user.id,
@@ -874,6 +865,7 @@ def newUser(user,pron):
         "collar":"None",  
         "pron":pron,
         "estado":"🛌Descanso",
+        "puntos_habili":"0",
         "bolso_arm":[{"01":"01"}],
         "weapons":[False],
         "rank":0,
@@ -1231,8 +1223,7 @@ def inventario(update: Update, context: CallbackContext):
     if(bolso_arm == 0):
         cantid_armas = "0" 
     else:
-        cantid_armas = bolso_arm 
-    
+        cantid_armas = bolso_arm   
    
     
     
@@ -1266,6 +1257,87 @@ def inventario(update: Update, context: CallbackContext):
         reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
+    return
+
+def tiempo(update: Update, context: CallbackContext):
+
+  
+    future = datetime.datetime.utcnow() - datetime.timedelta(hours=1*3 - 331.65)
+    epoch = future - datetime.datetime(1970, 1, 1)
+    dia = epoch.days
+    print(epoch)
+    hora = time.strftime("%H")
+    
+    text= "<b>En el mundo de Chat Wars ahora</b>"    
+        
+    if(hora == "00"):
+        text+="\n🌤Mañana"
+    elif (hora == "01"):
+        text+="\n🌞Día"
+    elif (hora == "02"):
+        text+="\n🌞Día"
+    elif (hora == "03"):
+        text+= "\n⛅️Tarde"
+    elif (hora == "04"):
+        text+= "\n⛅️Tarde"
+    elif (hora == "05"):
+        text+="\n🌙Noche"
+    elif (hora == "06"):
+        text+="\n🌙Noche"
+    elif(hora == "07"):
+        text+="\n🌤Mañana"
+    elif(hora == "08"):
+        text+="\n🌤Mañana"
+    elif (hora == "09"):
+        text+="\n🌞Día"
+    elif (hora == "10"):
+        text+="\n🌞Día"
+    elif (hora == "11"):
+        text+= "\n⛅️Tarde"
+    elif (hora == "12"):
+        text+= "\n⛅️Tarde"  
+    elif (hora == "13"):
+        text+="\n🌙Noche"
+    elif (hora == "14"):
+        text+="\n🌙Noche"
+    elif(hora == "15"):
+        text+="\n🌤Mañana"
+    elif(hora == "16"):
+        text+="\n🌤Mañana"
+    elif (hora == "17"):
+        text+="\n🌞Día"
+    elif (hora == "18"):
+        text+="\n🌞Día"
+    elif (hora == "19"):
+        text+= "\n⛅️Tarde"
+    elif (hora == "20"):
+        text+= "\n⛅️Tarde"
+    elif (hora == "21"):
+        text+="\n🌙Noche"
+    elif (hora == "22"):
+        text+="\n🌙Noche"
+    elif(hora == "23"):
+        text+="\n🌤Mañana"
+        
+    text+= "\n 24 hrs {h}".format(h=time.strftime("%H:%M"))
+    text+= "\n 12 hrs {h}".format(h=time.strftime("%I:%M"))    
+    text+= "\n Rapido {h}".format(h=epoch)    
+    text+= "\n{d}".format(d=dia)
+    text+= "\n\n<b>Pronóstico del tiempo</b>"
+    text+= "\n[🌫→🌤] (Inactivo)"
+
+    
+    reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+
+    update.message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return
+def pronostico():
+    
+    # estados climáticos: Soleado ☀️, Nublado 🌤, Lluvioso 🌧 y Brumoso 🌫
     return
 
 def beer(update: Update, context: CallbackContext):
@@ -1328,14 +1400,64 @@ def duellingcourt(update: Update, context: CallbackContext):
     return 
 
 def castillo(update: Update, context: CallbackContext):
-    text=str(   "\nCastle El Castillo más Alto"
-                +"\n🌞Dia [☀️→☀️]"
-                +"\n\n5h 5 minutos hasta la batalla"
-                +"\nInforme de batalla: / informe"
-                +"\nInforme detallado: @chtwrsReports"
-                +"\n\n💬Castle Chat del castillo: "
-                +"\nLos demás: / los demás"
-                +"\n\n🍺La taberna abre por la noche")
+
+    hora = time.strftime("%H")
+    print(hora)
+    text="El Castillo \n"   
+        
+    if(hora == "00"):
+        text+="🌤Mañana"
+    elif (hora == "01"):
+        text+="🌞Día"
+    elif (hora == "02"):
+        text+="🌞Día"
+    elif (hora == "03"):
+        text+= "⛅️Tarde"
+    elif (hora == "04"):
+        text+= "⛅️Tarde"
+    elif (hora == "05"):
+        text+="🌙Noche"
+    elif (hora == "06"):
+        text+="🌙Noche"
+    elif(hora == "07"):
+        text+="🌤Mañana"
+    elif(hora == "08"):
+        text+="🌤Mañana"
+    elif (hora == "09"):
+        text+="🌞Día"
+    elif (hora == "10"):
+        text+="🌞Día"
+    elif (hora == "11"):
+        text+= "⛅️Tarde"
+    elif (hora == "12"):
+        text+= "⛅️Tarde"  
+    elif (hora == "13"):
+        text+="🌙Noche"
+    elif (hora == "14"):
+        text+="🌙Noche"
+    elif(hora == "15"):
+        text+="🌤Mañana"
+    elif(hora == "16"):
+        text+="🌤Mañana"
+    elif (hora == "17"):
+        text+="🌞Día"
+    elif (hora == "18"):
+        text+="🌞Día"
+    elif (hora == "19"):
+        text+= "⛅️Tarde"
+    elif (hora == "20"):
+        text+= "⛅️Tarde"
+    elif (hora == 21):
+        text+="🌙Noche"
+    elif (hora == "22"):
+        text+="🌙Noche"
+    elif(hora == "23"):
+        text+="🌤Mañana"
+        
+    # text+="[-→-]"
+    text+="\n\n💬Castle Chat del castillo: "
+    text+="\nLos demás: /otros"
+    text+="\n\n🍺La taberna abre por la noche"
 
     IKB = KeyboardButton
     reply_markup = ReplyKeyboardMarkup(
@@ -1719,6 +1841,7 @@ def main():
             MessageHandler(Filters.regex("^(📝Ayudar)$"), help),
             MessageHandler(Filters.regex(r"^\/info_\d+$"), winfo),
             MessageHandler(Filters.regex("/inv"), inventario),
+            MessageHandler(Filters.regex("/tiempo"), tiempo),
             MessageHandler(Filters.regex("/heroe"), heroe),
             MessageHandler(Filters.regex("^(🗡Armas)$"), owned),
             MessageHandler(Filters.regex(r"^\/on_\d+$"), equip),
