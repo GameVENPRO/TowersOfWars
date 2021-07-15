@@ -35,6 +35,7 @@ from datetime import datetime
 import signal
 import time
 import datetime
+from datetime import datetime, timezone
 
 #Otras librerías para el desarrollo
 from uuid import uuid4
@@ -1262,12 +1263,63 @@ def inventario(update: Update, context: CallbackContext):
 def tiempo(update: Update, context: CallbackContext):
 
   
-    future = datetime.datetime.utcnow() - datetime.timedelta(hours=1*3 - 331.65)
-    epoch = future - datetime.datetime(1970, 1, 1)
-    dia = epoch.days
-    print(epoch)
-    hora = time.strftime("%H")
-    
+  #  future = datetime.datetime.utcnow() - datetime.timedelta(hours=1*3 - 331.65)
+   # epoch = future - datetime.datetime(1970, 1, 1)
+    #dia = epoch.days
+   # print(epoch)
+    #hora = time.strftime("%H")
+
+    #from datetime import datetime, timezone
+
+    #dt = datetime(1059, 8, 8,21,31,0, tzinfo=timezone.utc )
+    #timestamp = int( dt.timestamp() )
+    #print( timestamp )
+
+    #m=1
+
+    #if(m==1):
+    #	print('Wintar')
+    #	
+    #hora = dt.horus 
+    #minutos = dt.minutes
+
+    #print( str(hora) +':'+str(minutos))
+
+    timestamp = -28729391340
+   #-28729468800
+    dt = datetime.fromtimestamp( timestamp, tz=timezone.utc )
+    print(dt )
+    m = dt.month
+    dia= dt.days
+    anno= dt.years
+    hora = dt.hours
+    minutos = dt.minutes
+    completa=str(hora) +':'+str(minutos)
+
+    if(m  == 1 ):
+       mes="Wintar Invierno 31"
+    if(m==2 ):
+      mes= "Hornung Invierno 28"
+    if(m ==3 ):
+        mes="estrellas Primavera 30"
+    if(m==5):
+	mes=" Winni Primavera 31"
+    if(m==6):
+	mes="Brāh Verano 30"
+    if(m==7 ):
+ 	mes="Hewi Verano 31"
+    if(m==8):
+	print("Aran Verano 31"
+    if(m==9 ):
+	mes="Witu Otoño 30"
+    if(m==10 ):
+	mes="Wīndume Otoño 31"
+    if(m==11 ):
+	mes="Herbista Otoño 30"
+    if(m==12):
+	mes=" Hailag Invierno 31"
+
+
     text= "<b>En el mundo de Chat Wars ahora</b>"    
         
     if(hora == "00"):
@@ -1319,10 +1371,10 @@ def tiempo(update: Update, context: CallbackContext):
     elif(hora == "23"):
         text+="\n🌤Mañana"
         
-    text+= "\n 24 hrs {h}".format(h=time.strftime("%H:%M"))
-    text+= "\n 12 hrs {h}".format(h=time.strftime("%I:%M"))    
-    text+= "\n Rapido {h}".format(h=epoch)    
-    text+= "\n{d}".format(d=dia)
+    text+= "\n 24 hrs {h}".format(h=completa)
+    #text+= "\n 12 hrs {h}".format(h=time.strftime("%I:%M"))    
+    #text+= "\n Rapido {h}".format(h=epoch)    
+    text+= "\n{d} {m} {y}".format(d=dia,m=mes,y=anno)
     text+= "\n\n<b>Pronóstico del tiempo</b>"
     text+= "\n[🌫→🌤] (Inactivo)"
 
