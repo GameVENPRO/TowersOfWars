@@ -1290,9 +1290,9 @@ def tiempo(update: Update, context: CallbackContext):
     dt = datetime.fromtimestamp( timestamp, tz=timezone.utc )
     print(dt )
     m = dt.month
-    dia= dt.days
-    anno= dt.years
-    hora = dt.hours
+    dia= dt.day
+    anno= dt.year
+    hora = dt.hour
     minutos = dt.minutes
     completa=str(hora) +':'+str(minutos)
 
