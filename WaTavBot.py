@@ -32,9 +32,8 @@ import FullWidth as fw
 from tree import tree as tree
 import math
 from datetime import datetime
-import signal
 import time
-import datetime
+import signal
 
 
 #Otras librerías para el desarrollo
@@ -810,7 +809,7 @@ def reg(update: Update, context: CallbackContext):
             namename = "Comrade"
         else:
             namename = user.first_name
-        text = '<i>Tu nombre es... Ya veo. Mucho gusto, {name}!\n\n'.format(name=namename)
+        text = str('<i>Ah, worderful! And your name is... I see. Nice to meet you, {name}!\n\n'.format(name=namename))
         try:
             context.bot.edit_message_reply_markup(
                 chat_id=user.id,
@@ -867,8 +866,8 @@ def newUser(user,pron):
         "pron":pron,
         "estado":"🛌Descanso",
         "puntos_habili":"0",
-        "bolso_arm":[{"01":"01"}],
-        "weapons":[False],
+        "bolso_arm":[{"00":"00"}],
+        "weapons":[{"00":"00"}],
         "rank":0,
         "lastlog":datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     }
@@ -1262,103 +1261,110 @@ def inventario(update: Update, context: CallbackContext):
 
 def tiempo(update: Update, context: CallbackContext):
 
-    timestamp = -28729391340
-
-    hora = time.strftime("%H")
-    m = time.strftime("%m")
-    dia = time.strftime("%d")
-    anno = time.strftime("%Y")
 
 
+    # timestamp = 1545730073
+    # dt_object = datetime.fromtimestamp(timestamp)
+    # print("dt_object =", dt_object)
+    # print(datetime.fromtimestamp(-1576280665))
+    dt = datetime.datetime.now()     # Fecha y hora actual
+
+
+    anno = dt.year
+    m =  dt.month
+    dia= dt.day 
+    hora= str(dt.hour)
+    min= dt.minute
 
     text= "<b>En el mundo de Chat Wars ahora</b>"    
 
-    if(m  == 1 ):
+    if(m == 1):
        mes="Wintar "
             #    Invierno 31"
-    if(m==2 ):
+    if(m == 2):
       mes= "Hornung "
          #   Invierno 28"
-    if(m ==3 ):
+    if(m == 3):
         mes="estrellas"
                #  Primavera 30"
-    if(m==5):
+    if(m == 5):
 	    mes=" Winni "
                # Primavera 31"
-    if(m==6):
+    if(m == 6):
 	    mes="Brāh "
                # Verano 30"
-    if(m==7 ):
+    if(m == 7):
  	    mes="Hewi "
               #  Verano 31"
-    if(m==8):
+    if(m == 8):
     	m="Aran "
                # Verano 31"
-    if(m==9 ):
+    if(m == 9):
     	    mes="Witu "
                # Otoño 30"
-    if(m==10 ):
+    if(m == 10):
 	    mes="Wīndume "
                # Otoño 31"
-    if(m==11 ):
+    if(m == 11):
 	    mes="Herbista "
                # Otoño 30"
-    if(m==12):
+    if(m == 12):
 	    mes=" Hailag "
                # Invierno 31"
         
     if(hora == "00"):
         text+="\n🌤Mañana"
-    elif (hora == "01"):
+    elif(hora == "01"):
         text+="\n🌞Día"
-    elif (hora == "02"):
+    elif(hora == "02"):
         text+="\n🌞Día"
-    elif (hora == "03"):
+    elif(hora == "03"):
         text+= "\n⛅️Tarde"
-    elif (hora == "04"):
+    elif(hora == "04"):
         text+= "\n⛅️Tarde"
-    elif (hora == "05"):
+    elif(hora == "05"):
         text+="\n🌙Noche"
-    elif (hora == "06"):
+    elif(hora == "06"):
         text+="\n🌙Noche"
     elif(hora == "07"):
         text+="\n🌤Mañana"
     elif(hora == "08"):
         text+="\n🌤Mañana"
-    elif (hora == "09"):
+    elif(hora == "09"):
         text+="\n🌞Día"
-    elif (hora == "10"):
+    elif(hora == "10"):
         text+="\n🌞Día"
-    elif (hora == "11"):
+    elif(hora == "11"):
         text+= "\n⛅️Tarde"
-    elif (hora == "12"):
+    elif(hora == "12"):
         text+= "\n⛅️Tarde"  
-    elif (hora == "13"):
+    elif(hora == "13"):
         text+="\n🌙Noche"
-    elif (hora == "14"):
+    elif(hora == "14"):
         text+="\n🌙Noche"
     elif(hora == "15"):
         text+="\n🌤Mañana"
     elif(hora == "16"):
         text+="\n🌤Mañana"
-    elif (hora == "17"):
+    elif(hora == "17"):
         text+="\n🌞Día"
-    elif (hora == "18"):
+    elif(hora == "18"):
         text+="\n🌞Día"
-    elif (hora == "19"):
+    elif(hora == "19"):
         text+= "\n⛅️Tarde"
-    elif (hora == "20"):
+    elif(hora == "20"):
         text+= "\n⛅️Tarde"
-    elif (hora == "21"):
+    elif(hora == "21"):
         text+="\n🌙Noche"
-    elif (hora == "22"):
+    elif(hora == "22"):
         text+="\n🌙Noche"
     elif(hora == "23"):
         text+="\n🌤Mañana"
         
-    text+= "\n 12 hrs {h}".format(h=time.strftime("%I:%M"))    
+    text+= "\n{h}:{m}".format(h=hora ,m=min)    
 
     text+= "\n{d} {m} {a}".format(d=dia , m=mes, a=anno)
+
     text+= "\n\n<b>Pronóstico del tiempo</b>"
     text+= "\n[🌫→🌤] (Inactivo)"
 
@@ -1598,49 +1604,11 @@ def Newcompra(user,items):
     info = {
         "id": TiendaDB[items]["id"],
         "nombre": TiendaDB[items]["nombre"],
-        "historia": TiendaDB[items]["historia"],
-        "tipo": TiendaDB[items]["tipo"],
-        "g_type": TiendaDB[items]["g_type"],
-        "peso": TiendaDB[items]["peso"],
-        "tier": TiendaDB[items]["tier"],
-        "envolver": TiendaDB[items]["envolver"],
-        "evento_item": TiendaDB[items]["evento_item"],
-        "fabricable": TiendaDB[items]["fabricable"],
-        "intercanbio": TiendaDB[items]["intercanbio"],
-        "precio": TiendaDB[items]["precio"],
-        "venta": TiendaDB[items]["venta"],
-        "atributos": {
-            "ataque": TiendaDB[items]["atributos"]["ataque"],
-            "defensa": TiendaDB[items]["atributos"]["defensa"],
-            "mana": TiendaDB[items]["atributos"]["mana"],
-            "habilidad": TiendaDB[items]["atributos"]["habilidad"],
-            "nivel": TiendaDB[items]["atributos"]["nivel"],
-            "reforsado": {
-                "1": {
-                    "nivel": 1,
-                    "ataque": 0,
-                    "ataque_total": 0
-                },
-                "2": {
-                    "nivel": 2,
-                    "ataque": 0,
-                    "ataque_total": 0
-                },
-                "3": {
-                    "nivel": 3,
-                    "ataque": 0,
-                    "ataque_total": 0
-                },
-                "4": {
-                    "nivel": 4,
-                    "ataque": 0,
-                    "ataque_total": 0
-                }
-
-            }
-        }
+        "historia": TiendaDB[items]["historia"]
+        
     }
-    Fire.put("/players",user,"/bolso_arm",items,"/",info)
+    Fire.put_async("/players/",user,"/bolso_info/",items,"/",info)
+    
     PlayerDB[str(user)]["bolso_arm"] = info
     print(PlayerDB[str(user)]["bolso_arm"])
     return

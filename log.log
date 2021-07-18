@@ -2211,3 +2211,1297 @@ Traceback (most recent call last):
   File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1361, in tiempo
     text+= "\n{d} {m} {a}".format(d=dia , m=str(mes), a=anno)
 UnboundLocalError: local variable 'mes' referenced before assignment
+INFO:[17/07/2021 19:32:54] Scheduler started
+ERROR:[17/07/2021 19:32:58] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[17/07/2021 19:32:58] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[17/07/2021 19:33:02] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[17/07/2021 19:33:02] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:[17/07/2021 19:34:08] Scheduler started
+ERROR:[17/07/2021 19:34:15] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in tiempo
+    dt = datetime.fromtimestamp( timestamp )
+AttributeError: module 'datetime' has no attribute 'fromtimestamp'
+INFO:[17/07/2021 19:35:24] Scheduler started
+INFO:[17/07/2021 19:35:31] Scheduler started
+ERROR:[17/07/2021 19:35:38] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in tiempo
+    dt = datetime.fromtimestamp( timestamp )
+AttributeError: module 'datetime' has no attribute 'fromtimestamp'
+INFO:[17/07/2021 19:36:21] Scheduler started
+ERROR:[17/07/2021 19:36:40] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in tiempo
+    dt = datetime.fromtimestamp( timestamp, tz=timezone.utc )
+AttributeError: module 'datetime' has no attribute 'fromtimestamp'
+INFO:[17/07/2021 19:37:39] Scheduler started
+INFO:[17/07/2021 19:56:19] Scheduler started
+ERROR:[17/07/2021 19:56:32] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in tiempo
+    dt = datetime(1059,8,8)
+TypeError: 'module' object is not callable
+INFO:[17/07/2021 19:57:14] Scheduler started
+INFO:[17/07/2021 19:59:04] Scheduler started
+ERROR:[17/07/2021 19:59:05] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1268, in tiempo
+    hora = datetime.strftime("%H")
+TypeError: descriptor 'strftime' for 'datetime.date' objects doesn't apply to a 'str' object
+INFO:[17/07/2021 20:02:07] Received signal 2 (SIGINT), stopping...
+INFO:[17/07/2021 20:02:07] Scheduler has been shut down
+WARNING:[17/07/2021 20:02:07] Exiting immediately!
+INFO:[17/07/2021 20:02:16] Scheduler started
+INFO:[17/07/2021 20:04:39] Scheduler started
+ERROR:[17/07/2021 20:04:42] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1270, in tiempo
+    print(dt * 3 - 33281409744)
+TypeError: unsupported operand type(s) for *: 'datetime.datetime' and 'int'
+INFO:[17/07/2021 20:05:18] Scheduler started
+INFO:[17/07/2021 20:13:17] Scheduler started
+INFO:[17/07/2021 20:18:46] Scheduler started
+INFO:[17/07/2021 20:19:39] Scheduler started
+INFO:[17/07/2021 20:20:42] Scheduler started
+INFO:[17/07/2021 20:21:35] Scheduler started
+ERROR:[17/07/2021 20:21:36] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1269, in tiempo
+    dt = dt_object.now(1059,8,8)    # Fecha y hora actual
+TypeError: now() takes at most 1 argument (3 given)
+INFO:[17/07/2021 20:22:38] Scheduler started
+ERROR:[17/07/2021 20:22:41] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in tiempo
+    dt_object = datetime.fromtimestamp(timestamp * 3)
+OSError: [Errno 22] Invalid argument
+INFO:[17/07/2021 20:23:09] Scheduler started
+ERROR:[17/07/2021 20:23:10] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in tiempo
+    dt_object = datetime.fromtimestamp(int(timestamp))
+OSError: [Errno 22] Invalid argument
+INFO:[17/07/2021 20:23:58] Scheduler started
+ERROR:[17/07/2021 20:23:59] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in tiempo
+    dt_object = datetime.fromtimestamp(timestamp)
+OSError: [Errno 22] Invalid argument
+ERROR:[17/07/2021 20:24:01] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in tiempo
+    dt_object = datetime.fromtimestamp(timestamp)
+OSError: [Errno 22] Invalid argument
+INFO:[17/07/2021 20:24:13] Scheduler started
+ERROR:[17/07/2021 20:24:14] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in tiempo
+    dt_object = datetime.fromtimestamp(timestamp)
+OSError: [Errno 22] Invalid argument
+INFO:[17/07/2021 20:24:45] Scheduler started
+ERROR:[17/07/2021 20:24:48] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in tiempo
+    dt_object = datetime.fromtimestamp(timestamp)
+OSError: [Errno 22] Invalid argument
+INFO:[17/07/2021 20:25:00] Scheduler started
+INFO:[17/07/2021 20:25:20] Scheduler started
+INFO:[17/07/2021 20:27:52] Scheduler started
+ERROR:[17/07/2021 20:27:55] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1268, in tiempo
+    print(datetime.fromtimestamp(-1576280665))
+OSError: [Errno 22] Invalid argument
+INFO:[17/07/2021 21:38:06] Scheduler started
+ERROR:[17/07/2021 21:38:16] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in tiempo
+    future = datetime.datetime.utcnow() - datetime.timedelta(hours=1*3 - 331.65)
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+INFO:[17/07/2021 21:38:43] Scheduler started
+ERROR:[17/07/2021 21:38:45] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in tiempo
+    future = datetime.datetime.utcnow() - datetime.timedelta(hours=1*3 - 331.65)
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+INFO:[17/07/2021 21:39:26] Scheduler started
+ERROR:[17/07/2021 21:39:29] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1272, in tiempo
+    dt_object = datetime.fromtimestamp(timestamp)
+AttributeError: module 'datetime' has no attribute 'fromtimestamp'
+INFO:[17/07/2021 21:40:15] Scheduler started
+ERROR:[17/07/2021 21:40:16] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1275, in tiempo
+    dt = datetime.now()     # Fecha y hora actual
+AttributeError: module 'datetime' has no attribute 'now'
+INFO:[17/07/2021 21:40:37] Scheduler started
+ERROR:[17/07/2021 21:40:39] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1275, in tiempo
+    dt = epoch.now()     # Fecha y hora actual
+AttributeError: 'datetime.timedelta' object has no attribute 'now'
+INFO:[17/07/2021 21:42:44] Scheduler started
+ERROR:[17/07/2021 21:42:51] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1275, in tiempo
+    dt = epoch.now()     # Fecha y hora actual
+AttributeError: 'datetime.timedelta' object has no attribute 'now'
+INFO:[17/07/2021 21:43:09] Scheduler started
+INFO:[17/07/2021 21:44:08] Scheduler started
+INFO:[17/07/2021 21:44:15] Scheduler started
+ERROR:[17/07/2021 21:44:16] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in tiempo
+    future = datetime.datetime.utcnow() - datetime.timedelta(hour=1)
+TypeError: 'hour' is an invalid keyword argument for __new__()
+INFO:[17/07/2021 21:45:35] Scheduler started
+INFO:[17/07/2021 21:45:51] Scheduler started
+INFO:[17/07/2021 21:46:32] Scheduler started
+INFO:[17/07/2021 21:47:33] Scheduler started
+INFO:[17/07/2021 21:48:53] Scheduler started
+INFO:[17/07/2021 21:50:07] Scheduler started
+ERROR:[17/07/2021 21:50:09] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in tiempo
+    future = datetime.datetime.utcnow() * 3
+TypeError: unsupported operand type(s) for *: 'datetime.datetime' and 'int'
+INFO:[17/07/2021 21:51:33] Scheduler started
+ERROR:[17/07/2021 21:51:35] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1367, in tiempo
+    text+= "\n{d}".format(d=epoch)
+NameError: name 'epoch' is not defined
+INFO:[17/07/2021 21:51:54] Scheduler started
+INFO:[17/07/2021 21:55:40] Scheduler started
+INFO:[17/07/2021 21:59:30] Scheduler started
+INFO:[17/07/2021 22:02:18] Scheduler started
+INFO:[17/07/2021 22:03:43] Scheduler started
+INFO:[17/07/2021 22:08:23] Scheduler started
+WARNING:[17/07/2021 22:08:43] Actualizar: 
+│
+├update_id: 994731489
+└message:
+⠀├message_id: 5389
+⠀├date: 1626574122
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1587
+
+Notas: put() got multiple values for argument &#x27;connection&#x27;
+INFO:[17/07/2021 22:09:14] Scheduler started
+INFO:[17/07/2021 22:14:06] Scheduler started
+WARNING:[17/07/2021 22:14:10] Actualizar: 
+│
+├update_id: 994731495
+└message:
+⠀├message_id: 5398
+⠀├date: 1626574449
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_03
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1587
+
+Notas: put() got multiple values for argument &#x27;connection&#x27;
+INFO:[17/07/2021 22:14:38] Scheduler started
+WARNING:[17/07/2021 22:14:43] Actualizar: 
+│
+├update_id: 994731496
+└message:
+⠀├message_id: 5400
+⠀├date: 1626574482
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_03
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1587
+
+Notas: put() got multiple values for argument &#x27;connection&#x27;
+INFO:[17/07/2021 22:18:24] Scheduler started
+WARNING:[17/07/2021 22:18:27] Actualizar: 
+│
+├update_id: 994731497
+└message:
+⠀├message_id: 5402
+⠀├date: 1626574705
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_03
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1587
+
+Notas: post() got multiple values for argument &#x27;connection&#x27;
+INFO:[17/07/2021 22:19:23] Scheduler started
+WARNING:[17/07/2021 22:19:37] Actualizar: 
+│
+├update_id: 994731502
+└message:
+⠀├message_id: 5410
+⠀├date: 1626574776
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1587
+
+Notas: post() got multiple values for argument &#x27;connection&#x27;
+INFO:[17/07/2021 22:21:38] Scheduler started
+WARNING:[17/07/2021 22:21:48] Actualizar: 
+│
+├update_id: 994731503
+└message:
+⠀├message_id: 5412
+⠀├date: 1626574907
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1587
+
+Notas: post() got multiple values for argument &#x27;connection&#x27;
+INFO:[17/07/2021 22:22:07] Scheduler started
+WARNING:[17/07/2021 22:22:10] Actualizar: 
+│
+├update_id: 994731504
+└message:
+⠀├message_id: 5414
+⠀├date: 1626574929
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1587
+
+Notas: post() got multiple values for argument &#x27;connection&#x27;
+INFO:[17/07/2021 22:22:29] Scheduler started
+WARNING:[17/07/2021 22:22:30] Actualizar: 
+│
+├update_id: 994731505
+└message:
+⠀├message_id: 5416
+⠀├date: 1626574949
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1587
+
+Notas: post() got multiple values for argument &#x27;connection&#x27;
+INFO:[17/07/2021 22:23:08] Scheduler started
+INFO:[17/07/2021 22:23:43] Scheduler started
+INFO:[17/07/2021 22:25:24] Scheduler started
+INFO:[17/07/2021 22:26:16] Scheduler started
+WARNING:[17/07/2021 22:26:25] Actualizar: 
+│
+├update_id: 994731509
+└message:
+⠀├message_id: 5424
+⠀├date: 1626575183
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:string indices must be integers en WaTavBot.py en la linea 1581
+
+Notas: string indices must be integers
+INFO:[17/07/2021 22:26:51] Scheduler started
+WARNING:[17/07/2021 22:26:53] Actualizar: 
+│
+├update_id: 994731510
+└message:
+⠀├message_id: 5426
+⠀├date: 1626575212
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:string indices must be integers en WaTavBot.py en la linea 1581
+
+Notas: string indices must be integers
+INFO:[17/07/2021 22:28:27] Scheduler started
+WARNING:[17/07/2021 22:28:29] Actualizar: 
+│
+├update_id: 994731511
+└message:
+⠀├message_id: 5428
+⠀├date: 1626575308
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:string indices must be integers en WaTavBot.py en la linea 1581
+
+Notas: string indices must be integers
+INFO:[17/07/2021 22:29:24] Scheduler started
+WARNING:[17/07/2021 22:29:27] Actualizar: 
+│
+├update_id: 994731512
+└message:
+⠀├message_id: 5430
+⠀├date: 1626575366
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:string indices must be integers en WaTavBot.py en la linea 1581
+
+Notas: string indices must be integers
+INFO:[17/07/2021 22:30:26] Scheduler started
+ERROR:[17/07/2021 22:30:36] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1578, in buy
+    player = PlayerDB[str(user.id)]
+KeyError: '622952731'
+WARNING:[17/07/2021 22:30:59] Actualizar: 
+│
+├update_id: 994731515
+└callback_query:
+⠀├id: 2675561607933447888
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5434
+││├date: 1626575455
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 822
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+WARNING:[17/07/2021 22:31:34] Actualizar: 
+│
+├update_id: 994731517
+└callback_query:
+⠀├id: 2675561607204051261
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5437
+││├date: 1626575491
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 822
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[17/07/2021 22:34:20] Scheduler started
+WARNING:[17/07/2021 22:34:56] Actualizar: 
+│
+├update_id: 994731523
+└message:
+⠀├message_id: 5447
+⠀├date: 1626575695
+⠀├chat:
+││├id: 1858141908
+││├type: private
+││├username: DevilCr0w
+││└first_name: DevilCrow
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 1858141908
+│⠀├first_name: DevilCrow
+│⠀├is_bot: False
+│⠀├username: DevilCr0w
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post_async() takes from 3 to 6 positional arguments but 7 were given en WaTavBot.py en la linea 1587
+
+Notas: post_async() takes from 3 to 6 positional arguments but 7 were given
+INFO:[17/07/2021 22:36:01] Scheduler started
+WARNING:[17/07/2021 22:36:13] Actualizar: 
+│
+├update_id: 994731524
+└message:
+⠀├message_id: 5449
+⠀├date: 1626575772
+⠀├chat:
+││├id: 1858141908
+││├type: private
+││├username: DevilCr0w
+││└first_name: DevilCrow
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 1858141908
+│⠀├first_name: DevilCrow
+│⠀├is_bot: False
+│⠀├username: DevilCr0w
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post_async() takes from 3 to 6 positional arguments but 7 were given en WaTavBot.py en la linea 1587
+
+Notas: post_async() takes from 3 to 6 positional arguments but 7 were given
+INFO:[17/07/2021 22:36:33] Scheduler started
+INFO:[18/07/2021 10:04:04] Scheduler started
+WARNING:[18/07/2021 10:04:11] Actualizar: 
+│
+├update_id: 994731527
+└callback_query:
+⠀├id: 2675561609194397684
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5454
+││├date: 1626617045
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 822
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[18/07/2021 10:06:49] Scheduler started
+ERROR:[18/07/2021 10:07:34] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1105, in me
+    player = PlayerDB[str(user.id)]
+KeyError: '622952731'
+INFO:[18/07/2021 10:11:47] Scheduler started
+ERROR:[18/07/2021 10:11:48] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:48] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:51] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:51] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:51] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:51] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:55] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:55] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:55] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:55] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:58] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:58] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:59] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:11:59] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:12:02] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:12:02] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:12:03] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[18/07/2021 10:12:03] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:[18/07/2021 10:12:07] Scheduler started
+INFO:[18/07/2021 10:14:02] Scheduler started
