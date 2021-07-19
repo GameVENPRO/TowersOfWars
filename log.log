@@ -3505,3 +3505,2771 @@ Traceback (most recent call last):
 telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
 INFO:[18/07/2021 10:12:07] Scheduler started
 INFO:[18/07/2021 10:14:02] Scheduler started
+INFO:[18/07/2021 10:38:11] Scheduler started
+WARNING:[18/07/2021 10:38:28] Actualizar: 
+│
+├update_id: 994731542
+└message:
+⠀├message_id: 5477
+⠀├date: 1626619107
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1588
+
+Notas: put() got multiple values for argument &#x27;connection&#x27;
+INFO:[18/07/2021 10:39:28] Scheduler started
+INFO:[18/07/2021 10:41:11] Scheduler started
+WARNING:[18/07/2021 10:41:18] Actualizar: 
+│
+├update_id: 994731544
+└message:
+⠀├message_id: 5481
+⠀├date: 1626619276
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1587
+
+Notas: put() got multiple values for argument &#x27;connection&#x27;
+INFO:[18/07/2021 10:45:44] Scheduler started
+WARNING:[18/07/2021 10:45:54] Actualizar: 
+│
+├update_id: 994731545
+└message:
+⠀├message_id: 5483
+⠀├date: 1626619552
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() missing 1 required positional argument: &#x27;data&#x27; en WaTavBot.py en la linea 1587
+
+Notas: put() missing 1 required positional argument: &#x27;data&#x27;
+INFO:[18/07/2021 10:52:29] Scheduler started
+INFO:[18/07/2021 10:54:48] Scheduler started
+INFO:[18/07/2021 10:56:02] Scheduler started
+INFO:[18/07/2021 10:57:48] Scheduler started
+INFO:[18/07/2021 11:07:37] Scheduler started
+WARNING:[18/07/2021 11:08:50] Actualizar: 
+│
+├update_id: 994731553
+└callback_query:
+⠀├id: 2675561610100960248
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5498
+││├date: 1626620926
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 821
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[18/07/2021 11:12:36] Scheduler started
+ERROR:[18/07/2021 11:12:50] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 727, in register
+    if(str(user.id) in list(PlayerDB.keys())):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 11:13:59] Scheduler started
+WARNING:[18/07/2021 11:14:06] Actualizar: 
+│
+├update_id: 994731556
+└callback_query:
+⠀├id: 2675561607873390146
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5502
+││├date: 1626621241
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 821
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[18/07/2021 11:14:48] Scheduler started
+WARNING:[18/07/2021 11:14:53] Actualizar: 
+│
+├update_id: 994731558
+└callback_query:
+⠀├id: 2675561608424029312
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5505
+││├date: 1626621290
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 821
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[18/07/2021 11:15:31] Scheduler started
+WARNING:[18/07/2021 11:15:38] Actualizar: 
+│
+├update_id: 994731560
+└callback_query:
+⠀├id: 2675561610214421909
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5508
+││├date: 1626621335
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 821
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[18/07/2021 11:17:31] Scheduler started
+WARNING:[18/07/2021 11:17:42] Actualizar: 
+│
+├update_id: 994731562
+└callback_query:
+⠀├id: 2675561607999165109
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5511
+││├date: 1626621458
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 821
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[18/07/2021 11:19:28] Scheduler started
+WARNING:[18/07/2021 11:19:34] Actualizar: 
+│
+├update_id: 994731564
+└callback_query:
+⠀├id: 2675561610705501145
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5514
+││├date: 1626621568
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 821
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[18/07/2021 11:20:30] Scheduler started
+WARNING:[18/07/2021 11:20:39] Actualizar: 
+│
+├update_id: 994731566
+└callback_query:
+⠀├id: 2675561607048796399
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5517
+││├date: 1626621633
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 822
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[18/07/2021 11:21:46] Scheduler started
+WARNING:[18/07/2021 11:22:07] Actualizar: 
+│
+├update_id: 994731568
+└callback_query:
+⠀├id: 2675561610626051944
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 5520
+││├date: 1626621723
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no? Bienvenido a la Taberna Trotamundos, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente.
+Mi nombre es @JuanShotLC, y yo soy el que sirve por aquí.
+Antes que nada, por favor, viajero, hazme saber tu género...
+││├entities:
+│││├0:
+││││├type: italic
+││││├offset: 84
+││││└length: 19
+│││└1:
+│││⠀├type: mention
+│││⠀├offset: 212
+│││⠀└length: 11
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: ♀ Dama
+││││││└callback_data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ♂ Caballero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"he","d2":"622952731"}
+│││⠀├1:
+│││││├0:
+││││││├text: 🕈 Muerto
+││││││└callback_data: {"op":"reg|gen","d1":"it","d2":"622952731"}
+│││││└1:
+│││││⠀├text: ☭ Compañero
+│││││⠀└callback_data: {"op":"reg|gen","d1":"we","d2":"622952731"}
+│││⠀└2:
+││││⠀└0:
+│││││⠀├text: ▣ Otro
+│││││⠀└callback_data: {"op":"reg|gen","d1":"they","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"reg|gen","d1":"she","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i en WaTavBot.py en la linea 821
+
+Notas: Can&#x27;t parse entities: can&#x27;t find end tag corresponding to start tag i
+INFO:[18/07/2021 11:32:28] Scheduler started
+INFO:[18/07/2021 11:35:15] Scheduler started
+INFO:[18/07/2021 11:49:55] Scheduler started
+INFO:[18/07/2021 11:54:38] Scheduler started
+WARNING:[18/07/2021 11:54:55] Actualizar: 
+│
+├update_id: 994731578
+└message:
+⠀├message_id: 5536
+⠀├date: 1626623694
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:list.append() takes exactly one argument (2 given) en WaTavBot.py en la linea 1594
+
+Notas: list.append() takes exactly one argument (2 given)
+INFO:[18/07/2021 11:55:38] Scheduler started
+WARNING:[18/07/2021 11:55:41] Actualizar: 
+│
+├update_id: 994731579
+└message:
+⠀├message_id: 5538
+⠀├date: 1626623739
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:list indices must be integers or slices, not str en WaTavBot.py en la linea 1594
+
+Notas: list indices must be integers or slices, not str
+INFO:[18/07/2021 11:56:21] Scheduler started
+WARNING:[18/07/2021 11:56:23] Actualizar: 
+│
+├update_id: 994731580
+└message:
+⠀├message_id: 5540
+⠀├date: 1626623781
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;append&#x27; en WaTavBot.py en la linea 1594
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;append&#x27;
+INFO:[18/07/2021 11:58:19] Scheduler started
+WARNING:[18/07/2021 11:58:22] Actualizar: 
+│
+├update_id: 994731581
+└message:
+⠀├message_id: 5542
+⠀├date: 1626623900
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;str&#x27; object has no attribute &#x27;append&#x27; en WaTavBot.py en la linea 1594
+
+Notas: &#x27;str&#x27; object has no attribute &#x27;append&#x27;
+INFO:[18/07/2021 11:58:39] Scheduler started
+WARNING:[18/07/2021 11:58:42] Actualizar: 
+│
+├update_id: 994731582
+└message:
+⠀├message_id: 5544
+⠀├date: 1626623920
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;int&#x27; object has no attribute &#x27;append&#x27; en WaTavBot.py en la linea 1594
+
+Notas: &#x27;int&#x27; object has no attribute &#x27;append&#x27;
+INFO:[18/07/2021 12:03:18] Scheduler started
+INFO:[18/07/2021 12:04:51] Scheduler started
+WARNING:[18/07/2021 12:04:53] Actualizar: 
+│
+├update_id: 994731584
+└message:
+⠀├message_id: 5548
+⠀├date: 1626624291
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;append&#x27; en WaTavBot.py en la linea 1594
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;append&#x27;
+INFO:[18/07/2021 12:05:21] Scheduler started
+WARNING:[18/07/2021 12:05:32] Actualizar: 
+│
+├update_id: 994731585
+└message:
+⠀├message_id: 5550
+⠀├date: 1626624331
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;append&#x27; en WaTavBot.py en la linea 1594
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;append&#x27;
+INFO:[18/07/2021 12:05:53] Scheduler started
+WARNING:[18/07/2021 12:06:08] Actualizar: 
+│
+├update_id: 994731586
+└message:
+⠀├message_id: 5552
+⠀├date: 1626624366
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;append&#x27; en WaTavBot.py en la linea 1594
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;append&#x27;
+INFO:[18/07/2021 12:07:33] Scheduler started
+WARNING:[18/07/2021 12:07:36] Actualizar: 
+│
+├update_id: 994731587
+└message:
+⠀├message_id: 5554
+⠀├date: 1626624455
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;append&#x27; en WaTavBot.py en la linea 1594
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;append&#x27;
+INFO:[18/07/2021 12:10:59] Scheduler started
+INFO:[18/07/2021 12:12:32] Scheduler started
+WARNING:[18/07/2021 12:12:38] Actualizar: 
+│
+├update_id: 994731589
+└message:
+⠀├message_id: 5558
+⠀├date: 1626624756
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;list&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1594
+
+Notas: &#x27;list&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 12:13:04] Scheduler started
+WARNING:[18/07/2021 12:13:06] Actualizar: 
+│
+├update_id: 994731590
+└message:
+⠀├message_id: 5560
+⠀├date: 1626624784
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;list&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1594
+
+Notas: &#x27;list&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 12:14:20] Scheduler started
+WARNING:[18/07/2021 12:14:29] Actualizar: 
+│
+├update_id: 994731591
+└message:
+⠀├message_id: 5562
+⠀├date: 1626624867
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1594
+
+Notas: put() got multiple values for argument &#x27;connection&#x27;
+INFO:[18/07/2021 12:15:47] Scheduler started
+INFO:[18/07/2021 12:20:01] Scheduler started
+INFO:[18/07/2021 12:21:54] Scheduler started
+INFO:[18/07/2021 12:23:11] Scheduler started
+INFO:[18/07/2021 12:24:11] Scheduler started
+INFO:[18/07/2021 12:24:45] Scheduler started
+INFO:[18/07/2021 12:25:34] Scheduler started
+WARNING:[18/07/2021 12:25:49] Actualizar: 
+│
+├update_id: 994731625
+└message:
+⠀├message_id: 5626
+⠀├date: 1626625547
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;KeyError&#x27;&gt;:&#x27;bolso_arm&#x27; en WaTavBot.py en la linea 1591
+
+Notas: &#x27;bolso_arm&#x27;
+INFO:[18/07/2021 12:27:00] Scheduler started
+INFO:[18/07/2021 12:27:47] Scheduler started
+INFO:[18/07/2021 12:28:32] Scheduler started
+INFO:[18/07/2021 12:28:58] Scheduler started
+INFO:[18/07/2021 12:29:31] Scheduler started
+INFO:[18/07/2021 12:30:38] Scheduler started
+INFO:[18/07/2021 12:31:11] Scheduler started
+INFO:[18/07/2021 12:32:28] Scheduler started
+INFO:[18/07/2021 12:33:27] Scheduler started
+INFO:[18/07/2021 12:34:03] Scheduler started
+ERROR:[18/07/2021 12:34:08] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1162, in me
+    text=text,
+UnboundLocalError: local variable 'text' referenced before assignment
+INFO:[18/07/2021 12:34:58] Scheduler started
+ERROR:[18/07/2021 12:34:59] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1162, in me
+    text=text,
+UnboundLocalError: local variable 'text' referenced before assignment
+INFO:[18/07/2021 12:36:22] Scheduler started
+INFO:[18/07/2021 12:37:15] Scheduler started
+INFO:[18/07/2021 12:40:13] Scheduler started
+INFO:[18/07/2021 12:48:09] Scheduler started
+INFO:[18/07/2021 13:01:30] Scheduler started
+INFO:[18/07/2021 13:02:07] Scheduler started
+INFO:[18/07/2021 13:04:20] Scheduler started
+INFO:[18/07/2021 13:06:38] Scheduler started
+INFO:[18/07/2021 13:08:54] Scheduler started
+INFO:[18/07/2021 13:50:24] Scheduler started
+INFO:[18/07/2021 14:39:08] Scheduler started
+INFO:[18/07/2021 14:40:26] Scheduler started
+INFO:[18/07/2021 14:40:57] Scheduler started
+INFO:[18/07/2021 14:41:33] Scheduler started
+INFO:[18/07/2021 14:43:44] Scheduler started
+INFO:[18/07/2021 14:44:16] Scheduler started
+INFO:[18/07/2021 14:46:37] Scheduler started
+INFO:[18/07/2021 14:54:26] Scheduler started
+INFO:[18/07/2021 15:25:55] Scheduler started
+INFO:[18/07/2021 15:28:04] Scheduler started
+INFO:[18/07/2021 15:28:36] Scheduler started
+INFO:[18/07/2021 15:30:02] Scheduler started
+INFO:[18/07/2021 15:30:47] Scheduler started
+INFO:[18/07/2021 15:32:28] Scheduler started
+INFO:[18/07/2021 15:40:42] Scheduler started
+ERROR:[18/07/2021 15:40:48] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in list(set(player["bolso_arm"].keys())):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 15:41:18] Scheduler started
+ERROR:[18/07/2021 15:41:21] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in list(set(BolsoJG.keys())):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 15:42:15] Scheduler started
+ERROR:[18/07/2021 15:42:17] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in set(BolsoJG.keys()):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 15:43:33] Scheduler started
+ERROR:[18/07/2021 15:43:35] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in set(BolsoJG.keys()):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 15:43:57] Scheduler started
+ERROR:[18/07/2021 15:43:59] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in set(BolsoJG):
+TypeError: unhashable type: 'list'
+INFO:[18/07/2021 15:44:17] Scheduler started
+ERROR:[18/07/2021 15:44:19] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in list(set(BolsoJG)):
+TypeError: unhashable type: 'list'
+INFO:[18/07/2021 15:46:20] Scheduler started
+ERROR:[18/07/2021 15:46:23] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=BolsoJG[w]["nombre"])
+TypeError: list indices must be integers or slices, not list
+INFO:[18/07/2021 15:50:00] Scheduler started
+ERROR:[18/07/2021 15:50:03] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for key in BolsoJG.items():
+AttributeError: 'list' object has no attribute 'items'
+INFO:[18/07/2021 15:51:02] Scheduler started
+ERROR:[18/07/2021 15:51:04] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=BolsoJG[key]["nombre"])
+TypeError: list indices must be integers or slices, not list
+INFO:[18/07/2021 15:51:54] Scheduler started
+ERROR:[18/07/2021 15:51:56] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=BolsoJG[key]["nombre"])
+TypeError: list indices must be integers or slices, not list
+INFO:[18/07/2021 15:52:39] Scheduler started
+ERROR:[18/07/2021 15:52:45] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for key in list(set(BolsoJG)):
+TypeError: unhashable type: 'list'
+INFO:[18/07/2021 15:53:09] Scheduler started
+ERROR:[18/07/2021 15:53:11] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for key in list(set(BolsoJG.keys())):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 15:54:46] Scheduler started
+ERROR:[18/07/2021 15:54:49] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=BolsoJG[w]["nombre"])
+TypeError: list indices must be integers or slices, not list
+INFO:[18/07/2021 15:56:06] Scheduler started
+ERROR:[18/07/2021 15:56:11] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in bolso_arm:
+TypeError: 'int' object is not iterable
+INFO:[18/07/2021 15:56:41] Scheduler started
+ERROR:[18/07/2021 15:56:43] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in int(bolso_arm):
+TypeError: 'int' object is not iterable
+INFO:[18/07/2021 15:58:47] Scheduler started
+ERROR:[18/07/2021 15:58:49] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in BolsoJG.items():
+AttributeError: 'list' object has no attribute 'items'
+INFO:[18/07/2021 15:59:40] Scheduler started
+ERROR:[18/07/2021 15:59:48] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in sorted(list(set(BolsoJG.keys()))):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 16:01:07] Scheduler started
+ERROR:[18/07/2021 16:01:10] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in sorted(list(set(BolsoJG.keys()))):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 16:03:05] Scheduler started
+ERROR:[18/07/2021 16:03:07] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1267, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=BolsoJG[w]["nombre"])
+TypeError: list indices must be integers or slices, not str
+INFO:[18/07/2021 16:04:48] Scheduler started
+ERROR:[18/07/2021 16:04:50] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in range(list(set(BolsoJG))):
+TypeError: unhashable type: 'list'
+INFO:[18/07/2021 16:05:05] Scheduler started
+ERROR:[18/07/2021 16:05:07] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in range(set(BolsoJG)):
+TypeError: unhashable type: 'list'
+INFO:[18/07/2021 16:05:55] Scheduler started
+ERROR:[18/07/2021 16:05:56] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in range(list(set(BolsoJG.keys()))):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 16:07:04] Scheduler started
+ERROR:[18/07/2021 16:07:11] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in range(list(set(BolsoJG.keys()))):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 16:10:11] Scheduler started
+ERROR:[18/07/2021 16:10:17] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=BolsoJG[w]["nombre"])
+TypeError: list indices must be integers or slices, not list
+INFO:[18/07/2021 16:10:43] Scheduler started
+INFO:[18/07/2021 16:11:41] Scheduler started
+ERROR:[18/07/2021 16:11:45] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in BolsoJG.keys():
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[18/07/2021 16:12:25] Scheduler started
+ERROR:[18/07/2021 16:12:29] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in set(BolsoJG):
+TypeError: unhashable type: 'list'
+INFO:[18/07/2021 16:13:23] Scheduler started
+ERROR:[18/07/2021 16:13:25] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in list(set(BolsoJG)):
+TypeError: unhashable type: 'list'
+ERROR:[18/07/2021 16:14:49] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in (BolsoJG):
+TypeError: unhashable type: 'list'
+INFO:[18/07/2021 16:15:01] Scheduler started
+INFO:[18/07/2021 16:16:53] Scheduler started
+ERROR:[18/07/2021 16:17:00] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=w["nombre"])
+TypeError: list indices must be integers or slices, not str
+INFO:[18/07/2021 16:18:33] Scheduler started
+ERROR:[18/07/2021 16:18:40] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=w["nombre"])
+TypeError: string indices must be integers
+INFO:[18/07/2021 16:19:12] Scheduler started
+ERROR:[18/07/2021 16:19:14] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=BolsoJG[w]["nombre"])
+KeyError: 'nombre'
+INFO:[18/07/2021 16:19:46] Scheduler started
+INFO:[18/07/2021 16:27:29] Scheduler started
+ERROR:[18/07/2021 16:27:40] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in BolsoJG[0].values():
+KeyError: 0
+INFO:[18/07/2021 16:33:28] Scheduler started
+ERROR:[18/07/2021 16:33:31] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in BolsoJG[0].values():
+KeyError: 0
+WARNING:[18/07/2021 16:33:48] Actualizar: 
+│
+├update_id: 994731830
+└message:
+⠀├message_id: 5922
+⠀├date: 1626640426
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1608
+
+Notas: put() got multiple values for argument &#x27;connection&#x27;
+INFO:[18/07/2021 16:41:34] Scheduler started
+ERROR:[18/07/2021 16:42:03] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in bolso_arm:
+TypeError: 'int' object is not iterable
+INFO:[18/07/2021 16:43:33] Scheduler started
+ERROR:[18/07/2021 16:43:34] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    for w in int(bolso_arm):
+TypeError: 'int' object is not iterable
+INFO:[18/07/2021 16:45:26] Scheduler started
+ERROR:[18/07/2021 16:45:27] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    for w in bolso_arm:
+TypeError: 'int' object is not iterable
+INFO:[18/07/2021 16:46:01] Scheduler started
+INFO:[18/07/2021 16:46:14] Scheduler started
+WARNING:[18/07/2021 16:46:39] Actualizar: 
+│
+├update_id: 994731842
+└message:
+⠀├message_id: 5941
+⠀├date: 1626641197
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;append&#x27; en WaTavBot.py en la linea 1609
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;append&#x27;
+INFO:[18/07/2021 16:47:28] Scheduler started
+INFO:[18/07/2021 16:49:54] Scheduler started
+ERROR:[18/07/2021 16:50:00] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1266, in inventario
+    for w in set(BolsoJG):
+TypeError: unhashable type: 'list'
+WARNING:[18/07/2021 17:35:40] Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000027BB3E28FD0>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot1623058330:AAGsL076jnv3FIiRHEgJyfumeCmmMiSasHA/getUpdates
+WARNING:[18/07/2021 17:35:45] Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.connection.VerifiedHTTPSConnection object at 0x0000027BB3E6A070>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot1623058330:AAGsL076jnv3FIiRHEgJyfumeCmmMiSasHA/getUpdates
+INFO:[18/07/2021 18:08:30] Scheduler started
+ERROR:[18/07/2021 18:08:58] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1106, in me
+    player = PlayerDB[str(user.id)]
+KeyError: '1858141908'
+INFO:[18/07/2021 18:09:31] Scheduler started
+INFO:[18/07/2021 18:20:00] Scheduler started
+INFO:[18/07/2021 18:22:09] Scheduler started
+INFO:[18/07/2021 18:24:31] Scheduler started
+INFO:[18/07/2021 18:25:12] Scheduler started
+WARNING:[18/07/2021 18:25:22] Actualizar: 
+│
+├update_id: 994731880
+└message:
+⠀├message_id: 5994
+⠀├date: 1626647122
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1613
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 18:27:41] Scheduler started
+INFO:[18/07/2021 18:30:15] Scheduler started
+WARNING:[18/07/2021 18:30:24] Actualizar: 
+│
+├update_id: 994731887
+└message:
+⠀├message_id: 6002
+⠀├date: 1626647424
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1612
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 18:33:13] Scheduler started
+WARNING:[18/07/2021 18:33:24] Actualizar: 
+│
+├update_id: 994731890
+└message:
+⠀├message_id: 6006
+⠀├date: 1626647603
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1612
+
+Notas: post() got multiple values for argument &#x27;connection&#x27;
+INFO:[18/07/2021 18:34:03] Scheduler started
+WARNING:[18/07/2021 18:34:08] Actualizar: 
+│
+├update_id: 994731891
+└message:
+⠀├message_id: 6008
+⠀├date: 1626647647
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:bad operand type for unary +: &#x27;str&#x27; en WaTavBot.py en la linea 1612
+
+Notas: bad operand type for unary +: &#x27;str&#x27;
+INFO:[18/07/2021 18:34:45] Scheduler started
+WARNING:[18/07/2021 18:34:52] Actualizar: 
+│
+├update_id: 994731892
+└message:
+⠀├message_id: 6010
+⠀├date: 1626647692
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:bad operand type for unary +: &#x27;str&#x27; en WaTavBot.py en la linea 1612
+
+Notas: bad operand type for unary +: &#x27;str&#x27;
+INFO:[18/07/2021 18:42:57] Scheduler started
+WARNING:[18/07/2021 18:43:18] Actualizar: 
+│
+├update_id: 994731893
+└message:
+⠀├message_id: 6012
+⠀├date: 1626648198
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1612
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 18:48:56] Scheduler started
+WARNING:[18/07/2021 18:49:16] Actualizar: 
+│
+├update_id: 994731897
+└message:
+⠀├message_id: 6018
+⠀├date: 1626648555
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1612
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 19:07:00] Scheduler started
+INFO:[18/07/2021 19:07:24] Scheduler started
+WARNING:[18/07/2021 19:07:26] Actualizar: 
+│
+├update_id: 994731898
+└message:
+⠀├message_id: 6020
+⠀├date: 1626649645
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1612
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 19:08:00] Scheduler started
+WARNING:[18/07/2021 19:08:05] Actualizar: 
+│
+├update_id: 994731899
+└message:
+⠀├message_id: 6022
+⠀├date: 1626649684
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() missing 1 required positional argument: &#x27;data&#x27; en WaTavBot.py en la linea 1612
+
+Notas: put() missing 1 required positional argument: &#x27;data&#x27;
+INFO:[18/07/2021 19:09:01] Scheduler started
+WARNING:[18/07/2021 19:09:13] Actualizar: 
+│
+├update_id: 994731902
+└message:
+⠀├message_id: 6026
+⠀├date: 1626649752
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:put() missing 1 required positional argument: &#x27;data&#x27; en WaTavBot.py en la linea 1612
+
+Notas: put() missing 1 required positional argument: &#x27;data&#x27;
+INFO:[18/07/2021 19:10:26] Scheduler started
+WARNING:[18/07/2021 19:10:29] Actualizar: 
+│
+├update_id: 994731903
+└message:
+⠀├message_id: 6028
+⠀├date: 1626649828
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1612
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 19:11:39] Scheduler started
+WARNING:[18/07/2021 19:11:46] Actualizar: 
+│
+├update_id: 994731904
+└message:
+⠀├message_id: 6030
+⠀├date: 1626649905
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1612
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 19:11:57] Scheduler started
+WARNING:[18/07/2021 19:12:16] Actualizar: 
+│
+├update_id: 994731905
+└message:
+⠀├message_id: 6032
+⠀├date: 1626649936
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1612
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 19:15:55] Scheduler started
+INFO:[18/07/2021 19:17:17] Scheduler started
+WARNING:[18/07/2021 19:17:19] Actualizar: 
+│
+├update_id: 994731907
+└message:
+⠀├message_id: 6036
+⠀├date: 1626650239
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;AttributeError&#x27;&gt;:&#x27;dict&#x27; object has no attribute &#x27;endswith&#x27; en WaTavBot.py en la linea 1612
+
+Notas: &#x27;dict&#x27; object has no attribute &#x27;endswith&#x27;
+INFO:[18/07/2021 19:24:13] Scheduler started
+INFO:[18/07/2021 19:25:49] Scheduler started
+WARNING:[18/07/2021 19:25:53] Actualizar: 
+│
+├update_id: 994731914
+└message:
+⠀├message_id: 6048
+⠀├date: 1626650752
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_01
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1612
+
+Notas: post() got multiple values for argument &#x27;connection&#x27;
+ERROR:[18/07/2021 19:26:03] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1625, in buy
+    error(update,e)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1084, in error
+    bot.send_message(Mickey,message,parse_mode=ParseMode.HTML)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 475, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 296, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+ERROR:[18/07/2021 19:26:03] Error while getting Updates: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+ERROR:[18/07/2021 19:26:03] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 252, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Python39\lib\http\client.py", line 1347, in getresponse
+    response.begin()
+  File "C:\Python39\lib\http\client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "C:\Python39\lib\http\client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 258, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+WARNING:[18/07/2021 19:26:11] Actualizar: 
+│
+├update_id: 994731916
+└message:
+⠀├message_id: 6051
+⠀├date: 1626650770
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1612
+
+Notas: post() got multiple values for argument &#x27;connection&#x27;
+INFO:[18/07/2021 19:26:27] Scheduler started
+WARNING:[18/07/2021 19:26:32] Actualizar: 
+│
+├update_id: 994731917
+└message:
+⠀├message_id: 6053
+⠀├date: 1626650792
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_02
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:post() got multiple values for argument &#x27;connection&#x27; en WaTavBot.py en la linea 1612
+
+Notas: post() got multiple values for argument &#x27;connection&#x27;
+INFO:[18/07/2021 19:27:11] Scheduler started
+INFO:[18/07/2021 19:28:34] Scheduler started
+INFO:[18/07/2021 19:29:19] Scheduler started
+INFO:[18/07/2021 19:31:40] Scheduler started
+ERROR:[18/07/2021 19:34:06] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1270, in inventario
+    for w in set(BolsoJG):
+TypeError: unhashable type: 'list'
+INFO:[18/07/2021 19:34:55] Scheduler started
+INFO:[18/07/2021 19:39:23] Scheduler started
+ERROR:[18/07/2021 19:39:35] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1269, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=w["nombre"])
+TypeError: list indices must be integers or slices, not str
+INFO:[18/07/2021 19:52:09] Scheduler started
+INFO:[18/07/2021 19:53:33] Scheduler started
+INFO:[18/07/2021 19:54:34] Scheduler started
+ERROR:[18/07/2021 19:54:36] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1270, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=BolsoJG[p]["nombre"])
+TypeError: list indices must be integers or slices, not str
+ERROR:[18/07/2021 19:54:43] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1270, in inventario
+    text+="\n\n<b>{name}</b> ".format(name=BolsoJG[p]["nombre"])
+TypeError: list indices must be integers or slices, not str
+INFO:[18/07/2021 19:56:38] Scheduler started
+INFO:[18/07/2021 19:56:48] Scheduler started
+INFO:[18/07/2021 19:57:10] Scheduler started
+INFO:[18/07/2021 20:00:11] Scheduler started
+INFO:[18/07/2021 22:03:24] Scheduler started
+INFO:[18/07/2021 22:05:08] Scheduler started
+ERROR:[18/07/2021 22:05:16] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1270, in inventario
+    if(int(i) <= 15):
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'dict'
+INFO:[18/07/2021 22:06:01] Scheduler started
+INFO:[18/07/2021 22:06:41] Scheduler started
+ERROR:[18/07/2021 22:06:47] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1275, in inventario
+    text+=" /on_{id}".format(id=BolsoJG[n])
+IndexError: list index out of range
+INFO:[18/07/2021 22:07:02] Scheduler started
+INFO:[18/07/2021 22:07:32] Scheduler started
+INFO:[18/07/2021 22:08:01] Scheduler started
+INFO:[18/07/2021 22:09:03] Scheduler started
+INFO:[18/07/2021 22:12:04] Scheduler started
+INFO:[18/07/2021 22:12:25] Scheduler started
+INFO:[18/07/2021 22:13:02] Scheduler started
+INFO:[18/07/2021 22:14:31] Scheduler started

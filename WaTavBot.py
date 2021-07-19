@@ -55,8 +55,8 @@ TiendaDB = Fire.get("/tienda",None)
 # print(str(TiendaDB))
 # storeDB = Fire.get("/store",None)
 # print(str(storeDB))
-categories = ["daga","espada","hacha",
-            "arco ","casco","armadura",
+categories = ["dagas","espadas","desafilados",
+            "arcos","cascos","armaduras",
             "guantes","botas","escudos"]
 tmpPlayers = {'0':'null'}
 ArenaList = {'0':'null'}
@@ -102,22 +102,22 @@ class kb:
         elif(op == 'wtypes'):
             keyboard = [
                 [
-                    IKB("Espada",    callback_data="{\"op\":\"%s\",\"d1\":\"espada\",\"d2\":\"%s\"}"%(args)),
-                    IKB("Daga",   callback_data="{\"op\":\"%s\",\"d1\":\"daga\",\"d2\":\"%s\"}"%(args)),
-                    IKB("Hacha",      callback_data="{\"op\":\"%s\",\"d1\":\"hacha\",\"d2\":\"%s\"}"%(args))
+                    IKB("Espadas",    callback_data="{\"op\":\"%s\",\"d1\":\"espadas\",\"d2\":\"%s\"}"%(args)),
+                    IKB("Dagas",   callback_data="{\"op\":\"%s\",\"d1\":\"dagas\",\"d2\":\"%s\"}"%(args)),
+                    IKB("Desafilados",      callback_data="{\"op\":\"%s\",\"d1\":\"desafilados\",\"d2\":\"%s\"}"%(args))
                 ],
                 [
-                    IKB("Arco",  callback_data="{\"op\":\"%s\",\"d1\":\"arco\",\"d2\":\"%s\"}"%(args)),
+                    IKB("Arcos",  callback_data="{\"op\":\"%s\",\"d1\":\"arcos\",\"d2\":\"%s\"}"%(args)),
                     IKB("Botas",   callback_data="{\"op\":\"%s\",\"d1\":\"botas\",\"d2\":\"%s\"}"%(args)),
-                    IKB("Armadura",     callback_data="{\"op\":\"%s\",\"d1\":\"armadura\",\"d2\":\"%s\"}"%(args))
+                    IKB("Armaduras",     callback_data="{\"op\":\"%s\",\"d1\":\"armaduras\",\"d2\":\"%s\"}"%(args))
                 ],
                 [
                     IKB("Guantes",   callback_data="{\"op\":\"%s\",\"d1\":\"guantes\",\"d2\":\"%s\"}"%(args)),
-                    IKB("Lanza",    callback_data="{\"op\":\"%s\",\"d1\":\"lanza\",\"d2\":\"%s\"}"%(args)),
-                    IKB("Escudo",   callback_data="{\"op\":\"%s\",\"d1\":\"escudo\",\"d2\":\"%s\"}"%(args))
+                    IKB("Lanzas",    callback_data="{\"op\":\"%s\",\"d1\":\"lanzas\",\"d2\":\"%s\"}"%(args)),
+                    IKB("Escudos",   callback_data="{\"op\":\"%s\",\"d1\":\"escudos\",\"d2\":\"%s\"}"%(args))
                 ],                
                 [
-                    IKB("Cascos",   callback_data="{\"op\":\"%s\",\"d1\":\"casco\",\"d2\":\"%s\"}"%(args))
+                    IKB("Cascos",   callback_data="{\"op\":\"%s\",\"d1\":\"cascos\",\"d2\":\"%s\"}"%(args))
                 ],
             ]
         else:
@@ -809,7 +809,18 @@ def reg(update: Update, context: CallbackContext):
             namename = "Comrade"
         else:
             namename = user.first_name
-        text = str('<i>Ah, worderful! And your name is... I see. Nice to meet you, {name}!\n\n'.format(name=namename))
+        text = str('<i>Ah, worderful! And your name is... I see. Nice to meet you, {name}!\n\n'.format(name=namename)
+            +"Here, have a drink, courtesy of the house! If you like it, you can always come back and have one 🍻 Beer for just 5💰."
+            +" Who knows? Maybe you can make some new friends while drinking..."
+            +"\n\nWe also have a ⚔️ Duellng Court in the back, you can always come and take a challenge with another traveller,"
+            +" or you can just fight with a friend, all you have to do is to write: </i>\n\n@WaTavBot + <code>space</code>\n\n<i>On any chat window,"
+            +" and pressing the ⚔Duel button, then you'll be able to challenge any friend you want, even if they haven't even visited the tavern before..."
+            +"\nHuh! What is a chat window, by the way?"
+            +"\n\nAnyway, you can also play 🎲 Lucky Seven in our gambling tables. Also with a stranger, or call it via inline message the same way as the duels with friends:"
+            +"</i>\n\n@WaTavBot + <code>space</code>\n\n<i> and pressing the 🎲Dice button."
+            +"\n\nFinally, on the back, next to the duelling court, there's a blacksmith, who forges and sells weapons of the finest quality."
+            +" There you can buy anything that fits better your combat style."
+            +"\n\nWith nothing more to say, make yourself comfortable, and enjoy the atmosphere and the company with a good drink!</i>")
         try:
             context.bot.edit_message_reply_markup(
                 chat_id=user.id,
@@ -849,11 +860,7 @@ def newUser(user,pron):
         "bol_oro":50,
         "gemas":100,        
         "bolso":15,        
-        "stock":4000,        
-        "clase":0,        
-        "mascota":0,        
-        "mainW":0,
-        "offHW":"02",      
+        "stock":4000,               
         "manoPrincipal":"None",
         "mano":"None",
         "casco":"None",
@@ -866,8 +873,15 @@ def newUser(user,pron):
         "pron":pron,
         "estado":"🛌Descanso",
         "puntos_habili":"0",
-        "bolso_arm":[{"00":"00"}],
-        "weapons":[{"00":"00"}],
+        "equipados_arm": [[0]],   
+        "bolso_arm":{
+             "00":{
+                 "id":"00"
+             }        
+            },
+        "almacen_re":[[0]],
+        "clase":[[0]],        
+        "mascota":"0", 
         "rank":0,
         "lastlog":datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     }
@@ -1091,62 +1105,56 @@ def me(update: Update, context: CallbackContext):
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
     level = player["level"] 
-    exp_niveles = NivelesBD[level+1]       
-    
-    bolso_arm = len(player["bolso_arm"])
-    if(bolso_arm == 0):
-        cantid_armas = "0" 
-    else:
-        cantid_armas = bolso_arm    
-    
-
-        text="\n🌟Congratulations Felicitaciones! Nuevo nivel!🌟"
-        text+="\n\nAsignar puntos /level_up"
-        text+="\nBatlla"
-        text+="\n\n🦅🌑"
-        text+="[]Clan!"
-        text+="{name}".format(name=user.first_name)
-        text+="ClaseAqui"
-        text+="del"
-        text+="Castillo"
-        text+="\n🏅Nivel: {level}".format(level=str(player["level"]))        
-        text+="\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
-        text+="🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
-        text+="\n🔥Exp: {exp}".format(exp=str(player["exp"])) 
-        text+="/{exp_niv}".format(exp_niv=str(exp_niveles))
-        text+="\n❤️Vida: {vdmin}".format(vdmin=str(player["vida_min"]))
-        text+="/{vdmax}".format(vdmax=str(player["vida_max"]))        
-        text+="\n🔋Resistencia:{rsmin}".format(rsmin=str(player["resis_min"]))
-        text+="/{rsmax}".format(rsmax=str(player["resis_max"]))
-        if(player["mana_max"]>0):
-            text+="\n💧Mana:{mnamin}".format(mnamin=str(player["mana_min"]))
-            text+="/{mnamax}".format(mnamax=str(player["mana_max"]))          
-        text+="\n💰{oro}".format(oro=player["oro"])
-        if(player["bol_oro"] > 0):
-            text+="👝{bol_oro}".format(bol_oro=str(player["bol_oro"]))
-        text+="💎{gemas}".format(gemas=player["gemas"])
-        text+="\n\n🎽Euipamiento:"
-        text+="\n🎒Balso: {total}".format(total=cantid_armas)
-        text+="/{bolso} ".format(bolso=player["bolso"])
-        text+="/inv"
-        # +"Mascota:{money}".format(money=player["money"])
-        text+="\n\nEstado:\n{estado}".format(estado=player["estado"])
-        text+="\n\nMás: /heroe"
-        #  +"\n\n🎒 Equipo:\n"
-        #  +"\t"*4+"► Principal: {main}\n".format(main=TiendaDB[player["mainW"]]["name"])
-        #  +"\t"*4+"► Offhand: {offh}".format(offh=offhw)
+    exp_niveles = NivelesBD[level+1]      
+    bolso_arm = len(player["bolso_arm"])-1  
+ 
+    text="\n🌟Congratulations Felicitaciones! Nuevo nivel!🌟"
+    text+="\n\nAsignar puntos /level_up"
+    text+="\nBatlla"
+    text+="\n\n🦅🌑"
+    text+="[]Clan!"
+    text+="{name}".format(name=user.first_name)
+    text+="ClaseAqui"
+    text+="del"
+    text+="Castillo"
+    text+="\n🏅Nivel: {level}".format(level=str(player["level"]))        
+    text+="\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
+    text+="🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
+    text+="\n🔥Exp: {exp}".format(exp=str(player["exp"])) 
+    text+="/{exp_niv}".format(exp_niv=str(exp_niveles))
+    text+="\n❤️Vida: {vdmin}".format(vdmin=str(player["vida_min"]))
+    text+="/{vdmax}".format(vdmax=str(player["vida_max"]))        
+    text+="\n🔋Resistencia:{rsmin}".format(rsmin=str(player["resis_min"]))
+    text+="/{rsmax}".format(rsmax=str(player["resis_max"]))
+    if(player["mana_max"]>0):
+        text+="\n💧Mana:{mnamin}".format(mnamin=str(player["mana_min"]))
+        text+="/{mnamax}".format(mnamax=str(player["mana_max"]))          
+    text+="\n💰{oro}".format(oro=player["oro"])
+    if(player["bol_oro"] > 0):
+        text+="👝{bol_oro}".format(bol_oro=str(player["bol_oro"]))
+    text+="💎{gemas}".format(gemas=player["gemas"])
+    text+="\n\n🎽Euipamiento:"
+    text+="\n🎒Balso: {total}".format(total="0" if bolso_arm == 1 else bolso_arm)
+    text+="/{bolso} ".format(bolso=player["bolso"])
+    text+="/inv"
+    # +"Mascota:{money}".format(money=player["money"])
+    text+="\n\nEstado:\n{estado}".format(estado=player["estado"])
+    text+="\n\nMás: /heroe"
+    #  +"\n\n🎒 Equipo:\n"
+    #  +"\t"*4+"► Principal: {main}\n".format(main=TiendaDB[player["mainW"]]["name"])
+    #  +"\t"*4+"► Offhand: {offh}".format(offh=offhw)
         
     IKB = KeyboardButton
-    reply_markup = ReplyKeyboardMarkup(
-        [
-            [
-                IKB("🗡Armas"),
-                IKB("↩️Volver")
-            ]
-        ],
-        resize_keyboard=True,
-    )
-    # reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+    # reply_markup = ReplyKeyboardMarkup(
+    #     [
+    #         [
+    #             IKB("🗡Armas"),
+    #             IKB("↩️Volver")
+    #         ]
+    #     ],
+    #     resize_keyboard=True,
+    # )
+    reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
 
     update.message.reply_text(
         text=text,
@@ -1160,48 +1168,61 @@ def heroe(update: Update, context: CallbackContext):
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
     level = player["level"] 
-    exp_niveles = NivelesBD[level+1]
-         
+    exp_niveles = NivelesBD[level+1]       
+    bolso_arm = len(player["bolso_arm"])-1
+    alma_re = len(player["almacen_re"])-1   
     
-    bolso_arm = len(player["bolso_arm"])
-    if(bolso_arm == 0):
-        cantid_armas = "0" 
-    else:
-        cantid_armas = bolso_arm    
-
     
-        text="\n{name}".format(name=user.first_name)
-        text+="\n🏅Nivel: {level}".format(level=str(player["level"]))        
-        text+="\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
-        text+="🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
-        text+="\n🔥Exp: {exp}".format(exp=str(player["exp"])) 
-        text+="/{exp_niv}".format(exp_niv=str(exp_niveles))
-        text+="\n❤️Vida: {vdmin}".format(vdmin=str(player["vida_min"]))
-        text+="/{vdmax}".format(vdmax=str(player["vida_max"]))        
-        text+="\n🔋Resistencia:{rsmin}".format(rsmin=str(player["resis_min"]))
-        text+="/{rsmax}".format(rsmax=str(player["resis_max"]))
-        if(player["mana_max"]>0):
-            text+="\n💧Mana:{mnamin}".format(mnamin=str(player["mana_min"]))
-            text+="/{mnamax}".format(mnamax=str(player["mana_max"]))          
-        text+="\n💰{oro}".format(oro=player["oro"])
-        if(player["bol_oro"] > 0):
-            text+="👝{bol_oro}".format(bol_oro=str(player["bol_oro"]))
-        text+="💎{gemas}".format(gemas=player["gemas"])
+    text="\n{name}".format(name=user.first_name)
+    text+="\n🏅Nivel: {level}".format(level=str(player["level"]))        
+    text+="\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
+    text+="🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
+    text+="\n🔥Exp: {exp}".format(exp=str(player["exp"])) 
+    text+="/{exp_niv}".format(exp_niv=str(exp_niveles))
+    text+="\n❤️Vida: {vdmin}".format(vdmin=str(player["vida_min"]))
+    text+="/{vdmax}".format(vdmax=str(player["vida_max"]))        
+    text+="\n🔋Resistencia:{rsmin}".format(rsmin=str(player["resis_min"]))
+    text+="/{rsmax}".format(rsmax=str(player["resis_max"]))
+    if(player["mana_max"]>0):
+        text+="\n💧Mana:{mnamin}".format(mnamin=str(player["mana_min"]))
+        text+="/{mnamax}".format(mnamax=str(player["mana_max"]))          
+    text+="\n💰{oro}".format(oro=player["oro"])
+    if(player["bol_oro"] > 0):
+        text+="👝{bol_oro}".format(bol_oro=str(player["bol_oro"]))
+    text+="💎{gemas}".format(gemas=player["gemas"])
         
-        text+="\n📚Especializaciónes:-"
-        text+="\n🎉Logro: /ach"
-        text+="\n⚒Clase Info: /class"
-        text+="\n🚹Male"
+    text+="\n📚Especializaciónes:-"
+    text+="\n🎉Logro: /ach"
+    text+="\n⚒Clase Info: /class"
+    text+="\n🚹Male"
         
-        text+="\n\n✨Efectos: /effects"
-        # +"Mascota:{money}".format(money=player["money"])      
+    text+="\n\n✨Efectos: /effects"
+    # +"Mascota:{money}".format(money=player["money"])      
         
-        text+="\n\n🎽Euipamiento: "
-        
-        text+="\n\n🎒Balso: {total}".format(total=cantid_armas)
-        text+="/{bolso} ".format(bolso=player["bolso"])
-        text+="/inv"
-        text+="\n\n📦Almacen: /stock"
+    text+="\n\n🎽Euipamiento: "
+    if(player["manoPrincipal"]!="None"):
+        text+="\n +⚔️ +🛡" 
+    if(player["mano"]!="None"):
+        text+="\n +⚔️ +🛡" 
+    if(player["casco"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["guantes"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["armadura"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["botas"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["especial"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["anillo"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["collar"]!="None"):
+        text+="\n +⚔️ +🛡"   
+            
+    text+="\n\n🎒Balso: {total}".format(total="0" if bolso_arm == 1 else bolso_arm)
+    text+="/{bolso} ".format(bolso=player["bolso"])
+    text+="/inv"
+    text+="\n\n📦Almacen: {total} /stock".format(total=alma_re)
 
     reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
 
@@ -1214,41 +1235,46 @@ def heroe(update: Update, context: CallbackContext):
 
 def inventario(update: Update, context: CallbackContext):
     global PlayerDB
-    global TiendaDB
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
+    BolsoJG = player["bolso_arm"]
+    bolso_arm = len(player["bolso_arm"])-1
+    print(bolso_arm) 
+      
    
-    bolso_arm = len(player["bolso_arm"])
-    
-    if(bolso_arm == 0):
-        cantid_armas = "0" 
-    else:
-        cantid_armas = bolso_arm   
-   
-    
-    
-    # text="🎽Euipamiento: {t}{td}".format(t=total_a,td=total_d,t0=total_equi)
-    # text+="\n{ap} {a}{d} {id}".format(ap=armp_nom,a=ata,d=defn,id=i)
-    # text+="\n{arma_s} {a2}{d2} {id2}".format(arma_s=ars_nom,a2=atas,d2=defns,id2=ids)
-    # text+="\n{name_ca} {ataq_ca}{def_ca} {id_ca}".format(name_ca=co_nom,def_ca=defco,ataq_ca=co_ata,id_ca=idco)    
-    # text+="\n{name_g} {ataq_g}{def_g} {id_g}".format(name_g=g_nom,def_g=defng,ataq_g=atag,id_g=idg)
-    # text+="\n{name_a} {ataq_a}{def_a} {id_ar}".format(name_a=a_nom,def_a=defna,ataq_a=ataa,id_ar=ida)
-    # text+="\n{name_b} {ataq_b}{def_b} {id_b}".format(name_b=bnom,def_b=bdef,ataq_b=bata,id_b=bid)
-    # text+="\n{name_es} {ataq_es}{def_es} {id_es}".format(name_es=snom,def_es=sdef,ataq_es=sata,id_es=sid)
-    # text+="\n{name_an} {ataq_an}{def_an} {id_an}".format(name_an=anom,def_an=adef,ataq_an=aata,id_an=aid)
-    # text+="\n{name_co} {ataq_co}{def_co} {id_co}".format(name_co=cnom,def_co=cdef,ataq_co=cata,id_co=cid)
-    text="\n🎒Balso: {total}/{max} ".format(total=cantid_armas,max=str(player["bolso"]))
-         
-    # for w in list(set(player["bolso_arm"].keys())):
+    text="\n\n🎽Euipamiento: "
+    if(player["manoPrincipal"]!="None"):
+        text+="\n +⚔️ +🛡" 
+    if(player["mano"]!="None"):
+        text+="\n +⚔️ +🛡" 
+    if(player["casco"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["guantes"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["armadura"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["botas"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["especial"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["anillo"]!="None"):
+        text+="\n +⚔️ +🛡"  
+    if(player["collar"]!="None"):
+        text+="\n +⚔️ +🛡"  
         
-    #     text+="\n\n<b>{name}</b> ".format(name=TiendaDB[w]["nombre"])
-    #     if(TiendaDB[w]["atributos"]["ataque"] > 0):
-    #         text+="<b>+{actaque}</b>⚔️".format(actaque=TiendaDB[w]["atributos"]["ataque"])
-    #     if(TiendaDB[w]["atributos"]["defensa"] > 0):
-    #         text+="<b>+{defensa}</b>🛡".format(defensa=TiendaDB[w]["atributos"]["defensa"])
-    #     text+="\n  /on_{id}".format(id=w)
+    text+="\n🎒Balso: ({total}".format(total="0" if bolso_arm == 1 else bolso_arm)
+    text+="/{bolso})".format(bolso=player["bolso"])
+    p = 1
+    n = bolso_arm + 1
+    for i in BolsoJG[p:n]: 
+        text+="\n<b>{name}</b> ".format(name=BolsoJG[p]["nombre"])
+        if(BolsoJG[p]["atributos"]["ataque"] > 0):
+                text+="<b>+{actaque}</b>⚔️".format(actaque=BolsoJG[p]["atributos"]["ataque"])    
+        if(BolsoJG[p]["atributos"]["defensa"] > 0):
+                text+="<b>+{defensa}</b>🛡".format(defensa=BolsoJG[p]["atributos"]["defensa"])
+        text+=" /on_{id}".format(id=BolsoJG[p]["id"])
 
-
+        p=p+1
             
     reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
 
@@ -1377,6 +1403,7 @@ def tiempo(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML
     )
     return
+
 def pronostico():
     
     # estados climáticos: Soleado ☀️, Nublado 🌤, Lluvioso 🌧 y Brumoso 🌫
@@ -1444,7 +1471,6 @@ def duellingcourt(update: Update, context: CallbackContext):
 def castillo(update: Update, context: CallbackContext):
 
     hora = time.strftime("%H")
-    print(hora)
     text="El Castillo \n"   
         
     if(hora == "00"):
@@ -1545,7 +1571,7 @@ def shopcat(update: Update, context: CallbackContext):
     weapons = False
     text="<b>Aquí, algunas mercancías:</b>\n"
     # - set(player["weapons"])
-    for w in sorted(list(set(TiendaDB.keys()))):
+    for w in list(set(TiendaDB.keys())):
         if(int(w) < 100):
             # print(str(TiendaDB[w]["g_type"]))
             if(TiendaDB[w]["g_type"] == data["d1"]):
@@ -1580,10 +1606,10 @@ def buy(update: Update, context: CallbackContext):
         if(weapon not in player["bolso_arm"]):
             if(int(player["oro"]) >= int(TiendaDB[weapon]["precio"])):            
                 # player["bolso_arm"].append(weapon)
+                Newcompra(user=user.id,items=weapon)        
                 wps = player["bolso_arm"]
                 oro = str(int(PlayerDB[str(user.id)]["oro"]) - int(TiendaDB[weapon]["precio"]))
                 upload(player=str(user.id),concept=("bolso_arm","oro"),value=(wps,oro))
-                Newcompra(user=user.id,items=weapon)            
                 text = "Ja, ja! Este <b>{weapon}</b> te queda muy bien, amigo! \nUtilizar sabiamente!".format(weapon = TiendaDB[weapon]["nombre"])
             else:
                 text = "Lo siento amigo, pero parece que no puedes permitirte este artículo."
@@ -1600,17 +1626,55 @@ def buy(update: Update, context: CallbackContext):
 
 def Newcompra(user,items):
     global PlayerDB,TiendaDB
-    
+    Jugador = PlayerDB[str(user)]
     info = {
-        "id": TiendaDB[items]["id"],
-        "nombre": TiendaDB[items]["nombre"],
-        "historia": TiendaDB[items]["historia"]
-        
-    }
-    Fire.put_async("/players/",user,"/bolso_info/",items,"/",info)
+            "id": TiendaDB[items]["id"],
+            "estatus": 0,
+            "nombre": TiendaDB[items]["nombre"],
+            "historia": TiendaDB[items]["historia"],
+            "tipo": TiendaDB[items]["tipo"],
+            "g_type": TiendaDB[items]["g_type"],
+            "peso": TiendaDB[items]["peso"],
+            "tier": TiendaDB[items]["tier"],
+            "envolver": TiendaDB[items]["envolver"],
+            "evento_item": TiendaDB[items]["evento_item"],
+            "fabricable": TiendaDB[items]["fabricable"],
+            "intercanbio": TiendaDB[items]["intercanbio"],
+            "precio": TiendaDB[items]["precio"],
+            "venta": TiendaDB[items]["venta"],
+            "atributos": {
+                "ataque": TiendaDB[items]["atributos"]["ataque"],
+                "defensa": TiendaDB[items]["atributos"]["defensa"],
+                "mana": TiendaDB[items]["atributos"]["mana"],
+                "habilidad": TiendaDB[items]["atributos"]["habilidad"],
+                "nivel": TiendaDB[items]["atributos"]["nivel"],
+                "reforsado": {
+                    "1": {
+                        "nivel": 1,
+                        "ataque": 0,
+                        "ataque_total": 0
+                    },
+                    "2": {
+                        "nivel": 2,
+                        "ataque": 0,
+                        "ataque_total": 0
+                    },
+                    "3": {
+                        "nivel": 3,
+                        "ataque": 0,
+                        "ataque_total": 0
+                    },
+                    "4": {
+                        "nivel": 4,
+                        "ataque": 0,
+                        "ataque_total": 0
+                    }
+                    }
+                }
+            }
     
-    PlayerDB[str(user)]["bolso_arm"] = info
-    print(PlayerDB[str(user)]["bolso_arm"])
+    Jugador["bolso_arm"].append(info)
+    
     return
 
 def winfo(update: Update, context: CallbackContext):
@@ -1770,16 +1834,17 @@ def owned(update: Update, context: CallbackContext):
 
 def equip(update: Update, context: CallbackContext):
     user = update.message.from_user
-    player = PlayerDB[str(user.id)]
+    Jugador = PlayerDB[str(user.id)]
+    BolsoJG = Jugador["bolso_arm"]
     weapon = update.message.text.replace("/on_","")
-    if(weapon not in TiendaDB.keys()):
+    if(weapon not in BolsoJG.keys()):
         return
     else:
-        if(weapon not in player["weapons"]):
+        if(weapon not in BolsoJG):
             text = "¡No eres el dueño de esta arma!"
         else:
             wpassign(weapon,user)
-            text = "<b>{weapon}</b> equipado con éxito!".format(weapon = TiendaDB[weapon]["nombre"])
+            text = "<b>{weapon}</b> equipado con éxito!".format(weapon = BolsoJG[weapon]["nombre"])
         update.message.reply_text(
                                     text=text,
                                     parse_mode=ParseMode.HTML
@@ -1787,30 +1852,32 @@ def equip(update: Update, context: CallbackContext):
     return
 
 def wpassign(weapon,user):
+    Jugador = PlayerDB[str(user)]
+    BolsoJG = Jugador["bolso_arm"]
     slot = ""
-    if(TiendaDB[weapon]["type"] in ["dagger","shield"]):
-        slot = "offHW"
+    if(BolsoJG[weapon]["g_type"] in ["espada","","lanza","arco","hacha"]):
+        slot = "mano"
     else:
-        slot = "mainW"
+        slot = "manoPrincipal"
 
-    if(slot == "mainW"):
-        if(TiendaDB[weapon]["dual"] == True):
+    if(slot == "manoPrincipal"):
+        if(BolsoJG[weapon]["dual"] == True):
             """Cambian ambos slots"""
-            upload(player=str(user.id),concept=("mainW","offHW"),value=(weapon,"999"))
+            upload(player=str(user),concept=("manoPrincipal","mano"),value=(weapon,"999"))
         else:
-            if(TiendaDB[PlayerDB[str(user.id)]["mainW"]]["dual"] == True):
+            if(BolsoJG[PlayerDB[str(user.id)]["mainW"]]["dual"] == True):
                 """Asigna el arma, y Wooden Shield, respectivamente"""
-                upload(player=str(user.id),concept=("mainW","offHW"),value=(weapon,"02"))
+                upload(player=str(user),concept=("manoPrincipal","mano"),value=(weapon,"02"))
             else:
                 """Cambia normalmente"""
-                upload(player=str(user.id),concept=("mainW"),value=(weapon))
+                upload(player=str(user),concept=("mainW"),value=(weapon))
     else:
-        if(TiendaDB[PlayerDB[str(user.id)]["mainW"]]["dual"] == True):
+        if(BolsoJG[PlayerDB[str(user)]["manoPrincipal"]]["dual"] == True):
             """Asigna Iron Sword como principal y la secundaria normalmente"""
-            upload(player=str(user.id),concept=("mainW","offHW"),value=("01",weapon))
+            upload(player=str(user),concept=("manoPrincipal","mano"),value=("01",weapon))
         else:
             """Asigna secundaria normalmente"""
-            upload(player=str(user.id),concept=("offHW"),value=(weapon))
+            upload(player=str(user),concept=("mano"),value=(weapon))
     return
 
 def lastrestart(signum,frame):
