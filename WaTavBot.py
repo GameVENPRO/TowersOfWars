@@ -874,11 +874,7 @@ def newUser(user,pron):
         "estado":"🛌Descanso",
         "puntos_habili":"0",
         "equipados_arm": [[0]],   
-        "bolso_arm":{
-             "00":{
-                 "id":"00"
-             }        
-            },
+        "bolso_arm":[[0]],  
         "almacen_re":[[0]],
         "clase":[[0]],        
         "mascota":"0", 
@@ -1239,28 +1235,107 @@ def inventario(update: Update, context: CallbackContext):
     player = PlayerDB[str(user.id)]
     BolsoJG = player["bolso_arm"]
     bolso_arm = len(player["bolso_arm"])-1
-    print(bolso_arm) 
       
-   
     text="\n\n🎽Euipamiento: "
-    if(player["manoPrincipal"]!="None"):
-        text+="\n +⚔️ +🛡" 
+    if(player["manoPrincipal"]!="None"):  
+        p=player["manoPrincipal"]
+        nombre =str(BolsoJG[p]["nombre"])  
+        ataque =int(BolsoJG[p]["atributos"]["ataque"])
+        defensa= int(BolsoJG[p]["atributos"]["defensa"]) 
+        text+="\n{n} ".format(n=nombre)           
+        if(ataque > 0):           
+            text+="+{d}⚔️".format(d=ataque)            
+        if(defensa > 0):          
+            text+="+{d}🛡".format(d=defensa)
+        text+=" /off_{id}".format(id=p)
     if(player["mano"]!="None"):
-        text+="\n +⚔️ +🛡" 
+        p2=int(player["mano"])
+        nombre2 =str(BolsoJG[p2]["nombre"])
+        ataque2 =int(BolsoJG[p2]["atributos"]["ataque"])
+        defensa2= int(BolsoJG[p2]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre2)
+        if(ataque2 > 0):            
+            text+="+{d}⚔️".format(d=ataque2)            
+        if(defensa2 > 0):                      
+            text+="+{d}🛡".format(d=defensa2)
+        text+=" /off_{id}".format(id=p2)        
     if(player["casco"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p3=int(player["casco"])
+        nombre3 =str(BolsoJG[p3]["nombre"])
+        ataque3 =int(BolsoJG[p3]["atributos"]["ataque"])
+        defensa3= int(BolsoJG[p3]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre3)
+        if(ataque > 0):            
+            text+="+{d}⚔️".format(d=ataque3)            
+        if(defensa > 0):                      
+            text+="+{d}🛡".format(d=defensa3)
+        text+=" /off_{id}".format(id=p3)
     if(player["guantes"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p4=int(player["guantes"])
+        nombre4 =str(BolsoJG[p4]["nombre"])
+        ataque4 =int(BolsoJG[p4]["atributos"]["ataque"])
+        defensa4= int(BolsoJG[p4]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre4)
+        if(ataque4 > 0):            
+            text+="+{d}⚔️".format(d=ataque4)            
+        if(defensa4 > 0):                      
+            text+="+{d}🛡".format(d=defensa4)
+        text+=" /off_{id}".format(id=p4)
     if(player["armadura"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p5=int(player["armadura"])
+        nombre5 =str(BolsoJG[p5]["nombre"])
+        ataque5 =int(BolsoJG[p5]["atributos"]["ataque"])
+        defensa5= int(BolsoJG[p5]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre5)
+        if(ataque5 > 0):            
+            text+="+{d}⚔️".format(d=ataque5)            
+        if(defensa5 > 0):                      
+            text+="+{d}🛡".format(d=defensa5)
+        text+=" /off_{id}".format(id=p5)
     if(player["botas"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p6=int(player["botas"])
+        nombre6 =str(BolsoJG[p6]["nombre"])
+        ataque6 =int(BolsoJG[p6]["atributos"]["ataque"])
+        defensa6= int(BolsoJG[p6]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre6)
+        if(ataque6 > 0):            
+            text+="+{d}⚔️".format(d=ataque6)            
+        if(defensa6 > 0):                      
+            text+="+{d}🛡".format(d=defensa6)
+        text+=" /off_{id}".format(id=p6)
     if(player["especial"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p7=int(player["especial"])
+        nombre7 =str(BolsoJG[p7]["nombre"])
+        ataque7 =int(BolsoJG[p7]["atributos"]["ataque"])
+        defensa7= int(BolsoJG[p7]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre7)
+        if(ataque7 > 0):            
+            text+="+{d}⚔️".format(d=ataque7)            
+        if(defensa7 > 0):                      
+            text+="+{d}🛡".format(d=defensa7)
+        text+=" /off_{id}".format(id=p7)
     if(player["anillo"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p8=int(player["anillo"])
+        nombre8 =str(BolsoJG[p8]["nombre"])
+        ataque8 =int(BolsoJG[p8]["atributos"]["ataque"])
+        defensa8= int(BolsoJG[p8]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre8)
+        if(ataque8 > 0):            
+            text+="+{d}⚔️".format(d=ataque8)            
+        if(defensa8 > 0):                      
+            text+="+{d}🛡".format(d=defensa8)
+        text+=" /off_{id}".format(id=p8)
     if(player["collar"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p9=int(player["collar"])
+        nombre9 =str(BolsoJG[p9]["nombre"])
+        ataque9 =int(BolsoJG[p9]["atributos"]["ataque"])
+        defensa9= int(BolsoJG[p9]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre9)
+        if(ataque9 > 0):            
+            text+="+{d}⚔️".format(d=ataque9)            
+        if(defensa9 > 0):                      
+            text+="+{d}🛡".format(d=defensa9)
+        text+=" /off_{id}".format(id=p9)
         
     text+="\n🎒Balso: ({total}".format(total="0" if bolso_arm == 1 else bolso_arm)
     text+="/{bolso})".format(bolso=player["bolso"])
@@ -1272,7 +1347,7 @@ def inventario(update: Update, context: CallbackContext):
                 text+="<b>+{actaque}</b>⚔️".format(actaque=BolsoJG[p]["atributos"]["ataque"])    
         if(BolsoJG[p]["atributos"]["defensa"] > 0):
                 text+="<b>+{defensa}</b>🛡".format(defensa=BolsoJG[p]["atributos"]["defensa"])
-        text+=" /on_{id}".format(id=BolsoJG[p]["id"])
+        text+=" /on_{id}".format(id=p)
 
         p=p+1
             
@@ -1627,6 +1702,7 @@ def buy(update: Update, context: CallbackContext):
 def Newcompra(user,items):
     global PlayerDB,TiendaDB
     Jugador = PlayerDB[str(user)]
+    
     info = {
             "id": TiendaDB[items]["id"],
             "estatus": 0,
@@ -1634,6 +1710,7 @@ def Newcompra(user,items):
             "historia": TiendaDB[items]["historia"],
             "tipo": TiendaDB[items]["tipo"],
             "g_type": TiendaDB[items]["g_type"],
+            "dual": TiendaDB[items]["dual"],
             "peso": TiendaDB[items]["peso"],
             "tier": TiendaDB[items]["tier"],
             "envolver": TiendaDB[items]["envolver"],
@@ -1837,47 +1914,89 @@ def equip(update: Update, context: CallbackContext):
     Jugador = PlayerDB[str(user.id)]
     BolsoJG = Jugador["bolso_arm"]
     weapon = update.message.text.replace("/on_","")
-    if(weapon not in BolsoJG.keys()):
-        return
-    else:
-        if(weapon not in BolsoJG):
-            text = "¡No eres el dueño de esta arma!"
-        else:
-            wpassign(weapon,user)
-            text = "<b>{weapon}</b> equipado con éxito!".format(weapon = BolsoJG[weapon]["nombre"])
-        update.message.reply_text(
+    
+    # if(weapon not in BolsoJG):
+    #     return
+    # else:
+    # p=len(BolsoJG)
+    # if(weapon not in list(BolsoJG[p])):
+    #     text = "¡No eres el dueño de esta arma!"
+    # else:        
+    wpassign(int(weapon),user)   
+    text = "<b>{weapon}</b> equipado con éxito!".format(weapon=BolsoJG[int(weapon)]["nombre"])
+            
+    update.message.reply_text(
                                     text=text,
                                     parse_mode=ParseMode.HTML
                                 )
     return
 
 def wpassign(weapon,user):
-    Jugador = PlayerDB[str(user)]
+    Jugador = PlayerDB[str(user.id)]
     BolsoJG = Jugador["bolso_arm"]
     slot = ""
-    if(BolsoJG[weapon]["g_type"] in ["espada","","lanza","arco","hacha"]):
-        slot = "mano"
-    else:
+    if(BolsoJG[weapon]["g_type"] in ["espadas","lanzas","arcos","desafilados"]):
         slot = "manoPrincipal"
+    elif(BolsoJG[weapon]["g_type"] in ["dagas","escudos","flechas","antorcha"] ):
+        slot = "mano"
+    elif(BolsoJG[weapon]["g_type"] == "casco"):
+        slot = "casco"
+    elif(BolsoJG[weapon]["g_type"] == "guantes"):
+        slot = "guantes"
+    elif(BolsoJG[weapon]["g_type"] == "armadura"):
+        slot = "armadura"
+    elif(BolsoJG[weapon]["g_type"] == "botas"):
+        slot = "botas"
+    elif(BolsoJG[weapon]["g_type"] == "especial"):
+        slot = "especial"
+    elif(BolsoJG[weapon]["g_type"] == "anillo"):
+        slot = "anillo"
+    elif(BolsoJG[weapon]["g_type"] == "collar"):
+        slot = "collar"
 
     if(slot == "manoPrincipal"):
-        if(BolsoJG[weapon]["dual"] == True):
-            """Cambian ambos slots"""
-            upload(player=str(user),concept=("manoPrincipal","mano"),value=(weapon,"999"))
-        else:
-            if(BolsoJG[PlayerDB[str(user.id)]["mainW"]]["dual"] == True):
-                """Asigna el arma, y Wooden Shield, respectivamente"""
-                upload(player=str(user),concept=("manoPrincipal","mano"),value=(weapon,"02"))
-            else:
-                """Cambia normalmente"""
-                upload(player=str(user),concept=("mainW"),value=(weapon))
-    else:
-        if(BolsoJG[PlayerDB[str(user)]["manoPrincipal"]]["dual"] == True):
-            """Asigna Iron Sword como principal y la secundaria normalmente"""
-            upload(player=str(user),concept=("manoPrincipal","mano"),value=("01",weapon))
-        else:
-            """Asigna secundaria normalmente"""
-            upload(player=str(user),concept=("mano"),value=(weapon))
+        # if(BolsoJG[weapon]["dual"] == True):
+        #     """Cambian ambos slots"""
+        #     upload(player=str(user.id),concept=("manoPrincipal","mano"),value=(weapon,"999"))
+        # else:
+            # if(BolsoJG[PlayerDB[str(user.id)]["manoPrincipal"]]["dual"] == True):
+            #     """Asigna el arma, y Wooden Shield, respectivamente"""
+            #     upload(player=str(user.id),concept=("manoPrincipal","mano"),value=(weapon,"02"))
+            # else:
+        """Cambia normalmente"""
+        upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))
+    elif(slot == "mano"):
+        # if(BolsoJG[PlayerDB[str(user.id)]["mano"]]["dual"] == False):
+        #     """Asigna Iron Sword como principal y la secundaria normalmente"""
+        #     upload(player=str(user.id),concept=("manoPrincipal","mano"),value=("01",weapon))
+        # else:
+        """Asigna secundaria normalmente"""
+        upload(player=str(user.id),concept=("mano"),value=(weapon))
+    elif(slot == "casco"):
+        """Asigna secundaria normalmente"""
+        upload(player=str(user.id),concept=("casco"),value=(weapon))        
+    elif(slot == "guantes"):
+        """Asigna secundaria normalmente"""
+        upload(player=str(user.id),concept=("guantes"),value=(weapon))
+    elif(slot == "armadura"):
+        """Asigna secundaria normalmente"""
+        upload(player=str(user.id),concept=("armadura"),value=(weapon))
+    elif(slot == "botas"):
+        """Asigna secundaria normalmente"""
+        upload(player=str(user.id),concept=("botas"),value=(weapon))
+    elif(slot == "especial"):
+        """Asigna secundaria normalmente"""
+        upload(player=str(user.id),concept=("especial"),value=(weapon))
+    elif(slot == "anillo"):
+        """Asigna secundaria normalmente"""
+        upload(player=str(user.id),concept=("anillo"),value=(weapon))
+    elif(slot == "collar"):
+        """Asigna secundaria normalmente"""
+        upload(player=str(user.id),concept=("collar"),value=(weapon))
+        
+
+
+            
     return
 
 def lastrestart(signum,frame):
