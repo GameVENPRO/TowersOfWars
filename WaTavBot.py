@@ -1939,19 +1939,19 @@ def wpassign(weapon,user):
         slot = "manoPrincipal"
     elif(BolsoJG[weapon]["g_type"] in ["dagas","escudos","flechas","antorcha"] ):
         slot = "mano"
-    elif(BolsoJG[weapon]["g_type"] == "casco"):
+    elif(BolsoJG[weapon]["g_type"] == "cascos"):
         slot = "casco"
     elif(BolsoJG[weapon]["g_type"] == "guantes"):
         slot = "guantes"
-    elif(BolsoJG[weapon]["g_type"] == "armadura"):
+    elif(BolsoJG[weapon]["g_type"] == "armaduras"):
         slot = "armadura"
     elif(BolsoJG[weapon]["g_type"] == "botas"):
         slot = "botas"
-    elif(BolsoJG[weapon]["g_type"] == "especial"):
+    elif(BolsoJG[weapon]["g_type"] == "especiales"):
         slot = "especial"
-    elif(BolsoJG[weapon]["g_type"] == "anillo"):
+    elif(BolsoJG[weapon]["g_type"] == "anillos"):
         slot = "anillo"
-    elif(BolsoJG[weapon]["g_type"] == "collar"):
+    elif(BolsoJG[weapon]["g_type"] == "collares"):
         slot = "collar"
 
     if(slot == "manoPrincipal"):
