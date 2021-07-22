@@ -14,7 +14,7 @@ MMORPG basado en texto, en forma de Bot de Telegram.
 
 * [ ] `(weapons.py)` Terminar la lista de armas
 
-* [ ] `(weapons.py)` Terminar la lista de Recipes
+* [ ] `(recetas.py)` Terminar la lista de Recipes
 
 * [ ] `(WatTavBot.py)` Añadir el matchmaking para duelos, dados y para beber
 
@@ -31,3 +31,5 @@ MMORPG basado en texto, en forma de Bot de Telegram.
 * [ ] `(?)` Añadir más juegos de azar para multijugador
 
 * [ ] `(?)` ¿Modo aventura? → `(?)`También, mapa por coordenadas xyz, con detección de cercanía e interracción.
+
+* [ ] `(?)` Añadir mesa de Craf o trabajo para crear armas.
