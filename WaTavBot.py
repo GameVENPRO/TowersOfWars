@@ -859,6 +859,7 @@ def newUser(user,pron):
         "oro":1000,
         "bol_oro":50,
         "gemas":100,        
+        "bolso_min":0,        
         "bolso":15,        
         "stock":4000,               
         "manoPrincipal":"None",
@@ -915,6 +916,23 @@ def reload(update: Update, context: CallbackContext):
 
 def upload(player,concept,value):
     threading.Thread(target=manualupload,args=("/players/{id}".format(id=player),concept,value,)).start()
+    return
+
+def uploadwp(player,w,concept,value):
+    threading.Thread(target=manualuploadwp,args=("/players/{id}/bolso_arm/{p}".format(id=player,p=w),concept,value,)).start()
+    return
+def manualuploadwp(player,concept,value):
+    global PlayerDB
+    if(type(concept) in [list,tuple]):
+        for c in range(len(concept)):
+            try:
+                Fire.put(player,concept[c],value[c])
+            except:
+                e = "{}/{} = {}".format(player,concept[c],value[c])
+                error("En la carga manual",e)
+    else:
+        Fire.put(player,concept,value)
+    PlayerDB = Fire.get("/players",None)
     return
 
 def manualupload(player,concept,value):
@@ -1130,7 +1148,7 @@ def me(update: Update, context: CallbackContext):
         text+="👝{bol_oro}".format(bol_oro=str(player["bol_oro"]))
     text+="💎{gemas}".format(gemas=player["gemas"])
     text+="\n\n🎽Euipamiento:"
-    text+="\n🎒Balso: {total}".format(total="0" if bolso_arm == 1 else bolso_arm)
+    text+="\n🎒Balso: {total}".format(total="0" if bolso_arm == 0 else bolso_arm)
     text+="/{bolso} ".format(bolso=player["bolso"])
     text+="/inv"
     # +"Mascota:{money}".format(money=player["money"])
@@ -1215,7 +1233,7 @@ def heroe(update: Update, context: CallbackContext):
     if(player["collar"]!="None"):
         text+="\n +⚔️ +🛡"   
             
-    text+="\n\n🎒Balso: {total}".format(total="0" if bolso_arm == 1 else bolso_arm)
+    text+="\n\n🎒Balso: {total}".format(total="0" if bolso_arm == 0 else bolso_arm)
     text+="/{bolso} ".format(bolso=player["bolso"])
     text+="/inv"
     text+="\n\n📦Almacen: {total} /stock".format(total=alma_re)
@@ -1337,17 +1355,18 @@ def inventario(update: Update, context: CallbackContext):
             text+="+{d}🛡".format(d=defensa9)
         text+=" /off_{id}".format(id=p9)
         
-    text+="\n🎒Balso: ({total}".format(total="0" if bolso_arm == 1 else bolso_arm)
+    text+="\n🎒Balso: ({total}".format(total="0" if bolso_arm == 0 else bolso_arm)
     text+="/{bolso})".format(bolso=player["bolso"])
     p = 1
     n = bolso_arm + 1
     for i in BolsoJG[p:n]: 
-        text+="\n<b>{name}</b> ".format(name=BolsoJG[p]["nombre"])
-        if(BolsoJG[p]["atributos"]["ataque"] > 0):
-                text+="<b>+{actaque}</b>⚔️".format(actaque=BolsoJG[p]["atributos"]["ataque"])    
-        if(BolsoJG[p]["atributos"]["defensa"] > 0):
-                text+="<b>+{defensa}</b>🛡".format(defensa=BolsoJG[p]["atributos"]["defensa"])
-        text+=" /on_{id}".format(id=p)
+        if(BolsoJG[p]["estatus"] != 1 ):
+            text+="\n<b>{name}</b> ".format(name=BolsoJG[p]["nombre"])
+            if(BolsoJG[p]["atributos"]["ataque"] > 0):
+                    text+="<b>+{actaque}</b>⚔️".format(actaque=BolsoJG[p]["atributos"]["ataque"])    
+            if(BolsoJG[p]["atributos"]["defensa"] > 0):
+                    text+="<b>+{defensa}</b>🛡".format(defensa=BolsoJG[p]["atributos"]["defensa"])
+            text+=" /on_{id}".format(id=p)
 
         p=p+1
             
@@ -1964,34 +1983,43 @@ def wpassign(weapon,user):
             #     upload(player=str(user.id),concept=("manoPrincipal","mano"),value=(weapon,"02"))
             # else:
         """Cambia normalmente"""
-        upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))
+        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+        upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))       
     elif(slot == "mano"):
         # if(BolsoJG[PlayerDB[str(user.id)]["mano"]]["dual"] == False):
         #     """Asigna Iron Sword como principal y la secundaria normalmente"""
         #     upload(player=str(user.id),concept=("manoPrincipal","mano"),value=("01",weapon))
         # else:
         """Asigna secundaria normalmente"""
+        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
         upload(player=str(user.id),concept=("mano"),value=(weapon))
     elif(slot == "casco"):
         """Asigna secundaria normalmente"""
+        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
         upload(player=str(user.id),concept=("casco"),value=(weapon))        
     elif(slot == "guantes"):
         """Asigna secundaria normalmente"""
+        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
         upload(player=str(user.id),concept=("guantes"),value=(weapon))
     elif(slot == "armadura"):
         """Asigna secundaria normalmente"""
+        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
         upload(player=str(user.id),concept=("armadura"),value=(weapon))
     elif(slot == "botas"):
         """Asigna secundaria normalmente"""
+        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
         upload(player=str(user.id),concept=("botas"),value=(weapon))
     elif(slot == "especial"):
         """Asigna secundaria normalmente"""
+        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
         upload(player=str(user.id),concept=("especial"),value=(weapon))
     elif(slot == "anillo"):
         """Asigna secundaria normalmente"""
+        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
         upload(player=str(user.id),concept=("anillo"),value=(weapon))
     elif(slot == "collar"):
         """Asigna secundaria normalmente"""
+        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
         upload(player=str(user.id),concept=("collar"),value=(weapon))
         
 

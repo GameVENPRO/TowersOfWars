@@ -7372,3 +7372,177 @@ WARNING:[19/07/2021 22:32:55] Actualizar:
 &lt;class &#x27;KeyError&#x27;&gt;:&#x27;dual&#x27; en WaTavBot.py en la linea 1684
 
 Notas: &#x27;dual&#x27;
+INFO:[21/07/2021 21:32:51] Scheduler started
+INFO:[21/07/2021 21:39:16] Scheduler started
+INFO:[21/07/2021 21:45:08] Scheduler started
+ERROR:[21/07/2021 21:45:24] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1926, in equip
+    wpassign(int(weapon),user)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1939, in wpassign
+    if(BolsoJG[weapon]["g_type"] in ["espadas","lanzas","arcos","desafilados"]):
+TypeError: 'int' object is not subscriptable
+WARNING:[21/07/2021 21:45:36] Actualizar: 
+│
+├update_id: 994732391
+└message:
+⠀├message_id: 6843
+⠀├date: 1626918335
+⠀├chat:
+││├id: 622952731
+││├type: private
+││├username: JuanShotLC
+││├first_name: 👑 JuanShotLC 👑
+││└last_name: ⚒️ ²⁷
+⠀├text: /buy_04
+⠀├entities:
+││└0:
+││⠀├type: bot_command
+││⠀├offset: 0
+││⠀└length: 7
+⠀├caption_entities:
+⠀├photo:
+⠀├new_chat_members:
+⠀├new_chat_photo:
+⠀├delete_chat_photo: False
+⠀├group_chat_created: False
+⠀├supergroup_chat_created: False
+⠀├channel_chat_created: False
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;TypeError&#x27;&gt;:argument of type &#x27;int&#x27; is not iterable en WaTavBot.py en la linea 1682
+
+Notas: argument of type &#x27;int&#x27; is not iterable
+ERROR:[21/07/2021 21:46:53] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1254, in inventario
+    nombre2 =str(BolsoJG[p2]["nombre"])
+IndexError: list index out of range
+ERROR:[21/07/2021 21:46:59] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1254, in inventario
+    nombre2 =str(BolsoJG[p2]["nombre"])
+IndexError: list index out of range
+ERROR:[21/07/2021 21:48:12] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1254, in inventario
+    nombre2 =str(BolsoJG[p2]["nombre"])
+IndexError: list index out of range
+ERROR:[21/07/2021 21:50:07] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    nombre3 =str(BolsoJG[p3]["nombre"])
+IndexError: list index out of range
+ERROR:[21/07/2021 21:50:40] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    nombre3 =str(BolsoJG[p3]["nombre"])
+IndexError: list index out of range
+ERROR:[21/07/2021 21:50:44] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    nombre3 =str(BolsoJG[p3]["nombre"])
+IndexError: list index out of range
+ERROR:[21/07/2021 21:51:12] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1265, in inventario
+    nombre3 =str(BolsoJG[p3]["nombre"])
+IndexError: list index out of range
+INFO:[21/07/2021 21:59:05] Scheduler started
+ERROR:[21/07/2021 21:59:30] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1930, in equip
+    wpassign(int(weapon),user)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1974, in wpassign
+    upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))
+TypeError: upload() missing 2 required positional arguments: 'concept2' and 'concep3'
+INFO:[21/07/2021 22:03:02] Scheduler started
+ERROR:[21/07/2021 22:03:11] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1942, in equip
+    wpassign(int(weapon),user)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1987, in wpassign
+    upload(player=str(user.id),concept=("bolso_arm"),concept2=weapon,concep3=("status"),value=(1))
+TypeError: upload() got an unexpected keyword argument 'concept2'
+INFO:[21/07/2021 22:04:09] Scheduler started
+INFO:[21/07/2021 22:09:58] Scheduler started
+INFO:[21/07/2021 22:10:37] Scheduler started
+INFO:[21/07/2021 22:12:25] Scheduler started
+INFO:[21/07/2021 22:12:57] Scheduler started
+INFO:[21/07/2021 22:14:50] Scheduler started
+INFO:[21/07/2021 22:15:45] Scheduler started
+INFO:[21/07/2021 22:16:46] Scheduler started
+INFO:[21/07/2021 22:19:26] Scheduler started
+INFO:[21/07/2021 22:21:23] Scheduler started
+INFO:[21/07/2021 22:23:42] Scheduler started
+INFO:[21/07/2021 22:28:34] Scheduler started
+INFO:[21/07/2021 22:32:19] Scheduler started
+INFO:[21/07/2021 22:35:45] Scheduler started
+INFO:[21/07/2021 22:42:21] Scheduler started
