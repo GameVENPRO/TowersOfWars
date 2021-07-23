@@ -1154,9 +1154,7 @@ def me(update: Update, context: CallbackContext):
     # +"Mascota:{money}".format(money=player["money"])
     text+="\n\nEstado:\n{estado}".format(estado=player["estado"])
     text+="\n\nMás: /heroe"
-    #  +"\n\n🎒 Equipo:\n"
-    #  +"\t"*4+"► Principal: {main}\n".format(main=TiendaDB[player["mainW"]]["name"])
-    #  +"\t"*4+"► Offhand: {offh}".format(offh=offhw)
+
         
     IKB = KeyboardButton
     # reply_markup = ReplyKeyboardMarkup(
@@ -1181,6 +1179,7 @@ def heroe(update: Update, context: CallbackContext):
     global PlayerDB
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
+    BolsoJG = player["bolso_arm"]    
     level = player["level"] 
     exp_niveles = NivelesBD[level+1]       
     bolso_arm = len(player["bolso_arm"])-1
@@ -1214,24 +1213,105 @@ def heroe(update: Update, context: CallbackContext):
     # +"Mascota:{money}".format(money=player["money"])      
         
     text+="\n\n🎽Euipamiento: "
-    if(player["manoPrincipal"]!="None"):
-        text+="\n +⚔️ +🛡" 
+    if(player["manoPrincipal"]!="None"):  
+        p=player["manoPrincipal"]
+        nombre =str(BolsoJG[p]["nombre"])  
+        ataque =int(BolsoJG[p]["atributos"]["ataque"])
+        defensa= int(BolsoJG[p]["atributos"]["defensa"]) 
+        text+="\n{n} ".format(n=nombre)           
+        if(ataque > 0):           
+            text+="+{d}⚔️".format(d=ataque)            
+        if(defensa > 0):          
+            text+="+{d}🛡".format(d=defensa)
+        text+=" /off_{id}".format(id=p)
     if(player["mano"]!="None"):
-        text+="\n +⚔️ +🛡" 
+        p2=int(player["mano"])
+        nombre2 =str(BolsoJG[p2]["nombre"])
+        ataque2 =int(BolsoJG[p2]["atributos"]["ataque"])
+        defensa2= int(BolsoJG[p2]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre2)
+        if(ataque2 > 0):            
+            text+="+{d}⚔️".format(d=ataque2)            
+        if(defensa2 > 0):                      
+            text+="+{d}🛡".format(d=defensa2)
+        text+=" /off_{id}".format(id=p2)        
     if(player["casco"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p3=int(player["casco"])
+        nombre3 =str(BolsoJG[p3]["nombre"])
+        ataque3 =int(BolsoJG[p3]["atributos"]["ataque"])
+        defensa3= int(BolsoJG[p3]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre3)
+        if(ataque > 0):            
+            text+="+{d}⚔️".format(d=ataque3)            
+        if(defensa > 0):                      
+            text+="+{d}🛡".format(d=defensa3)
+        text+=" /off_{id}".format(id=p3)
     if(player["guantes"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p4=int(player["guantes"])
+        nombre4 =str(BolsoJG[p4]["nombre"])
+        ataque4 =int(BolsoJG[p4]["atributos"]["ataque"])
+        defensa4= int(BolsoJG[p4]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre4)
+        if(ataque4 > 0):            
+            text+="+{d}⚔️".format(d=ataque4)            
+        if(defensa4 > 0):                      
+            text+="+{d}🛡".format(d=defensa4)
+        text+=" /off_{id}".format(id=p4)
     if(player["armadura"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p5=int(player["armadura"])
+        nombre5 =str(BolsoJG[p5]["nombre"])
+        ataque5 =int(BolsoJG[p5]["atributos"]["ataque"])
+        defensa5= int(BolsoJG[p5]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre5)
+        if(ataque5 > 0):            
+            text+="+{d}⚔️".format(d=ataque5)            
+        if(defensa5 > 0):                      
+            text+="+{d}🛡".format(d=defensa5)
+        text+=" /off_{id}".format(id=p5)
     if(player["botas"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p6=int(player["botas"])
+        nombre6 =str(BolsoJG[p6]["nombre"])
+        ataque6 =int(BolsoJG[p6]["atributos"]["ataque"])
+        defensa6= int(BolsoJG[p6]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre6)
+        if(ataque6 > 0):            
+            text+="+{d}⚔️".format(d=ataque6)            
+        if(defensa6 > 0):                      
+            text+="+{d}🛡".format(d=defensa6)
+        text+=" /off_{id}".format(id=p6)
     if(player["especial"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p7=int(player["especial"])
+        nombre7 =str(BolsoJG[p7]["nombre"])
+        ataque7 =int(BolsoJG[p7]["atributos"]["ataque"])
+        defensa7= int(BolsoJG[p7]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre7)
+        if(ataque7 > 0):            
+            text+="+{d}⚔️".format(d=ataque7)            
+        if(defensa7 > 0):                      
+            text+="+{d}🛡".format(d=defensa7)
+        text+=" /off_{id}".format(id=p7)
     if(player["anillo"]!="None"):
-        text+="\n +⚔️ +🛡"  
+        p8=int(player["anillo"])
+        nombre8 =str(BolsoJG[p8]["nombre"])
+        ataque8 =int(BolsoJG[p8]["atributos"]["ataque"])
+        defensa8= int(BolsoJG[p8]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre8)
+        if(ataque8 > 0):            
+            text+="+{d}⚔️".format(d=ataque8)            
+        if(defensa8 > 0):                      
+            text+="+{d}🛡".format(d=defensa8)
+        text+=" /off_{id}".format(id=p8)
     if(player["collar"]!="None"):
-        text+="\n +⚔️ +🛡"   
+        p9=int(player["collar"])
+        nombre9 =str(BolsoJG[p9]["nombre"])
+        ataque9 =int(BolsoJG[p9]["atributos"]["ataque"])
+        defensa9= int(BolsoJG[p9]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre9)
+        if(ataque9 > 0):            
+            text+="+{d}⚔️".format(d=ataque9)            
+        if(defensa9 > 0):                      
+            text+="+{d}🛡".format(d=defensa9)
+        text+=" /off_{id}".format(id=p9)
             
     text+="\n\n🎒Balso: {total}".format(total="0" if bolso_arm == 0 else bolso_arm)
     text+="/{bolso} ".format(bolso=player["bolso"])
@@ -1974,53 +2054,115 @@ def wpassign(weapon,user):
         slot = "collar"
 
     if(slot == "manoPrincipal"):
-        # if(BolsoJG[weapon]["dual"] == True):
-        #     """Cambian ambos slots"""
-        #     upload(player=str(user.id),concept=("manoPrincipal","mano"),value=(weapon,"999"))
-        # else:
-            # if(BolsoJG[PlayerDB[str(user.id)]["manoPrincipal"]]["dual"] == True):
-            #     """Asigna el arma, y Wooden Shield, respectivamente"""
-            #     upload(player=str(user.id),concept=("manoPrincipal","mano"),value=(weapon,"02"))
-            # else:
-        """Cambia normalmente"""
-        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-        upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))       
+        if(Jugador["manoPrincipal"]=="None"):
+            """Cambia normalmente"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))  
+        else:  
+            WpAc = Jugador["manoPrincipal"]
+            verir = BolsoJG 
+            # if( WpAc == verir):
+            """Desactivar armar puesta y cambiar estatus del arma puesta"""
+            uploadwp(player=str(user.id),w=(WpAc),concept=("estatus"),value=(0))
+            """"Colocar Arma Nueva"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))                 
     elif(slot == "mano"):
-        # if(BolsoJG[PlayerDB[str(user.id)]["mano"]]["dual"] == False):
-        #     """Asigna Iron Sword como principal y la secundaria normalmente"""
-        #     upload(player=str(user.id),concept=("manoPrincipal","mano"),value=("01",weapon))
-        # else:
-        """Asigna secundaria normalmente"""
-        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-        upload(player=str(user.id),concept=("mano"),value=(weapon))
+        if(Jugador["mano"]=="None"):
+            """Cambia normalmente"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("mano"),value=(weapon))  
+        else:        
+           
+                """Desactivar armar puesta y cambiar estatus del arma puesta"""
+                uploadwp(player=str(user.id),w=(Jugador["mano"]),concept=("estatus"),value=(0))
+                """"Colocar Arma Nueva"""
+                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+                upload(player=str(user.id),concept=("mano"),value=(weapon))                         
     elif(slot == "casco"):
-        """Asigna secundaria normalmente"""
-        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-        upload(player=str(user.id),concept=("casco"),value=(weapon))        
+        if(Jugador["casco"]=="None"):
+            """Cambia normalmente"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("casco"),value=(weapon))  
+        else:        
+
+                """Desactivar armar puesta y cambiar estatus del arma puesta"""
+                uploadwp(player=str(user.id),w=(Jugador["casco"]),concept=("estatus"),value=(0))
+                """"Colocar Arma Nueva"""
+                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+                upload(player=str(user.id),concept=("casco"),value=(weapon))       
     elif(slot == "guantes"):
-        """Asigna secundaria normalmente"""
-        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-        upload(player=str(user.id),concept=("guantes"),value=(weapon))
+        if(Jugador["guantes"]=="None"):
+            """Cambia normalmente"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("guantes"),value=(weapon))  
+        else:        
+
+                """Desactivar armar puesta y cambiar estatus del arma puesta"""
+                uploadwp(player=str(user.id),w=(Jugador["guantes"]),concept=("estatus"),value=(0))
+                """"Colocar Arma Nueva"""
+                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+                upload(player=str(user.id),concept=("guantes"),value=(weapon)) 
     elif(slot == "armadura"):
-        """Asigna secundaria normalmente"""
-        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-        upload(player=str(user.id),concept=("armadura"),value=(weapon))
+        if(Jugador["armadura"]=="None"):
+            """Cambia normalmente"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("armadura"),value=(weapon))  
+        else:        
+
+                """Desactivar armar puesta y cambiar estatus del arma puesta"""
+                uploadwp(player=str(user.id),w=(Jugador["armadura"]),concept=("estatus"),value=(0))
+                """"Colocar Arma Nueva"""
+                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+                upload(player=str(user.id),concept=("armadura"),value=(weapon)) 
     elif(slot == "botas"):
-        """Asigna secundaria normalmente"""
-        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-        upload(player=str(user.id),concept=("botas"),value=(weapon))
+        if(Jugador["botas"]=="None"):
+            """Cambia normalmente"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("botas"),value=(weapon))  
+        else:        
+
+                """Desactivar armar puesta y cambiar estatus del arma puesta"""
+                uploadwp(player=str(user.id),w=(Jugador["botas"]),concept=("estatus"),value=(0))
+                """"Colocar Arma Nueva"""
+                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+                upload(player=str(user.id),concept=("botas"),value=(weapon)) 
     elif(slot == "especial"):
-        """Asigna secundaria normalmente"""
-        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-        upload(player=str(user.id),concept=("especial"),value=(weapon))
+        if(Jugador["especial"]=="None"):
+            """Cambia normalmente"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("especial"),value=(weapon))  
+        else:        
+
+                """Desactivar armar puesta y cambiar estatus del arma puesta"""
+                uploadwp(player=str(user.id),w=(Jugador["especial"]),concept=("estatus"),value=(0))
+                """"Colocar Arma Nueva"""
+                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+                upload(player=str(user.id),concept=("especial"),value=(weapon)) 
     elif(slot == "anillo"):
-        """Asigna secundaria normalmente"""
-        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-        upload(player=str(user.id),concept=("anillo"),value=(weapon))
+        if(Jugador["anillo"]=="None"):
+            """Cambia normalmente"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("mano"),value=(weapon))  
+        else:        
+
+                """Desactivar armar puesta y cambiar estatus del arma puesta"""
+                uploadwp(player=str(user.id),w=(Jugador["anillo"]),concept=("estatus"),value=(0))
+                """"Colocar Arma Nueva"""
+                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+                upload(player=str(user.id),concept=("anillo"),value=(weapon)) 
     elif(slot == "collar"):
-        """Asigna secundaria normalmente"""
-        uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-        upload(player=str(user.id),concept=("collar"),value=(weapon))
+        if(Jugador["collar"]=="None"):
+            """Cambia normalmente"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("collar"),value=(weapon))  
+        else:        
+
+                """Desactivar armar puesta y cambiar estatus del arma puesta"""
+                uploadwp(player=str(user.id),w=(Jugador["collar"]),concept=("estatus"),value=(0))
+                """"Colocar Arma Nueva"""
+                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+                upload(player=str(user.id),concept=("collar"),value=(weapon)) 
         
 
 
