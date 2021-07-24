@@ -1918,7 +1918,8 @@ def shopcat(update: Update, context: CallbackContext):
 
         if(weapons == False):
             text += "\n<b>((Vacio))</b>"        
-            reply_markup = InlineKeyboardMarkup(kb.kb("wtypes",("bsmith|na","null")))
+        
+        reply_markup = InlineKeyboardMarkup(kb.kb("wtypes",("bsmith|na","null")))
             
     context.bot.edit_message_text(
                             text=text,
