@@ -7644,3 +7644,287 @@ INFO:[22/07/2021 23:25:41] Scheduler started
 INFO:[22/07/2021 23:27:08] Scheduler started
 INFO:[22/07/2021 23:30:06] Scheduler started
 INFO:[22/07/2021 23:33:23] Scheduler started
+INFO:[23/07/2021 19:53:52] Scheduler started
+INFO:[23/07/2021 19:57:59] Scheduler started
+INFO:[23/07/2021 19:59:00] Scheduler started
+INFO:[23/07/2021 19:59:33] Scheduler started
+INFO:[23/07/2021 20:02:22] Scheduler started
+INFO:[23/07/2021 20:11:50] Scheduler started
+INFO:[23/07/2021 20:24:52] Scheduler started
+INFO:[23/07/2021 20:34:37] Scheduler started
+INFO:[23/07/2021 20:38:47] Scheduler started
+INFO:[23/07/2021 20:48:56] Scheduler started
+INFO:[23/07/2021 20:49:54] Scheduler started
+INFO:[23/07/2021 20:58:14] Scheduler started
+INFO:[23/07/2021 20:59:08] Scheduler started
+INFO:[23/07/2021 21:05:36] Scheduler started
+ERROR:[23/07/2021 21:05:37] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[23/07/2021 21:05:37] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[23/07/2021 21:05:40] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[23/07/2021 21:05:40] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[23/07/2021 21:05:41] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[23/07/2021 21:05:41] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[23/07/2021 21:05:44] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[23/07/2021 21:05:44] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[23/07/2021 21:05:45] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[23/07/2021 21:05:45] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:[23/07/2021 21:06:00] Scheduler started
+INFO:[23/07/2021 21:10:12] Scheduler started
+INFO:[23/07/2021 21:16:28] Scheduler started
+INFO:[23/07/2021 21:18:03] Scheduler started
+INFO:[23/07/2021 21:19:16] Scheduler started
+INFO:[23/07/2021 21:20:05] Scheduler started
+ERROR:[23/07/2021 21:20:08] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2144, in equipoff
+    text=text,
+UnboundLocalError: local variable 'text' referenced before assignment
+INFO:[23/07/2021 21:32:03] Scheduler started
+INFO:[23/07/2021 21:32:40] Scheduler started
+INFO:[23/07/2021 21:33:19] Scheduler started
+INFO:[23/07/2021 21:34:06] Scheduler started
+INFO:[23/07/2021 21:37:35] Scheduler started
+INFO:[23/07/2021 21:39:19] Scheduler started
+INFO:[23/07/2021 21:43:31] Scheduler started
+INFO:[23/07/2021 21:51:44] Scheduler started
+INFO:[23/07/2021 21:58:51] Scheduler started
+INFO:[23/07/2021 22:03:39] Scheduler started
+INFO:[23/07/2021 22:04:17] Scheduler started
+INFO:[23/07/2021 22:07:45] Scheduler started
+INFO:[23/07/2021 22:10:32] Scheduler started
+ERROR:[23/07/2021 22:10:35] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1125, in me
+    if(habilidad > 0):
+TypeError: '>' not supported between instances of 'str' and 'int'
+INFO:[23/07/2021 22:11:13] Scheduler started
+ERROR:[23/07/2021 22:11:16] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1128, in me
+    text+="\nBatlla"
+UnboundLocalError: local variable 'text' referenced before assignment
+INFO:[23/07/2021 22:12:06] Scheduler started
+INFO:[23/07/2021 22:56:18] Scheduler started
+ERROR:[23/07/2021 22:56:49] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2170, in equip
+    if(weapon not in list(BolsoJG[weapon])):
+TypeError: list indices must be integers or slices, not str
+INFO:[23/07/2021 22:58:01] Scheduler started
+ERROR:[23/07/2021 22:58:03] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2169, in equip
+    print(int(BolsoJG[weapon]))
+TypeError: list indices must be integers or slices, not str
+INFO:[23/07/2021 22:58:47] Scheduler started
+INFO:[23/07/2021 22:59:10] Scheduler started
+INFO:[23/07/2021 22:59:23] Scheduler started
+ERROR:[23/07/2021 22:59:25] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2169, in equip
+    print(len(BolsoJG[weapon]))
+TypeError: list indices must be integers or slices, not str
+INFO:[23/07/2021 22:59:49] Scheduler started
+ERROR:[23/07/2021 22:59:51] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2169, in equip
+    print(BolsoJG[weapon])
+TypeError: list indices must be integers or slices, not str
+INFO:[23/07/2021 23:00:10] Scheduler started
+ERROR:[23/07/2021 23:00:13] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2169, in equip
+    print(BolsoJG[weapon])
+TypeError: list indices must be integers or slices, not str
+INFO:[23/07/2021 23:01:04] Scheduler started
+ERROR:[23/07/2021 23:01:09] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2169, in equip
+    print(int(BolsoJG[weapon]))
+TypeError: list indices must be integers or slices, not str
+INFO:[23/07/2021 23:01:49] Scheduler started
+INFO:[23/07/2021 23:01:56] Scheduler started
+INFO:[23/07/2021 23:04:30] Scheduler started
+INFO:[23/07/2021 23:06:35] Scheduler started
+ERROR:[23/07/2021 23:06:43] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2166, in equip
+    if(weapon not in len(BolsoJG)):
+TypeError: argument of type 'int' is not iterable
+INFO:[23/07/2021 23:25:55] Scheduler started
+ERROR:[23/07/2021 23:26:11] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2166, in equip
+    if(int(weapon) not in len(BolsoJG)):
+TypeError: argument of type 'int' is not iterable
+INFO:[23/07/2021 23:27:35] Scheduler started
+INFO:[23/07/2021 23:28:19] Scheduler started
+INFO:[23/07/2021 23:29:11] Scheduler started
+INFO:[23/07/2021 23:33:07] Scheduler started
+INFO:[23/07/2021 23:34:30] Scheduler started
+INFO:[23/07/2021 23:38:16] Scheduler started
+INFO:[23/07/2021 23:38:38] Scheduler started
+INFO:[23/07/2021 23:39:21] Scheduler started
+INFO:[23/07/2021 23:40:03] Scheduler started
+INFO:[23/07/2021 23:41:24] Scheduler started
+INFO:[23/07/2021 23:45:51] Scheduler started
+INFO:[23/07/2021 23:46:49] Scheduler started
+INFO:[23/07/2021 23:46:59] Scheduler started
+INFO:[23/07/2021 23:47:43] Scheduler started
+INFO:[23/07/2021 23:48:06] Scheduler started
+INFO:[23/07/2021 23:49:23] Scheduler started
+INFO:[23/07/2021 23:49:59] Scheduler started
+INFO:[23/07/2021 23:50:30] Scheduler started
+INFO:[23/07/2021 23:51:05] Scheduler started
+INFO:[23/07/2021 23:53:25] Scheduler started
+INFO:[23/07/2021 23:55:19] Scheduler started
+INFO:[24/07/2021 00:00:45] Scheduler started
+INFO:[24/07/2021 00:02:09] Scheduler started
+INFO:[24/07/2021 00:03:22] Scheduler started
+INFO:[24/07/2021 00:05:13] Scheduler started
