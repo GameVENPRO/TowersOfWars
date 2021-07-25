@@ -124,6 +124,41 @@ class kb:
             keyboard = [[IKB("╔"),IKB("╗")],[IKB("╚"),IKB("╝")]]
         return keyboard
 
+    def castillo_kb(level):
+        IKB = KeyboardButton
+        keyboard = [
+                [
+                    IKB("⚒Taller"),                
+                    IKB("🍺Taberna"),                
+                    IKB("🛎Subasta" if(level >= 10) else ""),                
+
+                ],
+                [
+                    IKB("⚖️Intercambio" if(level >= 10) else ""),                
+                    IKB("🏚Tienda"),                
+                    IKB("↩️Volver")
+                ]
+            ]
+
+        return keyboard
+    
+    def ini_kb(level):
+        IKB2 = KeyboardButton
+        keyboard = [
+                [
+                    IKB2("⚔️Atacar"),
+                    IKB2("🗺Misiones"),
+                    IKB2("🛡Defender")
+                ],
+                [
+                    IKB2("🏅Yo"),
+                    IKB2("🏰Castillo"),
+                    IKB2("👥Clanes" if(level >= 15) else "💬")
+                ]
+            ]
+
+        return keyboard
+
 class Player:
     def __init__(self,name,last_name,id):
         self.name = name
@@ -542,11 +577,15 @@ def start(update: Update, context: CallbackContext):
     return
 
 def register(update: Update, context: CallbackContext):
-    user = update.message.from_user
+    user = update.message.from_user    
     IKB = InlineKeyboardButton
     if(str(user.id) in list(PlayerDB.keys())):
+        Juagador = PlayerDB[str(user.id)]
+        level = Juagador["level"] 
         welcometext = "Bienvenido de vuelta, {name}! \n¿Cómo puedo servirle hoy?".format(name=user.first_name)
-        reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+        reply_markup = ReplyKeyboardMarkup(kb.ini_kb(level),resize_keyboard=True)
+
+
         update.message.reply_text(
             text=welcometext,
             reply_markup=reply_markup,
@@ -586,6 +625,7 @@ def reg(update: Update, context: CallbackContext):
     data = json.loads(query.data)
     option,next = data["op"].split("|")
     user = query.from_user
+    level = 1
     if(next == 'gen'):      
         if(data["d1"] == "dragon"):
             castillo = "Escamas de dragon"
@@ -619,8 +659,8 @@ def reg(update: Update, context: CallbackContext):
                 message_id=query.message.message_id,
                 #inline_message_id=query.inline_message_id,
                 reply_markup=None
-            )
-            reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+            ) 
+            reply_markup = ReplyKeyboardMarkup(kb.ini_kb(level),resize_keyboard=True)
             context.bot.send_message(
                 chat_id=user.id,
                 text=text,
@@ -1098,7 +1138,7 @@ def me(update: Update, context: CallbackContext):
     text+="\n\nEstado:\n{estado}".format(estado=player["estado"])
     text+="\n\nMás: /heroe"
 
-    reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+    reply_markup = ReplyKeyboardMarkup(kb.ini_kb(level),resize_keyboard=True)
 
     update.message.reply_text(
         text=text,
@@ -1336,7 +1376,7 @@ def heroe(update: Update, context: CallbackContext):
     text+="/inv"
     text+="\n\n📦Almacen: {total} /stock".format(total=alma_re)
 
-    reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+    reply_markup = ReplyKeyboardMarkup(kb.ini_kb(level),resize_keyboard=True)
 
     update.message.reply_text(
         text=text,
@@ -1350,6 +1390,7 @@ def inventario(update: Update, context: CallbackContext):
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
     BolsoJG = player["bolso_arm"]
+    level = player["level"] 
     bolso_arm = len(player["bolso_arm"])-1
     a = 0   
     a2 = 0   
@@ -1530,7 +1571,7 @@ def inventario(update: Update, context: CallbackContext):
 
         p=p+1
             
-    reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+    reply_markup = ReplyKeyboardMarkup(kb.ini_kb(level),resize_keyboard=True)
 
     update.message.reply_text(
         text=text,
@@ -1540,13 +1581,6 @@ def inventario(update: Update, context: CallbackContext):
     return
 
 def tiempo(update: Update, context: CallbackContext):
-
-
-
-    # timestamp = 1545730073
-    # dt_object = datetime.fromtimestamp(timestamp)
-    # print("dt_object =", dt_object)
-    # print(datetime.fromtimestamp(-1576280665))
     dt = datetime.datetime.now()     # Fecha y hora actual
 
 
@@ -1684,7 +1718,10 @@ def clan(update: Update, context: CallbackContext):
     return
 
 def castillo(update: Update, context: CallbackContext):
-
+    global PlayerDB
+    user = update.message.from_user
+    player = PlayerDB[str(user.id)]  
+    level = player["level"] 
     hora = time.strftime("%H")
     text="El Castillo \n"   
         
@@ -1742,23 +1779,7 @@ def castillo(update: Update, context: CallbackContext):
     text+="\nLos demás: /otros"
     text+="\n\n🍺La taberna abre por la noche"
 
-    IKB = KeyboardButton
-    reply_markup = ReplyKeyboardMarkup(
-        [
-            [
-                IKB("⚒Taller"),                
-                IKB("🍺Taberna"),                
-                IKB("🛎Subasta"),                
-
-            ],
-            [
-                IKB("⚖️Intercambio"),                
-                IKB("🏚Tienda"),                
-                IKB("↩️Volver")
-            ]
-        ],
-        resize_keyboard=True,
-    )
+    reply_markup = ReplyKeyboardMarkup(kb.castillo_kb(level),resize_keyboard=True)
 
     update.message.reply_text(
         text=text,
