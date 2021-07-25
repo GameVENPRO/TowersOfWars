@@ -7956,3 +7956,512 @@ AttributeError: 'NoneType' object has no attribute 'from_user'
 INFO:[24/07/2021 23:28:55] Received signal 2 (SIGINT), stopping...
 INFO:[24/07/2021 23:28:55] Scheduler has been shut down
 WARNING:[24/07/2021 23:29:01] Exiting immediately!
+INFO:[25/07/2021 10:29:22] Scheduler started
+ERROR:[25/07/2021 10:29:27] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 548, in register
+    update.message.reply_text(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\message.py", line 689, in reply_text
+    return self.bot.send_message(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 475, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 296, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 352, in post
+    body=json.dumps(data).encode('utf-8'),
+  File "C:\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+INFO:[25/07/2021 10:30:15] Scheduler started
+INFO:[25/07/2021 10:33:08] Scheduler started
+INFO:[25/07/2021 10:51:41] Scheduler started
+ERROR:[25/07/2021 10:51:45] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 577, in register
+    context.bot.send_sticker(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+TypeError: send_sticker() got an unexpected keyword argument 'text'
+INFO:[25/07/2021 10:57:21] Scheduler started
+ERROR:[25/07/2021 10:57:24] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 577, in register
+    context.bot.send_sticker(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+TypeError: send_sticker() got an unexpected keyword argument 'foursquare_id'
+INFO:[25/07/2021 11:07:47] Scheduler started
+ERROR:[25/07/2021 11:07:48] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 571, in register
+    context.bot.send_sticker(chat_id=user.id, stiker=id_stiker)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+TypeError: send_sticker() got an unexpected keyword argument 'stiker'
+INFO:[25/07/2021 11:08:57] Scheduler started
+INFO:[25/07/2021 11:15:29] Scheduler started
+INFO:[25/07/2021 11:20:55] Scheduler started
+INFO:[25/07/2021 11:22:16] Scheduler started
+ERROR:[25/07/2021 11:22:18] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 578, in register
+    update.message.reply_text(text, reply_markup = reply_markup, parse_mode=ParseMode.HTML, resize_keyboard=True, row_width=2)
+TypeError: reply_text() got an unexpected keyword argument 'resize_keyboard'
+INFO:[25/07/2021 11:23:26] Scheduler started
+ERROR:[25/07/2021 11:23:29] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 578, in register
+    update.message.reply_text(text, reply_markup = reply_markup, parse_mode=ParseMode.HTML)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\message.py", line 689, in reply_text
+    return self.bot.send_message(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 475, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 296, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 352, in post
+    body=json.dumps(data).encode('utf-8'),
+  File "C:\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type KeyboardButton is not JSON serializable
+INFO:[25/07/2021 11:25:01] Scheduler started
+INFO:[25/07/2021 11:26:30] Scheduler started
+ERROR:[25/07/2021 11:26:35] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 561, in register
+    reply_markup = InlineKeyboardMarkup(random.sample([
+TypeError: sample() missing 1 required positional argument: 'k'
+INFO:[25/07/2021 11:27:11] Scheduler started
+ERROR:[25/07/2021 11:27:12] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 561, in register
+    reply_markup = InlineKeyboardMarkup(random.sample([
+TypeError: sample() missing 1 required positional argument: 'k'
+ERROR:[25/07/2021 11:27:15] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 561, in register
+    reply_markup = InlineKeyboardMarkup(random.sample([
+TypeError: sample() missing 1 required positional argument: 'k'
+INFO:[25/07/2021 11:38:15] Scheduler started
+ERROR:[25/07/2021 11:38:17] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 579, in register
+    update.message.reply_text(text, reply_markup = reply_markup, parse_mode=ParseMode.HTML)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\message.py", line 689, in reply_text
+    return self.bot.send_message(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 475, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 296, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+INFO:[25/07/2021 11:39:15] Scheduler started
+ERROR:[25/07/2021 11:39:19] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 578, in register
+    update.message.reply_text(text, reply_markup = reply_markup, parse_mode=ParseMode.HTML)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\message.py", line 689, in reply_text
+    return self.bot.send_message(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 475, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 296, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+INFO:[25/07/2021 11:39:50] Scheduler started
+ERROR:[25/07/2021 11:39:52] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 579, in register
+    update.message.reply_text(text, reply_markup = reply_markup, parse_mode=ParseMode.HTML)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\message.py", line 689, in reply_text
+    return self.bot.send_message(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 475, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 296, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+INFO:[25/07/2021 11:40:10] Scheduler started
+ERROR:[25/07/2021 11:40:11] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[25/07/2021 11:40:11] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[25/07/2021 11:40:13] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 579, in register
+    update.message.reply_text(text, reply_markup = reply_markup, parse_mode=ParseMode.HTML)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\message.py", line 689, in reply_text
+    return self.bot.send_message(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 475, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 296, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 272, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Button_data_invalid
+ERROR:[25/07/2021 11:40:15] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[25/07/2021 11:40:15] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[25/07/2021 11:40:15] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[25/07/2021 11:40:15] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:[25/07/2021 11:40:24] Scheduler started
+INFO:[25/07/2021 11:56:39] Scheduler started
+INFO:[25/07/2021 12:02:41] Scheduler started
+INFO:[25/07/2021 12:03:16] Scheduler started
+INFO:[25/07/2021 12:03:36] Scheduler started
+INFO:[25/07/2021 12:07:32] Scheduler started
+ERROR:[25/07/2021 12:07:40] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 546, in register
+    if(str(user.id) in list(PlayerDB.keys())):
+AttributeError: 'list' object has no attribute 'keys'
+INFO:[25/07/2021 12:09:10] Scheduler started
+INFO:[25/07/2021 12:11:29] Scheduler started
+INFO:[25/07/2021 12:22:43] Scheduler started
+INFO:[25/07/2021 12:22:53] Scheduler started
+INFO:[25/07/2021 12:31:56] Scheduler started
+INFO:[25/07/2021 12:32:46] Scheduler started
+INFO:[25/07/2021 12:33:46] Scheduler started
+ERROR:[25/07/2021 12:33:58] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 549, in register
+    update.message.reply_text(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\message.py", line 689, in reply_text
+    return self.bot.send_message(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 475, in send_message
+    return self._message(  # type: ignore[return-value]
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 296, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 352, in post
+    body=json.dumps(data).encode('utf-8'),
+  File "C:\Python39\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type function is not JSON serializable
+INFO:[25/07/2021 12:34:50] Scheduler started
+ERROR:[25/07/2021 12:34:51] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 547, in register
+    welcometext = me()
+TypeError: me() missing 2 required positional arguments: 'update' and 'context'
+INFO:[25/07/2021 12:35:31] Scheduler started
+ERROR:[25/07/2021 12:35:35] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 547, in register
+    welcometext = me(update= Update,context= CallbackContext)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1058, in me
+    user = update.message.from_user
+AttributeError: type object 'Update' has no attribute 'message'
+INFO:[25/07/2021 12:36:58] Scheduler started
+ERROR:[25/07/2021 12:45:30] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1979, in equip
+    update.message.reply_text(
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2074, in wpassign
+    upload(player=str(user.id),concept=("mano"),value=("None"))
+TypeError: list indices must be integers or slices, not str
+INFO:[25/07/2021 12:48:13] Scheduler started
+ERROR:[25/07/2021 12:48:22] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1976, in equip
+    wpassign(int(weapon),user)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2071, in wpassign
+    if(BolsoJG[WpAc]["g_type"] == "arcos"):
+TypeError: list indices must be integers or slices, not str
+INFO:[25/07/2021 12:49:55] Scheduler started
+INFO:[25/07/2021 13:08:43] Scheduler started
+INFO:[25/07/2021 13:11:40] Scheduler started
+INFO:[25/07/2021 13:15:28] Scheduler started
+INFO:[25/07/2021 13:23:29] Scheduler started
+INFO:[25/07/2021 13:26:35] Scheduler started
+INFO:[25/07/2021 13:28:57] Scheduler started
+INFO:[25/07/2021 13:30:09] Scheduler started
+INFO:[25/07/2021 13:31:55] Scheduler started
+INFO:[25/07/2021 13:35:19] Scheduler started
+INFO:[25/07/2021 13:44:10] Scheduler started
+ERROR:[25/07/2021 13:44:24] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1976, in equip
+    wpassign(int(weapon),user)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2072, in wpassign
+    if(BolsoJG[WpAc]["g_type"] == "arcos"):
+TypeError: list indices must be integers or slices, not str
+ERROR:[25/07/2021 13:45:03] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1976, in equip
+    wpassign(int(weapon),user)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 2072, in wpassign
+    if(BolsoJG[WpAc]["g_type"] == "arcos"):
+TypeError: list indices must be integers or slices, not str
+INFO:[25/07/2021 13:47:55] Scheduler started
+ERROR:[25/07/2021 14:04:50] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1546, in tiempo
+    dt = datetime.datetime.now()     # Fecha y hora actual
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+ERROR:[25/07/2021 14:04:52] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1546, in tiempo
+    dt = datetime.datetime.now()     # Fecha y hora actual
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+INFO:[25/07/2021 14:54:26] Scheduler started
+ERROR:[25/07/2021 14:54:28] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1398, in inventario
+    if(player["escudos"]!="None"):
+KeyError: 'escudos'
+INFO:[25/07/2021 14:55:02] Scheduler started
+INFO:[25/07/2021 14:58:07] Scheduler started
+INFO:[25/07/2021 14:58:56] Scheduler started
+INFO:[25/07/2021 15:13:43] Scheduler started
+INFO:[25/07/2021 15:21:04] Scheduler started
+INFO:[25/07/2021 15:21:21] Scheduler started
+INFO:[25/07/2021 15:34:17] Scheduler started
+INFO:[25/07/2021 16:01:10] Scheduler started
+INFO:[25/07/2021 16:11:54] Scheduler started
+INFO:[25/07/2021 16:18:49] Scheduler started
+INFO:[25/07/2021 16:30:49] Scheduler started

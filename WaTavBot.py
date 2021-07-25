@@ -153,52 +153,56 @@ class Player:
 
     def weapAssign(self):
         global PlayerDB
+        
         if(str(self.id) in list(PlayerDB.keys())):
-            self.mainW = TiendaDB[PlayerDB[str(self.id)]["mainW"]]
-            self.offHW = TiendaDB[PlayerDB[str(self.id)]["offHW"]]
+            player = PlayerDB[str(self.id)]
+            BolsoJG = player["bolso_arm"]               
+            self.mainW = BolsoJG[player["manoPrincipal"]]
+            self.offHW = BolsoJG[player["mano"]]
         else:
             self.mainW = TiendaDB['01']
             self.offHW = TiendaDB['02']
         return
 
     def genAssign(self):
-        pronouns = {
-            'he':{
-                'nomin':'he',
-                'object':'him',
-                'possAdj':'his',
-                'possPro':'his',
-                'reflex':'himself'
+        pronouns = {        
+            'el':{
+                'nomin':'el',
+                'object':'él',
+                'possAdj':'su',
+                'possPro':'su',
+                'reflex':'suyo'
             },
-            'she':{
-                'nomin':'she',
-                'object':'her',
-                'possAdj':'her',
-                'possPro':'hers',
-                'reflex':'herself'
+            'ella':{
+                'nomin':'ella',
+                'object':'ella',
+                'possAdj':'ella',
+                'possPro':'suyo',
+                'reflex':'ella misma'
             },
-            'it':{
-                'nomin':'it',
-                'object':'it',
-                'possAdj':'its',
-                'possPro':'its',
-                'reflex':'itself'
+            'se':{
+                'nomin':'se',
+                'object':'se',
+                'possAdj':'su',
+                'possPro':'su',
+                'reflex':'sí mismo'
             },
-            'we':{
-                'nomin':'we',
-                'object':'us',
-                'possAdj':'our',
-                'possPro':'ours',
-                'reflex':'ourself'
-            },
-            'they':{
-                'nomin':'they',
-                'object':'them',
-                'possAdj':'their',
-                'possPro':'theirs',
-                'reflex':'themself'
+            'nos':{
+                'nomin':'nos',
+                'object':'nos',
+                'possAdj':'nuestro',
+                'possPro':'nosotros',
+                'reflex':'nosotros mismos'
+            },            
+            'le':{
+                'nomin':'le',
+                'object':'ellos',
+                'possAdj':'su',
+                'possPro':'suyo',
+                'reflex':'ellos mismos'
                 }
             }
+        
         if(str(self.id) in list(PlayerDB.keys())):
             self.pron = pronouns[PlayerDB[str(self.id)]['pron']]
         else:
@@ -303,7 +307,7 @@ class ArenaObject:
 
     def dmgCalc(self):
         prs = list(self.Players.keys())
-        part = {'h':'Head','b':'Body','l':'Legs'}
+        part = {'h':'En la Cabeza','b':'En el Cuerpo','l':' En la Pierna'}
         crit = 1
         critxt = ""
         text = "\n<b>Ronda: %i</b>"%(self.round+1)
@@ -354,12 +358,12 @@ class ArenaObject:
 
                 )
             else:
-                text += "\n%s atacar %s's %s con %s %s"%(
+                text += "\n%s Atacó a %s - %s con %s %s"%(
                     self.Players[prs[0]].name,
                     self.Players[prs[1]].name,
                     part[atk].lower(),
                     self.Players[prs[0]].pron['possAdj'],
-                    self.Players[prs[0]].mainW["name"]
+                    self.Players[prs[0]].mainW["nombre"]
                     )
 
                 if(dam > 0):
@@ -369,11 +373,11 @@ class ArenaObject:
                     )
 
                 else:
-                    text += ', pero %s logró defender %s utilizar %s %s.'%(
+                    text += ', pero %s logró defender %s utilizando %s %s.'%(
                         self.Players[prs[1]].name,
                         self.Players[prs[1]].pron['reflex'],
                         self.Players[prs[1]].pron['possAdj'],
-                        self.Players[prs[1]].offHW['name']
+                        self.Players[prs[1]].offHW['nombre']
                     )
         self.Players[prs[1]].hp -= dam
 
@@ -407,12 +411,12 @@ class ArenaObject:
 
                     )
                 else:
-                    text += "\n%s atacar %s's %s con %s %s"%(
+                    text += "\n%s Atacó a %s - %s con %s %s"%(
                         self.Players[prs[1]].name,
                         self.Players[prs[0]].name,
                         part[atk].lower(),
                         self.Players[prs[1]].pron['possAdj'],
-                        self.Players[prs[1]].mainW["name"]
+                        self.Players[prs[1]].mainW["nombre"]
                         )
 
                     if(dam > 0):
@@ -425,7 +429,7 @@ class ArenaObject:
                             self.Players[prs[0]].name,
                             self.Players[prs[0]].pron['reflex'],
                             self.Players[prs[0]].pron['possAdj'],
-                            self.Players[prs[0]].offHW['name']
+                            self.Players[prs[0]].offHW['nombre']
                         )
             self.Players[prs[0]].hp -= dam
         else:
@@ -491,13 +495,13 @@ class ArenaObject:
                 "en combate."]
         elif(self.Players[win].hp > 33):
             if(self.round > 5):
-                length = "long"
+                length = "largo"
             else:
-                length = "short"
+                length = "corto"
             status = [
                 "Después de {} una batalla acalorada,".format(length),
-                "was able to overtake",
-                "in what it seemed a paired match."
+                "fue capaz de adelantar",
+                "en lo que parecía un partido emparejado."
                 ]
         else:
             status = [
@@ -521,6 +525,184 @@ class ArenaObject:
                                         self.Players[win].name)
 
         return "<b>⚔Duelo⚔</b>"+self.text+'\n'+text
+
+def start(update: Update, context: CallbackContext):
+    query = update.message.from_user
+    text = """Te acercas y ves un cartel en la puerta:\n
+            < i > Discúlpenos, por el momento esta bajo mantenimiento...
+            <s>(cosas aleatorias pueden suceder debido a la física cuántica.)</s>
+            Estaremos de negocios en un par de días...</me>
+            \n"""
+    update.message.reply_text(
+                                text,
+                                reply_markup = None,
+                                parse_mode=ParseMode.HTML
+                            )
+
+    return
+
+def register(update: Update, context: CallbackContext):
+    user = update.message.from_user
+    IKB = InlineKeyboardButton
+    if(str(user.id) in list(PlayerDB.keys())):
+        welcometext = "Bienvenido de vuelta, {name}! \n¿Cómo puedo servirle hoy?".format(name=user.first_name)
+        reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+        update.message.reply_text(
+            text=welcometext,
+            reply_markup=reply_markup,
+            parse_mode=ParseMode.HTML
+        )
+        threading.Thread(target=updateUser,args=(user,)).start()
+        return ConversationHandler.END
+    else:
+        text = "Elige el castillo al que jurarás lealtad 🗡"  
+        id_stiker= "CAACAgEAAxkBAAEB7BdgOA8VimAAATplEjtXp0IRxejpASoAAiwBAAJ9BsBFdTpwxjEI5z0eBA"   
+           
+        
+        reply_markup = InlineKeyboardMarkup([
+                                                [
+                                                    IKB("🐉Escama de dragon",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='dragon',d2=str(user.id))+'}'),
+                                                    IKB("🌑Luz lunar",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='luna',d2=str(user.id))+'}')
+                                                ],
+                                                [
+                                                    IKB("🥔Papa",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='papa',d2=str(user.id))+'}'),
+                                                    IKB("🐺Manada de lobos",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='lobos',d2=str(user.id))+'}')
+                                                ],
+                                                [   IKB("🦌Cuerno de ciervo",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='ciervos',d2=str(user.id))+'}'),
+                                                    IKB("🦅Nido alto",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='agilas',d2=str(user.id))+'}'),                                            
+                                                ],
+                                                [   IKB("🦈Dientes de Tiburón",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='tiburon',d2=str(user.id))+'}')
+                                                ]
+                                            ] 
+                                          )
+        
+        context.bot.send_sticker(chat_id=user.id, sticker=id_stiker)
+        update.message.reply_text(text, reply_markup = reply_markup, parse_mode=ParseMode.HTML)
+
+        return
+
+def reg(update: Update, context: CallbackContext):
+    query = update.callback_query
+    data = json.loads(query.data)
+    option,next = data["op"].split("|")
+    user = query.from_user
+    if(next == 'gen'):      
+        if(data["d1"] == "dragon"):
+            castillo = "Escamas de dragon"
+            flag = "🐉"
+        if(data["d1"] == "luna"):
+            castillo = "Luz lunar"
+            flag = "🌑"
+        if(data["d1"] == "lobos"):
+            castillo = "Manadas de Lobos"
+            flag = "🐺"
+        if(data["d1"] == "ciervos"):
+            castillo = "Cuernos de Ciervo"
+            flag = "🦌"
+        if(data["d1"] == "agilas"):
+            castillo = "Nido Alto" 
+            flag = "🦅"                                  
+        if(data["d1"] == "tiburon"):
+            castillo = "Dientes de Tiburón"
+            flag = "🦈"
+        if(data["d1"] == "papa"):
+            castillo = "Papa"
+            flag = "🥔"
+ 
+            
+        text = str('🎉Usted se une a los valientes guerreros del {fla}{castle}.\n\n'.format(fla=flag,castle=castillo)
+             +"Date prisa y únete al chat de nuestros jugadores: @TorreDeDiosRPG")
+        
+        try:
+            context.bot.edit_message_reply_markup(
+                chat_id=user.id,
+                message_id=query.message.message_id,
+                #inline_message_id=query.inline_message_id,
+                reply_markup=None
+            )
+            reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+            context.bot.send_message(
+                chat_id=user.id,
+                text=text,
+                parse_mode=ParseMode.HTML,
+                reply_markup=reply_markup)
+            threading.Thread(target=newUser,args=(user,data["d1"],)).start()
+        except Exception as e:
+            error(update,e)
+    return
+
+def newUser(user,pron):
+    global PlayerDB
+    castillo = ''
+    flag = ''
+    Castillos = pron
+    if(Castillos == "dragon"):
+        castillo = "Escamas de dragon"
+        flag = "🐉"
+    if(Castillos == "luna"):
+        castillo = "Luz lunar"
+        flag = "🌑"
+    if(Castillos == "lobos"):
+        castillo = "Manadas de Lobos"
+        flag = "🐺"
+    if(Castillos == "ciervos"):
+        castillo = "Cuernos de Ciervo"
+        flag = "🦌"
+    if(Castillos == "agilas"):
+        castillo = "Nido Alto" 
+        flag = "🦅"                                  
+    if(Castillos == "tiburon"):
+        castillo = "Dientes de Tiburón"
+        flag = "🦈"
+    if(Castillos == "papa"):
+        castillo = "Papa"
+        flag = "🥔"
+
+    info = {
+        "username":user.username,
+        "nombre_hero":user.username,
+        "castillo":castillo,
+        "flag_casti":flag,
+        "level":1,
+        "exp":0,
+        "ataque":1,
+        "defensa":1,
+        "resis_max":5,
+        "resis_min":5,
+        "vida_max":300,
+        "vida_min":300,
+        "mana_max":0,
+        "mana_min":0,
+        "oro":0,
+        "bol_oro":0,
+        "gemas":0,        
+        "bolso_min":0,        
+        "bolso":15,        
+        "stock":4000,               
+        "manoPrincipal":"None",
+        "mano":"None",
+        "casco":"None",
+        "guantes":"None",
+        "armadura":"None",
+        "botas":"None",
+        "especial":"None",
+        "anillo":"None",
+        "collar":"None",  
+        "pron":"they",
+        "estado":"🛌Descanso",
+        "puntos_habili":"0",
+        "equipados_arm": [[0]],   
+        "bolso_arm":[[0]],  
+        "almacen_re":[[0]],
+        "clase":[[0]],        
+        "mascota":"0", 
+        "rank":0,
+        "lastlog":datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    }
+    Fire.put("/players",user.id,info)
+    PlayerDB[str(user.id)] = info
+    #print(PlayerDB[str(user.id)])
+    return
 
 def keepAlive(update:Update,context:CallbackContext,arena:ArenaObject):
     query = update.callback_query
@@ -704,60 +886,6 @@ def battle(update:Update,context:CallbackContext):
 
     return
 
-def start(update: Update, context: CallbackContext):
-    query = update.message.from_user
-    text = """Te acercas y ves un cartel en la puerta:\n
-            < i > Discúlpenos, por el momento que ' re bajo mantenimiento...
-            Sin embargo, siempre se puede utilizar nuestra pista de duelo que está en la parte de atrás. Solo escribe: 
-            \n \ " @TorreRPG_bot + <code > space< / code > \"\n y pulse\" Duel Duel \ " en cualquier ventana de chat para acceder a ella.
-            <s>(cosas aleatorias pueden suceder debido a la física cuántica.)</s>
-            Estaremos de negocios en un par de días...</me>
-            \n"""
-    update.message.reply_text(
-                                text,
-                                reply_markup = None,
-                                parse_mode=ParseMode.HTML
-                            )
-
-    return
-
-def register(update: Update, context: CallbackContext):
-    user = update.message.from_user
-    IKB = InlineKeyboardButton
-    if(str(user.id) in list(PlayerDB.keys())):
-        welcometext = "Bienvenido de vuelta, {name}! \n¿Cómo puedo servirle hoy?".format(name=user.first_name)
-        reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
-        update.message.reply_text(
-            text=welcometext,
-            reply_markup=reply_markup,
-            parse_mode=ParseMode.HTML
-        )
-        threading.Thread(target=updateUser,args=(user,)).start()
-        return ConversationHandler.END
-    else:
-        text = str("Vaya, vaya, vaya... ¿Qué tenemos aquí? Pareces nuevo por aquí, ¿no?"
-            +" Bienvenido a la <i>Taberna Trotamundos</i>, viajero, donde puedes encontrar la mejor cerveza que jamás encontrarás en todo el continente."
-            +"\nMi nombre es @JuanShotLC, y yo soy el que sirve por aquí."
-            +"\nAntes que nada, por favor, viajero, hazme saber tu género...")
-        reply_markup = InlineKeyboardMarkup([
-                                                [
-                                                    IKB("♀ Dama",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='she',d2=str(user.id))+'}'),
-                                                    IKB("♂ Caballero",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='he',d2=str(user.id))+'}')
-                                                ],
-                                                [
-                                                    IKB("🕈 Muerto",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='it',d2=str(user.id))+'}'),
-                                                    IKB("☭ Compañero",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='we',d2=str(user.id))+'}')
-                                                ],
-                                                [   IKB("▣ Otro",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='they',d2=str(user.id))+'}')]
-                                            ]
-                                          )
-        update.message.reply_text(
-                                    text,
-                                    reply_markup = reply_markup,
-                                    parse_mode=ParseMode.HTML
-                                )
-        return
-
 def misiones(update: Update, context: CallbackContext):
     global PlayerDB
     user = update.message.from_user
@@ -797,94 +925,6 @@ def misiones(update: Update, context: CallbackContext):
                                     reply_markup = reply_markup,
                                     parse_mode=ParseMode.HTML
                                 )
-    return
-
-def reg(update: Update, context: CallbackContext):
-    query = update.callback_query
-    data = json.loads(query.data)
-    option,next = data["op"].split("|")
-    user = query.from_user
-    if(next == 'gen'):
-        if(data["d1"] == "we"):
-            namename = "Comrade"
-        else:
-            namename = user.first_name
-        text = str('<i>Ah, worderful! And your name is... I see. Nice to meet you, {name}!\n\n'.format(name=namename)
-            +"Here, have a drink, courtesy of the house! If you like it, you can always come back and have one 🍻 Beer for just 5💰."
-            +" Who knows? Maybe you can make some new friends while drinking..."
-            +"\n\nWe also have a ⚔️ Duellng Court in the back, you can always come and take a challenge with another traveller,"
-            +" or you can just fight with a friend, all you have to do is to write: </i>\n\n@WaTavBot + <code>space</code>\n\n<i>On any chat window,"
-            +" and pressing the ⚔Duel button, then you'll be able to challenge any friend you want, even if they haven't even visited the tavern before..."
-            +"\nHuh! What is a chat window, by the way?"
-            +"\n\nAnyway, you can also play 🎲 Lucky Seven in our gambling tables. Also with a stranger, or call it via inline message the same way as the duels with friends:"
-            +"</i>\n\n@WaTavBot + <code>space</code>\n\n<i> and pressing the 🎲Dice button."
-            +"\n\nFinally, on the back, next to the duelling court, there's a blacksmith, who forges and sells weapons of the finest quality."
-            +" There you can buy anything that fits better your combat style."
-            +"\n\nWith nothing more to say, make yourself comfortable, and enjoy the atmosphere and the company with a good drink!</i>")
-        try:
-            context.bot.edit_message_reply_markup(
-                chat_id=user.id,
-                message_id=query.message.message_id,
-                #inline_message_id=query.inline_message_id,
-                reply_markup=None
-            )
-            reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
-            context.bot.send_message(
-                chat_id=user.id,
-                text=text,
-                parse_mode=ParseMode.HTML,
-                reply_markup=reply_markup)
-            threading.Thread(target=newUser,args=(user,data["d1"],)).start()
-        except Exception as e:
-            error(update,e)
-    return
-
-def newUser(user,pron):
-    global PlayerDB
-    info = {
-        "username":user.username,
-        "nombre_hero":user.username,
-        "castillo":"None",
-        "flag_casti":"None",
-        "level":1,
-        "exp":0,
-        "ataque":1,
-        "defensa":1,
-        "resis_max":5,
-        "resis_min":5,
-        "vida_max":300,
-        "vida_min":300,
-        "mana_max":0,
-        "mana_min":0,
-        "oro":0,
-        "bol_oro":0,
-        "gemas":0,        
-        "bolso_min":0,        
-        "bolso":15,        
-        "stock":4000,               
-        "manoPrincipal":"None",
-        "mano":"None",
-        "casco":"None",
-        "guantes":"None",
-        "armadura":"None",
-        "botas":"None",
-        "especial":"None",
-        "anillo":"None",
-        "collar":"None",  
-        "pron":pron,
-        "estado":"🛌Descanso",
-        "puntos_habili":"0",
-        "equipados_arm": [[0]],   
-        "bolso_arm":[[0]],  
-        "almacen_re":[[0]],
-        "clase":[[0]],        
-        "mascota":"0", 
-        "rank":0,
-        "lastlog":datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    }
-    Fire.put("/players",user.id,info)
-    PlayerDB[str(user.id)] = info
-    #print(PlayerDB[str(user.id)])
     return
 
 def queryHandler(update: Update, context: CallbackContext):
@@ -961,7 +1001,7 @@ def inlinequery(update: Update, context: CallbackContext):
                                         ),
                 InlineQueryResultArticle(
                                             id=uuid4(),
-                                            title="🎲Dice",
+                                            title="🎲Dados",
                                             reply_markup = InlineKeyboardMarkup(kb.kb(op = "dice",args = "{\"op\":\"dice|dice\",\"next\":\"dice\",\"room\":\"%s\"}"%(target.username))),
                                             input_message_content=InputTextMessageContent(
                                                                                             message_text = "Pulsar <i>\"Roll\"</i> para rodar los dados...",
@@ -1026,16 +1066,14 @@ def me(update: Update, context: CallbackContext):
     if(int(habilidad) > 0):
         text+="\n🌟Congratulations Felicitaciones! Nuevo nivel!🌟"
         text+="\n\nAsignar puntos /level_up"
-    if( player["flag_casti"] != "None"):
-        text+="\nBatlla"
-        text+="\n\n"
-    if( player["flag_casti"] != "None"):
-        text+="🦅🌑"
-    if( player["flag_casti"] != "None"):
-        text+="[]"
+        # text+="\nBatlla"
+        # text+="\n\n"
+
+    text+="{fla}".format(fla=player["flag_casti"])
+    #text+="[LSD]"
     text+="{name}".format(name=user.first_name)
-    if( player["flag_casti"] != "None"):
-        text+="Del Castillo"
+    text+=" Del Castillo {castillo}".format(castillo=player["castillo"])
+    
     text+="\n🏅Nivel: {level}".format(level=str(player["level"]))        
     text+="\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
     text+="🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
@@ -1060,17 +1098,6 @@ def me(update: Update, context: CallbackContext):
     text+="\n\nEstado:\n{estado}".format(estado=player["estado"])
     text+="\n\nMás: /heroe"
 
-        
-    IKB = KeyboardButton
-    # reply_markup = ReplyKeyboardMarkup(
-    #     [
-    #         [
-    #             IKB("🗡Armas"),
-    #             IKB("↩️Volver")
-    #         ]
-    #     ],
-    #     resize_keyboard=True,
-    # )
     reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
 
     update.message.reply_text(
@@ -1142,9 +1169,10 @@ def heroe(update: Update, context: CallbackContext):
 
     Total_ataque = a + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9
     Total_defensa = d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9
-    Suma = Total_ataque + Total_ataque
-    
-    text="\n{name}".format(name=user.first_name)
+    Suma = Total_ataque + Total_defensa
+    text="{fla}".format(fla=player["flag_casti"])
+    #text+="[LSD]"
+    text+="{name}".format(name=user.first_name)
     text+="\n🏅Nivel: {level}".format(level=str(player["level"]))        
     text+="\n⚔️Ataque: {ataq}".format(ataq=str(player["ataque"]))
     text+="🛡Defensa: {defensa}".format(defensa=str(player["defensa"]))
@@ -1374,9 +1402,9 @@ def inventario(update: Update, context: CallbackContext):
 
 
 
-    Total_ataque = a + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9
-    Total_defensa = d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9
-    Suma = Total_ataque + Total_ataque
+    Total_ataque = a + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 
+    Total_defensa = d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 
+    Suma = Total_ataque + Total_defensa
     
     text="\n\n🎽Euipamiento:"
     if(Suma == 0):
@@ -2022,6 +2050,7 @@ def wpassign(weapon,user):
     Jugador = PlayerDB[str(user.id)]
     BolsoJG = Jugador["bolso_arm"]
     WpAc = Jugador["manoPrincipal"]
+    WpAc2 = Jugador["mano"]
     slot = ""
     if(BolsoJG[weapon]["g_type"] in ["espadas","lanzas","arcos","desafilados"]):
         slot = "manoPrincipal"
@@ -2044,33 +2073,17 @@ def wpassign(weapon,user):
 
     if(slot == "manoPrincipal"):
         if(Jugador["manoPrincipal"]=="None"):
-            if(BolsoJG[WpAc]["g_type"] == "arcos"):
-                """Desactivar armar segundaria cuando sean de dos manos"""
-                uploadwp(player=str(user.id),w=(WpAc),concept=("estatus"),value=(0))   
-                upload(player=str(user.id),concept=("mano"),value=("None"))                              
-                """Colocar Armade dos manos"""
-                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-                upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))  
-            else:
-                """Cambia normalmente"""
+                """"Colocar Arma Nueva"""
                 uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
                 upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon)) 
                
         else:  
-            
-            if(BolsoJG[WpAc]["g_type"] == "arcos"):
-                """Desactivar armar segundaria cuando sean de dos manos"""
-                uploadwp(player=str(user.id),w=(WpAc),concept=("estatus"),value=(0))   
-                upload(player=str(user.id),concept=("mano"),value=("None"))                              
-                """Colocar Armade dos manos"""
-                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-                upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))  
-            else:
-                """Desactivar armar puesta y cambiar estatus del arma puesta"""
-                uploadwp(player=str(user.id),w=(WpAc),concept=("estatus"),value=(0))
-                """"Colocar Arma Nueva"""
-                uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
-                upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))    
+
+            """Desactivar armar puesta y cambiar estatus del arma puesta"""
+            uploadwp(player=str(user.id),w=(WpAc),concept=("estatus"),value=(0))
+            """"Colocar Arma Nueva"""
+            uploadwp(player=str(user.id),w=(weapon),concept=("estatus"),value=(1))
+            upload(player=str(user.id),concept=("manoPrincipal"),value=(weapon))    
                          
     elif(slot == "mano"):
         if(Jugador["mano"]=="None"):
@@ -2178,12 +2191,10 @@ def ata_castillo(update: Update, context: CallbackContext):
     text='No esta Disponible'
     update.message.reply_text(text=text)
     return
-
 def def_castillo(update: Update, context: CallbackContext):
     text='No esta Disponible'
     update.message.reply_text(text=text)
     return
-
 def cominicacion(update: Update, context: CallbackContext):     
     text="📯Comunicación con otros castillos\n Únete a @TorreDeDiosRPG y empieza a hablar con los ciudadanos de los siete castillos.\n\n"
     text+="📢Nuevas Noticias del juego\n Únase a @TorreDeDiosRPG para mantenerse al día con las últimas actualizaciones.\n\n"
@@ -2203,7 +2214,6 @@ def cominicacion(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML
     )
     return 
-
 def taller(update: Update, context: CallbackContext):
     text="No esta disponible"
     IKB = InlineKeyboardButton
