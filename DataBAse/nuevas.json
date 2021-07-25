@@ -1,0 +1,1797 @@
+{
+    "01": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": true,
+        "evento_item": false,
+        "fabricable": false,
+        "intercanbio": true,
+        "subasta": false,
+        "misiones": true,
+        "drop": {
+            "madrugada": {
+                "bosque": true,
+                "pantano": true,
+                "valle": true,
+                "incursion": false
+
+            },
+            "dia": {
+                "bosque": true,
+                "pantano": true,
+                "valle": true,
+                "incursion": false
+
+            },
+            "tarde": {
+                "bosque": true,
+                "pantano": true,
+                "valle": true,
+                "incursion": false
+
+            },
+            "noche": {
+                "bosque": true,
+                "pantano": true,
+                "valle": true,
+                "incursion": false
+
+            }
+
+        }
+
+    },
+    "02": {
+        "id": "02",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Palo",
+        "depo_clan": true,
+        "evento_item": false,
+        "fabricable": false,
+        "intercanbio": true,
+        "subasta": false,
+        "misiones": true,
+        "drop": {
+            "madrugada": {
+                "bosque": true,
+                "pantano": false,
+                "valle": false,
+                "incursion": false
+
+            },
+            "dia": {
+                "bosque": true,
+                "pantano": false,
+                "valle": false,
+                "incursion": false
+
+            },
+            "tarde": {
+                "bosque": true,
+                "pantano": false,
+                "valle": false,
+                "incursion": false
+
+            },
+            "noche": {
+                "bosque": true,
+                "pantano": false,
+                "valle": false,
+                "incursion": false
+
+            }
+
+        }
+
+    },
+    "03": {
+        "id": "03",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Piel",
+        "depo_clan": true,
+        "evento_item": false,
+        "fabricable": false,
+        "intercanbio": true,
+        "subasta": false,
+        "misiones": true,
+        "drop": {
+            "madrugada": {
+                "bosque": false,
+                "pantano": true,
+                "valle": false,
+                "incursion": false
+
+            },
+            "dia": {
+                "bosque": false,
+                "pantano": true,
+                "valle": false,
+                "incursion": false
+
+            },
+            "tarde": {
+                "bosque": false,
+                "pantano": true,
+                "valle": false,
+                "incursion": false
+
+            },
+            "noche": {
+                "bosque": true,
+                "pantano": true,
+                "valle": false,
+                "incursion": false
+
+            }
+
+        }
+
+    },
+    "04": {
+        "id": "04",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hueso",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "05": {
+        "id": "05",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Carbón",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "06": {
+        "id": "06",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Carbón",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "07": {
+        "id": "07",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Polvo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "08": {
+        "id": "08",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Mineral de hierro",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "09": {
+        "id": "09",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Tela",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "10": {
+        "id": "10",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Mineral de plata",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "11": {
+        "id": "11",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Bauxita",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "12": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Cable",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "13": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Piedra magica",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "14": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Eje de madera",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "15": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Zafiro",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "16": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Solvente",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "17": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Rubí",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "18": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Endurecedor",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "19": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Acero",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "20": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Cuero",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "21": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Polvo de hueso",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "22": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Cuerda",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "23": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Coca",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "24": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Polvo purificado",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "25": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Aleación de plata",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "26": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Molde de acero",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "27": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Molde de plata",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "28": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Marco de herrero",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "29": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Marco artesanal",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "30": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Soga",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "31": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Marco de plata",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "32": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Placa metálica",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "33": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Fibra Metálica",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "34": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Cuero elaborado",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "35": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Paño de calidad",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "36": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Molde de herrero",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "37": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Molde Artesano",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "38": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Sumac apestoso",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "39": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Misericordia Sassafras",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "40": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Cliff Rue",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "41": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Enredadera de amor",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "42": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Raíz de lobo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "43": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Lavanda del pantano",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "44": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Flor blanca",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "45": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "adición",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "46": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Efijora",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "47": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hisopo de tormenta",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "48": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Ajo de cueva",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "49": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Semilla amarilla",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "50": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Envase",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "501": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "51": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "52": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "53": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "54": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "55": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "56": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "57": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "58": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "59": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "60": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "61": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "62": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "63": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "64": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "65": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "66": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "67": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "68": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "69": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "70": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "71": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "72": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "73": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "74": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "75": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "76": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "77": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "78": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "79": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "80": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    },
+    "81": {
+        "id": "01",
+        "elaboracion": "C0",
+        "peso": 1,
+        "tipo": "Recurso",
+        "nombre": "Hilo",
+        "depo_clan": "Si",
+        "evento_item": "No",
+        "fabricable": "No",
+        "intercanbio": "Si",
+        "subasta": "No",
+        "misiones": "Si",
+        "drop": {
+            "bosque": "Si",
+            "pantano": "Si",
+            "valle": "Si",
+            "incursion": "No"
+
+        }
+
+    }
+
+}
