@@ -7644,6 +7644,7 @@ INFO:[22/07/2021 23:25:41] Scheduler started
 INFO:[22/07/2021 23:27:08] Scheduler started
 INFO:[22/07/2021 23:30:06] Scheduler started
 INFO:[22/07/2021 23:33:23] Scheduler started
+INFO:[23/07/2021 19:52:34] Scheduler started
 INFO:[23/07/2021 19:53:52] Scheduler started
 INFO:[23/07/2021 19:57:59] Scheduler started
 INFO:[23/07/2021 19:59:00] Scheduler started
@@ -7928,3 +7929,30 @@ INFO:[24/07/2021 00:00:45] Scheduler started
 INFO:[24/07/2021 00:02:09] Scheduler started
 INFO:[24/07/2021 00:03:22] Scheduler started
 INFO:[24/07/2021 00:05:13] Scheduler started
+INFO:[24/07/2021 21:52:02] Scheduler started
+INFO:[24/07/2021 21:53:58] Scheduler started
+INFO:[24/07/2021 21:54:56] Scheduler started
+INFO:[24/07/2021 21:58:53] Scheduler started
+INFO:[24/07/2021 22:02:21] Scheduler started
+INFO:[24/07/2021 22:05:06] Scheduler started
+INFO:[24/07/2021 22:05:43] Scheduler started
+INFO:[24/07/2021 22:06:48] Scheduler started
+INFO:[24/07/2021 22:07:52] Scheduler started
+INFO:[24/07/2021 22:28:41] Scheduler started
+INFO:[24/07/2021 23:03:48] Scheduler started
+INFO:[24/07/2021 23:08:18] Scheduler started
+INFO:[24/07/2021 23:09:36] Scheduler started
+ERROR:[24/07/2021 23:17:25] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 725, in register
+    user = update.message.from_user
+AttributeError: 'NoneType' object has no attribute 'from_user'
+INFO:[24/07/2021 23:28:55] Received signal 2 (SIGINT), stopping...
+INFO:[24/07/2021 23:28:55] Scheduler has been shut down
+WARNING:[24/07/2021 23:29:01] Exiting immediately!
