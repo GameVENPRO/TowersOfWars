@@ -1779,7 +1779,8 @@ def shopcat(update: Update, context: CallbackContext):
 
         if(weapons == False):
             text += "\n<b>((Vacio))</b>"        
-            reply_markup = InlineKeyboardMarkup(kb.kb("wtypes",("bsmith|na","null")))
+        
+        reply_markup = InlineKeyboardMarkup(kb.kb("wtypes",("bsmith|na","null")))
             
     context.bot.edit_message_text(
                             text=text,
@@ -1942,14 +1943,14 @@ def equip(update: Update, context: CallbackContext):
     BolsoJG = Jugador["bolso_arm"]
     weapon = update.message.text.replace("/on_","")
     
-    if(weapon not in BolsoJG):
-        return
-    else:
-        if(weapon not in list(BolsoJG[weapon])):
-            text = "¡No eres el dueño de esta arma!"
-        else:        
-            wpassign(int(weapon),user)   
-            text = "<b>{weapon}</b> equipado con éxito!".format(weapon=BolsoJG[int(weapon)]["nombre"])
+    #if(weapon not in BolsoJG):
+   #     return
+   # else:
+    #    if(weapon not in list(BolsoJG[weapon])):
+           # text = "¡No eres el dueño de esta arma!"
+       # else:        
+    wpassign(int(weapon),user)   
+    text = "<b>{weapon}</b> equipado con éxito!".format(weapon=BolsoJG[int(weapon)]["nombre"])
             
     update.message.reply_text(
                                     text=text,
