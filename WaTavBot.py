@@ -728,7 +728,7 @@ def newUser(user,pron):
         "especial":"None",
         "anillo":"None",
         "collar":"None",  
-        "pron":"they",
+        "pron":"le",
         "estado":"🛌Descanso",
         "puntos_habili":"0",
         "equipados_arm": [[0]],   
@@ -965,8 +965,6 @@ def misiones(update: Update, context: CallbackContext):
                                     reply_markup = reply_markup,
                                     parse_mode=ParseMode.HTML
                                 )
-    return
-def quest_pantano():
     return
 
 def queryHandler(update: Update, context: CallbackContext):
