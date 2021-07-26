@@ -966,6 +966,8 @@ def misiones(update: Update, context: CallbackContext):
                                     parse_mode=ParseMode.HTML
                                 )
     return
+def quest_pantano():
+    return
 
 def queryHandler(update: Update, context: CallbackContext):
     query = update.callback_query
