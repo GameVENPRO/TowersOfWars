@@ -1373,7 +1373,7 @@ def heroe(update: Update, context: CallbackContext):
             
     text+="\n\n🎒Balso: {total}".format(total="0" if bolso_arm == 0 else bolso_arm)
     text+="/{bolso} ".format(bolso=player["bolso"])
-    text+="/inv"
+    text+="/almc"
     text+="\n\n📦Almacen: {total} /stock".format(total=alma_re)
 
     reply_markup = ReplyKeyboardMarkup(kb.ini_kb(level),resize_keyboard=True)
@@ -1695,26 +1695,6 @@ def tiempo(update: Update, context: CallbackContext):
 def pronostico():
     
     # estados climáticos: Soleado ☀️, Nublado 🌤, Lluvioso 🌧 y Brumoso 🌫
-    return
-
-def clan(update: Update, context: CallbackContext):
-    text="Te sentaste y disfrutaste de una cerveza fría y espumosa... Desafortunadamente, el tabern parece vacío por ahora.\nTal vez más tarde vendrá más gente.\n\nPero no te preocupes, la casa invita a esta ronda! 🍻🍻🍻"
-    IKB = InlineKeyboardButton
-    reply_markup = ReplyKeyboardMarkup(
-        [
-            [
-                IKB("👥Hablar"),
-                IKB("↩️Volver")
-            ]
-        ],
-        resize_keyboard=True,
-    )
-
-    update.message.reply_text(
-        text=text,
-        reply_markup=None,
-        parse_mode=ParseMode.HTML
-    )
     return
 
 def castillo(update: Update, context: CallbackContext):
@@ -2235,44 +2215,71 @@ def cominicacion(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML
     )
     return 
+
+# Taller
 def taller(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="Your recipes:"
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def mesa_trabajo(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="⚒En su banco de trabajo puede encontrar:"
+    text+="[vacio]"
+    text+="Su stock:"
+    text+="[vacio]"
+    
+    
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Artesanía"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("❌Reiniciar"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def craf(update: Update, context: CallbackContext):
     text="No esta disponible"
     IKB = InlineKeyboardButton
@@ -2292,158 +2299,358 @@ def craf(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML
     )
     return
+
 def formulas(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="Your recipes:"
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def envolver(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="Puedes envolver:"
+    text+="Espada de madera (1)"
+    text+="Requiere 1🏷"
+    text+="Wrap: / wrap_w01"
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
+
+# Taberna
 def taberna(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="Entras en la vieja Taberna de mofetas, ruidosa y abarrotada como siempre. Al lado de la barra se ven algunos "
+    text="soldados presumiendo de las últimas noticias de las líneas de batalla. En la parte de atrás de la taberna algunos"
+    text="granjeros están jugando a los dados."
+    text+="Usted puede comprar una pinta de cerveza y sentarse al lado de los soldados: tomar un descanso, "
+    text="escuchar algunos chismes. Si tienes suerte, es posible que escuches algo interesante."
+    text+="Precio de una pinta: 3 p"
+    text+="O usted puede sentarse al lado de los jugadores y probar suerte en los dados."
+    text+="Cuota de inscripción: 10💰"
+        
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("🍺Tomar"),
+                IKB("🎲Jugar a los dados")
+                
+            ],                            
+            [                
+                IKB("Hablar con el extraño"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
+def beber_cerveza(update: Update, context: CallbackContext):
+    text="Tomaste una cerveza fría. Ahora puedes sentarte"
+    text+="y escuchar lo que la gente tiene que decir. Terminarás tu bebida en 5 minutos."
+        
+    IKB = KeyboardButton
+    
+    reply_markup = ReplyKeyboardMarkup(
+        [
+            
+            [
+                IKB("🍺Tomar"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
+                IKB("↩️Volver")
+            ]                
+                
+        
+        ],
+        resize_keyboard=True,
+    )
+
+    update.message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return
+
+def juagar_dados(update: Update, context: CallbackContext):
+    text="Tomaste una cerveza fría. Ahora puedes sentarte"
+    text+="y escuchar lo que la gente tiene que decir. Terminarás tu bebida en 5 minutos."
+        
+    IKB = KeyboardButton
+    
+    reply_markup = ReplyKeyboardMarkup(
+        [
+            
+            [
+                IKB("🍺Tomar"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
+                IKB("↩️Volver")
+            ]                
+                
+        
+        ],
+        resize_keyboard=True,
+    )
+
+    update.message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return
+
+def habalar_pasaporte(update: Update, context: CallbackContext):
+    text="Cuando te acercaste al extraño, instantáneamente lo reconociste - era Contrabandista, "
+    text+=" un criminal conocido y peligroso, buscado por la guardia en cada castillo."
+    text+="¿Qué estás haciendo, cambiando tu lealtad?  Entonces este es mi precio. Si no - lárgate de aquí y no me hagas perder el tiempo"
+    text+="🦌Pasaporte Deerhorn 💎 25"
+    text+="🐺Pasaporte Wolfpack 💎 35"
+    text+="🦈Sharkteeth pasaporte 💎 60"
+    text+="🌑Pasaporte a la luz de la luna 💎 84"    
+    text+="🦅Pasaporte a la luz de la luna 💎 84"
+    text+="🥔Pasaporte de papa 💎 10"
+    text+="🐉 Pasaporte Dragonscale 💎 21"
+        
+    IKB = KeyboardButton
+    
+    reply_markup = ReplyKeyboardMarkup(
+        [
+            
+            [
+                IKB("🐉Pasaporte"),
+                IKB("🌑Pasaporte"),
+                IKB("🥔Pasaporte")
+                
+            ],                            
+            [                
+                IKB("🐺Pasaporte"),
+                IKB("🦌Pasaporte"),
+                IKB("🦅Pasaporte"),
+                IKB("🦈Pasaporte"),
+                IKB("↩️Volver")
+            ]                
+                
+        
+        ],
+        resize_keyboard=True,
+    )
+
+    update.message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return
+
+
 def subastas(update: Update, context: CallbackContext):
     text="No esta disponible"
-    IKB = InlineKeyboardButton
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def inetercambio(update: Update, context: CallbackContext):
     text="No esta disponible"
-    IKB = InlineKeyboardButton
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def diamantes(update: Update, context: CallbackContext):
     text="No esta disponible"
-    IKB = InlineKeyboardButton
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def vender(update: Update, context: CallbackContext):
     text="No esta disponible"
-    IKB = InlineKeyboardButton
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def casa_pet(update: Update, context: CallbackContext):
     text="No esta disponible"
-    IKB = InlineKeyboardButton
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def get_mascotas(update: Update, context: CallbackContext):
     text="No esta disponible"
     IKB = InlineKeyboardButton
@@ -2463,250 +2670,715 @@ def get_mascotas(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML
     )
     return
+
 def refugio(update: Update, context: CallbackContext):
     text="No esta disponible"
-    IKB = InlineKeyboardButton
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def bodega(update: Update, context: CallbackContext):
     text="No esta disponible"
-    IKB = InlineKeyboardButton
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("⚒Mesa de trabajo"),
+                IKB("📖Fórmulas")
+                
+            ],                            
+            [                
+                IKB("🏷Envolver"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
+#  Clan
+
+def clan(update: Update, context: CallbackContext):
+    text="🦅[SA] Sao Alternative"
+    text+="Commander: Artas1"
+    text+="🏅Level: 5 🎖Glory: 1905"
+    text+="💎Diamonds: 0"
+    text+="👥 14/15"
+    
+    IKB = KeyboardButton
+    
+    reply_markup = ReplyKeyboardMarkup(
+        [
+            
+            [
+                IKB("📦Almacen"),
+                IKB("📋Lista"),
+                IKB("ℹ️Otros")
+            ],                            
+            [
+                IKB("🤝Alianza"),
+                IKB("🏕Misiones"),
+                IKB("↩️Volver")
+            ]                
+                
+        
+        ],
+        resize_keyboard=True,
+    )
+
+    update.message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return
+
 def alam_clan(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="Guild Warehouse: 4424/28000"
+    text+="/g_stock_res - resources"
+    text+="/g_stock_alch - alchemist herbs"
+    text+="/g_stock_misc - miscellaneous stuff"
+    text+="/g_stock_rec - items recipes"
+    text+="/g_stock_parts - items parts"
+    text+="/g_stock_other - everything else"
+    
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("📦Almacen"),
+                IKB("📋Lista"),
+                IKB("ℹ️Otros")
+            ],                            
+            [
+                IKB("🤝Alianza"),
+                IKB("🏕Misiones"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def lista_clan(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="🦅Sao Alternative"
+    text+="#1 🛡⚗️69 [🛡] StormBlessed"
+    text+="#2 ⚔️40 [🛌] Carlos"
+    text+="#3 🏹36 [🛌] SuperGirl"
+    text+="#4 🛡34 [💤] Artas1"
+    text+="#5 ⚒29 [🛌] JuanShotLC"
+    text+="#6 ⚒28 [🛌] Lordaeron"
+    text+="#7 🛡25 [🛌] CARONTE"
+    text+="#8 🛡22 [🗡] Astharot"
+    text+="#9 ⚗️22 [🛌] Adianys"
+    text+="#10 ⚗️21 [🛌] Satoru Gojo"
+    text+="#11 ⚗️20 [🛌] Albus Dumbledore"
+    text+="#12 🐣19 [🛌] Ozymandias"
+    text+="#13 🐣18 [🌲] ItaliaFacista"
+    text+="#14 🐣18 [🛌] Tanos_King"
+    
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("📦Almacen"),
+                IKB("📋Lista"),
+                IKB("ℹ️Otros")
+            ],                            
+            [
+                IKB("🤝Alianza"),
+                IKB("🏕Misiones"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def otros_clan(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="/g_atk {guildTag} para atacarlo en la próxima guerra. Esto le costará a tu gremio algo without sin declaración de guerras"
+    text+="/g_atklist para ver las estadísticas de guild atk"
+    text+="/g_def {guildTag} para defenderlo en la próxima guerra"
+    text+="/g_deflist para ver guild def stat"
+    text+="/g_deposit {item code} {qty} para depositar artículos en el gremio"
+    text+="/g_deposit_dmd {qty} para donar diamantes al gremio"
+    text+="/g_emoji {emoji} para establecer emj de gremio"
+    text+="/g_emoji_confirm Emoji de confirmación del líder del gremio"
+    text+="/g_emoji_list Ver todos los emojis disponibles"
+    text+="/g_emoji_prolong Prolongación del emoji del líder del gremio"
+    text+="/g_i {código del artículo} para inspeccionar el artículo único"
+    text+="/g_inspect {código del elemento} para inspeccionar el elemento único"
+    text+="/g_leave para dejar el gremio. Esto le costará a tu gremio 🎖"
+    text+="/g_list para ver miembros"
+    text+="/g_q_view Vista de búsqueda"
+    text+="/g_quests Mostrar misiones"
+    text+="/g_roles para ver los roles de tu gremio"
+    text+="/g_stock para ver el stock"
+    text+="/g_stock_mod para ver los modificadores de stock"
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("📦Almacen"),
+                IKB("📋Lista"),
+                IKB("ℹ️Otros")
+            ],                            
+            [
+                IKB("🤝Alianza"),
+                IKB("🏕Misiones"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def alianza_clan(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="Your guild is not in alliance."
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("📦Almacen"),
+                IKB("📋Lista"),
+                IKB("ℹ️Otros")
+            ],                            
+            [
+                IKB("🤝Alianza"),
+                IKB("🏕Misiones"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def misiones_clan(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="🏕Lista de misiones:"
+    text+="Caza de campeones prohibidos /g_q_view_a10"
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("📦Almacen"),
+                IKB("📋Lista"),
+                IKB("ℹ️Otros")
+            ],                            
+            [
+                IKB("🤝Alianza"),
+                IKB("🏕Misiones"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
+# Almacen
+def almc(update: Update, context: CallbackContext):
+    text="Almacenamiento: (1218/8000):"
+    IKB = KeyboardButton
+    
+    reply_markup = ReplyKeyboardMarkup(
+        [
+            
+            [
+                IKB("🎒Bolso"),
+                IKB("📦Recursos"),
+                IKB("🗃Varios")
+            ],
+                            
+            [
+                IKB("⚗️Alquimia"),
+                IKB("⚒Elaboración")
+            ],                
+            [
+                IKB("🏷Equipo"),
+                IKB("↩️Volver")
+            ]                
+                
+        
+        ],
+        resize_keyboard=True,
+    )
+
+    update.message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return
+
 def recursos(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="Almacenamiento: (1218/8000):"
+    IKB = KeyboardButton
+        
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("🎒Bolso"),
+                IKB("📦Recursos"),
+                IKB("🗃Varios")
+            ],
+                            
+            [
+                IKB("⚗️Alquimia"),
+                IKB("⚒Elaboración")
+            ],                
+            [
+                IKB("🏷Equipo"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def varios(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="[empty]"
+    
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("🎒Bolso"),
+                IKB("📦Recursos"),
+                IKB("🗃Varios")
+            ],
+                            
+            [
+                IKB("⚗️Alquimia"),
+                IKB("⚒Elaboración")
+            ],                
+            [
+                IKB("🏷Equipo"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def alquimia(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="[empty]"
+    
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("🎒Bolso"),
+                IKB("📦Recursos"),
+                IKB("🗃Varios")
+            ],
+                            
+            [
+                IKB("⚗️Alquimia"),
+                IKB("⚒Elaboración")
+            ],                
+            [
+                IKB("🏷Equipo"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
+
 def elaboracion(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+    text="[empty]"
+    
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("🎒Bolso"),
+                IKB("📦Recursos"),
+                IKB("🗃Varios")
+            ],
+                            
+            [
+                IKB("⚗️Alquimia"),
+                IKB("⚒Elaboración")
+            ],                
+            [
+                IKB("🏷Equipo"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
-def equipo_en(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+
+def bolso(update: Update, context: CallbackContext):
+    global PlayerDB
+    user = update.message.from_user
+    player = PlayerDB[str(user.id)]
+    BolsoJG = player["bolso_arm"]
+    level = player["level"] 
+    bolso_arm = len(player["bolso_arm"])-1
+    a = 0   
+    a2 = 0   
+    a3 = 0   
+    a4 = 0   
+    a5 = 0   
+    a6 = 0   
+    a7 = 0   
+    a8 = 0   
+    a9 = 0   
+    d1 = 0
+    d2 = 0
+    d3 = 0
+    d4 = 0
+    d5 = 0
+    d6 = 0
+    d7 = 0
+    d8 = 0
+    d9 = 0
+    Total_ataque = 0
+    Total_defensa = 0
+
+    if(player["manoPrincipal"]!="None"):
+        a =int(BolsoJG[player["manoPrincipal"]]["atributos"]["ataque"])
+        d1 =int(BolsoJG[player["manoPrincipal"]]["atributos"]["defensa"])
+    if(player["mano"]!="None"):        
+        a2 =int(BolsoJG[player["mano"]]["atributos"]["ataque"])
+        d2 =int(BolsoJG[player["mano"]]["atributos"]["defensa"])
+    if(player["casco"]!="None"):    
+        a3 =int(BolsoJG[player["casco"]]["atributos"]["ataque"])
+        d3 =int(BolsoJG[player["casco"]]["atributos"]["defensa"])
+    if(player["guantes"]!="None"):    
+        a4 =int(BolsoJG[player["guantes"]]["atributos"]["ataque"])
+        d4 =int(BolsoJG[player["guantes"]]["atributos"]["defensa"])
+    if(player["armadura"]!="None"):    
+        a5 =int(BolsoJG[player["armadura"]]["atributos"]["ataque"])
+        d5 =int(BolsoJG[player["armadura"]]["atributos"]["defensa"])
+    if(player["botas"]!="None"):    
+        a6 =int(BolsoJG[player["botas"]]["atributos"]["ataque"])
+        d6 =int(BolsoJG[player["botas"]]["atributos"]["defensa"])
+    if(player["especial"]!="None"):    
+        a7 =int(BolsoJG[player["especial"]]["atributos"]["ataque"])
+        d7 =int(BolsoJG[player["especial"]]["atributos"]["defensa"])
+    if(player["anillo"]!="None"):    
+        a8 =int(BolsoJG[player["anillo"]]["atributos"]["ataque"])
+        d8 =int(BolsoJG[player["anillo"]]["atributos"]["defensa"])
+    if(player["collar"]!="None"):    
+        a9 =int(BolsoJG[player["collar"]]["atributos"]["ataque"])
+        d9 =int(BolsoJG[player["collar"]]["atributos"]["defensa"])
+
+
+
+    Total_ataque = a + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 
+    Total_defensa = d1 + d2 + d3 + d4 + d5 + d6 + d7 + d8 + d9 
+    Suma = Total_ataque + Total_defensa
+    
+    text="\n\n🎽Euipamiento:"
+    if(Suma == 0):
+        text+="[-]"
+    else:
+        if(Total_ataque > 0):
+            text+="+{t}⚔️".format(t=Total_ataque)
+        if(Total_defensa > 0):
+            text+="+{td}🛡".format(td=Total_defensa)
+            
+    if(player["manoPrincipal"]!="None"):  
+        p=player["manoPrincipal"]
+        nombre =str(BolsoJG[p]["nombre"])  
+        ataque =int(BolsoJG[p]["atributos"]["ataque"])
+        defensa= int(BolsoJG[p]["atributos"]["defensa"]) 
+        text+="\n{n} ".format(n=nombre)           
+        if(ataque > 0):           
+            text+="+{d}⚔️".format(d=ataque)            
+        if(defensa > 0):          
+            text+="+{d}🛡".format(d=defensa)
+        text+=" /off_{id}".format(id=p)
+    if(player["mano"]!="None"):
+        p2=int(player["mano"])
+        nombre2 =str(BolsoJG[p2]["nombre"])
+        ataque2 =int(BolsoJG[p2]["atributos"]["ataque"])
+        defensa2= int(BolsoJG[p2]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre2)
+        if(ataque2 > 0):            
+            text+="+{d}⚔️".format(d=ataque2)            
+        if(defensa2 > 0):                      
+            text+="+{d}🛡".format(d=defensa2)
+        text+=" /off_{id}".format(id=p2)        
+    if(player["casco"]!="None"):
+        p3=int(player["casco"])
+        nombre3 =str(BolsoJG[p3]["nombre"])
+        ataque3 =int(BolsoJG[p3]["atributos"]["ataque"])
+        defensa3= int(BolsoJG[p3]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre3)
+        if(ataque3 > 0):            
+            text+="+{d}⚔️".format(d=ataque3)            
+        if(defensa3 > 0):                      
+            text+="+{d}🛡".format(d=defensa3)
+        text+=" /off_{id}".format(id=p3)       
+    if(player["guantes"]!="None"):
+        p4=int(player["guantes"])
+        nombre4 =str(BolsoJG[p4]["nombre"])
+        ataque4 =int(BolsoJG[p4]["atributos"]["ataque"])
+        defensa4= int(BolsoJG[p4]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre4)
+        if(ataque4 > 0):            
+            text+="+{d}⚔️".format(d=ataque4)            
+        if(defensa4 > 0):                      
+            text+="+{d}🛡".format(d=defensa4)
+        text+=" /off_{id}".format(id=p4)
+    if(player["armadura"]!="None"):
+        p5=int(player["armadura"])
+        nombre5 =str(BolsoJG[p5]["nombre"])
+        ataque5 =int(BolsoJG[p5]["atributos"]["ataque"])
+        defensa5= int(BolsoJG[p5]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre5)
+        if(ataque5 > 0):            
+            text+="+{d}⚔️".format(d=ataque5)            
+        if(defensa5 > 0):                      
+            text+="+{d}🛡".format(d=defensa5)
+        text+=" /off_{id}".format(id=p5)
+    if(player["botas"]!="None"):
+        p6=int(player["botas"])
+        nombre6 =str(BolsoJG[p6]["nombre"])
+        ataque6 =int(BolsoJG[p6]["atributos"]["ataque"])
+        defensa6= int(BolsoJG[p6]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre6)
+        if(ataque6 > 0):            
+            text+="+{d}⚔️".format(d=ataque6)            
+        if(defensa6 > 0):                      
+            text+="+{d}🛡".format(d=defensa6)
+        text+=" /off_{id}".format(id=p6)
+    if(player["especial"]!="None"):
+        p7=int(player["especial"])
+        nombre7 =str(BolsoJG[p7]["nombre"])
+        ataque7 =int(BolsoJG[p7]["atributos"]["ataque"])
+        defensa7= int(BolsoJG[p7]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre7)
+        if(ataque7 > 0):            
+            text+="+{d}⚔️".format(d=ataque7)            
+        if(defensa7 > 0):                      
+            text+="+{d}🛡".format(d=defensa7)
+        text+=" /off_{id}".format(id=p7)
+    if(player["anillo"]!="None"):
+        p8=int(player["anillo"])
+        nombre8 =str(BolsoJG[p8]["nombre"])
+        ataque8 =int(BolsoJG[p8]["atributos"]["ataque"])
+        defensa8= int(BolsoJG[p8]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre8)
+        if(ataque8 > 0):            
+            text+="+{d}⚔️".format(d=ataque8)            
+        if(defensa8 > 0):                      
+            text+="+{d}🛡".format(d=defensa8)
+        text+=" /off_{id}".format(id=p8)
+    if(player["collar"]!="None"):
+        p9=int(player["collar"])
+        nombre9 =str(BolsoJG[p9]["nombre"])
+        ataque9 =int(BolsoJG[p9]["atributos"]["ataque"])
+        defensa9= int(BolsoJG[p9]["atributos"]["defensa"])
+        text+="\n{n} ".format(n=nombre9)
+        if(ataque9 > 0):            
+            text+="+{d}⚔️".format(d=ataque9)            
+        if(defensa9 > 0):                      
+            text+="+{d}🛡".format(d=defensa9)
+        text+=" /off_{id}".format(id=p9)
+        
+    text+="\n🎒Balso: ({total}".format(total="0" if bolso_arm == 0 else bolso_arm)
+    text+="/{bolso})".format(bolso=player["bolso"])
+    p = 1
+    n = bolso_arm + 1
+    for i in BolsoJG[p:n]: 
+        if(BolsoJG[p]["estatus"] != 1 ):
+            text+="\n<b>{name}</b> ".format(name=BolsoJG[p]["nombre"])
+            if(BolsoJG[p]["atributos"]["ataque"] > 0):
+                    text+="<b>+{actaque}</b>⚔️".format(actaque=BolsoJG[p]["atributos"]["ataque"])    
+            if(BolsoJG[p]["atributos"]["defensa"] > 0):
+                    text+="<b>+{defensa}</b>🛡".format(defensa=BolsoJG[p]["atributos"]["defensa"])
+            text+=" /on_{id}".format(id=p)
+
+        p=p+1
+
+    IKB = KeyboardButton
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("🎒Bolso"),
+                IKB("📦Recursos"),
+                IKB("🗃Varios")
+            ],
+                            
+            [
+                IKB("⚗️Alquimia"),
+                IKB("⚒Elaboración")
+            ],                
+            [
+                IKB("🏷Equipo"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
-def dados(update: Update, context: CallbackContext):
-    text="No esta disponible"
-    IKB = InlineKeyboardButton
+
+def equipo_envuelto(update: Update, context: CallbackContext):
+    text="[empty]"
+    
+    IKB = KeyboardButton
+    
     reply_markup = ReplyKeyboardMarkup(
         [
+            
             [
-                IKB("👥Hablar"),
+                IKB("🎒Bolso"),
+                IKB("📦Recursos"),
+                IKB("🗃Varios")
+            ],
+                            
+            [
+                IKB("⚗️Alquimia"),
+                IKB("⚒Elaboración")
+            ],                
+            [
+                IKB("🏷Equipo"),
                 IKB("↩️Volver")
-            ]
+            ]                
+                
+        
         ],
         resize_keyboard=True,
     )
 
     update.message.reply_text(
         text=text,
-        reply_markup=None,
+        reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
@@ -2839,7 +3511,7 @@ def main():
             MessageHandler(Filters.regex("^(⚒Taller)$"), taller),
             MessageHandler(Filters.regex("^(⚒Mesa de trabajo)$"), mesa_trabajo),
             MessageHandler(Filters.regex("^(⚒Artesanía)$"), craf),
-            MessageHandler(Filters.regex("^(📖Fórmula)$"), formulas),
+            MessageHandler(Filters.regex("^(📖Fórmulas)$"), formulas),
             MessageHandler(Filters.regex("^(🏷Envolver)$"), envolver),
                         
             MessageHandler(Filters.regex("^(🍺Taberna)$"), taberna),
@@ -2861,13 +3533,14 @@ def main():
             MessageHandler(Filters.regex("^(🏕Misiones)$"), misiones_clan),
             
             MessageHandler(Filters.regex("/inv"), inventario),
-            MessageHandler(Filters.regex("🎒Bolso"), inventario),
+            MessageHandler(Filters.regex("/almc"), almc),
+            MessageHandler(Filters.regex("🎒Bolso"), bolso),
             MessageHandler(Filters.regex("📦Recursos"), recursos),
             MessageHandler(Filters.regex("🗃Varios"), varios),
             MessageHandler(Filters.regex("⚗️Alquimia"), alquimia),
             MessageHandler(Filters.regex("⚒Elaboración"), elaboracion),
-            MessageHandler(Filters.regex("🏷Equipo"), equipo_en),      
-            MessageHandler(Filters.regex("^(🎲Dados)$"), dados),
+            MessageHandler(Filters.regex("🏷Equipo"), equipo_envuelto),      
+            # MessageHandler(Filters.regex("^(🎲Dados)$"), dados),
             MessageHandler(Filters.regex(r"^\/info_\d+$"), winfo),
             MessageHandler(Filters.regex("/tiempo"), tiempo),
             MessageHandler(Filters.regex("/heroe"), heroe),
