@@ -728,7 +728,7 @@ def newUser(user,pron):
         "especial":"None",
         "anillo":"None",
         "collar":"None",  
-        "pron":"le",
+        "pron":"el",
         "estado":"🛌Descanso",
         "puntos_habili":"0",
         "equipados_arm": [[0]],   
