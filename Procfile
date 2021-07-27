@@ -1,1 +1,1 @@
-worker: python WaTavBot.py jobs:work
+worker: python ChatWars.py jobs:work
