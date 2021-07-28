@@ -8705,3 +8705,148 @@ Traceback (most recent call last):
 IndexError: list index out of range
 INFO:[26/07/2021 22:41:50] Scheduler started
 INFO:[26/07/2021 23:12:21] Scheduler started
+INFO:[27/07/2021 20:03:50] Scheduler started
+ERROR:[27/07/2021 20:03:55] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[27/07/2021 20:03:55] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:[27/07/2021 20:06:51] Scheduler started
+ERROR:[27/07/2021 20:06:59] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 998, in queryHandler
+    option,next = data["op"].split("|")
+KeyError: 'op'
+INFO:[27/07/2021 20:09:00] Received signal 2 (SIGINT), stopping...
+INFO:[27/07/2021 20:09:00] Scheduler has been shut down
+WARNING:[27/07/2021 20:09:00] Exiting immediately!
+INFO:[27/07/2021 20:09:06] Scheduler started
+ERROR:[27/07/2021 20:09:12] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 996, in queryHandler
+    option,next = data["op"].split("|")
+KeyError: 'op'
+INFO:[27/07/2021 20:17:47] Scheduler started
+ERROR:[27/07/2021 20:17:55] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 994, in queryHandler
+    data = json.loads(query.data)
+  File "C:\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO:[27/07/2021 20:21:48] Scheduler started
+ERROR:[27/07/2021 20:22:07] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 999, in queryHandler
+    option,next = data["op"].split("|")
+ValueError: not enough values to unpack (expected 2, got 1)
+INFO:[27/07/2021 20:22:55] Scheduler started
+INFO:[27/07/2021 20:24:37] Scheduler started
+ERROR:[27/07/2021 20:24:56] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 999, in queryHandler
+    option,next = data["op"].split("|")
+ValueError: not enough values to unpack (expected 2, got 1)
+INFO:[27/07/2021 20:25:46] Scheduler started
+ERROR:[27/07/2021 20:25:50] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 999, in queryHandler
+    option,next = data["op"].split("|")
+KeyError: 'op'
+INFO:[27/07/2021 20:26:58] Scheduler started
+ERROR:[27/07/2021 20:27:07] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 999, in queryHandler
+    option,next = data["op"].split("|")
+KeyError: 'op'
+INFO:[27/07/2021 20:30:47] Scheduler started
+INFO:[27/07/2021 20:31:43] Scheduler started
+INFO:[27/07/2021 20:33:13] Scheduler started
+INFO:[27/07/2021 20:34:36] Scheduler started
+INFO:[27/07/2021 20:35:18] Scheduler started
+INFO:[27/07/2021 20:35:50] Scheduler started
+INFO:[27/07/2021 20:37:04] Scheduler started
+INFO:[27/07/2021 20:42:38] Scheduler started
+INFO:[27/07/2021 21:20:52] Scheduler started
+ERROR:[27/07/2021 21:21:48] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 999, in queryHandler
+    option,next = data["op"].split("|")
+ValueError: not enough values to unpack (expected 2, got 1)
+INFO:[27/07/2021 21:25:08] Scheduler started
+ERROR:[27/07/2021 21:29:09] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 999, in queryHandler
+    option,next = data["op"].split("|")
+ValueError: not enough values to unpack (expected 2, got 1)
+INFO:[27/07/2021 21:32:07] Scheduler started
+INFO:[27/07/2021 21:33:08] Scheduler started
+INFO:[27/07/2021 21:34:31] Scheduler started
+INFO:[27/07/2021 21:38:28] Scheduler started
+INFO:[27/07/2021 21:38:50] Scheduler started
+INFO:[27/07/2021 21:43:12] Scheduler started
+INFO:[27/07/2021 21:45:15] Scheduler started
+INFO:[27/07/2021 21:46:05] Scheduler started
+INFO:[27/07/2021 21:50:28] Scheduler started
+INFO:[27/07/2021 21:51:47] Scheduler started
+INFO:[27/07/2021 21:58:17] Scheduler started
+INFO:[27/07/2021 22:01:53] Received signal 2 (SIGINT), stopping...
+INFO:[27/07/2021 22:01:53] Scheduler has been shut down
+WARNING:[27/07/2021 22:01:53] Exiting immediately!
+INFO:[27/07/2021 22:08:46] Scheduler started
+INFO:[27/07/2021 22:32:48] Scheduler started
+INFO:[27/07/2021 22:41:15] Scheduler started
+INFO:[27/07/2021 22:45:36] Scheduler started

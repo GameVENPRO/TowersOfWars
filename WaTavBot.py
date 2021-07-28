@@ -925,7 +925,7 @@ def battle(update:Update,context:CallbackContext):
             return
 
     return
-
+# Misiones
 def misiones(update: Update, context: CallbackContext):
     global PlayerDB
     user = update.message.from_user
@@ -947,17 +947,17 @@ def misiones(update: Update, context: CallbackContext):
         text+='Arena no es un lugar para débiles. Aquí luchas contra otros jugadores y si sales victorioso, adquieres una experiencia preciosa.'
     
     reply_markup = InlineKeyboardMarkup([
-                                                [   
+                                            [   
                                                                                                          
-                                                    IKB("🌲Bosque",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='he',d2=str(user.id))+'}'),                                                    
-                                                    IKB("🍄Pantano" if(level >= 20) else "",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='he',d2=str(user.id))+'}'),
-                                                    IKB("🏔Valle" if(level >= 20) else "",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='it',d2=str(user.id))+'}'),
+                                                IKB("🌲Bosque",callback_data = '{'+"\"op\":\"bosque|mbosq\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='bosque',d2=str(user.id))+'}'),                                                  
+                                                IKB("🍄Pantano" if(level >= 20) else "",callback_data = '{'+"\"op\":\"pantano|mpant\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='pantano',d2=str(user.id))+'}'),
+                                                IKB("🏔Valle" if(level >= 20) else "",callback_data = '{'+"\"op\":\"valle|mvalle\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='valle',d2=str(user.id))+'}'),
                                                     
-                                                ],
-                                                [
-                                                    IKB("🗡Foray" if(level >= 3) else "",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='we',d2=str(user.id))+'}'),
-                                                    IKB("📯Arena" if(level >= 5) else "",callback_data = '{'+"\"op\":\"reg|gen\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='they',d2=str(user.id))+'}')
-                                                ]
+                                            ],
+                                            [
+                                                IKB("🗡Foray" if(level >= 3) else "",callback_data = '{'+"\"op\":\"foray|mforay\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='foray',d2=str(user.id))+'}'),
+                                                IKB("📯Arena" if(level >= 5) else "",callback_data = '{'+"\"op\":\"arena|marena\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='arena',d2=str(user.id))+'}')
+                                            ]
                                             ]
                                           )
     update.message.reply_text(
@@ -966,6 +966,157 @@ def misiones(update: Update, context: CallbackContext):
                                     parse_mode=ParseMode.HTML
                                 )
     return
+
+def bosque(update: Update, context: CallbackContext):
+    query = update.callback_query
+    data = json.loads(query.data)
+    option,next = data["op"].split("|")
+    user = query.from_user
+    text2='En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'
+    resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(1))
+    upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🌲En el bosque. Regreso en 2 minutos"))
+    context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)
+    
+    if(next == 'mbosq'): 
+        starttime = time.time()
+        i = 1      
+        while (i >= 1):            
+                Tiempo = time.sleep(180 - ((time.time() - starttime) % 180)) 
+                if(Tiempo == 60):
+                    upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en 1 minutos"))
+                if(Tiempo == 119):
+                    upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en unos segundos"))
+                
+                upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
+                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n' 
+                text+='Exigieron que les dieras todo lo que tienes. Mataste a cada uno de ellos y recogiste un montón de botín.\n\n'
+                text+='Usted recibió: 15 exp y 2 oro\n Ganado: Palo (1) \n Ganado: Polvo (1)\n'              
+
+                break   
+    
+    try:
+        context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
+        
+    except Exception as e:
+        error(update,e)
+    
+    return
+
+def pantano(update: Update, context: CallbackContext):
+    query = update.callback_query
+    data = json.loads(query.data)
+    option,next = data["op"].split("|")
+    user = query.from_user
+    text2='Una aventura está llamando. Pero fuiste a un pantano.\n Regresarás en 6 minutos.'
+    resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(1))
+    upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🍄Caminando por un pantano. En 3 minutos"))
+    context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)
+    
+    if(next == 'mpant'): 
+        starttime = time.time()
+        i = 1      
+        while (i >= 1):            
+                time.sleep(260 - ((time.time() - starttime) % 260)) 
+                
+                upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
+                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n' 
+                text+='Exigieron que les dieras todo lo que tienes. Mataste a cada uno de ellos y recogiste un montón de botín.\n\n'
+                text+='Usted recibió: 15 exp y 2 oro\n Ganado: Palo (1) \n Ganado: Polvo (1)\n'              
+
+                break   
+    
+    try:
+        context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
+        
+    except Exception as e:
+        error(update,e)
+    
+    return
+
+def valle(update: Update, context: CallbackContext):
+    query = update.callback_query
+    data = json.loads(query.data)
+    option,next = data["op"].split("|")
+    user = query.from_user
+    text2='Las montañas pueden ser un lugar peligroso.\nDecidiste investigar, qué está pasando.\n Regresarás en 4 minutos.'
+    resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(1))
+    upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"⛰Paseando por las montañas. Vuelvo en unos segundos."))
+    context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)
+    
+    if(next == 'mvalle'): 
+        starttime = time.time()
+        i = 1      
+        while (i >= 1):            
+                time.sleep(240 - ((time.time() - starttime) % 240)) 
+                
+                upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
+                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n' 
+                text+='Exigieron que les dieras todo lo que tienes. Mataste a cada uno de ellos y recogiste un montón de botín.\n\n'
+                text+='Usted recibió: 15 exp y 2 oro\n Ganado: Palo (1) \n Ganado: Polvo (1)\n'              
+
+                break   
+    
+    try:
+        context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
+        
+    except Exception as e:
+        error(update,e)
+    
+    return
+
+def foray(update: Update, context: CallbackContext):
+    query = update.callback_query
+    data = json.loads(query.data)
+    option,next = data["op"].split("|")
+    user = query.from_user
+    text2='Sintiendo una lujuria insatisfactoria por la violencia te diriges al pueblo más cercano.\n Llegará a la más cercana en 4 minutos.'
+    resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(2))
+    upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🗡Incursión. Estará de vuelta en 2 minutos"))
+    context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)
+    
+    if(next == 'mforay'): 
+        starttime = time.time()
+        i = 1      
+        while (i >= 1):            
+                time.sleep(240 - ((time.time() - starttime) % 240)) 
+                
+                upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
+                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n' 
+                text+='Exigieron que les dieras todo lo que tienes. Mataste a cada uno de ellos y recogiste un montón de botín.\n\n'
+                text+='Usted recibió: 15 exp y 2 oro\n Ganado: Palo (1) \n Ganado: Polvo (1)\n'              
+
+                break   
+    
+    try:
+        context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
+        
+    except Exception as e:
+        error(update,e)
+    
+    return
+
+def arena(update: Update, context: CallbackContext):
+    query = update.callback_query
+    data = json.loads(query.data)
+    option,next = data["op"].split("|")
+    user = query.from_user
+    if(next == 'marena'): 
+        text='📯 Bienvenido a Arena!\n'               
+        text+='El aire sucio está empapado con el espeso olor de la sangre.\n' 
+        text+='Nadie termina aquí por accidente: no puedes irte una vez que comienzas tu batalla.\n' 
+        text+='Espero que tu espada esté afilada y tu escudo firme.\n\n'
+        text+='Su rango: 893\nTus peleas: 0/5\n\n'
+        text+='Clasificación de combate: /top 5\nCrecimiento más rápido: /top 6\n\n'
+        text+='Precio de la entrada: 5 💰'  
+    
+    try:
+        context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
+        
+    except Exception as e:
+        error(update,e)
+    
+    return
+
 
 def queryHandler(update: Update, context: CallbackContext):
     query = update.callback_query
@@ -978,41 +1129,22 @@ def queryHandler(update: Update, context: CallbackContext):
         ##print("Acá fue battle!")
     if(option == "dice"):
         threading.Thread(target = dice, args = (update,context,)).start()
-        ##print("Acá fue dado!")
     if(option == "reg"):
         threading.Thread(target = reg, args = (update,context,)).start()
     if(option == "owned"):
         threading.Thread(target = owned, args = (update,context,)).start()
     if(option == "bsmith"):
         threading.Thread(target = shopcat, args = (update,context,)).start()
-    return
-
-def dice(update: Update, context: CallbackContext):
-    query = update.callback_query
-    data = json.loads(query.data)
-    d1 = rng(1,6)
-    d2 = rng(1,6)
-    dir = "/utils/dice"
-    Dices = [ "⚀", "⚁", "⚂", "⚃", "⚄", "⚅" ]
-    D1 = Dices[d1-1]
-    D2 = Dices[d2-1]
-    add = ""
-    if(d1+d2 == 7):
-        add = " ¡¡Dados!!"
-    text = "{} tiró los dados, y...\nLos dados muestran {}({}) y {}({})...\n<b>{} conseguir {}{}!</b>\n\n".format(
-                                    query.from_user.first_name,
-                                    D1,d1,
-                                    D2,d2,
-                                    query.from_user.first_name,
-                                    d1+d2,
-                                    add
-                                    )
-    ##print(text)
-    context.bot.edit_message_text(
-                            text=text,
-                            inline_message_id=query.inline_message_id,
-                            parse_mode=ParseMode.HTML
-                        )
+    if(option == "bosque"):
+        threading.Thread(target = bosque, args = (update,context,)).start() 
+    if(option == "pantano"):
+        threading.Thread(target = pantano, args = (update,context,)).start()
+    if(option == "valle"):        
+        threading.Thread(target = valle, args = (update,context,)).start()
+    if(option == "foray"):       
+        threading.Thread(target = foray, args = (update,context,)).start()
+    if(option == "arena"):
+        threading.Thread(target = arena, args = (update,context,)).start()
     return
 
 def inlinequery(update: Update, context: CallbackContext):
@@ -1092,6 +1224,34 @@ def inlinequery(update: Update, context: CallbackContext):
                         switch_pm_text='Enter the Tavern',
                         switch_pm_parameter='register')
     #update.inline_query.answer(results)
+    return
+
+def dice(update: Update, context: CallbackContext):
+    query = update.callback_query
+    data = json.loads(query.data)
+    d1 = rng(1,6)
+    d2 = rng(1,6)
+    dir = "/utils/dice"
+    Dices = [ "⚀", "⚁", "⚂", "⚃", "⚄", "⚅" ]
+    D1 = Dices[d1-1]
+    D2 = Dices[d2-1]
+    add = ""
+    if(d1+d2 == 7):
+        add = " ¡¡Dados!!"
+    text = "{} tiró los dados, y...\nLos dados muestran {}({}) y {}({})...\n<b>{} conseguir {}{}!</b>\n\n".format(
+                                    query.from_user.first_name,
+                                    D1,d1,
+                                    D2,d2,
+                                    query.from_user.first_name,
+                                    d1+d2,
+                                    add
+                                    )
+    ##print(text)
+    context.bot.edit_message_text(
+                            text=text,
+                            inline_message_id=query.inline_message_id,
+                            parse_mode=ParseMode.HTML
+                        )
     return
 
 def me(update: Update, context: CallbackContext):
@@ -1580,328 +1740,6 @@ def inventario(update: Update, context: CallbackContext):
     )
     return
 
-def tiempo(update: Update, context: CallbackContext):
-    dt = datetime.datetime.now()     # Fecha y hora actual
-
-
-    anno = dt.year
-    m =  dt.month
-    dia= dt.day 
-    hora= str(dt.hour)
-    min= dt.minute
-
-    text= "<b>En el mundo de Chat Wars ahora</b>"    
-
-    if(m == 1):
-       mes="Wintar "
-            #    Invierno 31"
-    if(m == 2):
-      mes= "Hornung "
-         #   Invierno 28"
-    if(m == 3):
-        mes="estrellas"
-               #  Primavera 30"
-    if(m == 5):
-	    mes=" Winni "
-               # Primavera 31"
-    if(m == 6):
-	    mes="Brāh "
-               # Verano 30"
-    if(m == 7):
- 	    mes="Hewi "
-              #  Verano 31"
-    if(m == 8):
-    	m="Aran "
-               # Verano 31"
-    if(m == 9):
-    	    mes="Witu "
-               # Otoño 30"
-    if(m == 10):
-	    mes="Wīndume "
-               # Otoño 31"
-    if(m == 11):
-	    mes="Herbista "
-               # Otoño 30"
-    if(m == 12):
-	    mes=" Hailag "
-               # Invierno 31"
-        
-    if(hora == "00"):
-        text+="\n🌤Mañana"
-    elif(hora == "01"):
-        text+="\n🌞Día"
-    elif(hora == "02"):
-        text+="\n🌞Día"
-    elif(hora == "03"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "04"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "05"):
-        text+="\n🌙Noche"
-    elif(hora == "06"):
-        text+="\n🌙Noche"
-    elif(hora == "07"):
-        text+="\n🌤Mañana"
-    elif(hora == "08"):
-        text+="\n🌤Mañana"
-    elif(hora == "09"):
-        text+="\n🌞Día"
-    elif(hora == "10"):
-        text+="\n🌞Día"
-    elif(hora == "11"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "12"):
-        text+= "\n⛅️Tarde"  
-    elif(hora == "13"):
-        text+="\n🌙Noche"
-    elif(hora == "14"):
-        text+="\n🌙Noche"
-    elif(hora == "15"):
-        text+="\n🌤Mañana"
-    elif(hora == "16"):
-        text+="\n🌤Mañana"
-    elif(hora == "17"):
-        text+="\n🌞Día"
-    elif(hora == "18"):
-        text+="\n🌞Día"
-    elif(hora == "19"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "20"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "21"):
-        text+="\n🌙Noche"
-    elif(hora == "22"):
-        text+="\n🌙Noche"
-    elif(hora == "23"):
-        text+="\n🌤Mañana"
-        
-    text+= "\n{h}:{m}".format(h=hora ,m=min)    
-
-    text+= "\n{d} {m} {a}".format(d=dia , m=mes, a=anno)
-
-    text+= "\n\n<b>Pronóstico del tiempo</b>"
-    text+= "\n[🌫→🌤] (Inactivo)"
-
-    
-    reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
-
-    update.message.reply_text(
-        text=text,
-        reply_markup=reply_markup,
-        parse_mode=ParseMode.HTML
-    )
-    return
-
-def pronostico():
-    
-    # estados climáticos: Soleado ☀️, Nublado 🌤, Lluvioso 🌧 y Brumoso 🌫
-    return
-
-def castillo(update: Update, context: CallbackContext):
-    global PlayerDB
-    user = update.message.from_user
-    player = PlayerDB[str(user.id)]  
-    level = player["level"] 
-    hora = time.strftime("%H")
-    text="El Castillo \n"   
-        
-    if(hora == "00"):
-        text+="🌤Mañana"
-    elif (hora == "01"):
-        text+="🌞Día"
-    elif (hora == "02"):
-        text+="🌞Día"
-    elif (hora == "03"):
-        text+= "⛅️Tarde"
-    elif (hora == "04"):
-        text+= "⛅️Tarde"
-    elif (hora == "05"):
-        text+="🌙Noche"
-    elif (hora == "06"):
-        text+="🌙Noche"
-    elif(hora == "07"):
-        text+="🌤Mañana"
-    elif(hora == "08"):
-        text+="🌤Mañana"
-    elif (hora == "09"):
-        text+="🌞Día"
-    elif (hora == "10"):
-        text+="🌞Día"
-    elif (hora == "11"):
-        text+= "⛅️Tarde"
-    elif (hora == "12"):
-        text+= "⛅️Tarde"  
-    elif (hora == "13"):
-        text+="🌙Noche"
-    elif (hora == "14"):
-        text+="🌙Noche"
-    elif(hora == "15"):
-        text+="🌤Mañana"
-    elif(hora == "16"):
-        text+="🌤Mañana"
-    elif (hora == "17"):
-        text+="🌞Día"
-    elif (hora == "18"):
-        text+="🌞Día"
-    elif (hora == "19"):
-        text+= "⛅️Tarde"
-    elif (hora == "20"):
-        text+= "⛅️Tarde"
-    elif (hora == 21):
-        text+="🌙Noche"
-    elif (hora == "22"):
-        text+="🌙Noche"
-    elif(hora == "23"):
-        text+="🌤Mañana"
-        
-    # text+="[-→-]"
-    text+="\n\n💬Castle Chat del castillo: "
-    text+="\nLos demás: /otros"
-    text+="\n\n🍺La taberna abre por la noche"
-
-    reply_markup = ReplyKeyboardMarkup(kb.castillo_kb(level),resize_keyboard=True)
-
-    update.message.reply_text(
-        text=text,
-        reply_markup=reply_markup,
-        parse_mode=ParseMode.HTML
-    )
-    return 
-
-def shop(update: Update, context: CallbackContext):
-    text=str("¡Mira esto, hombre! Aquí tenemos suficientes armas para cazar un dragón, o para atacar un templo maldito!"
-        +"\nEcha un vistazo a lo que quieras, y si algo te interesa, no dudes en preguntar!")
-    reply_markup = InlineKeyboardMarkup(kb.kb("wtypes",("bsmith|na","null")))
-    update.message.reply_text(
-                                text=text,
-                                reply_markup = reply_markup,
-                                parse_mode=ParseMode.HTML
-                            )
-    return
-
-def shopcat(update: Update, context: CallbackContext):
-    global TiendaDB
-    user = update.callback_query.from_user
-    data = json.loads(update.callback_query.data)
-    Juagador = PlayerDB[str(user.id)]
-    weapons = False
-    
-    if(len(Juagador["bolso_arm"]) >= 15):
-        text = "\n<b>Tienes lleno el inventario!!!</b>"
-        reply_markup = None
-        
-    else:
-        text="<b>Aquí, algunas mercancías:</b>\n"
-        for w in list(set(TiendaDB.keys())):
-            if(int(w) < 100):
-                # print(str(TiendaDB[w]["g_type"]))
-                if(TiendaDB[w]["g_type"] == data["d1"]):
-                    text+="\n\n<b>{name}</b> ".format(name=TiendaDB[w]["nombre"],id=TiendaDB[w]["id"])
-                    if(TiendaDB[w]["atributos"]["ataque"] > 0):
-                        text+="<b>+{actaque}</b>⚔️".format(actaque=TiendaDB[w]["atributos"]["ataque"])
-                    if(TiendaDB[w]["atributos"]["defensa"] > 0):
-                        text+="<b>+{defensa}</b>🛡".format(defensa=TiendaDB[w]["atributos"]["defensa"])
-                    if(TiendaDB[w]["tier"] == 1):
-                        text+="\nRequerido: 📕"
-                    text+="\n{precio}💰 \n/buy_{id}".format(precio=TiendaDB[w]["precio"],id=w)
-                    weapons = True
-
-        if(weapons == False):
-            text += "\n<b>((Vacio))</b>"        
-        
-        reply_markup = InlineKeyboardMarkup(kb.kb("wtypes",("bsmith|na","null")))
-            
-    context.bot.edit_message_text(
-                            text=text,
-                            chat_id=user.id,
-                            message_id=update.callback_query.message.message_id,
-                            reply_markup = reply_markup,
-                            parse_mode=ParseMode.HTML
-                        )
-    return
-
-def buy(update: Update, context: CallbackContext):
-    global PlayerDB
-    user = update.message.from_user
-    player = PlayerDB[str(user.id)]
-    weapon = update.message.text.replace("/buy_","")
-    try: 
-        if(weapon not in player["bolso_arm"]):
-            if(int(player["oro"]) >= int(TiendaDB[weapon]["precio"])):            
-                # player["bolso_arm"].append(weapon)
-                Newcompra(user=user.id,items=weapon)        
-                wps = player["bolso_arm"]
-                oro = str(int(PlayerDB[str(user.id)]["oro"]) - int(TiendaDB[weapon]["precio"]))
-                upload(player=str(user.id),concept=("bolso_arm","oro"),value=(wps,oro))
-                text = "Ja, ja! Este <b>{weapon}</b> te queda muy bien, amigo! \nUtilizar sabiamente!".format(weapon = TiendaDB[weapon]["nombre"])
-            else:
-                text = "Lo siento amigo, pero parece que no puedes permitirte este artículo."
-        
-            update.message.reply_text(
-                                        text=text,
-                                        parse_mode=ParseMode.HTML
-                                    )
-    except Exception as e:
-            error(update,e)
-    else:
-        return
-    return
-
-def Newcompra(user,items):
-    global PlayerDB,TiendaDB
-    Jugador = PlayerDB[str(user)]
-    
-    info = {
-            "id": TiendaDB[items]["id"],
-            "estatus": 0,
-            "nombre": TiendaDB[items]["nombre"],
-            "historia": TiendaDB[items]["historia"],
-            "tipo": TiendaDB[items]["tipo"],
-            "g_type": TiendaDB[items]["g_type"],
-            "dual": TiendaDB[items]["dual"],
-            "peso": TiendaDB[items]["peso"],
-            "tier": TiendaDB[items]["tier"],
-            "envolver": TiendaDB[items]["envolver"],
-            "evento_item": TiendaDB[items]["evento_item"],
-            "fabricable": TiendaDB[items]["fabricable"],
-            "intercanbio": TiendaDB[items]["intercanbio"],
-            "precio": TiendaDB[items]["precio"],
-            "venta": TiendaDB[items]["venta"],
-            "atributos": {
-                "ataque": TiendaDB[items]["atributos"]["ataque"],
-                "defensa": TiendaDB[items]["atributos"]["defensa"],
-                "mana": TiendaDB[items]["atributos"]["mana"],
-                "habilidad": TiendaDB[items]["atributos"]["habilidad"],
-                "nivel": TiendaDB[items]["atributos"]["nivel"],
-                "reforsado": {
-                    "1": {
-                        "nivel": 1,
-                        "ataque": 0,
-                        "ataque_total": 0
-                    },
-                    "2": {
-                        "nivel": 2,
-                        "ataque": 0,
-                        "ataque_total": 0
-                    },
-                    "3": {
-                        "nivel": 3,
-                        "ataque": 0,
-                        "ataque_total": 0
-                    },
-                    "4": {
-                        "nivel": 4,
-                        "ataque": 0,
-                        "ataque_total": 0
-                    }
-                    }
-                }
-            }
-    
-    Jugador["bolso_arm"].append(info)
-    
-    return
-
 def winfo(update: Update, context: CallbackContext):
     global TiendaDB
     try:
@@ -2187,6 +2025,383 @@ def wpassign(weapon,user):
 
             
     return
+
+# Clima y tiempo
+
+def tiempo(update: Update, context: CallbackContext):
+    dt = datetime.datetime.now()     # Fecha y hora actual
+
+
+    anno = dt.year
+    m =  dt.month
+    dia= dt.day 
+    hora= str(dt.hour)
+    min= dt.minute
+
+    text= "<b>En el mundo de Chat Wars ahora</b>"    
+
+    if(m == 1):
+       mes="Wintar "
+            #    Invierno 31"
+    if(m == 2):
+      mes= "Hornung "
+         #   Invierno 28"
+    if(m == 3):
+        mes="estrellas"
+               #  Primavera 30"
+    if(m == 5):
+	    mes=" Winni "
+               # Primavera 31"
+    if(m == 6):
+	    mes="Brāh "
+               # Verano 30"
+    if(m == 7):
+ 	    mes="Hewi "
+              #  Verano 31"
+    if(m == 8):
+    	m="Aran "
+               # Verano 31"
+    if(m == 9):
+    	    mes="Witu "
+               # Otoño 30"
+    if(m == 10):
+	    mes="Wīndume "
+               # Otoño 31"
+    if(m == 11):
+	    mes="Herbista "
+               # Otoño 30"
+    if(m == 12):
+	    mes=" Hailag "
+               # Invierno 31"
+        
+    if(hora == "00"):
+        text+="\n🌤Mañana"
+    elif(hora == "01"):
+        text+="\n🌞Día"
+    elif(hora == "02"):
+        text+="\n🌞Día"
+    elif(hora == "03"):
+        text+= "\n⛅️Tarde"
+    elif(hora == "04"):
+        text+= "\n⛅️Tarde"
+    elif(hora == "05"):
+        text+="\n🌙Noche"
+    elif(hora == "06"):
+        text+="\n🌙Noche"
+    elif(hora == "07"):
+        text+="\n🌤Mañana"
+    elif(hora == "08"):
+        text+="\n🌤Mañana"
+    elif(hora == "09"):
+        text+="\n🌞Día"
+    elif(hora == "10"):
+        text+="\n🌞Día"
+    elif(hora == "11"):
+        text+= "\n⛅️Tarde"
+    elif(hora == "12"):
+        text+= "\n⛅️Tarde"  
+    elif(hora == "13"):
+        text+="\n🌙Noche"
+    elif(hora == "14"):
+        text+="\n🌙Noche"
+    elif(hora == "15"):
+        text+="\n🌤Mañana"
+    elif(hora == "16"):
+        text+="\n🌤Mañana"
+    elif(hora == "17"):
+        text+="\n🌞Día"
+    elif(hora == "18"):
+        text+="\n🌞Día"
+    elif(hora == "19"):
+        text+= "\n⛅️Tarde"
+    elif(hora == "20"):
+        text+= "\n⛅️Tarde"
+    elif(hora == "21"):
+        text+="\n🌙Noche"
+    elif(hora == "22"):
+        text+="\n🌙Noche"
+    elif(hora == "23"):
+        text+="\n🌤Mañana"
+        
+    text+= "\n{h}:{m}".format(h=hora ,m=min)    
+
+    text+= "\n{d} {m} {a}".format(d=dia , m=mes, a=anno)
+
+    text+= "\n\n<b>Pronóstico del tiempo</b>"
+    text+= "\n[🌫→🌤] (Inactivo)"
+
+    
+    reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
+
+    update.message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return
+
+def pronostico():
+    
+    # estados climáticos: Soleado ☀️, Nublado 🌤, Lluvioso 🌧 y Brumoso 🌫
+    return
+
+# Castillo
+
+def castillo(update: Update, context: CallbackContext):
+    global PlayerDB
+    user = update.message.from_user
+    player = PlayerDB[str(user.id)]  
+    level = player["level"] 
+    hora = time.strftime("%H")
+    text="El Castillo \n"   
+        
+    if(hora == "00"):
+        text+="🌤Mañana"
+    elif (hora == "01"):
+        text+="🌞Día"
+    elif (hora == "02"):
+        text+="🌞Día"
+    elif (hora == "03"):
+        text+= "⛅️Tarde"
+    elif (hora == "04"):
+        text+= "⛅️Tarde"
+    elif (hora == "05"):
+        text+="🌙Noche"
+    elif (hora == "06"):
+        text+="🌙Noche"
+    elif(hora == "07"):
+        text+="🌤Mañana"
+    elif(hora == "08"):
+        text+="🌤Mañana"
+    elif (hora == "09"):
+        text+="🌞Día"
+    elif (hora == "10"):
+        text+="🌞Día"
+    elif (hora == "11"):
+        text+= "⛅️Tarde"
+    elif (hora == "12"):
+        text+= "⛅️Tarde"  
+    elif (hora == "13"):
+        text+="🌙Noche"
+    elif (hora == "14"):
+        text+="🌙Noche"
+    elif(hora == "15"):
+        text+="🌤Mañana"
+    elif(hora == "16"):
+        text+="🌤Mañana"
+    elif (hora == "17"):
+        text+="🌞Día"
+    elif (hora == "18"):
+        text+="🌞Día"
+    elif (hora == "19"):
+        text+= "⛅️Tarde"
+    elif (hora == "20"):
+        text+= "⛅️Tarde"
+    elif (hora == 21):
+        text+="🌙Noche"
+    elif (hora == "22"):
+        text+="🌙Noche"
+    elif(hora == "23"):
+        text+="🌤Mañana"
+        
+    # text+="[-→-]"
+    text+="\n\n💬Castle Chat del castillo: "
+    text+="\nLos demás: /otros"
+    text+="\n\n🍺La taberna abre por la noche"
+
+    reply_markup = ReplyKeyboardMarkup(kb.castillo_kb(level),resize_keyboard=True)
+
+    update.message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return 
+
+def shop(update: Update, context: CallbackContext):
+    text=str("¡Mira esto, hombre! Aquí tenemos suficientes armas para cazar un dragón, o para atacar un templo maldito!"
+        +"\nEcha un vistazo a lo que quieras, y si algo te interesa, no dudes en preguntar!")
+    reply_markup = InlineKeyboardMarkup(kb.kb("wtypes",("bsmith|na","null")))
+    update.message.reply_text(
+                                text=text,
+                                reply_markup = reply_markup,
+                                parse_mode=ParseMode.HTML
+                            )
+    return
+
+def shopcat(update: Update, context: CallbackContext):
+    global TiendaDB
+    user = update.callback_query.from_user
+    data = json.loads(update.callback_query.data)
+    Juagador = PlayerDB[str(user.id)]
+    weapons = False
+    
+    if(len(Juagador["bolso_arm"]) >= 15):
+        text = "\n<b>Tienes lleno el inventario!!!</b>"
+        reply_markup = None
+        
+    else:
+        text="<b>Aquí, algunas mercancías:</b>\n"
+        for w in list(set(TiendaDB.keys())):
+            if(int(w) < 100):
+                # print(str(TiendaDB[w]["g_type"]))
+                if(TiendaDB[w]["g_type"] == data["d1"]):
+                    text+="\n\n<b>{name}</b> ".format(name=TiendaDB[w]["nombre"],id=TiendaDB[w]["id"])
+                    if(TiendaDB[w]["atributos"]["ataque"] > 0):
+                        text+="<b>+{actaque}</b>⚔️".format(actaque=TiendaDB[w]["atributos"]["ataque"])
+                    if(TiendaDB[w]["atributos"]["defensa"] > 0):
+                        text+="<b>+{defensa}</b>🛡".format(defensa=TiendaDB[w]["atributos"]["defensa"])
+                    if(TiendaDB[w]["tier"] == 1):
+                        text+="\nRequerido: 📕"
+                    text+="\n{precio}💰 \n/buy_{id}".format(precio=TiendaDB[w]["precio"],id=w)
+                    weapons = True
+
+        if(weapons == False):
+            text += "\n<b>((Vacio))</b>"        
+        
+        reply_markup = InlineKeyboardMarkup(kb.kb("wtypes",("bsmith|na","null")))
+            
+    context.bot.edit_message_text(
+                            text=text,
+                            chat_id=user.id,
+                            message_id=update.callback_query.message.message_id,
+                            reply_markup = reply_markup,
+                            parse_mode=ParseMode.HTML
+                        )
+    return
+
+def buy(update: Update, context: CallbackContext):
+    global PlayerDB
+    user = update.message.from_user
+    player = PlayerDB[str(user.id)]
+    weapon = update.message.text.replace("/buy_","")
+    try: 
+        if(weapon not in player["bolso_arm"]):
+            if(int(player["oro"]) >= int(TiendaDB[weapon]["precio"])):            
+                # player["bolso_arm"].append(weapon)
+                Newcompra(user=user.id,items=weapon)        
+                wps = player["bolso_arm"]
+                oro = str(int(PlayerDB[str(user.id)]["oro"]) - int(TiendaDB[weapon]["precio"]))
+                upload(player=str(user.id),concept=("bolso_arm","oro"),value=(wps,oro))
+                text = "Ja, ja! Este <b>{weapon}</b> te queda muy bien, amigo! \nUtilizar sabiamente!".format(weapon = TiendaDB[weapon]["nombre"])
+            else:
+                text = "Lo siento amigo, pero parece que no puedes permitirte este artículo."
+        
+            update.message.reply_text(
+                                        text=text,
+                                        parse_mode=ParseMode.HTML
+                                    )
+    except Exception as e:
+            error(update,e)
+    else:
+        return
+    return
+
+def Newcompra(user,items):
+    global PlayerDB,TiendaDB
+    Jugador = PlayerDB[str(user)]
+    
+    info = {
+            "id": TiendaDB[items]["id"],
+            "estatus": 0,
+            "nombre": TiendaDB[items]["nombre"],
+            "historia": TiendaDB[items]["historia"],
+            "tipo": TiendaDB[items]["tipo"],
+            "g_type": TiendaDB[items]["g_type"],
+            "dual": TiendaDB[items]["dual"],
+            "peso": TiendaDB[items]["peso"],
+            "tier": TiendaDB[items]["tier"],
+            "envolver": TiendaDB[items]["envolver"],
+            "evento_item": TiendaDB[items]["evento_item"],
+            "fabricable": TiendaDB[items]["fabricable"],
+            "intercanbio": TiendaDB[items]["intercanbio"],
+            "precio": TiendaDB[items]["precio"],
+            "venta": TiendaDB[items]["venta"],
+            "atributos": {
+                "ataque": TiendaDB[items]["atributos"]["ataque"],
+                "defensa": TiendaDB[items]["atributos"]["defensa"],
+                "mana": TiendaDB[items]["atributos"]["mana"],
+                "habilidad": TiendaDB[items]["atributos"]["habilidad"],
+                "nivel": TiendaDB[items]["atributos"]["nivel"],
+                "reforsado": {
+                    "1": {
+                        "nivel": 1,
+                        "ataque": 0,
+                        "ataque_total": 0
+                    },
+                    "2": {
+                        "nivel": 2,
+                        "ataque": 0,
+                        "ataque_total": 0
+                    },
+                    "3": {
+                        "nivel": 3,
+                        "ataque": 0,
+                        "ataque_total": 0
+                    },
+                    "4": {
+                        "nivel": 4,
+                        "ataque": 0,
+                        "ataque_total": 0
+                    }
+                    }
+                }
+            }
+    
+    Jugador["bolso_arm"].append(info)
+    
+    return
+
+# def casino(update: Update, context: CallbackContext):
+    
+#     if message.text == '🤑 Casino':
+#         bot.send_message(message.chat.id, "Bienvenido al casino! No te olvides de elegir una apuesta! (original 20 $)\n"
+#                          + "Tu cuenta corriente " + str(slot_machine.credit) + " $!\n" +
+#                          "¡Es hora de comenzar el juego! - >¡Tira de la palanca!", reply_markup=markup_casino)
+#     if message.text == "¡Tire de la palanca! 💰":
+#         if slot_machine.cash >= slot_machine.credit:
+#             bot.send_message(message.chat.id, "¡La apuesta es demasiado alta!\ npóngase en una apuesta para continuar el juego.",
+#                              reply_markup=markup_casino)
+#         elif slot_machine.credit >= 15 and slot_machine.credit - slot_machine.cash > 0:
+#             bot.send_message(message.chat.id, "Tu apuesta " + str(slot_machine.cash) + " $!\n" +
+#                              slot_machine.play_game() + "\n"
+#                              + "Tu cuenta corriente " + str(slot_machine.credit) + " $\n"
+#                              , reply_markup=markup_casino)
+#             if slot_machine.flag:
+#                 bot.send_message(message.chat.id, "Felicidades, has ganado " + str(slot_machine.total_won) + " $!",
+#                                  reply_markup=markup_casino)
+#         else:
+#             bot.send_message(message.chat.id, "No hay fondos suficientes para continuar el juego.\n" +
+#                              "Por desgracia, viajero, este es tu juego. ¡Entra la próxima vez!",
+#                              reply_markup=markup_casino)
+#     elif message.text == "Cambiar la apuesta":
+#         bot.send_message(message.chat.id, "Introduzca una nueva apuesta (no menos de 15)!", reply_markup=markup_casino)
+#     elif message.text == "Leyes del juego 📝":
+#         bot.send_message(message.chat.id, "¡Saludos, jugador! El juego es muy simple, cada movimiento del juego pasa"
+#                                           " en 4 etapas:\n"
+#                          + "1) Pulsando El botón para tirar de la palanca! 💰 inicia la máquina.\ n se Cancela la apuesta, se muestra"
+#                          + " campo de juego 3x3 y por suerte (random honesto) el dinero o se pierde"
+#                          + " o se multiplican.\n2) Si el jugador quiere cambiar la apuesta, sólo tiene que hacer clic "
+#                          + "en el Botón cambiar apuesta o marcar el número deseado en la ubicación para el conjunto de mensajes.\n" +
+#                          "3) los Ganadores son filas de 3 elementos individuales ubicados:\nen horizontal\n 🍒🍒 🍒\n"
+#                          + "vertical\n🍏\n🍏\n🍏\nen diagonal\n7️⃣\n    7️⃣\n         7️⃣\n"
+#                          + "4) las Ganancias se calculan a partir del cálculo de la apuesta * factor de categoría:\n" +
+#                          " 7️⃣ - 5, 🍒 - 3, 🍏 - 1.5, 🔔- 1\nSi la tasa excede la cantidad de fondos disponibles,"
+#                          + " la notificación apropiada se mostrará en la pantalla de diálogo.\ n ¡Buen juego!",
+#                          reply_markup=markup_casino)
+#     elif message.text == "Salir del casino":
+#         bot.send_message(message.chat.id, "¡Nos vemos, viajero!\n¿Pero a dónde voy ahora?",
+#                          reply_markup=main_menu_keyboard)
+#     elif int(message.text) % 1 == 0 and int(message.text) >= 15:
+#         if int(message.text) < slot_machine.credit:
+#             slot_machine.cash = int(message.text)
+#             bot.send_message(message.chat.id, "Nueva apuesta " + message.text + "$ ¡aceptada!", reply_markup=markup_casino)
+#         else:
+#             bot.send_message(message.chat.id, "No se acepta la apuesta. Fondos insuficientes: " +
+#                              str(slot_machine.credit), reply_markup=markup_casino)
+#     else:
+#         bot.send_message(message.chat.id, "Viajero, aparentemente eres de tierras muy lejanas. No entendí nada.",
+#                          reply_markup=markup_casino)
 
 def ata_castillo(update: Update, context: CallbackContext):
     text='No esta Disponible'
