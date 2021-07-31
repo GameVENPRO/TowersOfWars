@@ -9222,3 +9222,245 @@ INFO:[30/07/2021 22:27:02] Received signal 2 (SIGINT), stopping...
 INFO:[30/07/2021 22:27:02] Scheduler has been shut down
 WARNING:[30/07/2021 22:27:02] Exiting immediately!
 INFO:[30/07/2021 22:32:34] Scheduler started
+INFO:[31/07/2021 11:06:54] Scheduler started
+ERROR:[31/07/2021 11:07:02] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1300, in me
+    text+="/{exp_niv}".format(exp_niv=str(get_xp(level)))
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\game_logic.py", line 7, in get_xp
+    if(lvl in range[1,9]):
+TypeError: 'type' object is not subscriptable
+INFO:[31/07/2021 11:08:33] Scheduler started
+INFO:[31/07/2021 11:09:11] Scheduler started
+INFO:[31/07/2021 11:09:41] Scheduler started
+INFO:[31/07/2021 11:16:30] Scheduler started
+INFO:[31/07/2021 11:17:20] Scheduler started
+INFO:[31/07/2021 11:28:49] Scheduler started
+INFO:[31/07/2021 11:29:49] Scheduler started
+INFO:[31/07/2021 11:30:54] Scheduler started
+INFO:[31/07/2021 11:32:15] Scheduler started
+INFO:[31/07/2021 11:32:47] Scheduler started
+INFO:[31/07/2021 11:33:34] Scheduler started
+INFO:[31/07/2021 11:34:03] Scheduler started
+INFO:[31/07/2021 11:37:08] Scheduler started
+INFO:[31/07/2021 11:37:54] Scheduler started
+INFO:[31/07/2021 11:38:59] Scheduler started
+INFO:[31/07/2021 13:30:05] Scheduler started
+INFO:[31/07/2021 13:33:16] Scheduler started
+INFO:[31/07/2021 13:34:26] Scheduler started
+INFO:[31/07/2021 13:41:21] Scheduler started
+INFO:[31/07/2021 13:43:55] Scheduler started
+INFO:[31/07/2021 13:45:14] Scheduler started
+INFO:[31/07/2021 13:46:24] Scheduler started
+INFO:[31/07/2021 13:51:22] Scheduler started
+INFO:[31/07/2021 13:52:30] Scheduler started
+INFO:[31/07/2021 13:53:12] Scheduler started
+INFO:[31/07/2021 13:54:59] Scheduler started
+INFO:[31/07/2021 13:56:59] Scheduler started
+INFO:[31/07/2021 14:41:54] Scheduler started
+INFO:[31/07/2021 14:44:13] Scheduler started
+INFO:[31/07/2021 14:45:13] Scheduler started
+INFO:[31/07/2021 14:45:59] Scheduler started
+INFO:[31/07/2021 14:46:39] Scheduler started
+INFO:[31/07/2021 14:48:39] Scheduler started
+INFO:[31/07/2021 15:04:05] Scheduler started
+INFO:[31/07/2021 15:05:18] Scheduler started
+INFO:[31/07/2021 15:07:00] Scheduler started
+INFO:[31/07/2021 15:09:30] Scheduler started
+INFO:[31/07/2021 15:11:57] Scheduler started
+INFO:[31/07/2021 15:30:48] Scheduler started
+INFO:[31/07/2021 15:59:31] Scheduler started
+INFO:[31/07/2021 16:10:25] Scheduler started
+INFO:[31/07/2021 16:18:45] Scheduler started
+INFO:[31/07/2021 16:24:10] Scheduler started
+INFO:[31/07/2021 16:33:54] Scheduler started
+INFO:[31/07/2021 16:37:43] Scheduler started
+INFO:[31/07/2021 16:39:02] Scheduler started
+INFO:[31/07/2021 17:06:26] Scheduler started
+INFO:[31/07/2021 17:08:10] Scheduler started
+INFO:[31/07/2021 17:16:21] Scheduler started
+INFO:[31/07/2021 17:20:35] Scheduler started
+INFO:[31/07/2021 17:21:26] Scheduler started
+INFO:[31/07/2021 17:23:33] Scheduler started
+INFO:[31/07/2021 17:25:24] Scheduler started
+INFO:[31/07/2021 17:29:38] Scheduler started
+INFO:[31/07/2021 17:30:57] Scheduler started
+INFO:[31/07/2021 17:46:13] Scheduler started
+INFO:[31/07/2021 17:47:42] Scheduler started
+INFO:[31/07/2021 17:48:47] Scheduler started
+INFO:[31/07/2021 17:49:30] Scheduler started
+INFO:[31/07/2021 17:51:12] Scheduler started
+INFO:[31/07/2021 17:52:32] Scheduler started
+INFO:[31/07/2021 17:54:59] Scheduler started
+INFO:[31/07/2021 17:58:21] Scheduler started
+INFO:[31/07/2021 18:02:23] Scheduler started
+INFO:[31/07/2021 18:09:32] Scheduler started
+INFO:[31/07/2021 18:15:57] Scheduler started
+INFO:[31/07/2021 18:17:29] Scheduler started
+INFO:[31/07/2021 18:20:03] Scheduler started
+INFO:[31/07/2021 18:22:03] Scheduler started
+INFO:[31/07/2021 18:26:32] Scheduler started
+WARNING:[31/07/2021 18:26:45] Actualizar: 
+│
+├update_id: 994735201
+└callback_query:
+⠀├id: 2675561609503176573
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 11064
+││├date: 1627770397
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: 🌲Bosque 3min 
+ Pueden pasar muchas cosas en el bosque.
+││├entities:
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀└0:
+││││⠀└0:
+│││││⠀├text: 🌲Bosque
+│││││⠀└callback_data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;UnboundLocalError&#x27;&gt;:local variable &#x27;text3&#x27; referenced before assignment en WaTavBot.py en la linea 1037
+
+Notas: local variable &#x27;text3&#x27; referenced before assignment
+INFO:[31/07/2021 18:27:46] Scheduler started
+WARNING:[31/07/2021 18:28:00] Actualizar: 
+│
+├update_id: 994735207
+└callback_query:
+⠀├id: 2675561607351451553
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 11076
+││├date: 1627770472
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: 🌲Bosque 3min 
+ Pueden pasar muchas cosas en el bosque.
+││├entities:
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀└0:
+││││⠀└0:
+│││││⠀├text: 🌲Bosque
+│││││⠀└callback_data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;telegram.error.BadRequest&#x27;&gt;:Message text is empty en WaTavBot.py en la linea 1039
+
+Notas: Message text is empty
+INFO:[31/07/2021 18:30:09] Scheduler started
+INFO:[31/07/2021 18:40:25] Scheduler started
+WARNING:[31/07/2021 18:41:00] Actualizar: 
+│
+├update_id: 994735225
+└callback_query:
+⠀├id: 2675561610222359404
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 11113
+││├date: 1627771253
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: 🌲Bosque 3min 
+ Pueden pasar muchas cosas en el bosque.
+││├entities:
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀└0:
+││││⠀└0:
+│││││⠀├text: 🌲Bosque
+│││││⠀└callback_data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;UnboundLocalError&#x27;&gt;:local variable &#x27;text3&#x27; referenced before assignment en WaTavBot.py en la linea 1046
+
+Notas: local variable &#x27;text3&#x27; referenced before assignment
+INFO:[31/07/2021 18:41:46] Scheduler started
+INFO:[31/07/2021 18:42:33] Scheduler started
+INFO:[31/07/2021 18:44:40] Scheduler started
+INFO:[31/07/2021 18:46:38] Scheduler started
+INFO:[31/07/2021 18:48:52] Scheduler started

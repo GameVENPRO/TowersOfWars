@@ -976,16 +976,33 @@ def bosque(update: Update, context: CallbackContext):
     user = query.from_user
     
     player = PlayerDB[str(user.id)]
-    lvl = player["level"] 
-    exp_base = NivelesBD[lvl+1]   
-    text2='En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'
+    ExpJugador = int(player["exp"] ) 
+    BolsoJG = player["bolso_arm"]   
+    ArmaSgStatus = BolsoJG[player["mano"]]["estatus"]
+    ArmaSg = BolsoJG[player["mano"]]["nombre"]
+    (d_max ,a_min ,exp_base , lvl) = obtener_estadisticas_hero(user)
+    
     resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(1))
-    upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🌲En el bosque. Regreso en 2 minutos."))
-    context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)
+    if ArmaSgStatus == 1 and ArmaSg == 'Antorcha':
+        text2='En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'        
+        upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🌲En el bosque. Regreso en 2 minutos."))
+    else:
+        text2='En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'        
+        upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🌲En el bosque. Regreso en 1 minutos."))
+
+    context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)      
+
+    
     
     if(next == 'mbosq'):
-        countdown = 180      
-        while countdown:
+        countdown = 0
+        
+        if ArmaSgStatus == 1 and ArmaSg == 'Antorcha':
+            countdown = 5
+        else:
+            countdown = 5
+              
+        while countdown: 
             m, s = divmod(countdown, 60)
             formato = '{:02d}:{:02d}'.format(m, s)           
             if formato == "01:00":   
@@ -994,18 +1011,36 @@ def bosque(update: Update, context: CallbackContext):
                 upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en unos segundos.")) 
             if formato == "00:01":   
                 upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
+                exp_ganada = exp_bosque(d_max ,a_min , lvl)
+                oro_win = random.randint(0, 4)
+                print(exp_ganada)
                 text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'   
-                text+='Exp:{exp}\n'.format(exp=exp_bosque(exp_base,lvl))   
-                text+='Ganaste:{r}'.format(r=RecursosDB[drop_recuros()]["nombre"])   
-                            
+                text+='Ganaste:<b>{exp}</b> y <b>{oro}</b> oro'.format(exp=exp_ganada , oro=oro_win)   
+                # text+='\nGanaste:<b>{r}</b>'.format(r=RecursosDB[drop_recuros()]["nombre"])   
+                suma = int(PlayerDB[str(user.id)]["exp"]) + int(exp_ganada)
+                suma_oro = int(PlayerDB[str(user.id)]["oro"]) + int(oro_win)
+                upload(player=str(user.id),concept=("exp","oro"),value=(suma,suma_oro))                            
             countdown -= 1 
             sleep(1)     
+        try:           
+            context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)      
+        except Exception as e:
+            error(update,e)
 
-    try:
-        context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
-        
-    except Exception as e:
-        error(update,e)
+        if suma >= exp_base:
+                    text3='Nuevo Nivel:'
+                    Lvl_up = int(PlayerDB[str(user.id)]["level"]) + int(lvl)
+                    at = int(PlayerDB[str(user.id)]["defensa"]) * int(lvl)
+                    de = int(PlayerDB[str(user.id)]["ataque"]) * int(lvl)
+                    upload(player=str(user.id),concept=("level","defensa","ataque"),value=(Lvl_up,de,at))
+
+                    try:
+                                
+                        context.bot.send_message(chat_id=user.id,text=text3,parse_mode=ParseMode.HTML,reply_markup=None)
+                    
+                    except Exception as e:
+                        error(update,e)
+                    
     
     return
 
@@ -1136,6 +1171,18 @@ def arena(update: Update, context: CallbackContext):
     
     return
 
+def obtener_estadisticas_hero(user):
+    global PlayerDB
+    player = PlayerDB[str(user.id)]
+    BolsoJG = player["bolso_arm"]
+    d_max = player["defensa"] 
+    a_min = player["ataque"]
+    lvl = player["level"]     
+    exp_base = NivelesBD[lvl+1]     
+
+    
+        
+    return (d_max ,a_min ,exp_base ,lvl)
 
 def queryHandler(update: Update, context: CallbackContext):
     query = update.callback_query

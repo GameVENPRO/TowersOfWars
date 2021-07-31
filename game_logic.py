@@ -1,12 +1,13 @@
 import random
 import json
 import math
+from time import sleep, time
 
 def get_xp(lvl):
     """
     Returns total XP according to gain level
     """
-    total_xp = int((lvl * 5) ** 2.1)
+    total_xp = int((lvl * 10) ** 2.1)
     return total_xp * lvl
 
 def drop_recuros():
@@ -56,8 +57,21 @@ def enemy_calc(u_attack, u_health, u_defence, lvl):
     
     return result
 
-def exp_bosque(exp_base,lvl):
-    Bunus = random.randint(1,47)
-    # Bonus1 = random.randint(1,20)
-    exp = int(exp_base / (lvl/lvl)*(1+lvl/10) / Bunus )
-    return exp 
+def exp_bosque(d_max ,a_min , lvl):
+    
+    Ataque_bosque = random.randint(0, lvl)
+    Defensa_bosque = random.randint(0, lvl)
+    
+    exp =int(round((d_max + a_min) -  ( Defensa_bosque + Ataque_bosque) ) * (lvl**0.04))
+    
+    return exp
+
+
+def recuperar(v_max,v_min):
+         
+    if v_min < v_max:
+        v_min += 1
+        print(v_min)
+    sleep(0.3)
+        
+    
