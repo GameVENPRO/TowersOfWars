@@ -8850,3 +8850,375 @@ INFO:[27/07/2021 22:08:46] Scheduler started
 INFO:[27/07/2021 22:32:48] Scheduler started
 INFO:[27/07/2021 22:41:15] Scheduler started
 INFO:[27/07/2021 22:45:36] Scheduler started
+INFO:[28/07/2021 20:28:34] Scheduler started
+INFO:[28/07/2021 20:29:10] Scheduler started
+INFO:[28/07/2021 20:29:45] Scheduler started
+INFO:[28/07/2021 20:30:14] Scheduler started
+INFO:[28/07/2021 20:30:39] Scheduler started
+INFO:[28/07/2021 21:28:45] Scheduler started
+INFO:[28/07/2021 21:30:47] Scheduler started
+INFO:[28/07/2021 21:33:02] Scheduler started
+INFO:[28/07/2021 22:12:32] Scheduler started
+INFO:[28/07/2021 22:13:38] Scheduler started
+INFO:[28/07/2021 22:14:23] Scheduler started
+INFO:[28/07/2021 22:15:40] Scheduler started
+INFO:[28/07/2021 22:16:14] Scheduler started
+INFO:[30/07/2021 20:17:08] Scheduler started
+WARNING:[30/07/2021 20:31:45] Actualizar: 
+│
+├update_id: 994734499
+└callback_query:
+⠀├id: 2675561607232107621
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 9790
+││├date: 1627691319
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: 🌲Bosque 3min 
+ Pueden pasar muchas cosas en el bosque.
+
+🍄Pantano 4min
+Quién sabe lo que está al acecho en el barro.
+
+🏔Valle de Montaña 4min
+Cuidado con los deslizamientos de tierra.
+
+🗡Foray 🔋🔋 
+La incursión es una actividad peligrosa. Alguien puede notarlo y puede golpearlo. Pero si pasas desapercibido, conseguirás mucho botín. 
+
+📯Arena 
+Arena no es un lugar para débiles. Aquí luchas contra otros jugadores y si sales victorioso, adquieres una experiencia preciosa.
+││├entities:
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: 🌲Bosque
+││││││└callback_data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+│││││├1:
+││││││├text: 🍄Pantano
+││││││└callback_data: {"op":"pantano|mpant","d1":"pantano","d2":"622952731"}
+│││││└2:
+│││││⠀├text: 🏔Valle
+│││││⠀└callback_data: {"op":"valle|mvalle","d1":"valle","d2":"622952731"}
+│││⠀└1:
+││││⠀├0:
+││││││├text: 🗡Foray
+││││││└callback_data: {"op":"foray|mforay","d1":"foray","d2":"622952731"}
+││││⠀└1:
+│││││⠀├text: 📯Arena
+│││││⠀└callback_data: {"op":"arena|marena","d1":"arena","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;UnboundLocalError&#x27;&gt;:local variable &#x27;text&#x27; referenced before assignment en WaTavBot.py en la linea 998
+
+Notas: local variable &#x27;text&#x27; referenced before assignment
+INFO:[30/07/2021 20:34:10] Scheduler started
+INFO:[30/07/2021 20:35:56] Scheduler started
+WARNING:[30/07/2021 20:39:01] Actualizar: 
+│
+├update_id: 994734505
+└callback_query:
+⠀├id: 2675561607876986594
+⠀├chat_instance: 5267401404583260664
+⠀├message:
+││├message_id: 9800
+││├date: 1627691678
+││├chat:
+│││├id: 622952731
+│││├type: private
+│││├username: JuanShotLC
+│││├first_name: 👑 JuanShotLC 👑
+│││└last_name: ⚒️ ²⁷
+││├text: 🌲Bosque 3min 
+ Pueden pasar muchas cosas en el bosque.
+
+🍄Pantano 4min
+Quién sabe lo que está al acecho en el barro.
+
+🏔Valle de Montaña 4min
+Cuidado con los deslizamientos de tierra.
+
+🗡Foray 🔋🔋 
+La incursión es una actividad peligrosa. Alguien puede notarlo y puede golpearlo. Pero si pasas desapercibido, conseguirás mucho botín. 
+
+📯Arena 
+Arena no es un lugar para débiles. Aquí luchas contra otros jugadores y si sales victorioso, adquieres una experiencia preciosa.
+││├entities:
+││├caption_entities:
+││├photo:
+││├new_chat_members:
+││├new_chat_photo:
+││├delete_chat_photo: False
+││├group_chat_created: False
+││├supergroup_chat_created: False
+││├channel_chat_created: False
+││├reply_markup:
+│││└inline_keyboard:
+│││⠀├0:
+│││││├0:
+││││││├text: 🌲Bosque
+││││││└callback_data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+│││││├1:
+││││││├text: 🍄Pantano
+││││││└callback_data: {"op":"pantano|mpant","d1":"pantano","d2":"622952731"}
+│││││└2:
+│││││⠀├text: 🏔Valle
+│││││⠀└callback_data: {"op":"valle|mvalle","d1":"valle","d2":"622952731"}
+│││⠀└1:
+││││⠀├0:
+││││││├text: 🗡Foray
+││││││└callback_data: {"op":"foray|mforay","d1":"foray","d2":"622952731"}
+││││⠀└1:
+│││││⠀├text: 📯Arena
+│││││⠀└callback_data: {"op":"arena|marena","d1":"arena","d2":"622952731"}
+││└from:
+││⠀├id: 1623058330
+││⠀├first_name: Torre De Dios
+││⠀├is_bot: True
+││⠀└username: Torre_RPGBot
+⠀├data: {"op":"bosque|mbosq","d1":"bosque","d2":"622952731"}
+⠀└from:
+│⠀├id: 622952731
+│⠀├first_name: 👑 JuanShotLC 👑
+│⠀├is_bot: False
+│⠀├last_name: ⚒️ ²⁷
+│⠀├username: JuanShotLC
+│⠀└language_code: es 
+...Error causado : 
+
+&lt;class &#x27;UnboundLocalError&#x27;&gt;:local variable &#x27;text&#x27; referenced before assignment en WaTavBot.py en la linea 998
+
+Notas: local variable &#x27;text&#x27; referenced before assignment
+INFO:[30/07/2021 20:45:44] Scheduler started
+INFO:[30/07/2021 21:03:24] Scheduler started
+ERROR:[30/07/2021 21:03:27] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1284, in me
+    text+="⏰{rege}min".format(rege=regenera_res(user))
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1325, in regenera_res
+    return formato
+UnboundLocalError: local variable 'formato' referenced before assignment
+INFO:[30/07/2021 21:04:03] Scheduler started
+INFO:[30/07/2021 21:04:38] Scheduler started
+INFO:[30/07/2021 21:05:37] Scheduler started
+INFO:[30/07/2021 21:06:03] Scheduler started
+INFO:[30/07/2021 21:08:15] Scheduler started
+INFO:[30/07/2021 21:31:52] Scheduler started
+INFO:[30/07/2021 21:32:16] Scheduler started
+INFO:[30/07/2021 21:33:48] Scheduler started
+INFO:[30/07/2021 21:34:42] Received signal 2 (SIGINT), stopping...
+INFO:[30/07/2021 21:34:42] Scheduler has been shut down
+WARNING:[30/07/2021 21:34:42] Exiting immediately!
+INFO:[30/07/2021 21:36:12] Scheduler started
+INFO:[30/07/2021 21:46:23] Scheduler started
+INFO:[30/07/2021 21:46:30] Scheduler started
+ERROR:[30/07/2021 21:46:31] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:31] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:34] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:34] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:34] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:34] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:38] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:38] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:38] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:38] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:42] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:42] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:42] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:42] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:46] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:46] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:46] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+ERROR:[30/07/2021 21:46:46] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 516, in _network_loop_retry
+    if not action_cb():
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\updater.py", line 467, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 127, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 2761, in get_updates
+    result = self._post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\bot.py", line 259, in _post
+    return self.request.post(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 349, in post
+    result = self._request_wrapper(
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\utils\request.py", line 276, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+INFO:[30/07/2021 21:47:05] Scheduler started
+INFO:[30/07/2021 21:48:16] Scheduler started
+INFO:[30/07/2021 21:50:43] Scheduler started
+INFO:[30/07/2021 21:55:11] Scheduler started
+INFO:[30/07/2021 22:16:11] Scheduler started
+INFO:[30/07/2021 22:18:07] Scheduler started
+INFO:[30/07/2021 22:19:14] Scheduler started
+INFO:[30/07/2021 22:21:05] Scheduler started
+INFO:[30/07/2021 22:22:41] Scheduler started
+INFO:[30/07/2021 22:24:11] Scheduler started
+INFO:[30/07/2021 22:25:59] Scheduler started
+INFO:[30/07/2021 22:27:02] Received signal 2 (SIGINT), stopping...
+INFO:[30/07/2021 22:27:02] Scheduler has been shut down
+WARNING:[30/07/2021 22:27:02] Exiting immediately!
+INFO:[30/07/2021 22:32:34] Scheduler started

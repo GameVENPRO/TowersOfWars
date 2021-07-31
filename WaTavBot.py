@@ -1,5 +1,6 @@
 #Logging, para empezar a monitorear el desmadre desde el principio
 import logging
+import random
 logging.basicConfig(format=u'%(levelname)s:[%(asctime)s] %(message)s',datefmt='%d/%m/%Y %H:%M:%S' , level=logging.INFO, 
                     handlers=[logging.FileHandler(filename="log.log", encoding='utf8'), logging.StreamHandler()])
 logger = logging.getLogger(__name__)
@@ -9,7 +10,7 @@ from telegram import *
 from telegram.ext import *
 #Configuracion 
 from cfg import *
-
+from game_logic import *
 # Crea el Actualizador y pásalo el token de tu bot.
 updater = Updater(TOKEN, use_context=True)
 (ME,    MEINFO,     MEWEAPONS,
@@ -53,7 +54,7 @@ ObjetosDB = Fire.get("/objetos",None)
 # print(str(ObjetosDB))
 TiendaDB = Fire.get("/tienda",None)
 # print(str(TiendaDB))
-# storeDB = Fire.get("/store",None)
+RecursosDB = Fire.get("/recursos",None)
 # print(str(storeDB))
 categories = ["dagas","espadas","desafilados",
             "arcos","cascos","armaduras",
@@ -968,32 +969,38 @@ def misiones(update: Update, context: CallbackContext):
     return
 
 def bosque(update: Update, context: CallbackContext):
+    global PlayerDB, RecursosDB
     query = update.callback_query
     data = json.loads(query.data)
     option,next = data["op"].split("|")
     user = query.from_user
+    
+    player = PlayerDB[str(user.id)]
+    lvl = player["level"] 
+    exp_base = NivelesBD[lvl+1]   
     text2='En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'
     resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(1))
-    upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🌲En el bosque. Regreso en 2 minutos"))
+    upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🌲En el bosque. Regreso en 2 minutos."))
     context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)
     
-    if(next == 'mbosq'): 
-        starttime = time.time()
-        i = 1      
-        while (i >= 1):            
-                Tiempo = time.sleep(180 - ((time.time() - starttime) % 180)) 
-                if(Tiempo == 60):
-                    upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en 1 minutos"))
-                if(Tiempo == 119):
-                    upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en unos segundos"))
-                
+    if(next == 'mbosq'):
+        countdown = 180      
+        while countdown:
+            m, s = divmod(countdown, 60)
+            formato = '{:02d}:{:02d}'.format(m, s)           
+            if formato == "01:00":   
+                upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en 1 minuto."))
+            if formato == "00:59":  
+                upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en unos segundos.")) 
+            if formato == "00:01":   
                 upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
-                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n' 
-                text+='Exigieron que les dieras todo lo que tienes. Mataste a cada uno de ellos y recogiste un montón de botín.\n\n'
-                text+='Usted recibió: 15 exp y 2 oro\n Ganado: Palo (1) \n Ganado: Polvo (1)\n'              
+                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'   
+                text+='Exp:{exp}\n'.format(exp=exp_bosque(exp_base,lvl))   
+                text+='Ganaste:{r}'.format(r=RecursosDB[drop_recuros()]["nombre"])   
+                            
+            countdown -= 1 
+            sleep(1)     
 
-                break   
-    
     try:
         context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
         
@@ -1013,17 +1020,21 @@ def pantano(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)
     
     if(next == 'mpant'): 
-        starttime = time.time()
-        i = 1      
-        while (i >= 1):            
-                time.sleep(260 - ((time.time() - starttime) % 260)) 
-                
+        countdown = 260      
+        while countdown:
+            m, s = divmod(countdown, 60)
+            formato = '{:02d}:{:02d}'.format(m, s)           
+            if formato == "01:59":   
+                upload(player=str(user.id),concept=("estado"),value=("🍄Caminando por un pantano. Regreso en 1 minuto."))
+            if formato == "00:59":  
+                upload(player=str(user.id),concept=("estado"),value=("🍄Caminando por un pantano. Regreso en unos segundos.")) 
+            if formato == "00:01":   
                 upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
-                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n' 
-                text+='Exigieron que les dieras todo lo que tienes. Mataste a cada uno de ellos y recogiste un montón de botín.\n\n'
-                text+='Usted recibió: 15 exp y 2 oro\n Ganado: Palo (1) \n Ganado: Polvo (1)\n'              
 
-                break   
+                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'   
+                            
+            countdown -= 1 
+            sleep(1) 
     
     try:
         context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
@@ -1044,17 +1055,21 @@ def valle(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)
     
     if(next == 'mvalle'): 
-        starttime = time.time()
-        i = 1      
-        while (i >= 1):            
-                time.sleep(240 - ((time.time() - starttime) % 240)) 
-                
+        countdown = 240      
+        while countdown:
+            m, s = divmod(countdown, 60)
+            formato = '{:02d}:{:02d}'.format(m, s)           
+            if formato == "01:59":   
+                upload(player=str(user.id),concept=("estado"),value=("⛰Paseando por las montañas. Vuelvo en 1 minuto."))
+            if formato == "00:59":  
+                upload(player=str(user.id),concept=("estado"),value=("⛰Paseando por las montañas. Vuelvo en unos segundos.")) 
+            if formato == "00:01":   
                 upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
-                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n' 
-                text+='Exigieron que les dieras todo lo que tienes. Mataste a cada uno de ellos y recogiste un montón de botín.\n\n'
-                text+='Usted recibió: 15 exp y 2 oro\n Ganado: Palo (1) \n Ganado: Polvo (1)\n'              
 
-                break   
+                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'   
+                            
+            countdown -= 1 
+            sleep(1)  
     
     try:
         context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
@@ -1075,17 +1090,21 @@ def foray(update: Update, context: CallbackContext):
     context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)
     
     if(next == 'mforay'): 
-        starttime = time.time()
-        i = 1      
-        while (i >= 1):            
-                time.sleep(240 - ((time.time() - starttime) % 240)) 
-                
+        countdown = 260      
+        while countdown:
+            m, s = divmod(countdown, 60)
+            formato = '{:02d}:{:02d}'.format(m, s)           
+            if formato == "01:59":   
+                upload(player=str(user.id),concept=("estado"),value=("🗡Incursión. Estará de vuelta en 1 minutos"))
+            if formato == "00:59":  
+                upload(player=str(user.id),concept=("estado"),value=("🗡Incursión. Estará de vuelta en unos segundos")) 
+            if formato == "00:01":   
                 upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
-                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n' 
-                text+='Exigieron que les dieras todo lo que tienes. Mataste a cada uno de ellos y recogiste un montón de botín.\n\n'
-                text+='Usted recibió: 15 exp y 2 oro\n Ganado: Palo (1) \n Ganado: Polvo (1)\n'              
 
-                break   
+                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'   
+                            
+            countdown -= 1 
+            sleep(1)   
     
     try:
         context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
@@ -1283,6 +1302,7 @@ def me(update: Update, context: CallbackContext):
     text+="/{vdmax}".format(vdmax=str(player["vida_max"]))        
     text+="\n🔋Resistencia:{rsmin}".format(rsmin=str(player["resis_min"]))
     text+="/{rsmax}".format(rsmax=str(player["resis_max"]))
+    text+="⏰{rege}min".format(rege="NADDAA")
     if(player["mana_max"]>0):
         text+="\n💧Mana:{mnamin}".format(mnamin=str(player["mana_min"]))
         text+="/{mnamax}".format(mnamax=str(player["mana_max"]))          
