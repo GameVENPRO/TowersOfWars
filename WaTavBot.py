@@ -2096,50 +2096,7 @@ def wpassign(weapon,user):
 # Clima y tiempo
 
 def tiempo(update: Update, context: CallbackContext):
-    dt = datetime.now()     # Fecha y hora actual
-
-
-    anno = dt.year
-    m =  dt.month
-    dia= dt.day 
-    hora= str(dt.hour)
-    min= dt.minute
-
-    text= "<b>En el mundo de Chat Wars ahora</b>"    
-
-    if(m == 1):
-       mes="Wintar "
-            #    Invierno 31"
-    if(m == 2):
-      mes= "Hornung "
-         #   Invierno 28"
-    if(m == 3):
-        mes="estrellas"
-               #  Primavera 30"
-    if(m == 5):
-	    mes=" Winni "
-               # Primavera 31"
-    if(m == 6):
-	    mes="Brāh "
-               # Verano 30"
-    if(m == 7):
- 	    mes="Hewi "
-              #  Verano 31"
-    if(m == 8):
-    	m="Aran "
-               # Verano 31"
-    if(m == 9):
-    	    mes="Witu "
-               # Otoño 30"
-    if(m == 10):
-	    mes="Wīndume "
-               # Otoño 31"
-    if(m == 11):
-	    mes="Herbista "
-               # Otoño 30"
-    if(m == 12):
-	    mes=" Hailag "
-               # Invierno 31"
+    hora=01
         
     if(hora == "00"):
         text+="\n🌤Mañana"
@@ -2190,9 +2147,7 @@ def tiempo(update: Update, context: CallbackContext):
     elif(hora == "23"):
         text+="\n🌤Mañana"
         
-    text+= "\n{h}:{m}".format(h=hora ,m=min)    
-
-    text+= "\n{d} {m} {a}".format(d=dia , m=mes, a=anno)
+    
 
     text+= "\n\n<b>Pronóstico del tiempo</b>"
     text+= "\n[{clima}]".format(clima=climas())
