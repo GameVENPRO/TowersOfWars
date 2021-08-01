@@ -2096,7 +2096,7 @@ def wpassign(weapon,user):
 # Clima y tiempo
 
 def tiempo(update: Update, context: CallbackContext):
-    dt = datetime.datetime.now()     # Fecha y hora actual
+    dt = datetime.now()     # Fecha y hora actual
 
 
     anno = dt.year
