@@ -2096,60 +2096,10 @@ def wpassign(weapon,user):
 # Clima y tiempo
 
 def tiempo(update: Update, context: CallbackContext):
-    hora=01
-        
-    if(hora == "00"):
-        text+="\n🌤Mañana"
-    elif(hora == "01"):
-        text+="\n🌞Día"
-    elif(hora == "02"):
-        text+="\n🌞Día"
-    elif(hora == "03"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "04"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "05"):
-        text+="\n🌙Noche"
-    elif(hora == "06"):
-        text+="\n🌙Noche"
-    elif(hora == "07"):
-        text+="\n🌤Mañana"
-    elif(hora == "08"):
-        text+="\n🌤Mañana"
-    elif(hora == "09"):
-        text+="\n🌞Día"
-    elif(hora == "10"):
-        text+="\n🌞Día"
-    elif(hora == "11"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "12"):
-        text+= "\n⛅️Tarde"  
-    elif(hora == "13"):
-        text+="\n🌙Noche"
-    elif(hora == "14"):
-        text+="\n🌙Noche"
-    elif(hora == "15"):
-        text+="\n🌤Mañana"
-    elif(hora == "16"):
-        text+="\n🌤Mañana"
-    elif(hora == "17"):
-        text+="\n🌞Día"
-    elif(hora == "18"):
-        text+="\n🌞Día"
-    elif(hora == "19"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "20"):
-        text+= "\n⛅️Tarde"
-    elif(hora == "21"):
-        text+="\n🌙Noche"
-    elif(hora == "22"):
-        text+="\n🌙Noche"
-    elif(hora == "23"):
-        text+="\n🌤Mañana"
         
     
 
-    text+= "\n\n<b>Pronóstico del tiempo</b>"
+    text= "\n\n<b>Pronóstico del tiempo</b>"
     text+= "\n[{clima}]".format(clima=climas())
 
     
