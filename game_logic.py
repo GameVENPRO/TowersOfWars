@@ -73,5 +73,13 @@ def recuperar(v_max,v_min):
         v_min += 1
         print(v_min)
     sleep(0.3)
-        
+
+
+def climas():
     
+    climas= ["Soleado☀️ ","Nublado🌤 ","Lluvioso🌧 " ,"Nieblina🌫 "]
+    clima1 = climas[random.randint(0, 3)]
+    clima2 = climas[random.randint(0, 3)]
+    Cambio = str(clima1) + ' → ' + str(clima2)
+    
+    return Cambio

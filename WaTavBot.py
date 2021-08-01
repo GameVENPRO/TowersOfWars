@@ -2195,7 +2195,7 @@ def tiempo(update: Update, context: CallbackContext):
     text+= "\n{d} {m} {a}".format(d=dia , m=mes, a=anno)
 
     text+= "\n\n<b>Pronóstico del tiempo</b>"
-    text+= "\n[🌫→🌤] (Inactivo)"
+    text+= "\n[{clima}]".format(clima=climas())
 
     
     reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
@@ -2205,11 +2205,6 @@ def tiempo(update: Update, context: CallbackContext):
         reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
-    return
-
-def pronostico():
-    
-    # estados climáticos: Soleado ☀️, Nublado 🌤, Lluvioso 🌧 y Brumoso 🌫
     return
 
 # Castillo
