@@ -9464,3 +9464,52 @@ INFO:[31/07/2021 18:42:33] Scheduler started
 INFO:[31/07/2021 18:44:40] Scheduler started
 INFO:[31/07/2021 18:46:38] Scheduler started
 INFO:[31/07/2021 18:48:52] Scheduler started
+INFO:[01/08/2021 10:41:20] Scheduler started
+INFO:[01/08/2021 10:43:21] Scheduler started
+INFO:[01/08/2021 10:50:34] Scheduler started
+INFO:[01/08/2021 10:52:02] Scheduler started
+INFO:[01/08/2021 11:31:43] Scheduler started
+INFO:[01/08/2021 11:35:16] Scheduler started
+INFO:[01/08/2021 11:37:44] Scheduler started
+INFO:[01/08/2021 11:40:08] Scheduler started
+INFO:[01/08/2021 11:42:05] Scheduler started
+INFO:[01/08/2021 11:52:18] Scheduler started
+INFO:[01/08/2021 11:55:29] Scheduler started
+INFO:[01/08/2021 11:56:20] Scheduler started
+INFO:[01/08/2021 11:58:32] Scheduler started
+INFO:[01/08/2021 11:59:50] Scheduler started
+INFO:[01/08/2021 12:00:31] Scheduler started
+INFO:[01/08/2021 12:01:40] Scheduler started
+INFO:[01/08/2021 12:02:56] Scheduler started
+INFO:[01/08/2021 12:04:47] Scheduler started
+INFO:[01/08/2021 12:05:51] Scheduler started
+INFO:[01/08/2021 12:07:23] Scheduler started
+INFO:[01/08/2021 12:09:09] Scheduler started
+INFO:[01/08/2021 12:10:09] Scheduler started
+INFO:[01/08/2021 12:15:04] Scheduler started
+INFO:[01/08/2021 12:15:47] Scheduler started
+INFO:[01/08/2021 12:17:14] Scheduler started
+INFO:[01/08/2021 12:19:57] Scheduler started
+INFO:[01/08/2021 12:50:28] Scheduler started
+INFO:[01/08/2021 12:57:36] Scheduler started
+INFO:[01/08/2021 12:58:40] Scheduler started
+INFO:[01/08/2021 14:14:57] Scheduler started
+INFO:[01/08/2021 14:16:29] Scheduler started
+INFO:[01/08/2021 14:19:32] Scheduler started
+INFO:[01/08/2021 15:03:46] Scheduler started
+INFO:[01/08/2021 15:14:20] Scheduler started
+INFO:[01/08/2021 15:17:38] Scheduler started
+INFO:[01/08/2021 16:00:12] Scheduler started
+ERROR:[01/08/2021 16:00:29] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\dispatcher.py", line 442, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\conversationhandler.py", line 549, in handle_update
+    new_state = handler.handle_update(update, dispatcher, check_result, context)
+  File "C:\Python39\lib\site-packages\python_telegram_bot-13.4.1-py3.9.egg\telegram\ext\handler.py", line 160, in handle_update
+    return self.callback(update, context)
+  File "c:\Users\juanp\OneDrive\Escritorio\Repositorio\ChatWars\WaTavBot.py", line 1363, in me
+    player = PlayerDB[str(user.id)]
+KeyError: '1594772905'
+INFO:[01/08/2021 20:20:00] Scheduler started
+INFO:[01/08/2021 20:21:32] Scheduler started

@@ -10,15 +10,46 @@ def get_xp(lvl):
     total_xp = int((lvl * 10) ** 2.1)
     return total_xp * lvl
 
-def drop_recuros():
-    madruga = 16
-    dia = 5
-    tarde = 11
-    noche = 19
-    
-    c = random.randint(1, 81)
-    
-    return c
+def drop_recuros(tiempo):
+            
+    Res_man=["01","02","03","04","05","09","07","10","21","31"]
+    Res_med=["01","03","04","07","09","20","22","23"]
+    Res_tar=["01","02","03","04","05","07","09","20","21","22","23"]
+    Res_noc=["01","02","03","05","06","07","08","13","22","23"]
+        
+    if tiempo == "🌤":
+        rango = random.randint(1, 4)
+        
+        for i in range(rango):
+            drps = Res_man[random.randint(0, 9)]
+            cantida = random.randint(0, 3)
+            items_d=drps
+            itm_c = cantida 
+            print(items_d ,itm_c) 
+    elif tiempo =="🌞":
+        rango = random.randint(1, 4)
+        
+        for i in range(rango):
+            drps = Res_med[random.randint(0, 8)]
+            cantida = random.randint(0, 3)
+            items_d="Rercursos Ganados",drps,"Catidad:" ,cantida 
+    elif tiempo == "⛅️":
+        rango = random.randint(1, 4)
+        
+        for i in range(rango):
+            drps = Res_tar[random.randint(0, 10)]
+            cantida = random.randint(0, 3)
+            items_d="Rercursos Ganados",drps,"Catidad:" ,cantida 
+    elif  tiempo == "🌙":
+        rango = random.randint(1, 4)
+        
+        for i in range(rango):
+            drps = Res_noc[random.randint(0, 9)]
+            cantida = random.randint(0, 3)
+            items_d="Rercursos Ganados",drps,"Catidad:" ,cantida
+        
+        
+    return items_d,itm_c
 
 def item_drop(chance):
     """
@@ -28,7 +59,7 @@ def item_drop(chance):
     c = random.randint(1, 100)
     if c >= chance:
         return True
-    return True
+    return False
 
 def round_down(n, decimals=0):
     """
@@ -57,13 +88,11 @@ def enemy_calc(u_attack, u_health, u_defence, lvl):
     
     return result
 
-def exp_bosque(d_max ,a_min , lvl):
-    
-    Ataque_bosque = random.randint(0, lvl)
-    Defensa_bosque = random.randint(0, lvl)
-    
-    exp =int(round((d_max + a_min) -  ( Defensa_bosque + Ataque_bosque) ) * (lvl**0.04))
-    
+def exp_bosque(Nivel):
+    Exp_base = get_xp(Nivel)
+    Aleaorio = random.randint(1, Nivel)
+    Aleaorio2 = random.randint(1, 100)
+    exp =int(round(((Exp_base/Aleaorio2)*0.04+Aleaorio)/2))
     return exp
 
 

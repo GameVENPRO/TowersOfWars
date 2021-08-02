@@ -1,8 +1,9 @@
 #Logging, para empezar a monitorear el desmadre desde el principio
 import logging
 import random
-logging.basicConfig(format=u'%(levelname)s:[%(asctime)s] %(message)s',datefmt='%d/%m/%Y %H:%M:%S' , level=logging.INFO, 
-                    handlers=[logging.FileHandler(filename="log.log", encoding='utf8'), logging.StreamHandler()])
+import logging
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                    level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 #Librerías para interactuar con la API de Telegram
@@ -11,6 +12,8 @@ from telegram.ext import *
 #Configuracion 
 from cfg import *
 from game_logic import *
+from dialogos import *
+from drop_items import *
 # Crea el Actualizador y pásalo el token de tu bot.
 updater = Updater(TOKEN, use_context=True)
 (ME,    MEINFO,     MEWEAPONS,
@@ -50,8 +53,6 @@ PlayerDB = Fire.get("/players",None)
 # print(str(PlayerDB))
 NivelesBD = Fire.get("/niveles_exp",None)
 # print(str(NivelesBD))
-ObjetosDB = Fire.get("/objetos",None)
-# print(str(ObjetosDB))
 TiendaDB = Fire.get("/tienda",None)
 # print(str(TiendaDB))
 RecursosDB = Fire.get("/recursos",None)
@@ -973,77 +974,155 @@ def bosque(update: Update, context: CallbackContext):
     query = update.callback_query
     data = json.loads(query.data)
     option,next = data["op"].split("|")
-    user = query.from_user
-    
-    player = PlayerDB[str(user.id)]
-    ExpJugador = int(player["exp"] ) 
-    BolsoJG = player["bolso_arm"]   
-    ArmaSgStatus = BolsoJG[player["mano"]]["estatus"]
-    ArmaSg = BolsoJG[player["mano"]]["nombre"]
-    (d_max ,a_min ,exp_base , lvl) = obtener_estadisticas_hero(user)
-    
-    resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(1))
-    if ArmaSgStatus == 1 and ArmaSg == 'Antorcha':
-        text2='En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'        
-        upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🌲En el bosque. Regreso en 2 minutos."))
-    else:
-        text2='En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'        
-        upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🌲En el bosque. Regreso en 1 minutos."))
+    user = query.from_user   
+    Jugador = PlayerDB[str(user.id)]
+    resis_min = Jugador["resis_min"]
 
-    context.bot.send_message(chat_id=user.id,text=text2,parse_mode=ParseMode.HTML,reply_markup=None)      
-
-    
-    
     if(next == 'mbosq'):
-        countdown = 0
-        
-        if ArmaSgStatus == 1 and ArmaSg == 'Antorcha':
-            countdown = 5
+        if resis_min == 0:
+            text='No hay suficiente resistencia. Vuelve después de descansar.\n\n'
+            text+='Para obtener más resistencia, invita a tus amigos al juego a '
+            text+='través del enlace de invitación.\n Pulse /promo para conseguirlo.'
+            context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)
         else:
+            quitar_res(user ,context)     
             countdown = 5
-              
-        while countdown: 
-            m, s = divmod(countdown, 60)
-            formato = '{:02d}:{:02d}'.format(m, s)           
-            if formato == "01:00":   
-                upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en 1 minuto."))
-            if formato == "00:59":  
-                upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en unos segundos.")) 
-            if formato == "00:01":   
-                upload(player=str(user.id),concept=("estado"),value=("🛌Descanso"))
-                exp_ganada = exp_bosque(d_max ,a_min , lvl)
-                oro_win = random.randint(0, 4)
-                print(exp_ganada)
-                text='De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'   
-                text+='Ganaste:<b>{exp}</b> y <b>{oro}</b> oro'.format(exp=exp_ganada , oro=oro_win)   
-                # text+='\nGanaste:<b>{r}</b>'.format(r=RecursosDB[drop_recuros()]["nombre"])   
-                suma = int(PlayerDB[str(user.id)]["exp"]) + int(exp_ganada)
-                suma_oro = int(PlayerDB[str(user.id)]["oro"]) + int(oro_win)
-                upload(player=str(user.id),concept=("exp","oro"),value=(suma,suma_oro))                            
-            countdown -= 1 
-            sleep(1)     
-        try:           
-            context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)      
-        except Exception as e:
-            error(update,e)
-
-        if suma >= exp_base:
-                    text3='Nuevo Nivel:'
-                    Lvl_up = int(PlayerDB[str(user.id)]["level"]) + int(lvl)
-                    at = int(PlayerDB[str(user.id)]["defensa"]) * int(lvl)
-                    de = int(PlayerDB[str(user.id)]["ataque"]) * int(lvl)
-                    upload(player=str(user.id),concept=("level","defensa","ataque"),value=(Lvl_up,de,at))
-
-                    try:
-                                
-                        context.bot.send_message(chat_id=user.id,text=text3,parse_mode=ParseMode.HTML,reply_markup=None)
-                    
-                    except Exception as e:
-                        error(update,e)
-                    
-    
+            while countdown: 
+                m, s = divmod(countdown, 60)
+                formato = '{:02d}:{:02d}'.format(m, s)           
+                if formato == "01:59":   
+                    upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en 1 minuto."))
+                if formato == "00:59":  
+                    upload(player=str(user.id),concept=("estado"),value=("🌲En el bosque. Regreso en unos segundos.")) 
+                if formato == "00:01":   
+                    upload(player=str(user.id),concept=("estado"),value=("🛌Descanso")) 
+                    quest_fina(user,context) 
+                countdown -= 1 
+                sleep(1) 
     return
 
+def quitar_res(user,context: CallbackContext):
+    global PlayerDB
+    Jugador = PlayerDB[str(user.id)]
+        
+    resx = str(int(Jugador["resis_min"]) - int(1))
+    text='En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'
+    upload(player=str(user.id),concept=("resis_min","estado"),value=(resx,"🌲En el bosque. Regreso en 2 minutos."))      
+    context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)      
+      
+    return
+
+def quest_fina(user,context: CallbackContext):
+    global PlayerDB, RecursosDB
+    Jugador = PlayerDB[str(user.id)]
+    Nivel = int(Jugador["level"])
+    exp_ganada = exp_bosque(Nivel)
+    oro_win = random.randint(0, 4)
+    dialogos= QUEST_BOSQUE_SUSS[random.randint(0, 29)]
+    text= dialogos  
+    text+='\nObtubiste :<b>{exp}</b> y <b>{oro}</b> oro'.format(exp=exp_ganada , oro=oro_win)   
+    
+    suma = int(Jugador["exp"]) + int(exp_ganada)
+    suma_oro = int(Jugador["oro"]) + int(oro_win)
+    veri_lvl(user,suma,context)                         
+    upload(player=str(user.id),concept=("exp","oro"),value=(suma,suma_oro))
+    hora = time.strftime("%H")
+ 
+        
+    if(hora == "00"):
+        tiempo_d="🌤Mañana"
+    elif (hora == "01"):
+        tiempo_d="🌞Día"
+    elif (hora == "02"):
+        tiempo_d="🌞Día"
+    elif (hora == "03"):
+        tiempo_d= "⛅️Tarde"
+    elif (hora == "04"):
+        tiempo_d= "⛅️Tarde"
+    elif (hora == "05"):
+        tiempo_d="🌙Noche"
+    elif (hora == "06"):
+        tiempo_d="🌙Noche"
+    elif(hora == "07"):
+        tiempo_d="🌤Mañana"
+    elif(hora == "08"):
+        tiempo_d="🌤Mañana"
+    elif (hora == "09"):
+        tiempo_d="🌞Día"
+    elif (hora == "10"):
+        tiempo_d="🌞Día"
+    elif (hora == "11"):
+        tiempo_d= "⛅️Tarde"
+    elif (hora == "12"):
+        tiempo_d= "⛅️Tarde"  
+    elif (hora == "13"):
+        tiempo_d="🌙Noche"
+    elif (hora == "14"):
+        tiempo_d="🌙Noche"
+    elif(hora == "15"):
+        tiempo_d="🌤Mañana"
+    elif(hora == "16"):
+        tiempo_d="🌤Mañana"
+    elif (hora == "17"):
+        tiempo_d="🌞Día"
+    elif (hora == "18"):
+        tiempo_d="🌞Día"
+    elif (hora == "19"):
+        tiempo_d= "⛅️Tarde"
+    elif (hora == "20"):
+        tiempo_d= "⛅️Tarde"
+    elif (hora == 21):
+        tiempo_d="🌙Noche"
+    elif (hora == "22"):
+        tiempo_d="🌙Noche"
+    elif(hora == "23"):
+        tiempo_d="🌤Mañana"
+        
+    if tiempo_d == "🌤":
+        rango = random.randint(1, 4)
+        
+        for i in range(rango):
+            drps = REC_MAN[random.randint(0, 9)]
+            cantida = random.randint(0, 3)
+            items_d=drps
+            itm_c = cantida 
+            text+='\nGanaste:<b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"] , cant=itm_c)   
+ 
+    elif tiempo_d =="🌞":
+        rango = random.randint(1, 4)
+        
+        for i in range(rango):
+            drps = REC_MED[random.randint(0, 8)]
+            cantida = random.randint(0, 3)
+            items_d=drps
+            itm_c = cantida 
+            text+='\nGanaste:<b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"] , cant=itm_c)   
+
+    elif tiempo_d == "⛅️":
+        rango = random.randint(1, 4)
+        
+        for i in range(rango):
+            drps = REC_TAD[random.randint(0, 10)]
+            cantida = random.randint(0, 3)
+            items_d=drps
+            itm_c = cantida 
+            text+='\nGanaste:<b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"] , cant=itm_c)   
+
+    elif  tiempo_d == "🌙":
+        rango = random.randint(1, 4)
+        
+        for i in range(rango):
+            drps = REC_NOC[random.randint(0, 9)]
+            cantida = random.randint(0, 3)
+            items_d=drps
+            itm_c = cantida 
+            text+='\nGanaste:<b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"] , cant=itm_c)   
+
+    
+    context.bot.send_message(chat_id=user.id,text=text,parse_mode=ParseMode.HTML,reply_markup=None)  
+    return
+
+  
 def pantano(update: Update, context: CallbackContext):
     query = update.callback_query
     data = json.loads(query.data)
@@ -1171,6 +1250,20 @@ def arena(update: Update, context: CallbackContext):
     
     return
 
+
+def veri_lvl(user,suma,context: CallbackContext):
+    global PlayerDB
+    Jugador = PlayerDB[str(user.id)]
+    Nivel = int(Jugador["level"])
+    NuevoLvl = int(int(Jugador["level"]) + int(1))    
+    BaseExp = int(get_xp(Nivel))
+    id_stiker= "CAACAgIAAxkBAAECq25hBsf94hWfsIYFTtjlY1ZW2JjVNAACiQAD6st5AuZbw2Z4SeORIAQ"     
+    if suma >= BaseExp:      
+        upload(player=str(user.id),concept=("level"),value=(NuevoLvl))      
+        context.bot.send_sticker(chat_id=user.id, sticker=id_stiker)                    
+
+    return 
+ 
 def obtener_estadisticas_hero(user):
     global PlayerDB
     player = PlayerDB[str(user.id)]
@@ -1326,7 +1419,7 @@ def me(update: Update, context: CallbackContext):
     player = PlayerDB[str(user.id)]
     level = player["level"] 
     habilidad = player["puntos_habili"]
-    exp_niveles = NivelesBD[level+1]      
+    exp_niveles = int(get_xp(level))
     bolso_arm = len(player["bolso_arm"])-1  
     text=""
     if(int(habilidad) > 0):
@@ -1380,7 +1473,7 @@ def heroe(update: Update, context: CallbackContext):
     player = PlayerDB[str(user.id)]
     BolsoJG = player["bolso_arm"]    
     level = player["level"] 
-    exp_niveles = NivelesBD[level+1]       
+    exp_niveles = int(get_xp(level))    
     bolso_arm = len(player["bolso_arm"])-1
     alma_re = len(player["almacen_re"])-1
     a = 0   
@@ -2096,39 +2189,36 @@ def wpassign(weapon,user):
 # Clima y tiempo
 
 def tiempo(update: Update, context: CallbackContext):
-    dt = datetime.datetime.now()     # Fecha y hora actual
-
-
-    anno = dt.year
-    m =  dt.month
-    dia= dt.day 
-    hora= str(dt.hour)
-    min= dt.minute
+    hora = time.strftime("%H")     # Fecha y hora actual
+    anno = time.strftime("%Y")
+    m =  time.strftime("%m")
+    dia= time.strftime("%d")
+    min= time.strftime("%M")
 
     text= "<b>En el mundo de Chat Wars ahora</b>"    
 
-    if(m == 1):
+    if(m == "01"):
        mes="Wintar "
             #    Invierno 31"
-    if(m == 2):
+    if(m == "02"):
       mes= "Hornung "
          #   Invierno 28"
-    if(m == 3):
+    if(m == "03"):
         mes="estrellas"
                #  Primavera 30"
-    if(m == 5):
+    if(m == "05"):
 	    mes=" Winni "
                # Primavera 31"
-    if(m == 6):
+    if(m == "06"):
 	    mes="Brāh "
                # Verano 30"
-    if(m == 7):
+    if(m == "07"):
  	    mes="Hewi "
               #  Verano 31"
-    if(m == 8):
+    if(m == "08"):
     	m="Aran "
                # Verano 31"
-    if(m == 9):
+    if(m == "09"):
     	    mes="Witu "
                # Otoño 30"
     if(m == 10):
@@ -2195,7 +2285,7 @@ def tiempo(update: Update, context: CallbackContext):
     text+= "\n{d} {m} {a}".format(d=dia , m=mes, a=anno)
 
     text+= "\n\n<b>Pronóstico del tiempo</b>"
-    text+= "\n[{clima}]".format(clima=climas())
+    text+= "\n[{clima}] No funciona xd".format(clima=climas())
 
     
     reply_markup = ReplyKeyboardMarkup(kb.kb("start"),resize_keyboard=True)
@@ -2413,6 +2503,7 @@ def Newcompra(user,items):
     Jugador["bolso_arm"].append(info)
     
     return
+
 
 # def casino(update: Update, context: CallbackContext):
     
@@ -3723,10 +3814,9 @@ def reload(update: Update, context: CallbackContext):
     user = update.message.from_user
     if(user.id == 622952731):
         def reloadTask():
-            global PlayerDB,NivelesBD,ObjetosDB,TiendaDB
+            global PlayerDB,NivelesBD,TiendaDB
             PlayerDB = Fire.get("/players",None)
             NivelesBD = Fire.get("/niveles_exp",None)
-            ObjetosDB = Fire.get("/objetos",None)
             TiendaDB = Fire.get("/tienda",None)
             context.bot.send_message(
                 chat_id = user.id,
@@ -3808,9 +3898,7 @@ def main():
             MessageHandler(Filters.regex("^(ℹ️Otros)$"), otros_clan),
             MessageHandler(Filters.regex("^(🤝Alianza)$"), alianza_clan),
             MessageHandler(Filters.regex("^(🏕Misiones)$"), misiones_clan),
-            
-            MessageHandler(Filters.regex("/inv"), inventario),
-            MessageHandler(Filters.regex("/almc"), almc),
+
             MessageHandler(Filters.regex("🎒Bolso"), bolso),
             MessageHandler(Filters.regex("📦Recursos"), recursos),
             MessageHandler(Filters.regex("🗃Varios"), varios),
@@ -3824,8 +3912,10 @@ def main():
             MessageHandler(Filters.regex(r"^\/on_\d+$"), equip),
             MessageHandler(Filters.regex(r"^\/off_\d+$"), equipoff),
             MessageHandler(Filters.regex(r"^\/buy_\d+$"), buy),
-            MessageHandler(Filters.regex("^(/r)$"), reload),
-            CommandHandler('reload', reload),
+            CommandHandler('r', reload),
+            CommandHandler('heroe', heroe),
+            CommandHandler('inv', inventario),
+            CommandHandler('almc', almc),
             MessageHandler(Filters.text,register)
             ],
 

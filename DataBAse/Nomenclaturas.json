@@ -1,0 +1,139 @@
+{
+    "Equipo": {
+        "01": {
+            "descrip": "Compre artículos comprados que no requieran estar equipados",
+            "emoji": "0",
+            "etiqueta": "T0",
+            "lvl_ela": {
+                "01": 0
+            },
+            "lvl_req": 0
+        },
+        "02": {
+            "descrip": "Los artículos que requieren la 📕 experiencia para ser utilizados también se compran en la tienda , aunque las subastas también son comunes",
+            "emoji": "📕",
+            "etiqueta": "T1",
+            "lvl_ela": {
+                "01": 0
+            },
+            "lvl_req": 15
+        },
+        "03": {
+            "descrip": "Artículos que requieren la 📗 experiencia para ser usados, comprados exclusivamente en subasta o fabricados en herrerías .",
+            "emoji": "📗",
+            "etiqueta": "T2",
+            "lvl_ela": {
+                "01": "C3"
+            },
+            "lvl_req": 25
+        },
+        "04": {
+            "descrip": "Artículos que requieren la 📘 experiencia para ser usados, comprados exclusivamente en subasta o fabricados en herrerías .",
+            "emoji": "📘",
+            "etiqueta": "T3",
+            "lvl_ela": {
+                "01": "C4",
+                "02": "C5"
+            },
+
+            "lvl_req": 35
+        },
+        "05": {
+            "descrip": "Artículos que requieren la 📙 experiencia para ser usados, comprados exclusivamente en subasta o fabricados en herrerías .",
+            "emoji": "📙",
+            "etiqueta": "T4",
+            "lvl_ela": {
+                "01": "C6"
+            },
+            "lvl_req": 45
+        },
+        "06": {
+            "descrip": "Artículos que requieren la 📒 experiencia para ser usados, comprados exclusivamente en subasta o fabricados en herrerías .",
+            "emoji": "📒",
+            "etiqueta": "T5",
+            "lvl_ela": {
+                "01": "C6"
+            },
+            "lvl_req": 60
+        }
+    },
+    "rango_recu": {
+        "01": {
+            "requiere_ha": "No requiere elaboración (habilidad)",
+            "etiqueta": "C0"
+
+        },
+        "02": {
+            "requiere_ha": "requiere elaboración (habilidad 1)",
+            "etiqueta": "C1"
+        },
+        "03": {
+            "requiere_ha": "requiere elaboración (habilidad 2)",
+            "etiqueta": "C2"
+        },
+        "04": {
+            "requiere_ha": "requiere elaboración (habilidad 3)",
+            "etiqueta": "C3"
+        }
+    },
+    "recurso_alquimia": {
+
+        "01": {
+            "requiere_ha": "requiere Cosecha 1 para encontrar",
+            "etiqueta": "H1"
+
+        },
+        "02": {
+            "requiere_ha": "requiere Harvest 3 para encontrar",
+            "etiqueta": "H2"
+        },
+        "03": {
+            "requiere_ha": "requiere Harvest 7 para encontrar",
+            "etiqueta": "H3"
+        },
+        "04": {
+            "requiere_ha": "requiere Harvest 12 para encontrar",
+            "etiqueta": "H4"
+        },
+        "05": {
+            "requiere_ha": "requiere Harvest 15 para encontrar",
+            "etiqueta": "H5"
+        },
+        "06": {
+            "requiere_ha": "requiere Harvest 17 para encontrar",
+            "etiqueta": "H6"
+        }
+    },
+    "rango_elabor": {
+
+        "01": {
+            "requiere_ha": "Elaborado con alquimia nivel 1",
+            "etiqueta": "A1"
+
+        },
+        "02": {
+            "requiere_ha": "Elaborado con alquimia nivel 2",
+            "etiqueta": "A2"
+        },
+        "03": {
+            "requiere_ha": "Elaborado con alquimia nivel 3",
+            "etiqueta": "A3"
+        },
+        "04": {
+            "requiere_ha": "Elaborado con alquimia nivel 4",
+            "etiqueta": "A4"
+        },
+        "05": {
+            "requiere_ha": "Elaborado con alquimia nivel 5",
+            "etiqueta": "A5"
+        },
+        "06": {
+            "requiere_ha": "Elaborado con alquimia nivel 6",
+            "etiqueta": "A6"
+        },
+        "07": {
+            "requiere_ha": "Elaborado con alquimia nivel 7",
+            "etiqueta": "A7"
+        }
+    }
+}
