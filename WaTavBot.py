@@ -1027,56 +1027,8 @@ def quest_fina(user,context: CallbackContext):
     veri_lvl(user,suma,context)                         
     upload(player=str(user.id),concept=("exp","oro"),value=(suma,suma_oro))
     hora = time.strftime("%H")
- 
-        
-    if(hora == "00"):
-        tiempo_d="🌤Mañana"
-    elif (hora == "01"):
-        tiempo_d="🌞Día"
-    elif (hora == "02"):
-        tiempo_d="🌞Día"
-    elif (hora == "03"):
-        tiempo_d= "⛅️Tarde"
-    elif (hora == "04"):
-        tiempo_d= "⛅️Tarde"
-    elif (hora == "05"):
-        tiempo_d="🌙Noche"
-    elif (hora == "06"):
-        tiempo_d="🌙Noche"
-    elif(hora == "07"):
-        tiempo_d="🌤Mañana"
-    elif(hora == "08"):
-        tiempo_d="🌤Mañana"
-    elif (hora == "09"):
-        tiempo_d="🌞Día"
-    elif (hora == "10"):
-        tiempo_d="🌞Día"
-    elif (hora == "11"):
-        tiempo_d= "⛅️Tarde"
-    elif (hora == "12"):
-        tiempo_d= "⛅️Tarde"  
-    elif (hora == "13"):
-        tiempo_d="🌙Noche"
-    elif (hora == "14"):
-        tiempo_d="🌙Noche"
-    elif(hora == "15"):
-        tiempo_d="🌤Mañana"
-    elif(hora == "16"):
-        tiempo_d="🌤Mañana"
-    elif (hora == "17"):
-        tiempo_d="🌞Día"
-    elif (hora == "18"):
-        tiempo_d="🌞Día"
-    elif (hora == "19"):
-        tiempo_d= "⛅️Tarde"
-    elif (hora == "20"):
-        tiempo_d= "⛅️Tarde"
-    elif (hora == 21):
-        tiempo_d="🌙Noche"
-    elif (hora == "22"):
-        tiempo_d="🌙Noche"
-    elif(hora == "23"):
-        tiempo_d="🌤Mañana"
+    tiempo_d = "🌤"
+    
         
     if tiempo_d == "🌤":
         rango = random.randint(1, 4)
