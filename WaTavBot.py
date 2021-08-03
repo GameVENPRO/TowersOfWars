@@ -1016,7 +1016,8 @@ def quest_fina(user,context: CallbackContext):
     global PlayerDB, RecursosDB
     Jugador = PlayerDB[str(user.id)]
     Nivel = int(Jugador["level"])
-    exp_ganada = exp_bosque(Nivel)
+    ExpBase = int(NivelesBD[Nivel]  ) 
+    exp_ganada = exp_bosque(Nivel,ExpBase)
     oro_win = random.randint(0, 4)
     dialogos= QUEST_BOSQUE_SUSS[random.randint(0, 29)]
     text= dialogos  
@@ -1208,7 +1209,7 @@ def veri_lvl(user,suma,context: CallbackContext):
     Jugador = PlayerDB[str(user.id)]
     Nivel = int(Jugador["level"])
     NuevoLvl = int(int(Jugador["level"]) + int(1))    
-    BaseExp = int(get_xp(Nivel))
+    BaseExp =  NivelesBD[Nivel]    
     id_stiker= "CAACAgIAAxkBAAECq25hBsf94hWfsIYFTtjlY1ZW2JjVNAACiQAD6st5AuZbw2Z4SeORIAQ"     
     if suma >= BaseExp:      
         upload(player=str(user.id),concept=("level"),value=(NuevoLvl))      
@@ -1371,7 +1372,7 @@ def me(update: Update, context: CallbackContext):
     player = PlayerDB[str(user.id)]
     level = player["level"] 
     habilidad = player["puntos_habili"]
-    exp_niveles = int(get_xp(level))
+    exp_niveles = NivelesBD[level]    
     bolso_arm = len(player["bolso_arm"])-1  
     text=""
     if(int(habilidad) > 0):
@@ -1425,7 +1426,7 @@ def heroe(update: Update, context: CallbackContext):
     player = PlayerDB[str(user.id)]
     BolsoJG = player["bolso_arm"]    
     level = player["level"] 
-    exp_niveles = int(get_xp(level))    
+    exp_niveles = NivelesBD[level]        
     bolso_arm = len(player["bolso_arm"])-1
     alma_re = len(player["almacen_re"])-1
     a = 0   
@@ -2339,6 +2340,7 @@ def shopcat(update: Update, context: CallbackContext):
     data = json.loads(update.callback_query.data)
     Juagador = PlayerDB[str(user.id)]
     weapons = False
+    
     
     if(len(Juagador["bolso_arm"]) >= 15):
         text = "\n<b>Tienes lleno el inventario!!!</b>"

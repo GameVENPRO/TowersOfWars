@@ -88,11 +88,11 @@ def enemy_calc(u_attack, u_health, u_defence, lvl):
     
     return result
 
-def exp_bosque(Nivel):
-    Exp_base = get_xp(Nivel)
+def exp_bosque(Nivel,ExpBase):
+
     Aleaorio = random.randint(1, Nivel)
     Aleaorio2 = random.randint(1, 100)
-    exp =int(round(((Exp_base/Aleaorio2)*0.04+Aleaorio)/2))
+    exp =int(round(((ExpBase/Aleaorio2)*0.04+Aleaorio)/2))
     return exp
 
 
