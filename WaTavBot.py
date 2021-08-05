@@ -980,6 +980,7 @@ def battle(update: Update, context: CallbackContext):
             return
 
     return
+
 # Misiones
 
 
@@ -1030,6 +1031,122 @@ def misiones(update: Update, context: CallbackContext):
     return
 
 
+def quitar_res(user,mision, context: CallbackContext):
+    global PlayerDB
+    Jugador = PlayerDB[str(user.id)]
+    resx = str(int(Jugador["resis_min"]) - int(1))
+    
+    if mision == "mbosq":
+        text = 'En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'
+        upload(player=str(user.id), concept=("resis_min", "estado"),value=(resx, "🌲En el bosque. Regreso en 2 minutos."))
+        context.bot.send_message(chat_id=user.id, text=text,parse_mode=ParseMode.HTML, reply_markup=None)
+    elif mision == "":
+        text2 = 'Una aventura está llamando. Pero fuiste a un pantano.\n Regresarás en 4 minutos.'
+        upload(player=str(user.id), concept=("resis_min", "estado"),value=(resx, "🍄Caminando por un pantano. En 4 minutos"))
+        context.bot.send_message(chat_id=user.id, text=text2,parse_mode=ParseMode.HTML, reply_markup=None)        
+    elif mision == "mvalle":        
+        text2 = 'Las montañas pueden ser un lugar peligroso.\nDecidiste investigar, qué está pasando.\n Regresarás en 4 minutos.'
+        upload(player=str(user.id), concept=("resis_min", "estado"), value=(resx, "⛰Paseando por las montañas. Vuelvo en 4 minutos."))
+        context.bot.send_message(chat_id=user.id, text=text2,parse_mode=ParseMode.HTML, reply_markup=None)
+    elif mision == "mforay":
+        resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(2))
+        text2 = 'Sintiendo una lujuria insatisfactoria por la violencia te diriges al pueblo más cercano.\n Llegará a la más cercana en 4 minutos.'
+        upload(player=str(user.id), concept=("resis_min", "estado"),value=(resx, "🗡Incursión. Estará de vuelta en 2 minutos"))
+        context.bot.send_message(chat_id=user.id, text=text2,parse_mode=ParseMode.HTML, reply_markup=None)
+    
+    return
+
+
+def quest_fina(user, context: CallbackContext):
+    global PlayerDB, RecursosDB
+    Jugador = PlayerDB[str(user.id)]
+    Nivel = int(Jugador["level"])
+    Almacen = Jugador["almacen_re"]
+    ExpBase = int(NivelesBD[Nivel])
+    exp_ganada = exp_bosque(Nivel, ExpBase)
+    oro_win = random.randint(0, 4)
+    dialogos = QUEST_BOSQUE_SUSS[random.randint(0, 29)]
+    text = dialogos
+    text += '\n\nObtubiste: <b>{exp}</b> y <b>{oro}</b> oro\n'.format(exp=exp_ganada, oro=oro_win)
+
+    suma = int(Jugador["exp"]) + int(exp_ganada)
+    suma_oro = int(Jugador["oro"]) + int(oro_win)
+    veri_lvl(user, suma, context)
+    upload(player=str(user.id), concept=("exp", "oro"), value=(suma, suma_oro))
+    
+    tiempo_d = "🌤"
+
+    if tiempo_d == "🌤":
+        rango = random.randint(1, 4)
+
+        for i in range(rango):
+            drps = REC_BO_MAN[random.randint(0, 9)]
+            cantida = random.randint(0, 3)
+            items_d = drps
+            itm_c = cantida
+            if itm_c > 0 :
+                if(str(items_d) in list(Almacen.keys())):
+                    cal = int(Almacen[items_d]["cantidad"])+int(itm_c)
+                    Newrecursos(user=user.id, items=items_d , cantidad=cal)
+                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
+                else:
+                    Newrecursos(user=user.id, items=items_d , cantidad=itm_c)
+                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
+
+    elif tiempo_d == "🌞":
+        rango = random.randint(1, 4)
+        
+        for i in range(rango):
+            drps = REC_BO_MED[random.randint(0, 8)]
+            cantida = random.randint(0, 3)
+            items_d = drps
+            itm_c = cantida
+            if itm_c > 0 :
+                if(str(items_d) in list(Almacen.keys())):
+                    cal = int(Almacen[items_d]["cantidad"])+int(itm_c)
+                    Newrecursos(user=user.id, items=items_d , cantidad=cal)
+                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
+                else:
+                    Newrecursos(user=user.id, items=items_d , cantidad=itm_c)
+                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
+
+    elif tiempo_d == "⛅️":
+        rango = random.randint(1, 4)
+
+        for i in range(rango):
+            drps = REC_BO_TAD[random.randint(0, 10)]
+            cantida = random.randint(0, 3)
+            items_d = drps
+            itm_c = cantida
+            if itm_c > 0 :
+                if(str(items_d) in list(Almacen.keys())):
+                    cal = int(Almacen[items_d]["cantidad"])+int(itm_c)
+                    Newrecursos(user=user.id, items=items_d , cantidad=cal)
+                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
+                else:
+                    Newrecursos(user=user.id, items=items_d , cantidad=itm_c)
+                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
+
+    elif tiempo_d == "🌙":
+        rango = random.randint(1, 4)
+
+        for i in range(rango):
+            drps = REC_BO_NOC[random.randint(0, 9)]
+            cantida = random.randint(0, 3)
+            items_d = drps
+            itm_c = cantida
+            if itm_c > 0 :
+                if(str(items_d) in list(Almacen.keys())):
+                    cal = int(Almacen[items_d]["cantidad"])+int(itm_c)
+                    Newrecursos(user=user.id, items=items_d , cantidad=cal)
+                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
+                else:
+                    Newrecursos(user=user.id, items=items_d , cantidad=itm_c)
+                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
+
+    context.bot.send_message(chat_id=user.id, text=text,parse_mode=ParseMode.HTML, reply_markup=None)
+    return
+
 def bosque(update: Update, context: CallbackContext):
     global PlayerDB, RecursosDB
     query = update.callback_query
@@ -1044,154 +1161,62 @@ def bosque(update: Update, context: CallbackContext):
             text = 'No hay suficiente resistencia. Vuelve después de descansar.\n\n'
             text += 'Para obtener más resistencia, invita a tus amigos al juego a '
             text += 'través del enlace de invitación.\n Pulse /promo para conseguirlo.'
-            context.bot.send_message(
-                chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
+            context.bot.send_message(chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
         else:
-            quitar_res(user, context)
+            quitar_res(user,next, context)
             countdown = 5
             while countdown:
                 m, s = divmod(countdown, 60)
                 formato = '{:02d}:{:02d}'.format(m, s)
                 if formato == "01:59":
-                    upload(player=str(user.id), concept=("estado"),
-                           value=("🌲En el bosque. Regreso en 1 minuto."))
+                    upload(player=str(user.id), concept=("estado"),value=("🌲En el bosque. Regreso en 1 minuto."))
                 if formato == "00:59":
-                    upload(player=str(user.id), concept=("estado"), value=(
-                        "🌲En el bosque. Regreso en unos segundos."))
+                    upload(player=str(user.id), concept=("estado"), value=("🌲En el bosque. Regreso en unos segundos."))
                 if formato == "00:01":
-                    upload(player=str(user.id), concept=(
-                        "estado"), value=("🛌Descanso"))
+                    upload(player=str(user.id), concept=("estado"), value=("🛌Descanso"))
                     quest_fina(user, context)
                 countdown -= 1
                 sleep(1)
     return
 
-
-def quitar_res(user, context: CallbackContext):
-    global PlayerDB
-    Jugador = PlayerDB[str(user.id)]
-
-    resx = str(int(Jugador["resis_min"]) - int(1))
-    text = 'En una necesidad extrema de una aventura, fuiste a un bosque.\n Regresarás en 3 minutos.'
-    upload(player=str(user.id), concept=("resis_min", "estado"),
-           value=(resx, "🌲En el bosque. Regreso en 2 minutos."))
-    context.bot.send_message(chat_id=user.id, text=text,
-                             parse_mode=ParseMode.HTML, reply_markup=None)
-
-    return
-
-
-def quest_fina(user, context: CallbackContext):
-    global PlayerDB, RecursosDB
-    Jugador = PlayerDB[str(user.id)]
-    Nivel = int(Jugador["level"])
-    Almacen = Jugador["almacen_re"]
-    ExpBase = int(NivelesBD[Nivel])
-    exp_ganada = exp_bosque(Nivel, ExpBase)
-    oro_win = random.randint(0, 4)
-    dialogos = QUEST_BOSQUE_SUSS[random.randint(0, 29)]
-    text = dialogos
-    text += '\n\nObtubiste: <b>{exp}</b> y <b>{oro}</b> oro\n'.format(
-        exp=exp_ganada, oro=oro_win)
-
-    suma = int(Jugador["exp"]) + int(exp_ganada)
-    suma_oro = int(Jugador["oro"]) + int(oro_win)
-    veri_lvl(user, suma, context)
-    upload(player=str(user.id), concept=("exp", "oro"), value=(suma, suma_oro))
-    
-    tiempo_d = "🌤"
-
-    if tiempo_d == "🌤":
-        rango = random.randint(1, 4)
-
-        for i in range(rango):
-            drps = REC_MAN[random.randint(0, 9)]
-            cantida = random.randint(0, 3)
-            items_d = drps
-            itm_c = cantida
-            if itm_c > 0 :
-                if(str(items_d) in list(Almacen.keys())):
-                    cal = int(Almacen[items_d]["cantidad"])+int(itm_c)
-                    Newrecursos(user=user.id, items=items_d , cantidad=cal)
-                    text += '\nGanaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
-                else:
-                    Newrecursos(user=user.id, items=items_d , cantidad=itm_c)
-                    text += '\nGanaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
-
-
-    elif tiempo_d == "🌞":
-        rango = random.randint(1, 4)
-
-        for i in range(rango):
-            drps = REC_MED[random.randint(0, 8)]
-            cantida = random.randint(0, 3)
-            items_d = drps
-            itm_c = cantida
-            text += '\nGanaste:<b>{r}</b>({cant})'.format(
-                r=RecursosDB[items_d]["nombre"], cant=itm_c)
-
-    elif tiempo_d == "⛅️":
-        rango = random.randint(1, 4)
-
-        for i in range(rango):
-            drps = REC_TAD[random.randint(0, 10)]
-            cantida = random.randint(0, 3)
-            items_d = drps
-            itm_c = cantida
-            text += '\nGanaste:<b>{r}</b>({cant})'.format(
-                r=RecursosDB[items_d]["nombre"], cant=itm_c)
-
-    elif tiempo_d == "🌙":
-        rango = random.randint(1, 4)
-
-        for i in range(rango):
-            drps = REC_NOC[random.randint(0, 9)]
-            cantida = random.randint(0, 3)
-            items_d = drps
-            itm_c = cantida
-            text += '\nGanaste:<b>{r}</b>({cant})'.format(
-                r=RecursosDB[items_d]["nombre"], cant=itm_c)
-
-    context.bot.send_message(chat_id=user.id, text=text,
-                             parse_mode=ParseMode.HTML, reply_markup=None)
-    return
-
-
 def pantano(update: Update, context: CallbackContext):
+    global PlayerDB, RecursosDB
     query = update.callback_query
     data = json.loads(query.data)
     option, next = data["op"].split("|")
     user = query.from_user
-    text2 = 'Una aventura está llamando. Pero fuiste a un pantano.\n Regresarás en 6 minutos.'
-    resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(1))
-    upload(player=str(user.id), concept=("resis_min", "estado"),
-           value=(resx, "🍄Caminando por un pantano. En 3 minutos"))
-    context.bot.send_message(chat_id=user.id, text=text2,
-                             parse_mode=ParseMode.HTML, reply_markup=None)
+    Jugador = PlayerDB[str(user.id)]
+    resis_min = Jugador["resis_min"]
 
     if(next == 'mpant'):
-        countdown = 260
-        while countdown:
-            m, s = divmod(countdown, 60)
-            formato = '{:02d}:{:02d}'.format(m, s)
-            if formato == "01:59":
-                upload(player=str(user.id), concept=("estado"), value=(
-                    "🍄Caminando por un pantano. Regreso en 1 minuto."))
-            if formato == "00:59":
-                upload(player=str(user.id), concept=("estado"), value=(
-                    "🍄Caminando por un pantano. Regreso en unos segundos."))
-            if formato == "00:01":
-                upload(player=str(user.id), concept=(
-                    "estado"), value=("🛌Descanso"))
-
-                text = 'De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'
-
-            countdown -= 1
-            sleep(1)
+        if resis_min == 0:
+            text = 'No hay suficiente resistencia. Vuelve después de descansar.\n\n'
+            text += 'Para obtener más resistencia, invita a tus amigos al juego a '
+            text += 'través del enlace de invitación.\n Pulse /promo para conseguirlo.'
+            context.bot.send_message(chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
+        else:
+            quitar_res(user, next, context)          
+            countdown = 260
+            while countdown:
+                m, s = divmod(countdown, 60)
+                formato = '{:02d}:{:02d}'.format(m, s)
+                if formato == "3:30":
+                    upload(player=str(user.id), concept=("estado"), value=("🍄Caminando por un pantano. Regreso en 3 minuto."))
+                if formato == "2:59":
+                    upload(player=str(user.id), concept=("estado"), value=("🍄Caminando por un pantano. Regreso en 2 minuto."))
+                if formato == "1:59":
+                    upload(player=str(user.id), concept=("estado"), value=("🍄Caminando por un pantano. Regreso en 1 minuto."))
+                if formato == "00:59":
+                    upload(player=str(user.id), concept=("estado"), value=("🍄Caminando por un pantano. Regreso en unos segundos."))
+                if formato == "00:01":
+                    upload(player=str(user.id), concept=("estado"), value=("🛌Descanso"))
+                    text = 'De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'
+                    quest_fina(user,context)
+                countdown -= 1
+                sleep(1)
 
     try:
-        context.bot.send_message(
-            chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
+        context.bot.send_message(chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
 
     except Exception as e:
         error(update, e)
@@ -1200,40 +1225,42 @@ def pantano(update: Update, context: CallbackContext):
 
 
 def valle(update: Update, context: CallbackContext):
+    global PlayerDB, RecursosDB
     query = update.callback_query
     data = json.loads(query.data)
     option, next = data["op"].split("|")
     user = query.from_user
-    text2 = 'Las montañas pueden ser un lugar peligroso.\nDecidiste investigar, qué está pasando.\n Regresarás en 4 minutos.'
-    resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(1))
-    upload(player=str(user.id), concept=("resis_min", "estado"), value=(
-        resx, "⛰Paseando por las montañas. Vuelvo en unos segundos."))
-    context.bot.send_message(chat_id=user.id, text=text2,
-                             parse_mode=ParseMode.HTML, reply_markup=None)
-
-    if(next == 'mvalle'):
-        countdown = 240
-        while countdown:
-            m, s = divmod(countdown, 60)
-            formato = '{:02d}:{:02d}'.format(m, s)
-            if formato == "01:59":
-                upload(player=str(user.id), concept=("estado"), value=(
-                    "⛰Paseando por las montañas. Vuelvo en 1 minuto."))
-            if formato == "00:59":
-                upload(player=str(user.id), concept=("estado"), value=(
-                    "⛰Paseando por las montañas. Vuelvo en unos segundos."))
-            if formato == "00:01":
-                upload(player=str(user.id), concept=(
-                    "estado"), value=("🛌Descanso"))
-
-                text = 'De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'
-
+    Jugador = PlayerDB[str(user.id)]
+    resis_min = Jugador["resis_min"]
+    
+    if(next == 'mpant'):
+        if resis_min == 0:
+            text = 'No hay suficiente resistencia. Vuelve después de descansar.\n\n'
+            text += 'Para obtener más resistencia, invita a tus amigos al juego a '
+            text += 'través del enlace de invitación.\n Pulse /promo para conseguirlo.'
+            context.bot.send_message(chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
+        else:
+            quitar_res(user, next, context)         
+            countdown = 240
+            while countdown:
+                m, s = divmod(countdown, 60)
+                formato = '{:02d}:{:02d}'.format(m, s)
+                if formato == "3:30":
+                    upload(player=str(user.id), concept=("estado"), value=("⛰Paseando por las montañas. Vuelvo en 3 minuto."))
+                if formato == "2:59":
+                    upload(player=str(user.id), concept=("estado"), value=("⛰Paseando por las montañas. Vuelvo en 2 minuto."))
+                if formato == "1:59":
+                    upload(player=str(user.id), concept=("estado"), value=("⛰Paseando por las montañas. Vuelvo en 1 minuto."))
+                if formato == "00:59":
+                    upload(player=str(user.id), concept=("estado"), value=("⛰Paseando por las montañas. Vuelvo en unos segundos."))
+                if formato == "00:01":
+                    upload(player=str(user.id), concept=("estado"), value=("🛌Descanso"))
+                    quest_fina(user,context)
             countdown -= 1
             sleep(1)
 
     try:
-        context.bot.send_message(
-            chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
+        context.bot.send_message(chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
 
     except Exception as e:
         error(update, e)
@@ -1242,40 +1269,38 @@ def valle(update: Update, context: CallbackContext):
 
 
 def foray(update: Update, context: CallbackContext):
+    global PlayerDB, RecursosDB
     query = update.callback_query
     data = json.loads(query.data)
     option, next = data["op"].split("|")
-    user = query.from_user
-    text2 = 'Sintiendo una lujuria insatisfactoria por la violencia te diriges al pueblo más cercano.\n Llegará a la más cercana en 4 minutos.'
-    resx = str(int(PlayerDB[str(user.id)]["resis_min"]) - int(2))
-    upload(player=str(user.id), concept=("resis_min", "estado"),
-           value=(resx, "🗡Incursión. Estará de vuelta en 2 minutos"))
-    context.bot.send_message(chat_id=user.id, text=text2,
-                             parse_mode=ParseMode.HTML, reply_markup=None)
+    user = query.from_user    
+    Jugador = PlayerDB[str(user.id)]
+    resis_min = Jugador["resis_min"]
 
     if(next == 'mforay'):
-        countdown = 260
-        while countdown:
-            m, s = divmod(countdown, 60)
-            formato = '{:02d}:{:02d}'.format(m, s)
-            if formato == "01:59":
-                upload(player=str(user.id), concept=("estado"), value=(
-                    "🗡Incursión. Estará de vuelta en 1 minutos"))
-            if formato == "00:59":
-                upload(player=str(user.id), concept=("estado"), value=(
-                    "🗡Incursión. Estará de vuelta en unos segundos"))
-            if formato == "00:01":
-                upload(player=str(user.id), concept=(
-                    "estado"), value=("🛌Descanso"))
-
-                text = 'De repente estabas rodeado por una enorme banda de orcos, liderados por un chamán Orco.\n'
-
-            countdown -= 1
-            sleep(1)
+        if resis_min == 0:
+            text = 'No hay suficiente resistencia. Vuelve después de descansar.\n\n'
+            text += 'Para obtener más resistencia, invita a tus amigos al juego a '
+            text += 'través del enlace de invitación.\n Pulse /promo para conseguirlo.'
+            context.bot.send_message(chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
+        else:            
+            quitar_res(user, next, context)  
+            countdown = 260
+            while countdown:
+                m, s = divmod(countdown, 60)
+                formato = '{:02d}:{:02d}'.format(m, s)
+                if formato == "01:59":
+                    upload(player=str(user.id), concept=("estado"), value=("🗡Incursión. Estará de vuelta en 1 minutos"))
+                if formato == "00:59":
+                    upload(player=str(user.id), concept=("estado"), value=("🗡Incursión. Estará de vuelta en unos segundos"))
+                if formato == "00:01":
+                    upload(player=str(user.id), concept=("estado"), value=("🛌Descanso"))
+                    quest_fina(user,context)
+                countdown -= 1
+                sleep(1)
 
     try:
-        context.bot.send_message(
-            chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
+        context.bot.send_message(chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
 
     except Exception as e:
         error(update, e)
@@ -1689,8 +1714,8 @@ def heroe(update: Update, context: CallbackContext):
     text += "\n\n🎒Balso: {total}".format(
         total="0" if bolso_arm == 0 else bolso_arm)
     text += "/{bolso} ".format(bolso=player["bolso"])
-    text += "/almc"
-    text += "\n\n📦Almacen: {total} /stock".format(total=alma_re)
+    text += "/inv"
+    text += "\n\n📦Almacen: {total} /almc".format(total=alma_re)
 
     reply_markup = ReplyKeyboardMarkup(kb.ini_kb(level), resize_keyboard=True)
 
