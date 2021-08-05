@@ -2173,12 +2173,12 @@ def wpassign(weapon, user):
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(WpAc),
+            uploadwp(player=str(user.id), w=()WpAc),
                      concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
             uploadwp(player=str(user.id), w=(weapon),
                      concept=("estatus"), value=(1))
-            upload(player=str(user.id), concept=(
+            upload(player=str(user.id, concept=(
                 "manoPrincipal"), value=(weapon))
 
     elif(slot == "mano"):
@@ -3850,20 +3850,21 @@ def bolso(update: Update, context: CallbackContext):
     text += "\n🎒Balso: ({total}".format(total="0" if bolso_arm ==
                                         0 else bolso_arm)
     text += "/{bolso})".format(bolso=player["bolso"])
-    p = 1
-    n = bolso_arm + 1
-    for i in BolsoJG[p:n]:
-        if(BolsoJG[p]["estatus"] != 1):
-            text += "\n<b>{name}</b> ".format(name=BolsoJG[p]["nombre"])
-            if(BolsoJG[p]["atributos"]["ataque"] > 0):
+    #p = 1
+    #n = bolso_arm + 1
+    #for i in BolsoJG[p:n]:
+    for w in list(set(BolsoJG.keys())):
+        if(BolsoJG[w]["estatus"] != 1):
+            text += "\n<b>{name}</b> ".format(name=BolsoJG[w]["nombre"])
+            if(BolsoJG[w]["atributos"]["ataque"] > 0):
                 text += "<b>+{actaque}</b>⚔️".format(
-                    actaque=BolsoJG[p]["atributos"]["ataque"])
-            if(BolsoJG[p]["atributos"]["defensa"] > 0):
+                    actaque=BolsoJG[w]["atributos"]["ataque"])
+            if(BolsoJG[w]["atributos"]["defensa"] > 0):
                 text += "<b>+{defensa}</b>🛡".format(
-                    defensa=BolsoJG[p]["atributos"]["defensa"])
-            text += " /on_{id}".format(id=p)
+                    defensa=BolsoJG[w]["atributos"]["defensa"])
+            text += " /on_{id}".format(id=w)
 
-        p = p+1
+        #p = p+1
 
     IKB = KeyboardButton
     reply_markup = ReplyKeyboardMarkup(
