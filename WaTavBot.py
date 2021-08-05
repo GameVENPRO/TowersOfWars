@@ -2173,7 +2173,7 @@ def wpassign(weapon, user):
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=()WpAc),
+            uploadwp(player=str(user.id), w=(WpAc),
                      concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
             uploadwp(player=str(user.id), w=(weapon),
