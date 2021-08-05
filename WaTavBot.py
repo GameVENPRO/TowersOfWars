@@ -756,6 +756,7 @@ def newUser(user, pron):
         "bolso_min": 0,
         "bolso": 15,
         "stock": 4000,
+        "stock_min": 0,
         "manoPrincipal": "None",
         "mano": "None",
         "casco": "None",
@@ -767,11 +768,10 @@ def newUser(user, pron):
         "collar": "None",
         "pron": "el",
         "estado": "🛌Descanso",
-        "puntos_habili": "0",
-        "equipados_arm": [[0]],
-        "bolso_arm": [[0]],
-        "almacen_re": [[0]],
-        "clase": [[0]],
+        "puntos_habili": 0,
+        "bolso_arm": [[00]],
+        "almacen_re": [[00]],
+        "clase": [[00]],
         "mascota": "0",
         "rank": 0,
         "lastlog": datetime.now().strftime("%d/%m/%Y %H:%M:%S")
@@ -2593,6 +2593,7 @@ def Newcompra(user, items):
         "intercanbio": TiendaDB[items]["intercanbio"],
         "precio": TiendaDB[items]["precio"],
         "venta": TiendaDB[items]["venta"],
+        "cantidad": 1,
         "atributos": {
             "ataque": TiendaDB[items]["atributos"]["ataque"],
             "defensa": TiendaDB[items]["atributos"]["defensa"],
@@ -2624,7 +2625,8 @@ def Newcompra(user, items):
         }
     }
 
-    Jugador["bolso_arm"].append(info)
+    
+    Fire.put("/players/"+str(user)+"/bolso_arm",items,info)
 
     return
 
