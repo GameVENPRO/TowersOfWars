@@ -4119,7 +4119,7 @@ def main():
             MessageHandler(Filters.regex(r"^\/info_\d+$"), winfo),
             MessageHandler(Filters.regex(r"^\/on_\d+$"), equip),
             MessageHandler(Filters.regex(r"^\/off_\d+$"), equipoff),
-            MessageHandler(Filters.regex(r"\/buy_\W+$"), buy),
+            MessageHandler(Filters.regex(r"\/buy_\w+$"), buy),
            
             CommandHandler('r', reload),
             CommandHandler('heroe', heroe),
