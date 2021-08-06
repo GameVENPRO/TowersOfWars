@@ -1,5 +1,5 @@
 {
-    "01": {
+    "w01": {
         "id": "w01",
         "nombre": "Espada de madera",
         "historia": "Esencialmente un palo, el bastón de madera como arma se corta y se lija, con un mango liso, sin empuñadura y una hoja de 3 pies ... de madera curva. Principalmente para entrenar, puede hacer un daño hacha contra un enemigo sin armadura.",
@@ -23,7 +23,7 @@
             "reforsado": 0
         }
     },
-    "02": {
+    "w02": {
         "id": "w02",
         "nombre": "Espada corta",
         "historia": "Bueno para principiantes, la espada corta está hecha de una hoja de metal y un mango de hilo enrollado. Ligeramente más corta que la espada de entrenamiento de madera, definitivamente es un paso adelante de los palos que usan para practicar. Sin embargo, esta arma solo tiene un filo, a diferencia del ángulo de ataque de 360 ​​grados como una espada de madera.",
@@ -47,7 +47,7 @@
             "reforsado": 0
         }
     },
-    "03": {
+    "w03": {
         "id": "w03",
         "nombre": "Espada larga",
         "historia": "Solo para aquellos que han dominado la espada corta y tienen la fuerza de voluntad y el talento para llevar una espada más larga a la batalla. 4 pies de hierro en la parte superior de una resistente protección transversal horizontal, con un asa envuelta trenzada. Al carecer de una funda, depende del usuario encontrar una manera de enfundar y contener el arma cuando no esté en uso.",
@@ -71,7 +71,7 @@
             "reforsado": 0
         }
     },
-    "04": {
+    "w04": {
         "id": "w04",
         "nombre": "Espada de la viuda",
         "historia": "Un diseño bastante popular, más popular entre la clase alta del castillo. Una hoja delgada y ligeramente curva similar a un estoque se extiende hasta una única punta afilada. Un protector de manos similar a una red se envuelve alrededor del mango. La hoja delgada y susurrante es popular entre la realeza del castillo y los duelistas, por la belleza y el peso ligero de la hoja en desfiles y espectáculos.",
@@ -95,7 +95,7 @@
             "ranuras_enca": 0
         }
     },
-    "05": {
+    "w05": {
         "id": "w05",
         "nombre": "Espada de caballero",
         "historia": "Un artículo antiguo, muchos de estos existen, pero su valor es atesorado. Estas espadas se reacondicionan antes de revenderse a nuevos guerreros ... casi como una bendición. Con una rica cruz de color dorado y una empuñadura de cordel antiguo y cordón de diferentes colores terrosos, te hace preguntarte quién fue el dueño de esto antes que tú, y qué batallas ha visto esta espada.",
@@ -141,7 +141,7 @@
             }
         }
     },
-    "06": {
+    "w06": {
         "id": "w06",
         "nombre": "Espada élfica",
         "historia": "",
@@ -187,7 +187,7 @@
             }
         }
     },
-    "07": {
+    "w07": {
         "id": "w07",
         "nombre": "Estoque",
         "historia": "La plata se envuelve sobre un núcleo de hierro para dar una apariencia elegante pero resistente para un uso intensivo. Aproximadamente 4 pies de largo y delgado, la espada es popular para la mitad de la espada, donde la hoja se agarra para aumentar el control y se usa como un cuchillo. La hoja es tan popular para el combate como para el deporte, donde algunas espadas desafiladas se utilizan en la esgrima.",
@@ -234,7 +234,7 @@
 
         }
     },
-    "08": {
+    "w08": {
         "id": "w08",
         "nombre": "Lanza corta",
         "historia": "Se forja una hoja de hierro en forma de flecha, antes de que se haga una muesca en un eje de 4 pies y se inserte la flecha. Luego, apretada con hilo y atada, la improvisada lanza está lista para el combate. Considerado como el hermano pequeño de la Lanza Larga normal, sigue siendo un arma a distancia devastadora para el espadachín sin escudo.",
@@ -258,7 +258,7 @@
             "reforsado": 0
         }
     },
-    "09": {
+    "w09": {
         "id": "w09",
         "nombre": "Lanza larga",
         "historia": "La mejor lanza de madera que ofrece el castillo. Se moldea una cabeza y se martilla para darle forma, un triángulo delgado casi perfecto se une a un bastón de madera de 6 pies con varias uniones en cola de milano. Bloqueado en su lugar, el mango grande está envuelto en tela y cordel para agarre y para mostrar agarres populares, como: un agarre medio, extendido o corto, para lanzar.",
@@ -282,7 +282,7 @@
             "reforsado": 0
         }
     },
-    "10": {
+    "w10": {
         "id": "w10",
         "nombre": "Lanza",
         "historia": "",
@@ -306,7 +306,7 @@
             "reforsado": 0
         }
     },
-    "11": {
+    "w11": {
         "id": "w11",
         "nombre": "Lanza élfica",
         "historia": "",
@@ -352,7 +352,7 @@
             }
         }
     },
-    "12": {
+    "w12": {
         "id": "w12",
         "nombre": "Alabarda",
         "historia": "",
@@ -398,7 +398,7 @@
             }
         }
     },
-    "13": {
+    "w13": {
         "id": "w13",
         "nombre": "Cuchillo de cocina",
         "historia": "En pocas palabras, alguien robó esto de la cocina del castillo. Una hoja de un pie de largo sobresale de un mango de madera lijada, unida a través de 2 espigas que sujetan la madera. A pesar de que se utiliza para cortar frutas y verduras, puede cortar fácilmente a los enemigos si está en la mano derecha, se excava entre placas de armadura o se apuñala en un costado.",
@@ -422,7 +422,7 @@
             "reforsado": 0
         }
     },
-    "14": {
+    "w14": {
         "id": "w14",
         "nombre": "Cuchillo de batalla",
         "historia": "Otro cuchillo robado de la cocina del castillo, excepto que éste fue robado por un herrero con mucho tiempo, y cuchillos robados. Una banda curva y puntiaguda de metal amarillo cubre los dedos del portador y se extiende hasta el cabezal del cuchillo de cocina. El lomo de la hoja se ha limentado para formar dientes dentados, lo que agrega un factor de intimidación.",
@@ -446,7 +446,7 @@
             "reforsado": 0
         }
     },
-    "15": {
+    "w15": {
         "id": "w15",
         "nombre": "Daga de acero",
         "historia": "Tu primer verdadero cuchillo de duelo, qué lindo. El mineral de hierro normal se funde a alta temperatura y todas las impurezas se 'hornean' y se agrega carbono para fabricar acero. Una empuñadura dorada / de latón con una pequeña cruz de protección se envuelve con una pequeña cantidad de cuerda para agarrarla y se ensambla antes de forjarla en su lugar. ¡Voila, tu arma está lista para el combate!",
@@ -470,7 +470,7 @@
             "reforsado": 0
         }
     },
-    "16": {
+    "w16": {
         "id": "w16",
         "nombre": "Daga de plata",
         "historia": "Con un brillo bajo la luz, el metal de mayor calidad brilla con riqueza. Aproximadamente 7 y afilada en ambos lados, la hoja corta es una buena copia de seguridad. Normalmente unida a la cadera o metida en una bota, la mayoría de las personas optan por un arma de daga. Algunos guerreros experimentados incluso aplican un ácido para agregar colores deslumbrantes y endurecen el cuchillo.",
@@ -516,7 +516,7 @@
             }
         }
     },
-    "17": {
+    "w17": {
         "id": "w17",
         "nombre": "Daga de Mithril",
         "historia": "El cuchillo Catalina Blue, de primera línea para las dagas que se encuentran en la tienda, es afilado como una navaja y lo suficientemente resistente como para martillarlo y doblarlo a voluntad. Con un filo lo suficientemente duro como para rayar acero de calidad media, muchos guerreros aprecian la hoja. Algunos modelos incluso cuentan con un lazo, que se puede sujetar a la muñeca del usuario para evitar que se pierda en combate.",
@@ -562,7 +562,7 @@
             }
         }
     },
-    "18": {
+    "w18": {
         "id": "w18",
         "nombre": "Arco corto",
         "historia": "Con la motivación llevada a los antepasados, el arco corto está hecho de tendones de animales y cuero crudo. Configurado para endurecerse al sol y moldeado después, no es realmente impresionante en términos de tecnología. Simplista y temprano para aprender, no es de extrañar que la mayoría de los arqueros experimentados todavía tengan su primer arco, que suele ser el arco corto.",
@@ -591,7 +591,7 @@
             }
         }
     },
-    "19": {
+    "W19": {
         "id": "w19",
         "nombre": "Arco de madera",
         "historia": "Entrando en los tiempos modernos, una rama es despojada y tratada, antes de doblarse lentamente en su lugar para embotellar energía. Luego, se une una cuerda de arriba a abajo y se prueba. Se hacen los ajustes y el arco está listo para pelear. Los diferentes tipos de madera pueden cambiar el color del arco y se pueden aplicar ciertos tintes / aceites para lograr un acabado brillante.",
@@ -620,7 +620,7 @@
             }
         }
     },
-    "20": {
+    "W20": {
         "id": "w20",
         "nombre": "Arco largo",
         "historia": "",
@@ -649,7 +649,7 @@
             }
         }
     },
-    "21": {
+    "W21": {
         "id": "w21",
         "nombre": "Arco élfico",
         "historia": "",
@@ -700,7 +700,7 @@
             }
         }
     },
-    "22": {
+    "W22": {
         "id": "w22",
         "nombre": "Arco del bosque",
         "historia": "",
@@ -751,7 +751,7 @@
             }
         }
     },
-    "23": {
+    "W23": {
         "id": "w23",
         "nombre": "Club",
         "historia": "Un arma básica en cualquier arsenal de guerreros, esta se remonta a cientos, incluso miles de años. Se martilla y se perfora una piedra, y se inserta un palo cómodamente en el agujero. Después de la inserción, se sujeta con un cordel y cordón para mantenerlo puesto. Casi te sientes estafado, pagando 62 de oro por un arma tan básica.",
@@ -775,7 +775,7 @@
             "reforsado": 0
         }
     },
-    "24": {
+    "W24": {
         "id": "w24",
         "nombre": "Club de huesos",
         "historia": "",
@@ -799,7 +799,7 @@
             "reforsado": 0
         }
     },
-    "25": {
+    "W25": {
         "id": "w25",
         "nombre": "Club pesado",
         "historia": "",
@@ -823,7 +823,7 @@
             "reforsado": 0
         }
     },
-    "26": {
+    "W26": {
         "id": "w26",
         "nombre": "Hacha de acero",
         "historia": "",
@@ -869,7 +869,7 @@
             }
         }
     },
-    "27": {
+    "W27": {
         "id": "w27",
         "nombre": "Hacha de mitril",
         "historia": "A diferencia del Steel Axe, el Mithril Axe tiene dos hojas, para un ataque de doble filo. Ambas hojas tienen aproximadamente 131 grados, y en realidad es una sola pieza de metal formada en forma de reloj de arena. La mayoría de los veteranos tienen diseños y detalles grabados en los lados de las espadas, con asesinatos gloriosos y otros recuerdos con sus armas.",
@@ -915,7 +915,7 @@
             }
         }
     },
-    "28": {
+    "a01": {
         "id": "a01",
         "nombre": "Chaqueta de tela",
         "historia": "Una mezcla simple de tejidos similares, superpuestos para proporcionar una fina defensa contra cortes. Las capas de algodón, lana y lino enrolladas juntas se superponen al torso y la parte superior de los brazos, abotonándose para cerrar y envolver al usuario para brindar calidez y protección.",
@@ -940,7 +940,7 @@
         }
 
     },
-    "29": {
+    "a02": {
         "id": "a02",
         "nombre": "Camisa de cuero",
         "historia": "Piel de animal en bruto, despellejada y curtida, para crear un chaleco a modo de abrigo para defender al usuario. De color marrón y una pieza uniforme, es mejor que una simple tela, pero la piel de animal solo llega hasta cierto punto.",
@@ -965,7 +965,7 @@
         }
 
     },
-    "30": {
+    "a03": {
         "id": "a03",
         "nombre": "Cota de malla",
         "historia": "Los anillos de hierro individuales, ligeramente curvados, se unen para formar una malla de torso completa. Protegiendo el cuello, los brazos y el torso completo, definitivamente es una pieza de armadura a tener en cuenta. Mejor contra las flechas, el correo tintinea con cada paso, ligero en tu cuerpo en comparación con la armadura de placas normal.",
@@ -990,7 +990,7 @@
         }
 
     },
-    "31": {
+    "a04": {
         "id": "a04",
         "nombre": "Coraza de plata",
         "historia": "",
@@ -1037,7 +1037,7 @@
         }
 
     },
-    "32": {
+    "a05": {
         "id": "a05",
         "nombre": "Armadura de mithril",
         "historia": "Una armadura teñida de azul que es de primera línea para la defensa. Especialmente diseñado para los mejores luchadores del castillo, consta de 6 placas delanteras y traseras: 2 sobre el pecho y los hombros, 2 en el estómago y la mitad de la espalda, y 2 en la cintura y el área lateral. Con espacios intermedios que permiten que las placas se muevan, ayuda con la movilidad del usuario en combate.",
@@ -1084,7 +1084,7 @@
         }
 
     },
-    "33": {
+    "a06": {
         "id": "a06",
         "nombre": "Sombrero",
         "historia": "Un sombrero envolvente, cubierto de piel de animal, similar a un ushanka o papakha, cubre tu cabeza y cubre tus oídos para abrigarte. De color negro, tiene un exterior peludo con una gorra circular en la parte superior. No hace mucho por la protección, pero es mejor que nada.",
@@ -1109,7 +1109,7 @@
         }
 
     },
-    "34": {
+    "a07": {
         "id": "a07",
         "nombre": "Capucha de cuero",
         "historia": "La mitad de una piel de cuero doblada, cortada por la mitad y cosida en la barbilla, se produce una capucha simple. Marrón, de color y delgado, cubre los lados de su cabeza y cubre su cuello. Con el beneficio de ser impermeable y liviano, es ideal para disfrazar u ocultar su identidad.",
@@ -1134,7 +1134,7 @@
         }
 
     },
-    "35": {
+    "a08": {
         "id": "a08",
         "nombre": "Casco de acero",
         "historia": "Un casco bastante simplista que presentaba una gorra de cuero similar a una capucha, excepto que estaba atada a una taza de hierro. Un corte en forma de 'T' en el medio permite al usuario ver y hablar con claridad. Aparte de eso, es simplemente un cuenco de hierro colocado en la cabeza.",
@@ -1159,7 +1159,7 @@
         }
 
     },
-    "36": {
+    "a09": {
         "id": "a09",
         "nombre": "Casco plateado",
         "historia": "",
@@ -1204,7 +1204,7 @@
             }
         }
     },
-    "37": {
+    "a10": {
         "id": "a10",
         "nombre": "Casco de mithril",
         "historia": "Un casco bastante complejo elaborado con metal endurecido teñido de azul, es la mejor armadura que obtendrás antes de necesitar un herrero especializado. Similar a un casco plateado en la forma en que está decorado con una cresta de plumas, este tiene un protector ocular con bisagras y protección bucal. Sin embargo, parece bastante tonto cuando se abre, pero por lo demás es una gran protección.",
@@ -1251,7 +1251,7 @@
         }
 
     },
-    "38": {
+    "a11": {
         "id": "a11",
         "nombre": "Sandalias",
         "historia": "Una fina tira de cuero y tela que se usa como suela del zapato, combinada con una bobina de cuero que se extiende más allá del talón y agarra la pantorrilla. Se pueden atar para sujetarlo de forma segura y proteger el pie contra peligros menores. Sin embargo, dejar la parte inferior de la pierna y el dorso expuestos es bastante peligroso.",
@@ -1276,7 +1276,7 @@
         }
 
     },
-    "39": {
+    "a12": {
         "id": "a12",
         "nombre": "Los zapatos de cuero",
         "historia": "",
@@ -1301,7 +1301,7 @@
         }
 
     },
-    "40": {
+    "a13": {
         "id": "a13",
         "nombre": "Botas de acero",
         "historia": "El zapato oficial del castillo, es una forma simplista de proteger los pies de muchos soldados. Un zapato de cuero con soporte para el tobillo y una cubierta de hierro, se beneficia enormemente sobre la sandalia y el zapato de cuero solo. Algo simplista, carece de grabados o detalles.",
@@ -1326,7 +1326,7 @@
         }
 
     },
-    "41": {
+    "a14": {
         "id": "a14",
         "nombre": "Botas de plata",
         "historia": "Un 'paso' por encima de las botas de acero, esta cuenta con protección total. Cubre el pie en sí, una bisagra alrededor del tobillo y se extiende parcialmente hacia arriba de la pierna, presenta placas superpuestas similares a escamas, para ayudar a desviar el daño y rebotar cualquier puñalada.",
@@ -1373,7 +1373,7 @@
         }
 
     },
-    "42": {
+    "a15": {
         "id": "a15",
         "nombre": "Botas de mitril",
         "historia": "Una actualización completa de Silver Boots, este tipo de bota presentaba bisagras anti-roll en los tobillos, para evitar el movimiento hacia la izquierda y la derecha, y un espaciador de tela alrededor de la pierna para evitar la entrada de humedad. Junto con él, hay metal adicional en un patrón de rayo en la suela, para agarre y protección adicional.",
@@ -1420,7 +1420,7 @@
         }
 
     },
-    "43": {
+    "a16": {
         "id": "a16",
         "nombre": "Guantes (Objeto)",
         "historia": "Guantes de lana sencillos, con agujeros para 5 dígitos. Se extiende hasta la muñeca y ofrece una protección suave tanto contra el frío como contra las cuchillas. Sobre todo para mostrar, la pareja blanca está limpia y lista para la batalla.",
@@ -1445,7 +1445,7 @@
         }
 
     },
-    "44": {
+    "a17": {
         "id": "a17",
         "nombre": "Guantes de cuero",
         "historia": "Pequeñas tiras de cuero enrolladas en rollos del tamaño de un dedo, cosidas a dos almohadillas de conexión. En forma de mano, están cosidos para cerrar las manos y brindar la protección de una armadura normal. Son un poco valientes y rudos, pero una gran protección para el guerrero promedio.",
@@ -1470,7 +1470,7 @@
         }
 
     },
-    "45": {
+    "a18": {
         "id": "a18",
         "nombre": "Guantes de acero",
         "historia": "Un guante de acero completo cubre el lado externo de la mano y el antebrazo, que enfrenta a los enemigos en combate. Unidas por bisagras y correas de cuero, las placas se extienden por el brazo y consumen los dedos de forma similar a un guante. Proporciona una excelente protección al exterior, pero deja la mano y el interior del brazo expuestos para no sobrecargar al tiempo.",
@@ -1495,8 +1495,8 @@
         }
 
     },
-    "46": {
-        "id": "a01",
+    "a19": {
+        "id": "a19",
         "nombre": "Guantes de plata",
         "historia": "Tres placas colocadas en el antebrazo, la parte superior de la mano y una sábana rectangular en la muñeca, se unen con una bisagra alrededor de la muñeca para permitir movimientos simples. Totalmente revestido de plata y cuero, el usuario tiene el beneficio de los guantes y la protección de la plata.",
         "tipo": "Equipo de protección",
@@ -1542,7 +1542,7 @@
         }
 
     },
-    "47": {
+    "a20": {
         "id": "a20",
         "nombre": "Guantes de mithril",
         "historia": "El mithril de primera línea está forjado para proporcionar un verdadero guante. Se colocan láminas de metal delgadas y suaves para encerrar la mano y el antebrazo del usuario, protegiendo tanto la palma como el dorso de la mano. Con un tipo de bisagra de bola y encaje, permite el movimiento de la mano sin restricciones para facilitar el combate. Es lo mejor que obtendrás en la tienda del castillo.",
@@ -1589,7 +1589,7 @@
         }
 
     },
-    "48": {
+    "a21": {
         "id": "a21",
         "nombre": "Escudo de madera",
         "historia": "Los tablones de roble se lijan y se tratan con aceite para resistir el agua antes de colocarlos uno al lado del otro. Colocando verticalmente, se agregan dos tablas horizontales y luego se clavan para mantener la madera unida. Las correas de cuero se sujetan a la madera de soporte, diseñadas para llevarse en el brazo. Barato y de baja calidad, está casi mejor sin el peso extra.",
@@ -1614,7 +1614,7 @@
         }
 
     },
-    "49": {
+    "a22": {
         "id": "a22",
         "nombre": "Broquel esqueleto",
         "historia": "Similar al Escudo de madera, una base de madera se hace con tablas tratadas y luego se clava. Sin embargo, el exterior final del escudo está sujeto con alambre, cordel y varios huesos grandes. Desde ciervos hasta humanos y otros animales pequeños, el acabado de la madera está cubierto de blanco. De naturaleza bárbara, los huesos invitan a tus enemigos a unirse a ellos.",
@@ -1639,7 +1639,7 @@
         }
 
     },
-    "50": {
+    "a23": {
         "id": "a23",
         "nombre": "Escudo de bronce",
         "historia": "La especialidad de un defensor principiante. Se funde una mezcla de cobre y estaño 1: 1 para formar un material más fuerte. Moldeado en forma de cometa, tiene 4 paneles distintos que se mantienen en su lugar curvando los bordes sobre las placas individuales. Aproximadamente del tamaño del torso del usuario, proporciona una excelente protección, pero sigue siendo un material ligero para aprender las manos.",
@@ -1664,7 +1664,7 @@
         }
 
     },
-    "51": {
+    "a24": {
         "id": "a24",
         "nombre": "Escudo de plata",
         "historia": "Más brillante que cualquier hierro o acero, la plata es la elección de aquellos que tienen la habilidad para usarla, pero carecen de los fondos para un Mithril. El metal gris se calienta y se dobla varias veces, en forma de cometa. Levantado en los bordes superiores y bajado en el medio de la mitad inferior, protege fácilmente al usuario tanto a distancia como cuerpo a cuerpo.",
@@ -1711,7 +1711,7 @@
         }
 
     },
-    "52": {
+    "a25": {
         "id": "a25",
         "nombre": "Escudo de mithril",
         "historia": "El metal azul oscuro de este escudo es un espectáculo de la fuerza de Mithril. Adoptando un diseño tipo torre y en forma de cometa, se apoya en el suelo y llega hasta la barbilla del usuario. El escudo de gran tamaño es eficaz para proteger todo el cuerpo del usuario, e incluso permite una ofensiva al golpear o cargar contra un enemigo.",

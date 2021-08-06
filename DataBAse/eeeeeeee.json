@@ -1,0 +1,1611 @@
+{
+    "01": {
+        "atributos": {
+            "ataque": 1,
+            "defensa": 0,
+            "habilidad": "Dominio de la espada",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "espadas",
+        "historia": "Esencialmente un palo, el bastón de madera como arma se corta y se lija, con un mango liso, sin empuñadura y una hoja de 3 pies ... de madera curva. Principalmente para entrenar, puede hacer un daño hacha contra un enemigo sin armadura.",
+        "id": "w01",
+        "intercanbio": "No",
+        "nombre": "Espada de madera",
+        "peso": 180,
+        "precio": 3,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 0
+    },
+    "02": {
+        "atributos": {
+            "ataque": 3,
+            "defensa": 0,
+            "habilidad": "Dominio de la espada",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "espadas",
+        "historia": "Bueno para principiantes, la espada corta está hecha de una hoja de metal y un mango de hilo enrollado. Ligeramente más corta que la espada de entrenamiento de madera, definitivamente es un paso adelante de los palos que usan para practicar. Sin embargo, esta arma solo tiene un filo, a diferencia del ángulo de ataque de 360 ​​grados como una espada de madera.",
+        "id": "w02",
+        "intercanbio": "Si",
+        "nombre": "Espada corta",
+        "peso": 180,
+        "precio": 30,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 9
+    },
+    "03": {
+        "atributos": {
+            "ataque": 6,
+            "defensa": 0,
+            "habilidad": "Dominio de la espada",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "espadas",
+        "historia": "Solo para aquellos que han dominado la espada corta y tienen la fuerza de voluntad y el talento para llevar una espada más larga a la batalla. 4 pies de hierro en la parte superior de una resistente protección transversal horizontal, con un asa envuelta trenzada. Al carecer de una funda, depende del usuario encontrar una manera de enfundar y contener el arma cuando no esté en uso.",
+        "id": "w03",
+        "intercanbio": "Si",
+        "nombre": "Espada larga",
+        "peso": 180,
+        "precio": 244,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 73
+    },
+    "04": {
+        "atributos": {
+            "ataque": 10,
+            "defensa": 0,
+            "habilidad": "Dominio de la espada",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "espadas",
+        "historia": "Un diseño bastante popular, más popular entre la clase alta del castillo. Una hoja delgada y ligeramente curva similar a un estoque se extiende hasta una única punta afilada. Un protector de manos similar a una red se envuelve alrededor del mango. La hoja delgada y susurrante es popular entre la realeza del castillo y los duelistas, por la belleza y el peso ligero de la hoja en desfiles y espectáculos.",
+        "id": "w04",
+        "intercanbio": "Si",
+        "nombre": "Espada de la viuda",
+        "peso": 180,
+        "precio": 645,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 193
+    },
+    "05": {
+        "atributos": {
+            "ataque": 16,
+            "defensa": 0,
+            "habilidad": "Dominio de la espada",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "espadas",
+        "historia": "Un artículo antiguo, muchos de estos existen, pero su valor es atesorado. Estas espadas se reacondicionan antes de revenderse a nuevos guerreros ... casi como una bendición. Con una rica cruz de color dorado y una empuñadura de cordel antiguo y cordón de diferentes colores terrosos, te hace preguntarte quién fue el dueño de esto antes que tú, y qué batallas ha visto esta espada.",
+        "id": "w05",
+        "intercanbio": "Si",
+        "nombre": "Espada de caballero",
+        "peso": 180,
+        "precio": 1140,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 432
+    },
+    "06": {
+        "atributos": {
+            "ataque": 22,
+            "defensa": 0,
+            "habilidad": "Dominio de la espada",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "espadas",
+        "historia": "",
+        "id": "w06",
+        "intercanbio": "Si",
+        "nombre": "Espada élfica",
+        "peso": 180,
+        "precio": 1800,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 540
+    },
+    "07": {
+        "atributos": {
+            "ataque": 27,
+            "defensa": 0,
+            "habilidad": "Dominio de la espada",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "espadas",
+        "historia": "La plata se envuelve sobre un núcleo de hierro para dar una apariencia elegante pero resistente para un uso intensivo. Aproximadamente 4 pies de largo y delgado, la espada es popular para la mitad de la espada, donde la hoja se agarra para aumentar el control y se usa como un cuchillo. La hoja es tan popular para el combate como para el deporte, donde algunas espadas desafiladas se utilizan en la esgrima.",
+        "id": "w07",
+        "intercanbio": "Si",
+        "nombre": "Estoque",
+        "peso": 180,
+        "precio": 3100,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 930
+    },
+    "08": {
+        "atributos": {
+            "ataque": 3,
+            "defensa": 1,
+            "habilidad": "Dominio de la lanza",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "lanzas",
+        "historia": "Se forja una hoja de hierro en forma de flecha, antes de que se haga una muesca en un eje de 4 pies y se inserte la flecha. Luego, apretada con hilo y atada, la improvisada lanza está lista para el combate. Considerado como el hermano pequeño de la Lanza Larga normal, sigue siendo un arma a distancia devastadora para el espadachín sin escudo.",
+        "id": "w08",
+        "intercanbio": "No",
+        "nombre": "Lanza corta",
+        "peso": 180,
+        "precio": 55,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 16
+    },
+    "09": {
+        "atributos": {
+            "ataque": 5,
+            "defensa": 3,
+            "habilidad": "Dominio de la lanza",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "lanzas",
+        "historia": "La mejor lanza de madera que ofrece el castillo. Se moldea una cabeza y se martilla para darle forma, un triángulo delgado casi perfecto se une a un bastón de madera de 6 pies con varias uniones en cola de milano. Bloqueado en su lugar, el mango grande está envuelto en tela y cordel para agarre y para mostrar agarres populares, como: un agarre medio, extendido o corto, para lanzar.",
+        "id": "w09",
+        "intercanbio": "Si",
+        "nombre": "Lanza larga",
+        "peso": 180,
+        "precio": 364,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 109
+    },
+    "10": {
+        "atributos": {
+            "ataque": 11,
+            "defensa": 5,
+            "habilidad": "Dominio de la lanza",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "lanzas",
+        "historia": "",
+        "id": "w10",
+        "intercanbio": "Si",
+        "nombre": "Lanza",
+        "peso": 180,
+        "precio": 976,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 292
+    },
+    "11": {
+        "atributos": {
+            "ataque": 12,
+            "defensa": 7,
+            "habilidad": "Dominio de la lanza",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "lanzas",
+        "historia": "",
+        "id": "w11",
+        "intercanbio": "Si",
+        "nombre": "Lanza élfica",
+        "peso": 180,
+        "precio": 1414,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 424
+    },
+    "12": {
+        "atributos": {
+            "ataque": 14,
+            "defensa": 10,
+            "habilidad": "Dominio de la lanza",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "lanzas",
+        "historia": "",
+        "id": "w12",
+        "intercanbio": "Si",
+        "nombre": "Alabarda",
+        "peso": 180,
+        "precio": 2300,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 690
+    },
+    "13": {
+        "atributos": {
+            "ataque": 1,
+            "defensa": 0,
+            "habilidad": "Dominio de la daga",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "dagas",
+        "historia": "En pocas palabras, alguien robó esto de la cocina del castillo. Una hoja de un pie de largo sobresale de un mango de madera lijada, unida a través de 2 espigas que sujetan la madera. A pesar de que se utiliza para cortar frutas y verduras, puede cortar fácilmente a los enemigos si está en la mano derecha, se excava entre placas de armadura o se apuñala en un costado.",
+        "id": "w13",
+        "intercanbio": "No",
+        "nombre": "Cuchillo de cocina",
+        "peso": 180,
+        "precio": 3,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 0
+    },
+    "14": {
+        "atributos": {
+            "ataque": 2,
+            "defensa": 0,
+            "habilidad": "Dominio de la daga",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "dagas",
+        "historia": "Otro cuchillo robado de la cocina del castillo, excepto que éste fue robado por un herrero con mucho tiempo, y cuchillos robados. Una banda curva y puntiaguda de metal amarillo cubre los dedos del portador y se extiende hasta el cabezal del cuchillo de cocina. El lomo de la hoja se ha limentado para formar dientes dentados, lo que agrega un factor de intimidación.",
+        "id": "w14",
+        "intercanbio": "No",
+        "nombre": "Cuchillo de batalla",
+        "peso": 180,
+        "precio": 50,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 15
+    },
+    "15": {
+        "atributos": {
+            "ataque": 3,
+            "defensa": 0,
+            "habilidad": "Dominio de la daga",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "dagas",
+        "historia": "Tu primer verdadero cuchillo de duelo, qué lindo. El mineral de hierro normal se funde a alta temperatura y todas las impurezas se 'hornean' y se agrega carbono para fabricar acero. Una empuñadura dorada / de latón con una pequeña cruz de protección se envuelve con una pequeña cantidad de cuerda para agarrarla y se ensambla antes de forjarla en su lugar. ¡Voila, tu arma está lista para el combate!",
+        "id": "w15",
+        "intercanbio": "No",
+        "nombre": "Daga de acero",
+        "peso": 180,
+        "precio": 103,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 30
+    },
+    "16": {
+        "atributos": {
+            "ataque": 5,
+            "defensa": 0,
+            "habilidad": "Dominio de la daga",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "dagas",
+        "historia": "Con un brillo bajo la luz, el metal de mayor calidad brilla con riqueza. Aproximadamente 7 y afilada en ambos lados, la hoja corta es una buena copia de seguridad. Normalmente unida a la cadera o metida en una bota, la mayoría de las personas optan por un arma de daga. Algunos guerreros experimentados incluso aplican un ácido para agregar colores deslumbrantes y endurecen el cuchillo.",
+        "id": "w16",
+        "intercanbio": "Si",
+        "nombre": "Daga de plata",
+        "peso": 180,
+        "precio": 311,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 93
+    },
+    "17": {
+        "atributos": {
+            "ataque": 7,
+            "defensa": 0,
+            "habilidad": "Dominio de la daga",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "dagas",
+        "historia": "El cuchillo Catalina Blue, de primera línea para las dagas que se encuentran en la tienda, es afilado como una navaja y lo suficientemente resistente como para martillarlo y doblarlo a voluntad. Con un filo lo suficientemente duro como para rayar acero de calidad media, muchos guerreros aprecian la hoja. Algunos modelos incluso cuentan con un lazo, que se puede sujetar a la muñeca del usuario para evitar que se pierda en combate.",
+        "id": "w17",
+        "intercanbio": "Si",
+        "nombre": "Daga de Mithril",
+        "peso": 180,
+        "precio": 498,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 149
+    },
+    "18": {
+        "atributos": {
+            "ataque": 4,
+            "defensa": 1,
+            "habilidad": "Dominio del arco",
+            "mana": 0,
+            "municion": {
+                "consume": 1,
+                "id": 504,
+                "nobre": "Flecha de madera"
+            },
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "arcos",
+        "historia": "Con la motivación llevada a los antepasados, el arco corto está hecho de tendones de animales y cuero crudo. Configurado para endurecerse al sol y moldeado después, no es realmente impresionante en términos de tecnología. Simplista y temprano para aprender, no es de extrañar que la mayoría de los arqueros experimentados todavía tengan su primer arco, que suele ser el arco corto.",
+        "id": "w18",
+        "intercanbio": "No",
+        "nombre": "Arco corto",
+        "peso": 180,
+        "precio": 68,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 20
+    },
+    "19": {
+        "atributos": {
+            "ataque": 8,
+            "defensa": 2,
+            "habilidad": "Dominio del arco",
+            "mana": 0,
+            "municion": {
+                "consume": 1,
+                "id": 504,
+                "nobre": "Flecha de madera"
+            },
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "arcos",
+        "historia": "Entrando en los tiempos modernos, una rama es despojada y tratada, antes de doblarse lentamente en su lugar para embotellar energía. Luego, se une una cuerda de arriba a abajo y se prueba. Se hacen los ajustes y el arco está listo para pelear. Los diferentes tipos de madera pueden cambiar el color del arco y se pueden aplicar ciertos tintes / aceites para lograr un acabado brillante.",
+        "id": "w19",
+        "intercanbio": "No",
+        "nombre": "Arco de madera",
+        "peso": 180,
+        "precio": 410,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 123
+    },
+    "20": {
+        "atributos": {
+            "ataque": 12,
+            "defensa": 4,
+            "habilidad": "Dominio del arco",
+            "mana": 0,
+            "municion": {
+                "consume": 1,
+                "id": 504,
+                "nobre": "Flecha de madera"
+            },
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "arcos",
+        "historia": "",
+        "id": "w20",
+        "intercanbio": "No",
+        "nombre": "Arco largo",
+        "peso": 180,
+        "precio": 854,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 256
+    },
+    "21": {
+        "atributos": {
+            "ataque": 16,
+            "defensa": 5,
+            "habilidad": "Dominio del arco",
+            "mana": 0,
+            "municion": {
+                "consume": 1,
+                "id": 504,
+                "nobre": "Flecha de madera"
+            },
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "arcos",
+        "historia": "",
+        "id": "w21",
+        "intercanbio": "Si",
+        "nombre": "Arco élfico",
+        "peso": 180,
+        "precio": 1618,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 485
+    },
+    "22": {
+        "atributos": {
+            "ataque": 18,
+            "defensa": 6,
+            "habilidad": "Dominio del arco",
+            "mana": 0,
+            "municion": {
+                "consume": 1,
+                "id": 504,
+                "nobre": "Flecha de madera"
+            },
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "arcos",
+        "historia": "",
+        "id": "w22",
+        "intercanbio": "Si",
+        "nombre": "Arco del bosque",
+        "peso": 180,
+        "precio": 2424,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 727
+    },
+    "23": {
+        "atributos": {
+            "ataque": 2,
+            "defensa": 2,
+            "habilidad": "Maestría hacha",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "desafilados",
+        "historia": "Un arma básica en cualquier arsenal de guerreros, esta se remonta a cientos, incluso miles de años. Se martilla y se perfora una piedra, y se inserta un palo cómodamente en el agujero. Después de la inserción, se sujeta con un cordel y cordón para mantenerlo puesto. Casi te sientes estafado, pagando 62 de oro por un arma tan básica.",
+        "id": "w23",
+        "intercanbio": "No",
+        "nombre": "Club",
+        "peso": 180,
+        "precio": 62,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 18
+    },
+    "24": {
+        "atributos": {
+            "ataque": 4,
+            "defensa": 4,
+            "habilidad": "Maestría hacha",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "desafilados",
+        "historia": "",
+        "id": "w24",
+        "intercanbio": "No",
+        "nombre": "Club de huesos",
+        "peso": 180,
+        "precio": 372,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 111
+    },
+    "25": {
+        "atributos": {
+            "ataque": 7,
+            "defensa": 7,
+            "habilidad": "Maestría hacha",
+            "mana": 0,
+            "nivel": 0,
+            "reforsado": 0
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "desafilados",
+        "historia": "",
+        "id": "w25",
+        "intercanbio": "Si",
+        "nombre": "Club pesado",
+        "peso": 180,
+        "precio": 820,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 246
+    },
+    "26": {
+        "atributos": {
+            "ataque": 9,
+            "defensa": 9,
+            "habilidad": "Maestría hacha",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "desafilados",
+        "historia": "",
+        "id": "w26",
+        "intercanbio": "Si",
+        "nombre": "Hacha de acero",
+        "peso": 180,
+        "precio": 1740,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 441
+    },
+    "27": {
+        "atributos": {
+            "ataque": 11,
+            "defensa": 11,
+            "habilidad": "Maestría hacha",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "ataque": 1,
+                "ataque_total": 1,
+                "nivel": 1
+            }, {
+                "ataque": 1,
+                "ataque_total": 2,
+                "nivel": 2
+            }, {
+                "ataque": 1,
+                "ataque_total": 3,
+                "nivel": 3
+            }, {
+                "ataque": 1,
+                "ataque_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": true,
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "desafilados",
+        "historia": "A diferencia del Steel Axe, el Mithril Axe tiene dos hojas, para un ataque de doble filo. Ambas hojas tienen aproximadamente 131 grados, y en realidad es una sola pieza de metal formada en forma de reloj de arena. La mayoría de los veteranos tienen diseños y detalles grabados en los lados de las espadas, con asesinatos gloriosos y otros recuerdos con sus armas.",
+        "id": "w27",
+        "intercanbio": "Si",
+        "nombre": "Hacha de mitril",
+        "peso": 180,
+        "precio": 2450,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 735
+    },
+    "28": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 2,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "armaduras",
+        "historia": "Una mezcla simple de tejidos similares, superpuestos para proporcionar una fina defensa contra cortes. Las capas de algodón, lana y lino enrolladas juntas se superponen al torso y la parte superior de los brazos, abotonándose para cerrar y envolver al usuario para brindar calidez y protección.",
+        "id": "a01",
+        "intercanbio": "No",
+        "nombre": "Chaqueta de tela",
+        "peso": 450,
+        "precio": 3,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 0
+    },
+    "29": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 4,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "armaduras",
+        "historia": "Piel de animal en bruto, despellejada y curtida, para crear un chaleco a modo de abrigo para defender al usuario. De color marrón y una pieza uniforme, es mejor que una simple tela, pero la piel de animal solo llega hasta cierto punto.",
+        "id": "a02",
+        "intercanbio": "No",
+        "nombre": "Camisa de cuero",
+        "peso": 450,
+        "precio": 30,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 9
+    },
+    "30": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 12,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "armaduras",
+        "historia": "Los anillos de hierro individuales, ligeramente curvados, se unen para formar una malla de torso completa. Protegiendo el cuello, los brazos y el torso completo, definitivamente es una pieza de armadura a tener en cuenta. Mejor contra las flechas, el correo tintinea con cada paso, ligero en tu cuerpo en comparación con la armadura de placas normal.",
+        "id": "a03",
+        "intercanbio": "Si",
+        "nombre": "Cota de malla",
+        "peso": 450,
+        "precio": 250,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 75
+    },
+    "31": {
+        "atributos": {
+            "ataque": 1,
+            "defensa": 15,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "armaduras",
+        "historia": "",
+        "id": "a04",
+        "intercanbio": "Si",
+        "nombre": "Coraza de plata",
+        "peso": 450,
+        "precio": 430,
+        "tier": 1,
+        "tipo": "Equipo de protección",
+        "venta": 128
+    },
+    "32": {
+        "atributos": {
+            "ataque": 3,
+            "defensa": 17,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "armaduras",
+        "historia": "Una armadura teñida de azul que es de primera línea para la defensa. Especialmente diseñado para los mejores luchadores del castillo, consta de 6 placas delanteras y traseras: 2 sobre el pecho y los hombros, 2 en el estómago y la mitad de la espalda, y 2 en la cintura y el área lateral. Con espacios intermedios que permiten que las placas se muevan, ayuda con la movilidad del usuario en combate.",
+        "id": "a05",
+        "intercanbio": "Si",
+        "nombre": "Armadura de mithril",
+        "peso": 450,
+        "precio": 690,
+        "tier": 1,
+        "tipo": "Equipo de protección",
+        "venta": 207
+    },
+    "33": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 1,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "cascos",
+        "historia": "Un sombrero envolvente, cubierto de piel de animal, similar a un ushanka o papakha, cubre tu cabeza y cubre tus oídos para abrigarte. De color negro, tiene un exterior peludo con una gorra circular en la parte superior. No hace mucho por la protección, pero es mejor que nada.",
+        "id": "a06",
+        "intercanbio": "No",
+        "nombre": "Sombrero",
+        "peso": 190,
+        "precio": 1,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 0
+    },
+    "34": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 2,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "cascos",
+        "historia": "La mitad de una piel de cuero doblada, cortada por la mitad y cosida en la barbilla, se produce una capucha simple. Marrón, de color y delgado, cubre los lados de su cabeza y cubre su cuello. Con el beneficio de ser impermeable y liviano, es ideal para disfrazar u ocultar su identidad.",
+        "id": "a07",
+        "intercanbio": "No",
+        "nombre": "Capucha de cuero",
+        "peso": 190,
+        "precio": 35,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 10
+    },
+    "35": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 3,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "cascos",
+        "historia": "Un casco bastante simplista que presentaba una gorra de cuero similar a una capucha, excepto que estaba atada a una taza de hierro. Un corte en forma de 'T' en el medio permite al usuario ver y hablar con claridad. Aparte de eso, es simplemente un cuenco de hierro colocado en la cabeza.",
+        "id": "a08",
+        "intercanbio": "No",
+        "nombre": "Casco de acero",
+        "peso": 450,
+        "precio": 80,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 24
+    },
+    "36": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 7,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "cascos",
+        "historia": "",
+        "id": "a09",
+        "intercanbio": "Si",
+        "nombre": "Casco plateado",
+        "peso": 190,
+        "precio": 238,
+        "tier": 1,
+        "tipo": "Equipo de protección",
+        "venta": 71
+    },
+    "37": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 12,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "cascos",
+        "historia": "Un casco bastante complejo elaborado con metal endurecido teñido de azul, es la mejor armadura que obtendrás antes de necesitar un herrero especializado. Similar a un casco plateado en la forma en que está decorado con una cresta de plumas, este tiene un protector ocular con bisagras y protección bucal. Sin embargo, parece bastante tonto cuando se abre, pero por lo demás es una gran protección.",
+        "id": "a10",
+        "intercanbio": "Si",
+        "nombre": "Casco de mithril",
+        "peso": 450,
+        "precio": 510,
+        "tier": 1,
+        "tipo": "Equipo de protección",
+        "venta": 153
+    },
+    "38": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 1,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "botas",
+        "historia": "Una fina tira de cuero y tela que se usa como suela del zapato, combinada con una bobina de cuero que se extiende más allá del talón y agarra la pantorrilla. Se pueden atar para sujetarlo de forma segura y proteger el pie contra peligros menores. Sin embargo, dejar la parte inferior de la pierna y el dorso expuestos es bastante peligroso.",
+        "id": "a11",
+        "intercanbio": "No",
+        "nombre": "Sandalias",
+        "peso": 125,
+        "precio": 1,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 0
+    },
+    "39": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 2,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "botas",
+        "historia": "",
+        "id": "a12",
+        "intercanbio": "No",
+        "nombre": "Los zapatos de cuero",
+        "peso": 125,
+        "precio": 43,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 12
+    },
+    "40": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 3,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "botas",
+        "historia": "El zapato oficial del castillo, es una forma simplista de proteger los pies de muchos soldados. Un zapato de cuero con soporte para el tobillo y una cubierta de hierro, se beneficia enormemente sobre la sandalia y el zapato de cuero solo. Algo simplista, carece de grabados o detalles.",
+        "id": "a13",
+        "intercanbio": "No",
+        "nombre": "Botas de acero",
+        "peso": 125,
+        "precio": 92,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 27
+    },
+    "41": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 5,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "botas",
+        "historia": "Un 'paso' por encima de las botas de acero, esta cuenta con protección total. Cubre el pie en sí, una bisagra alrededor del tobillo y se extiende parcialmente hacia arriba de la pierna, presenta placas superpuestas similares a escamas, para ayudar a desviar el daño y rebotar cualquier puñalada.",
+        "id": "a14",
+        "intercanbio": "Si",
+        "nombre": "Botas de plata",
+        "peso": 125,
+        "precio": 285,
+        "tier": 1,
+        "tipo": "Equipo de protección",
+        "venta": 85
+    },
+    "42": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 8,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "botas",
+        "historia": "Una actualización completa de Silver Boots, este tipo de bota presentaba bisagras anti-roll en los tobillos, para evitar el movimiento hacia la izquierda y la derecha, y un espaciador de tela alrededor de la pierna para evitar la entrada de humedad. Junto con él, hay metal adicional en un patrón de rayo en la suela, para agarre y protección adicional.",
+        "id": "a15",
+        "intercanbio": "Si",
+        "nombre": "Botas de mitril",
+        "peso": 125,
+        "precio": 490,
+        "tier": 1,
+        "tipo": "Equipo de protección",
+        "venta": 147
+    },
+    "43": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 1,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "guantes",
+        "historia": "Guantes de lana sencillos, con agujeros para 5 dígitos. Se extiende hasta la muñeca y ofrece una protección suave tanto contra el frío como contra las cuchillas. Sobre todo para mostrar, la pareja blanca está limpia y lista para la batalla.",
+        "id": "a16",
+        "intercanbio": "No",
+        "nombre": "Guantes (Objeto)",
+        "peso": 125,
+        "precio": 1,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 0
+    },
+    "44": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 2,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "guantes",
+        "historia": "Pequeñas tiras de cuero enrolladas en rollos del tamaño de un dedo, cosidas a dos almohadillas de conexión. En forma de mano, están cosidos para cerrar las manos y brindar la protección de una armadura normal. Son un poco valientes y rudos, pero una gran protección para el guerrero promedio.",
+        "id": "a17",
+        "intercanbio": "No",
+        "nombre": "Guantes de cuero",
+        "peso": 125,
+        "precio": 43,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 12
+    },
+    "45": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 3,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "guantes",
+        "historia": "Un guante de acero completo cubre el lado externo de la mano y el antebrazo, que enfrenta a los enemigos en combate. Unidas por bisagras y correas de cuero, las placas se extienden por el brazo y consumen los dedos de forma similar a un guante. Proporciona una excelente protección al exterior, pero deja la mano y el interior del brazo expuestos para no sobrecargar al tiempo.",
+        "id": "a18",
+        "intercanbio": "No",
+        "nombre": "Guantes de acero",
+        "peso": 125,
+        "precio": 92,
+        "tier": 0,
+        "tipo": "Equipo de protección",
+        "venta": 27
+    },
+    "46": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 5,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "guantes",
+        "historia": "Tres placas colocadas en el antebrazo, la parte superior de la mano y una sábana rectangular en la muñeca, se unen con una bisagra alrededor de la muñeca para permitir movimientos simples. Totalmente revestido de plata y cuero, el usuario tiene el beneficio de los guantes y la protección de la plata.",
+        "id": "a01",
+        "intercanbio": "Si",
+        "nombre": "Guantes de plata",
+        "peso": 125,
+        "precio": 285,
+        "tier": 1,
+        "tipo": "Equipo de protección",
+        "venta": 85
+    },
+    "47": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 8,
+            "habilidad": "Maestría en armaduras",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "guantes",
+        "historia": "El mithril de primera línea está forjado para proporcionar un verdadero guante. Se colocan láminas de metal delgadas y suaves para encerrar la mano y el antebrazo del usuario, protegiendo tanto la palma como el dorso de la mano. Con un tipo de bisagra de bola y encaje, permite el movimiento de la mano sin restricciones para facilitar el combate. Es lo mejor que obtendrás en la tienda del castillo.",
+        "id": "a20",
+        "intercanbio": "So",
+        "nombre": "Guantes de mithril",
+        "peso": 125,
+        "precio": 490,
+        "tier": 1,
+        "tipo": "Equipo de protección",
+        "venta": 147
+    },
+    "48": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 1,
+            "habilidad": "Maestría del escudo",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "escudos",
+        "historia": "Los tablones de roble se lijan y se tratan con aceite para resistir el agua antes de colocarlos uno al lado del otro. Colocando verticalmente, se agregan dos tablas horizontales y luego se clavan para mantener la madera unida. Las correas de cuero se sujetan a la madera de soporte, diseñadas para llevarse en el brazo. Barato y de baja calidad, está casi mejor sin el peso extra.",
+        "id": "a21",
+        "intercanbio": "No",
+        "nombre": "Escudo de madera",
+        "peso": 180,
+        "precio": 3,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 0
+    },
+    "49": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 2,
+            "habilidad": "Maestría del escudo",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "escudos",
+        "historia": "Similar al Escudo de madera, una base de madera se hace con tablas tratadas y luego se clava. Sin embargo, el exterior final del escudo está sujeto con alambre, cordel y varios huesos grandes. Desde ciervos hasta humanos y otros animales pequeños, el acabado de la madera está cubierto de blanco. De naturaleza bárbara, los huesos invitan a tus enemigos a unirse a ellos.",
+        "id": "a22",
+        "intercanbio": "No",
+        "nombre": "Broquel esqueleto",
+        "peso": 180,
+        "precio": 50,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 15
+    },
+    "50": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 3,
+            "habilidad": "Maestría del escudo",
+            "mana": 0,
+            "nivel": 0,
+            "ranuras_enca": 0
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "escudos",
+        "historia": "La especialidad de un defensor principiante. Se funde una mezcla de cobre y estaño 1: 1 para formar un material más fuerte. Moldeado en forma de cometa, tiene 4 paneles distintos que se mantienen en su lugar curvando los bordes sobre las placas individuales. Aproximadamente del tamaño del torso del usuario, proporciona una excelente protección, pero sigue siendo un material ligero para aprender las manos.",
+        "id": "a23",
+        "intercanbio": "No",
+        "nombre": "Escudo de bronce",
+        "peso": 180,
+        "precio": 103,
+        "tier": 0,
+        "tipo": "Arma",
+        "venta": 30
+    },
+    "51": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 5,
+            "habilidad": "Maestría del escudo",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "escudos",
+        "historia": "Más brillante que cualquier hierro o acero, la plata es la elección de aquellos que tienen la habilidad para usarla, pero carecen de los fondos para un Mithril. El metal gris se calienta y se dobla varias veces, en forma de cometa. Levantado en los bordes superiores y bajado en el medio de la mitad inferior, protege fácilmente al usuario tanto a distancia como cuerpo a cuerpo.",
+        "id": "a24",
+        "intercanbio": "Si",
+        "nombre": "Escudo de plata",
+        "peso": 450,
+        "precio": 311,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 93
+    },
+    "52": {
+        "atributos": {
+            "ataque": 0,
+            "defensa": 7,
+            "habilidad": "Maestría del escudo",
+            "mana": 0,
+            "nivel": 15,
+            "ranuras_enca": [null, {
+                "defensa": 1,
+                "defensa_total": 1,
+                "nivel": 1
+            }, {
+                "defensa": 1,
+                "defensa_total": 2,
+                "nivel": 2
+            }, {
+                "defensa": 1,
+                "defensa_total": 3,
+                "nivel": 3
+            }, {
+                "defensa": 1,
+                "defensa_total": 4,
+                "nivel": 4
+            }]
+        },
+        "dual": "False",
+        "envolver": 1,
+        "evento_item": "No",
+        "fabricable": "No",
+        "g_type": "escudos",
+        "historia": "El metal azul oscuro de este escudo es un espectáculo de la fuerza de Mithril. Adoptando un diseño tipo torre y en forma de cometa, se apoya en el suelo y llega hasta la barbilla del usuario. El escudo de gran tamaño es eficaz para proteger todo el cuerpo del usuario, e incluso permite una ofensiva al golpear o cargar contra un enemigo.",
+        "id": "a25",
+        "intercanbio": "Si",
+        "nombre": "Escudo de mithril",
+        "peso": 180,
+        "precio": 498,
+        "tier": 1,
+        "tipo": "Arma",
+        "venta": 149
+    }
+}

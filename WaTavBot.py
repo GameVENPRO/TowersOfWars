@@ -753,8 +753,9 @@ def newUser(user, pron):
         "oro": 0,
         "bol_oro": 0,
         "gemas": 0,
-        "bolso_min": 0,
+        "puntos_habili": 0,
         "bolso": 15,
+        "bolso_min": 0,
         "stock": 4000,
         "stock_min": 0,
         "manoPrincipal": "None",
@@ -768,11 +769,10 @@ def newUser(user, pron):
         "collar": "None",
         "pron": "el",
         "estado": "🛌Descanso",
-        "puntos_habili": 0,
-        "bolso_arm": [[00]],
-        "almacen_re": [[00]],
-        "clase": [[00]],
-        "mascota": "0",
+        "bolso_arm": {"00" : {"00" : "00"}},
+        "almacen": {"00" : {"00" : "00"}},
+        "clase": {"00" : {"00" : "00"}},
+        "mascota": {"00" : {"00" : "00"}},
         "rank": 0,
         "lastlog": datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     }
@@ -1057,11 +1057,20 @@ def quitar_res(user,mision, context: CallbackContext):
     return
 
 
+def reducir_stock(user,itm_c,items_d):
+    global PlayerDB, RecursosDB
+    Jugador = PlayerDB[str(user.id)]
+    
+    peso= int(RecursosDB[items_d]["peso"]) * int(itm_c)
+    peso_t= int(Jugador["stock_min"])  + int(peso)
+    upload(player=str(user.id), concept=("stock_min"), value=(peso_t))
+    return
+
 def quest_fina(user, context: CallbackContext):
     global PlayerDB, RecursosDB
     Jugador = PlayerDB[str(user.id)]
     Nivel = int(Jugador["level"])
-    Almacen = Jugador["almacen_re"]
+    Almacen = Jugador["almacen"]
     ExpBase = int(NivelesBD[Nivel])
     exp_ganada = exp_bosque(Nivel, ExpBase)
     oro_win = random.randint(0, 4)
@@ -1088,10 +1097,13 @@ def quest_fina(user, context: CallbackContext):
                 if(str(items_d) in list(Almacen.keys())):
                     cal = int(Almacen[items_d]["cantidad"])+int(itm_c)
                     Newrecursos(user=user.id, items=items_d , cantidad=cal)
-                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
+                    reducir_stock(user,itm_c,items_d)                    
+                    text += 'Ganaste: <b>{r}</b>({cant})\n'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
                 else:
                     Newrecursos(user=user.id, items=items_d , cantidad=itm_c)
-                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
+                    reducir_stock(user,itm_c,items_d)
+                    text += 'Ganaste: <b>{r}</b>({cant})\n'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
+                    
 
     elif tiempo_d == "🌞":
         rango = random.randint(1, 4)
@@ -1105,10 +1117,12 @@ def quest_fina(user, context: CallbackContext):
                 if(str(items_d) in list(Almacen.keys())):
                     cal = int(Almacen[items_d]["cantidad"])+int(itm_c)
                     Newrecursos(user=user.id, items=items_d , cantidad=cal)
-                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
+                    reducir_stock(user,itm_c,items_d)
+                    text += 'Ganaste: <b>{r}</b>({cant})\n'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
                 else:
                     Newrecursos(user=user.id, items=items_d , cantidad=itm_c)
-                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
+                    reducir_stock(user,itm_c,items_d)
+                    text += 'Ganaste: <b>{r}</b>({cant})\n'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
 
     elif tiempo_d == "⛅️":
         rango = random.randint(1, 4)
@@ -1122,10 +1136,12 @@ def quest_fina(user, context: CallbackContext):
                 if(str(items_d) in list(Almacen.keys())):
                     cal = int(Almacen[items_d]["cantidad"])+int(itm_c)
                     Newrecursos(user=user.id, items=items_d , cantidad=cal)
-                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
+                    reducir_stock(user,itm_c,items_d)
+                    text += 'Ganaste: <b>{r}</b>({cant})\n'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
                 else:
                     Newrecursos(user=user.id, items=items_d , cantidad=itm_c)
-                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
+                    reducir_stock(user,itm_c,items_d)
+                    text += 'Ganaste: <b>{r}</b>({cant})\n'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
 
     elif tiempo_d == "🌙":
         rango = random.randint(1, 4)
@@ -1139,10 +1155,12 @@ def quest_fina(user, context: CallbackContext):
                 if(str(items_d) in list(Almacen.keys())):
                     cal = int(Almacen[items_d]["cantidad"])+int(itm_c)
                     Newrecursos(user=user.id, items=items_d , cantidad=cal)
-                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
+                    reducir_stock(user,itm_c,items_d)
+                    text += 'Ganaste: <b>{r}</b>({cant})\n'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)                
                 else:
                     Newrecursos(user=user.id, items=items_d , cantidad=itm_c)
-                    text += 'Ganaste: <b>{r}</b>({cant})'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
+                    reducir_stock(user,itm_c,items_d)
+                    text += 'Ganaste: <b>{r}</b>({cant})\n'.format(r=RecursosDB[items_d]["nombre"], cant=itm_c)
 
     context.bot.send_message(chat_id=user.id, text=text,parse_mode=ParseMode.HTML, reply_markup=None)
     return
@@ -1548,7 +1566,9 @@ def heroe(update: Update, context: CallbackContext):
     level = player["level"]
     exp_niveles = NivelesBD[level]
     bolso_arm = len(player["bolso_arm"])-1
-    alma_re = len(player["almacen_re"])-1
+
+    StockMin = player["stock_min"]
+    
     Total_ataque,Total_defensa,Suma = equipamiento_heroe(user)
     
     text = "{fla}".format(fla=player["flag_casti"])
@@ -1715,7 +1735,9 @@ def heroe(update: Update, context: CallbackContext):
         total="0" if bolso_arm == 0 else bolso_arm)
     text += "/{bolso} ".format(bolso=player["bolso"])
     text += "/inv"
-    text += "\n\n📦Almacen: {total} /almc".format(total=alma_re)
+    text += "\n\n📦Almacen: {total} /almc".format(total=StockMin)
+
+
 
     reply_markup = ReplyKeyboardMarkup(kb.ini_kb(level), resize_keyboard=True)
 
@@ -1847,23 +1869,20 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa9)
         text += " /off_{id}".format(id=p9)
 
-    text += "\n🎒Balso: ({total}".format(total="0" if bolso_arm ==
-                                        0 else bolso_arm)
+    text += "\n🎒Balso: ({total}".format(total="0" if bolso_arm == 0 else bolso_arm)
     text += "/{bolso})".format(bolso=player["bolso"])
-    p = 1
-    n = bolso_arm + 1
-    for i in BolsoJG[p:n]:
-        if(BolsoJG[p]["estatus"] != 1):
-            text += "\n<b>{name}</b> ".format(name=BolsoJG[p]["nombre"])
-            if(BolsoJG[p]["atributos"]["ataque"] > 0):
+    
+    for w in list(set(BolsoJG.keys()) - set(BolsoJG["00"])):
+        # if(BolsoJG[w]["estatus"] != 1):
+            text += "\n<b>{name}</b> ".format(name=BolsoJG[w]["nombre"])
+            if(BolsoJG[w]["atributos"]["ataque"] > 0):
                 text += "<b>+{actaque}</b>⚔️".format(
-                    actaque=BolsoJG[p]["atributos"]["ataque"])
-            if(BolsoJG[p]["atributos"]["defensa"] > 0):
+                    actaque=BolsoJG[w]["atributos"]["ataque"])
+            if(BolsoJG[w]["atributos"]["defensa"] > 0):
                 text += "<b>+{defensa}</b>🛡".format(
-                    defensa=BolsoJG[p]["atributos"]["defensa"])
-            text += " /on_{id}".format(id=p)
+                    defensa=BolsoJG[w]["atributos"]["defensa"])
+            text += " /on_{id}".format(id=w)
 
-        p = p+1
 
     reply_markup = ReplyKeyboardMarkup(kb.ini_kb(level), resize_keyboard=True)
 
@@ -2057,7 +2076,6 @@ def equip(update: Update, context: CallbackContext):
     )
     return
 
-
 def equipoff(update: Update, context: CallbackContext):
     user = update.message.from_user
     Jugador = PlayerDB[str(user.id)]
@@ -2068,11 +2086,9 @@ def equipoff(update: Update, context: CallbackContext):
         text = "<b>[Acción Inválida]</b>"
     elif(int(weapon) == Jugador["manoPrincipal"]):
         """"Desactivar Arma"""
-        uploadwp(player=str(user.id), w=(int(weapon)),
-                 concept=("estatus"), value=(0))
+        uploadwp(player=str(user.id), w=(int(weapon)),concept=("estatus"), value=(0))
         upload(player=str(user.id), concept=("manoPrincipal"), value=("None"))
-        text = "<b>{weapon}</b> Quitado con éxito!".format(
-            weapon=BolsoJG[int(weapon)]["nombre"])
+        text = "<b>{weapon}</b> Quitado con éxito!".format(weapon=BolsoJG[int(weapon)]["nombre"])
     elif(int(weapon) == Jugador["mano"]):
         """"Desactivar Arma"""
         uploadwp(player=str(user.id), w=(int(weapon)),
@@ -2165,10 +2181,8 @@ def wpassign(weapon, user):
     if(slot == "manoPrincipal"):
         if(Jugador["manoPrincipal"] == "None"):
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
-            upload(player=str(user.id), concept=(
-                "manoPrincipal"), value=(weapon))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
+            upload(player=str(user.id), concept=("manoPrincipal"), value=(weapon))
 
         else:
 
@@ -2178,8 +2192,7 @@ def wpassign(weapon, user):
             """"Colocar Arma Nueva"""
             uploadwp(player=str(user.id), w=(weapon),
                      concept=("estatus"), value=(1))
-            upload(player=str(user.id, concept=(
-                "manoPrincipal"), value=(weapon))
+            upload(player=str(user.id), concept=("manoPrincipal"), value=(weapon))
 
     elif(slot == "mano"):
         if(Jugador["mano"] == "None"):
@@ -2511,21 +2524,17 @@ def shopcat(update: Update, context: CallbackContext):
     else:
         text = "<b>Aquí, algunas mercancías:</b>\n"
         for w in list(set(TiendaDB.keys())):
-            if(int(w) < 100):
+            # if(int(w < 100):
                 # print(str(TiendaDB[w]["g_type"]))
                 if(TiendaDB[w]["g_type"] == data["d1"]):
-                    text += "\n\n<b>{name}</b> ".format(
-                        name=TiendaDB[w]["nombre"], id=TiendaDB[w]["id"])
+                    text += "\n\n<b>{name}</b> ".format( name=TiendaDB[w]["nombre"], id=TiendaDB[w]["id"])
                     if(TiendaDB[w]["atributos"]["ataque"] > 0):
-                        text += "<b>+{actaque}</b>⚔️".format(
-                            actaque=TiendaDB[w]["atributos"]["ataque"])
+                        text += "<b>+{actaque}</b>⚔️".format(actaque=TiendaDB[w]["atributos"]["ataque"])
                     if(TiendaDB[w]["atributos"]["defensa"] > 0):
-                        text += "<b>+{defensa}</b>🛡".format(
-                            defensa=TiendaDB[w]["atributos"]["defensa"])
+                        text += "<b>+{defensa}</b>🛡".format(defensa=TiendaDB[w]["atributos"]["defensa"])
                     if(TiendaDB[w]["tier"] == 1):
                         text += "\nRequerido: 📕"
-                    text += "\n{precio}💰 \n/buy_{id}".format(
-                        precio=TiendaDB[w]["precio"], id=w)
+                    text += "\n{precio}💰 \n/buy_{id}".format(precio=TiendaDB[w]["precio"], id=w)
                     weapons = True
 
         if(weapons == False):
@@ -2543,23 +2552,28 @@ def shopcat(update: Update, context: CallbackContext):
     )
     return
 
+def redu_stock(user,weapon):
+    global PlayerDB, RecursosDB
+    Jugador = PlayerDB[str(user.id)]
+    
+    peso_t= int(Jugador["stock_min"])  + int(TiendaDB[weapon]["peso"]) 
+    upload(player=str(user.id), concept=("stock_min"), value=(peso_t))
+    return
+
 def buy(update: Update, context: CallbackContext):
     global PlayerDB
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
     weapon = update.message.text.replace("/buy_", "")
+    print(weapon)
     try:
         if(weapon not in player["bolso_arm"]):
             if(int(player["oro"]) >= int(TiendaDB[weapon]["precio"])):
-                # player["bolso_arm"].append(weapon)
+                oro = str(int(PlayerDB[str(user.id)]["oro"]) - int(TiendaDB[weapon]["precio"]))    
                 Newcompra(user=user.id, items=weapon)
-                wps = player["bolso_arm"]
-                oro = str(int(PlayerDB[str(user.id)]["oro"]
-                              ) - int(TiendaDB[weapon]["precio"]))
-                upload(player=str(user.id), concept=(
-                    "bolso_arm", "oro"), value=(wps, oro))
-                text = "Ja, ja! Este <b>{weapon}</b> te queda muy bien, amigo! \nUtilizar sabiamente!".format(
-                    weapon=TiendaDB[weapon]["nombre"])
+                redu_stock(user,weapon)
+                upload(player=str(user.id), concept=("oro"), value=(oro))
+                text = "Ja, ja! Este <b>{weapon}</b> te queda muy bien, amigo! \nUtilizar sabiamente!".format(weapon=TiendaDB[weapon]["nombre"])
             else:
                 text = "Lo siento amigo, pero parece que no puedes permitirte este artículo."
 
@@ -2575,7 +2589,6 @@ def buy(update: Update, context: CallbackContext):
 
 def Newcompra(user, items):
     global PlayerDB, TiendaDB
-    Jugador = PlayerDB[str(user)]
 
     info = {
         "id": TiendaDB[items]["id"],
@@ -2625,8 +2638,9 @@ def Newcompra(user, items):
         }
     }
 
-    
+
     Fire.put("/players/"+str(user)+"/bolso_arm",items,info)
+    print("/players/"+str(user)+"/bolso_arm",TiendaDB[items]["id"],info)
 
     return
 
@@ -2646,7 +2660,7 @@ def Newrecursos(user, items, cantidad):
             "costo": 0                
             }
 
-    Fire.put("/players/"+str(user)+"/almacen_re",items,info)
+    Fire.put("/players/"+str(user)+"/almacen",items,info)
  
     return
 
@@ -3493,11 +3507,12 @@ def almc(update: Update, context: CallbackContext):
     global PlayerDB,RecursosDB
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
-    AlmaceJG = player["almacen_re"]
-    bolso_arm = player["stock"]
+    AlmaceJG = player["almacen"]
+    StockTotal = player["stock"]
+    StockMin = player["stock_min"]
 
-    text = "\n📦Almacen: ({total}".format(total="0" if bolso_arm == 0 else bolso_arm)
-    text += "/{bolso})".format(bolso=bolso_arm)
+    text = "\n📦Almacen: ({total}".format(total=StockMin)
+    text += "/{bolso})".format(bolso=StockTotal)
     for w in list(set(AlmaceJG.keys()) - set(AlmaceJG["00"])):
                 text+="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
 
@@ -4083,8 +4098,7 @@ def main():
             MessageHandler(Filters.regex("^(💎Lujo)$"), diamantes),
             MessageHandler(Filters.regex("^(💰Vender)$"), vender),
             MessageHandler(Filters.regex("^(🐾Casa de fieras)$"), casa_pet),
-            MessageHandler(Filters.regex(
-                "^(🎟Consigue una mascota)$"), get_mascotas),
+            MessageHandler(Filters.regex("^(🎟Consigue una mascota)$"), get_mascotas),
             MessageHandler(Filters.regex("^(💁Refugio)$"), refugio),
             MessageHandler(Filters.regex("^(⚰️Bodega)$"), bodega),
 
@@ -4105,7 +4119,8 @@ def main():
             MessageHandler(Filters.regex(r"^\/info_\d+$"), winfo),
             MessageHandler(Filters.regex(r"^\/on_\d+$"), equip),
             MessageHandler(Filters.regex(r"^\/off_\d+$"), equipoff),
-            MessageHandler(Filters.regex(r"^\/buy_\d+$"), buy),
+            MessageHandler(Filters.regex(r"\/buy_\d+$"), buy),
+           
             CommandHandler('r', reload),
             CommandHandler('heroe', heroe),
             CommandHandler('tiempo', tiempo),
