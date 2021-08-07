@@ -3744,8 +3744,19 @@ def bolso(update: Update, context: CallbackContext):
         if(defensa > 0):
             text += "+{d}🛡".format(d=defensa)
         text += " /off_{id}".format(id=p)
+    if(Jugador["manoPrincipal"] != "None"):
+        p = Jugador["manoPrincipal"]
+        nombre = str(BolsoJG[p]["nombre"])
+        ataque = int(BolsoJG[p]["atributos"]["ataque"])
+        defensa = int(BolsoJG[p]["atributos"]["defensa"])
+        text += "\n{n} ".format(n=nombre)
+        if(ataque > 0):
+            text += "+{d}⚔️".format(d=ataque)
+        if(defensa > 0):
+            text += "+{d}🛡".format(d=defensa)
+        text += " /off_{id}".format(id=p)
     if(Jugador["mano"] != "None"):
-        p2 = int(Jugador["mano"])
+        p2 = Jugador["mano"]
         nombre2 = str(BolsoJG[p2]["nombre"])
         ataque2 = int(BolsoJG[p2]["atributos"]["ataque"])
         defensa2 = int(BolsoJG[p2]["atributos"]["defensa"])
@@ -3756,7 +3767,7 @@ def bolso(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa2)
         text += " /off_{id}".format(id=p2)
     if(Jugador["casco"] != "None"):
-        p3 = int(Jugador["casco"])
+        p3 = Jugador["casco"]
         nombre3 = str(BolsoJG[p3]["nombre"])
         ataque3 = int(BolsoJG[p3]["atributos"]["ataque"])
         defensa3 = int(BolsoJG[p3]["atributos"]["defensa"])
@@ -3767,7 +3778,7 @@ def bolso(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa3)
         text += " /off_{id}".format(id=p3)
     if(Jugador["guantes"] != "None"):
-        p4 = int(Jugador["guantes"])
+        p4 = Jugador["guantes"]
         nombre4 = str(BolsoJG[p4]["nombre"])
         ataque4 = int(BolsoJG[p4]["atributos"]["ataque"])
         defensa4 = int(BolsoJG[p4]["atributos"]["defensa"])
@@ -3778,7 +3789,7 @@ def bolso(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa4)
         text += " /off_{id}".format(id=p4)
     if(Jugador["armadura"] != "None"):
-        p5 = int(Jugador["armadura"])
+        p5 = Jugador["armadura"]
         nombre5 = str(BolsoJG[p5]["nombre"])
         ataque5 = int(BolsoJG[p5]["atributos"]["ataque"])
         defensa5 = int(BolsoJG[p5]["atributos"]["defensa"])
@@ -3789,7 +3800,7 @@ def bolso(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa5)
         text += " /off_{id}".format(id=p5)
     if(Jugador["botas"] != "None"):
-        p6 = int(Jugador["botas"])
+        p6 = Jugador["botas"]
         nombre6 = str(BolsoJG[p6]["nombre"])
         ataque6 = int(BolsoJG[p6]["atributos"]["ataque"])
         defensa6 = int(BolsoJG[p6]["atributos"]["defensa"])
@@ -3800,7 +3811,7 @@ def bolso(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa6)
         text += " /off_{id}".format(id=p6)
     if(Jugador["especial"] != "None"):
-        p7 = int(Jugador["especial"])
+        p7 = Jugador["especial"]
         nombre7 = str(BolsoJG[p7]["nombre"])
         ataque7 = int(BolsoJG[p7]["atributos"]["ataque"])
         defensa7 = int(BolsoJG[p7]["atributos"]["defensa"])
@@ -3811,7 +3822,7 @@ def bolso(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa7)
         text += " /off_{id}".format(id=p7)
     if(Jugador["anillo"] != "None"):
-        p8 = int(Jugador["anillo"])
+        p8 = Jugador["anillo"]
         nombre8 = str(BolsoJG[p8]["nombre"])
         ataque8 = int(BolsoJG[p8]["atributos"]["ataque"])
         defensa8 = int(BolsoJG[p8]["atributos"]["defensa"])
@@ -3822,7 +3833,7 @@ def bolso(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa8)
         text += " /off_{id}".format(id=p8)
     if(Jugador["collar"] != "None"):
-        p9 = int(Jugador["collar"])
+        p9 = Jugador["collar"]
         nombre9 = str(BolsoJG[p9]["nombre"])
         ataque9 = int(BolsoJG[p9]["atributos"]["ataque"])
         defensa9 = int(BolsoJG[p9]["atributos"]["defensa"])
@@ -3850,7 +3861,7 @@ def bolso(update: Update, context: CallbackContext):
     IKB = InlineKeyboardButton
     reply_markup = InlineKeyboardMarkup([
             [
-                IKB("🔍Inspeccionar", callback_data='{'+"\"op\":\"inspec|wp\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='inspeccionar', d2=str(user.id))+'}'),
+                IKB("🔍Inspeccionar", callback_data='{'+"\"op\":\"inspec|inwp\",\"d1\":\"{d1}\",\"d2\":\"{d2}\"".format(d1='inspec', d2=str(user.id))+'}'),
 
             ]
             ])
@@ -3865,7 +3876,11 @@ def bolso(update: Update, context: CallbackContext):
 
 def inspeccionar(update: Update, context: CallbackContext):
     global PlayerDB
-    user = update.message.from_user
+    query = update.callback_query
+    data = json.loads(query.data)
+    option, next = data["op"].split("|")
+    user = query.from_user
+    
     Jugador = PlayerDB[str(user.id)]
     BolsoJG = Jugador["bolso_arm"]
     BolsoMax = Jugador["bolso"]
@@ -4139,6 +4154,7 @@ def reload(update: Update, context: CallbackContext):
             PlayerDB = Fire.get("/players", None)
             NivelesBD = Fire.get("/niveles_exp", None)
             TiendaDB = Fire.get("/tienda", None)
+            RecursosDB = Fire.get("/recursos", None)
             context.bot.send_message(
                 chat_id=user.id,
                 text="<code>¡Recargado!</code>",
@@ -4195,19 +4211,15 @@ def main():
     conv_handler = ConversationHandler(
         entry_points=[
             CommandHandler('start', register),
-            MessageHandler(Filters.regex("^(⚔️Atacar)$"), ata_castillo),
-            MessageHandler(Filters.regex("^(🛡Defender)$"), def_castillo),
             MessageHandler(Filters.regex("^(🗺Misiones)$"), misiones),
             MessageHandler(Filters.regex("^(🏅Yo)$"), me),
             MessageHandler(Filters.regex("^(💬)$"), cominicacion),
             MessageHandler(Filters.regex("^(🏰Castillo)$"), castillo),
             MessageHandler(Filters.regex("^(⚒Taller)$"), taller),
-            MessageHandler(Filters.regex(
-                "^(⚒Mesa de trabajo)$"), mesa_trabajo),
+            MessageHandler(Filters.regex("^(⚒Mesa de trabajo)$"), mesa_trabajo),
             MessageHandler(Filters.regex("^(⚒Artesanía)$"), craf),
             MessageHandler(Filters.regex("^(📖Fórmulas)$"), formulas),
             MessageHandler(Filters.regex("^(🏷Envolver)$"), envolver),
-
             MessageHandler(Filters.regex("^(🍺Taberna)$"), taberna),
             MessageHandler(Filters.regex("^(🛎Subastas)$"), subastas),
             MessageHandler(Filters.regex("^(⚖️Instercambios)$"), inetercambio),
@@ -4225,6 +4237,8 @@ def main():
             MessageHandler(Filters.regex("^(ℹ️Otros)$"), otros_clan),
             MessageHandler(Filters.regex("^(🤝Alianza)$"), alianza_clan),
             MessageHandler(Filters.regex("^(🏕Misiones)$"), misiones_clan),
+            MessageHandler(Filters.regex("^(⚔️Atacar)$"), ata_castillo),
+            MessageHandler(Filters.regex("^(🛡Defender)$"), def_castillo),
 
             MessageHandler(Filters.regex("🎒Bolso"), bolso),
             MessageHandler(Filters.regex("📦Recursos"), recursos),
@@ -4244,7 +4258,7 @@ def main():
             CommandHandler('tiempo', tiempo),
             CommandHandler('inv', inventario),
             CommandHandler('almc', almc),
-            MessageHandler(Filters.text, register)
+            MessageHandler(Filters.text, me)
         ],
 
         states={
@@ -4265,14 +4279,13 @@ def main():
             #     MessageHandler(Filters.regex("^(📝🎲Dados)$"), helpinfo)],
         },
 
-        fallbacks=[MessageHandler(Filters.regex("^(❌Cancelar)$"), register),
-                   MessageHandler(Filters.regex("^(↩️Volver)$"), register),
-                   CommandHandler("reload", reload)]
+        fallbacks=[MessageHandler(Filters.regex("^(❌Cancelar)$"), me),
+                   MessageHandler(Filters.regex("^(↩️Volver)$"), me),
+                   CommandHandler('r', reload)]
     )
     updater.dispatcher.add_handler(conv_handler)
     updater.dispatcher.add_handler(CallbackQueryHandler(queryHandler))
-    updater.dispatcher.add_handler(InlineQueryHandler(
-        inlinequery, pass_user_data=True, pass_chat_data=True))
+    updater.dispatcher.add_handler(InlineQueryHandler(inlinequery, pass_user_data=True, pass_chat_data=True))
     updater.user_sig_handler = lastrestart
     updater.start_polling(poll_interval=0.1, clean=True, read_latency=1.0)
 
