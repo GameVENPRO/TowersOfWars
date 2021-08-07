@@ -1646,7 +1646,7 @@ def heroe(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa)
         text += " /off_{id}".format(id=p)
     if(player["mano"] != "None"):
-        p2 = int(player["mano"])
+        p2 = player["mano"]
         nombre2 = str(BolsoJG[p2]["nombre"])
         ataque2 = int(BolsoJG[p2]["atributos"]["ataque"])
         defensa2 = int(BolsoJG[p2]["atributos"]["defensa"])
@@ -1657,7 +1657,7 @@ def heroe(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa2)
         text += " /off_{id}".format(id=p2)
     if(player["casco"] != "None"):
-        p3 = int(player["casco"])
+        p3 = player["casco"]
         nombre3 = str(BolsoJG[p3]["nombre"])
         ataque3 = int(BolsoJG[p3]["atributos"]["ataque"])
         defensa3 = int(BolsoJG[p3]["atributos"]["defensa"])
@@ -1668,7 +1668,7 @@ def heroe(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa3)
         text += " /off_{id}".format(id=p3)
     if(player["guantes"] != "None"):
-        p4 = int(player["guantes"])
+        p4 = player["guantes"]
         nombre4 = str(BolsoJG[p4]["nombre"])
         ataque4 = int(BolsoJG[p4]["atributos"]["ataque"])
         defensa4 = int(BolsoJG[p4]["atributos"]["defensa"])
@@ -1679,7 +1679,7 @@ def heroe(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa4)
         text += " /off_{id}".format(id=p4)
     if(player["armadura"] != "None"):
-        p5 = int(player["armadura"])
+        p5 = player["armadura"]
         nombre5 = str(BolsoJG[p5]["nombre"])
         ataque5 = int(BolsoJG[p5]["atributos"]["ataque"])
         defensa5 = int(BolsoJG[p5]["atributos"]["defensa"])
@@ -1690,7 +1690,7 @@ def heroe(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa5)
         text += " /off_{id}".format(id=p5)
     if(player["botas"] != "None"):
-        p6 = int(player["botas"])
+        p6 = player["botas"]
         nombre6 = str(BolsoJG[p6]["nombre"])
         ataque6 = int(BolsoJG[p6]["atributos"]["ataque"])
         defensa6 = int(BolsoJG[p6]["atributos"]["defensa"])
@@ -1701,7 +1701,7 @@ def heroe(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa6)
         text += " /off_{id}".format(id=p6)
     if(player["especial"] != "None"):
-        p7 = int(player["especial"])
+        p7 = player["especial"]
         nombre7 = str(BolsoJG[p7]["nombre"])
         ataque7 = int(BolsoJG[p7]["atributos"]["ataque"])
         defensa7 = int(BolsoJG[p7]["atributos"]["defensa"])
@@ -1712,7 +1712,7 @@ def heroe(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa7)
         text += " /off_{id}".format(id=p7)
     if(player["anillo"] != "None"):
-        p8 = int(player["anillo"])
+        p8 = player["anillo"]
         nombre8 = str(BolsoJG[p8]["nombre"])
         ataque8 = int(BolsoJG[p8]["atributos"]["ataque"])
         defensa8 = int(BolsoJG[p8]["atributos"]["defensa"])
@@ -1723,7 +1723,7 @@ def heroe(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa8)
         text += " /off_{id}".format(id=p8)
     if(player["collar"] != "None"):
-        p9 = int(player["collar"])
+        p9 = player["collar"]
         nombre9 = str(BolsoJG[p9]["nombre"])
         ataque9 = int(BolsoJG[p9]["atributos"]["ataque"])
         defensa9 = int(BolsoJG[p9]["atributos"]["defensa"])
@@ -1756,8 +1756,11 @@ def inventario(update: Update, context: CallbackContext):
     user = update.message.from_user
     player = PlayerDB[str(user.id)]
     BolsoJG = player["bolso_arm"]
+    BolsoMax = player["bolso"]
+    BolsoMin = player["bolso_min"]
+    StockMin = player["stock_min"]
     level = player["level"]
-    bolso_arm = len(player["bolso_arm"])-1
+
     Total_ataque,Total_defensa,Suma = equipamiento_heroe(user)
 
     
@@ -1783,7 +1786,7 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa)
         text += " /off_{id}".format(id=p)
     if(player["mano"] != "None"):
-        p2 = int(player["mano"])
+        p2 = player["mano"]
         nombre2 = str(BolsoJG[p2]["nombre"])
         ataque2 = int(BolsoJG[p2]["atributos"]["ataque"])
         defensa2 = int(BolsoJG[p2]["atributos"]["defensa"])
@@ -1794,7 +1797,7 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa2)
         text += " /off_{id}".format(id=p2)
     if(player["casco"] != "None"):
-        p3 = int(player["casco"])
+        p3 = player["casco"]
         nombre3 = str(BolsoJG[p3]["nombre"])
         ataque3 = int(BolsoJG[p3]["atributos"]["ataque"])
         defensa3 = int(BolsoJG[p3]["atributos"]["defensa"])
@@ -1805,7 +1808,7 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa3)
         text += " /off_{id}".format(id=p3)
     if(player["guantes"] != "None"):
-        p4 = int(player["guantes"])
+        p4 = player["guantes"]
         nombre4 = str(BolsoJG[p4]["nombre"])
         ataque4 = int(BolsoJG[p4]["atributos"]["ataque"])
         defensa4 = int(BolsoJG[p4]["atributos"]["defensa"])
@@ -1816,7 +1819,7 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa4)
         text += " /off_{id}".format(id=p4)
     if(player["armadura"] != "None"):
-        p5 = int(player["armadura"])
+        p5 = player["armadura"]
         nombre5 = str(BolsoJG[p5]["nombre"])
         ataque5 = int(BolsoJG[p5]["atributos"]["ataque"])
         defensa5 = int(BolsoJG[p5]["atributos"]["defensa"])
@@ -1827,7 +1830,7 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa5)
         text += " /off_{id}".format(id=p5)
     if(player["botas"] != "None"):
-        p6 = int(player["botas"])
+        p6 = player["botas"]
         nombre6 = str(BolsoJG[p6]["nombre"])
         ataque6 = int(BolsoJG[p6]["atributos"]["ataque"])
         defensa6 = int(BolsoJG[p6]["atributos"]["defensa"])
@@ -1838,7 +1841,7 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa6)
         text += " /off_{id}".format(id=p6)
     if(player["especial"] != "None"):
-        p7 = int(player["especial"])
+        p7 = player["especial"]
         nombre7 = str(BolsoJG[p7]["nombre"])
         ataque7 = int(BolsoJG[p7]["atributos"]["ataque"])
         defensa7 = int(BolsoJG[p7]["atributos"]["defensa"])
@@ -1849,7 +1852,7 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa7)
         text += " /off_{id}".format(id=p7)
     if(player["anillo"] != "None"):
-        p8 = int(player["anillo"])
+        p8 = player["anillo"]
         nombre8 = str(BolsoJG[p8]["nombre"])
         ataque8 = int(BolsoJG[p8]["atributos"]["ataque"])
         defensa8 = int(BolsoJG[p8]["atributos"]["defensa"])
@@ -1860,7 +1863,7 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa8)
         text += " /off_{id}".format(id=p8)
     if(player["collar"] != "None"):
-        p9 = int(player["collar"])
+        p9 = player["collar"]
         nombre9 = str(BolsoJG[p9]["nombre"])
         ataque9 = int(BolsoJG[p9]["atributos"]["ataque"])
         defensa9 = int(BolsoJG[p9]["atributos"]["defensa"])
@@ -1871,18 +1874,15 @@ def inventario(update: Update, context: CallbackContext):
             text += "+{d}🛡".format(d=defensa9)
         text += " /off_{id}".format(id=p9)
 
-    text += "\n🎒Balso: ({total}".format(total="0" if bolso_arm == 0 else bolso_arm)
-    text += "/{bolso})".format(bolso=player["bolso"])
+    text += "\n🎒Balso: ({bmi}/{bm})".format(bmi=BolsoMin, bm=BolsoMax)
     
     for w in list(set(BolsoJG.keys()) - set(BolsoJG["00"])):
         if(BolsoJG[w]["estatus"] != 1):
             text += "\n<b>{name}</b> ".format(name=BolsoJG[w]["nombre"])
             if(BolsoJG[w]["atributos"]["ataque"] > 0):
-                text += "<b>+{actaque}</b>⚔️".format(
-                    actaque=BolsoJG[w]["atributos"]["ataque"])
+                text += "<b>+{actaque}</b>⚔️".format(actaque=BolsoJG[w]["atributos"]["ataque"])
             if(BolsoJG[w]["atributos"]["defensa"] > 0):
-                text += "<b>+{defensa}</b>🛡".format(
-                    defensa=BolsoJG[w]["atributos"]["defensa"])
+                text += "<b>+{defensa}</b>🛡".format(defensa=BolsoJG[w]["atributos"]["defensa"])
             text += " /on_{id}".format(id=w)
 
 
@@ -2122,10 +2122,9 @@ def off_equipo(update: Update, context: CallbackContext):
             weapon=BolsoJG[weapon]["nombre"])
     elif(weapon == Jugador["casco"]):
         """"Desactivar Arma"""
-        uploadwp(player=str(user.id), w=(int(weapon)),concept=("estatus"), value=(0))
+        uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(0))
         upload(player=str(user.id), concept=("casco"), value=("None"))
-        text = "<b>{weapon}</b> Quitado con éxito!".format(
-            weapon=BolsoJG[int(weapon)]["nombre"])
+        text = "<b>{weapon}</b> Quitado con éxito!".format(weapon=BolsoJG[weapon]["nombre"])
     elif(weapon == Jugador["guantes"]):
         """"Desactivar Arma"""
         uploadwp(player=str(user.id), w=(weapon), concept=("estatus"), value=(0))
@@ -2140,8 +2139,7 @@ def off_equipo(update: Update, context: CallbackContext):
         """"Desactivar Arma"""
         uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(0))
         upload(player=str(user.id), concept=("botas"), value=("None"))
-        text = "<b>{weapon}</b> Quitado con éxito!".format(
-            weapon=BolsoJG[weapon]["nombre"])
+        text = "<b>{weapon}</b> Quitado con éxito!".format( weapon=BolsoJG[weapon]["nombre"])
     elif(weapon == Jugador["especial"]):
         """"Desactivar Arma"""
         uploadwp(player=str(user.id), w=(weapon), concept=("estatus"), value=(0))
@@ -2200,132 +2198,106 @@ def wpassign(weapon, user):
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(WpAc),
-                     concept=("estatus"), value=(0))
+            uploadwp(player=str(user.id), w=(WpAc),concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("manoPrincipal"), value=(weapon))
             
     elif(slot == "mano"):
         if(Jugador["mano"] == "None"):
             """Cambia normalmente"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("mano"), value=(weapon))
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(
-                Jugador["mano"]), concept=("estatus"), value=(0))
+            uploadwp(player=str(user.id), w=(Jugador["mano"]), concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("mano"), value=(weapon))
     elif(slot == "casco"):
         if(Jugador["casco"] == "None"):
             """Cambia normalmente"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("casco"), value=(weapon))
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(
-                Jugador["casco"]), concept=("estatus"), value=(0))
+            uploadwp(player=str(user.id), w=(Jugador["casco"]), concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("casco"), value=(weapon))
     elif(slot == "guantes"):
         if(Jugador["guantes"] == "None"):
             """Cambia normalmente"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("guantes"), value=(weapon))
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(
-                Jugador["guantes"]), concept=("estatus"), value=(0))
+            uploadwp(player=str(user.id), w=(Jugador["guantes"]), concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("guantes"), value=(weapon))
     elif(slot == "armadura"):
         if(Jugador["armadura"] == "None"):
             """Cambia normalmente"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon), concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("armadura"), value=(weapon))
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(
-                Jugador["armadura"]), concept=("estatus"), value=(0))
+            uploadwp(player=str(user.id), w=(Jugador["armadura"]), concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("armadura"), value=(weapon))
     elif(slot == "botas"):
         if(Jugador["botas"] == "None"):
             """Cambia normalmente"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("botas"), value=(weapon))
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(
-                Jugador["botas"]), concept=("estatus"), value=(0))
+            uploadwp(player=str(user.id), w=(Jugador["botas"]), concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("botas"), value=(weapon))
     elif(slot == "especial"):
         if(Jugador["especial"] == "None"):
             """Cambia normalmente"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("especial"), value=(weapon))
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(
-                Jugador["especial"]), concept=("estatus"), value=(0))
+            uploadwp(player=str(user.id), w=(Jugador["especial"]), concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("especial"), value=(weapon))
     elif(slot == "anillo"):
         if(Jugador["anillo"] == "None"):
             """Cambia normalmente"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("mano"), value=(weapon))
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(
-                Jugador["anillo"]), concept=("estatus"), value=(0))
+            uploadwp(player=str(user.id), w=(Jugador["anillo"]), concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("anillo"), value=(weapon))
     elif(slot == "collar"):
         if(Jugador["collar"] == "None"):
             """Cambia normalmente"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("collar"), value=(weapon))
         else:
 
             """Desactivar armar puesta y cambiar estatus del arma puesta"""
-            uploadwp(player=str(user.id), w=(
-                Jugador["collar"]), concept=("estatus"), value=(0))
+            uploadwp(player=str(user.id), w=(Jugador["collar"]), concept=("estatus"), value=(0))
             """"Colocar Arma Nueva"""
-            uploadwp(player=str(user.id), w=(weapon),
-                     concept=("estatus"), value=(1))
+            uploadwp(player=str(user.id), w=(weapon),concept=("estatus"), value=(1))
             upload(player=str(user.id), concept=("collar"), value=(weapon))
 
     return
@@ -3306,7 +3278,7 @@ def bodega(update: Update, context: CallbackContext):
     )
     return
 
-#  Clan
+#Clan
 
 
 def clan(update: Update, context: CallbackContext):
