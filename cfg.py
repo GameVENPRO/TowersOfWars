@@ -1,7 +1,6 @@
 
-TOKEN = "1935758366:AAGr4EQl-GDlleBUrZhSg_sCTNtTkRoyfW4"  # Test
-# TOKEN = "1623058330:AAGsL076jnv3FIiRHEgJyfumeCmmMiSasHA" #Test
-
+#TOKEN = ""  # Beta
+TOKEN = "1623058330:AAGsL076jnv3FIiRHEgJyfumeCmmMiSasHA" #TorreRPG
 
 DEV_MODO = True
 
