@@ -1,4 +1,4 @@
-# ChatWars Bot
+# Towers Of Wars
 
 MMORPG basado en texto, en forma de Bot de Telegram.
 > Aquí es donde comienza tu aventura: Castillos, dragones, luchas épicas, y claro, beber y festejar con amigos... ¿Qué más puedes pedir?
