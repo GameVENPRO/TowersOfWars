@@ -591,7 +591,7 @@
             }
         }
     },
-    "W19": {
+    "w19": {
         "id": "w19",
         "nombre": "Arco de madera",
         "historia": "Entrando en los tiempos modernos, una rama es despojada y tratada, antes de doblarse lentamente en su lugar para embotellar energía. Luego, se une una cuerda de arriba a abajo y se prueba. Se hacen los ajustes y el arco está listo para pelear. Los diferentes tipos de madera pueden cambiar el color del arco y se pueden aplicar ciertos tintes / aceites para lograr un acabado brillante.",
@@ -620,7 +620,7 @@
             }
         }
     },
-    "W20": {
+    "w20": {
         "id": "w20",
         "nombre": "Arco largo",
         "historia": "",
@@ -649,7 +649,7 @@
             }
         }
     },
-    "W21": {
+    "w21": {
         "id": "w21",
         "nombre": "Arco élfico",
         "historia": "",
@@ -700,7 +700,7 @@
             }
         }
     },
-    "W22": {
+    "w22": {
         "id": "w22",
         "nombre": "Arco del bosque",
         "historia": "",
@@ -751,7 +751,7 @@
             }
         }
     },
-    "W23": {
+    "w23": {
         "id": "w23",
         "nombre": "Club",
         "historia": "Un arma básica en cualquier arsenal de guerreros, esta se remonta a cientos, incluso miles de años. Se martilla y se perfora una piedra, y se inserta un palo cómodamente en el agujero. Después de la inserción, se sujeta con un cordel y cordón para mantenerlo puesto. Casi te sientes estafado, pagando 62 de oro por un arma tan básica.",
@@ -775,7 +775,7 @@
             "reforsado": 0
         }
     },
-    "W24": {
+    "w24": {
         "id": "w24",
         "nombre": "Club de huesos",
         "historia": "",
@@ -799,7 +799,7 @@
             "reforsado": 0
         }
     },
-    "W25": {
+    "w25": {
         "id": "w25",
         "nombre": "Club pesado",
         "historia": "",
@@ -823,7 +823,7 @@
             "reforsado": 0
         }
     },
-    "W26": {
+    "w26": {
         "id": "w26",
         "nombre": "Hacha de acero",
         "historia": "",
@@ -869,7 +869,7 @@
             }
         }
     },
-    "W27": {
+    "w27": {
         "id": "w27",
         "nombre": "Hacha de mitril",
         "historia": "A diferencia del Steel Axe, el Mithril Axe tiene dos hojas, para un ataque de doble filo. Ambas hojas tienen aproximadamente 131 grados, y en realidad es una sola pieza de metal formada en forma de reloj de arena. La mayoría de los veteranos tienen diseños y detalles grabados en los lados de las espadas, con asesinatos gloriosos y otros recuerdos con sus armas.",
@@ -1757,5 +1757,89 @@
             }
         }
 
+    },
+    "pl1": {
+        "id": "pl1",
+        "nombre": "Vial de olvido",
+        "historia": "Te permite olvidar las habilidades que has entrenado tan duro.\nElimina 1SP de la habilidad elegida",
+        "tipo": "Varios",
+        "g_type": "lujos",
+        "dual": false,
+        "peso": 1,
+        "tier": 0,
+        "envolver": 0,
+        "evento_item": false,
+        "fabricable": false,
+        "intercanbio": false,
+        "precio": 3,
+        "venta": 0
+
+    },
+    "pl3": {
+        "id": "pl3",
+        "nombre": "Botella del olvido",
+        "historia": "Te permite olvidar las habilidades que has entrenado tan duro.\n Elimina todos los SP de la habilidad elegida",
+        "tipo": "Varios",
+        "g_type": "lujos",
+        "dual": false,
+        "peso": 1,
+        "tier": 0,
+        "envolver": 0,
+        "evento_item": false,
+        "fabricable": false,
+        "intercanbio": false,
+        "precio": 30,
+        "venta": 0
+
+    },
+    "key": {
+        "id": "key",
+        "nombre": "Llave",
+        "historia": "Se adapta perfectamente a las cerraduras del pecho.\n Abierto: Cofre de zombis , Cofre antiguo",
+        "tipo": "Varios",
+        "g_type": "lujos",
+        "dual": false,
+        "peso": 1,
+        "tier": 0,
+        "envolver": 0,
+        "evento_item": false,
+        "fabricable": false,
+        "intercanbio": false,
+        "precio": 8,
+        "venta": 0
+
+    },
+    "enh": {
+        "id": "enh",
+        "nombre": "Potenciador de desplazamiento",
+        "historia": "Se usa para combinar 3 pergaminos de encantamiento regulares del mismo tipo en uno raro.\nConvierte tres pergaminos de encantamiento en un pergamino de encantamiento raro",
+        "tipo": "Varios",
+        "g_type": "lujos",
+        "dual": false,
+        "peso": 1,
+        "tier": 0,
+        "envolver": 0,
+        "evento_item": false,
+        "fabricable": false,
+        "intercanbio": false,
+        "precio": 30,
+        "venta": 0
+
+    },
+    "ens": {
+        "id": "ens",
+        "nombre": "Pergamino de sigilo",
+        "historia": "Grabe su sello favorito en un artículo querido. ¡Hazlo con moda! Cambia el emoji del objeto encantado.\nCambia el emoji del objeto encantado.",
+        "tipo": "Varios",
+        "g_type": "lujos",
+        "dual": false,
+        "peso": 1,
+        "tier": 0,
+        "envolver": 0,
+        "evento_item": false,
+        "fabricable": false,
+        "intercanbio": false,
+        "precio": 16,
+        "venta": 0
     }
 }

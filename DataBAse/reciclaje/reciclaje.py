@@ -193,3 +193,56 @@ manana = "🌤"
     "String = 22"
     "Coke = 23"
 
+
+def shop_apagado(update: Update, context: CallbackContext):
+    text = str("¡Mira esto, hombre! Aquí tenemos suficientes armas para cazar un dragón, o para atacar un templo maldito!"
+               + "\nEcha un vistazo a lo que quieras, y si algo te interesa, no dudes en preguntar!")
+    reply_markup = InlineKeyboardMarkup(kb.kb("wtypes", ("bsmith|na", "null")))
+    update.message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return
+
+def shopcat_apagado(update: Update, context: CallbackContext):
+    global TiendaDB
+    user = update.callback_query.from_user
+    data = json.loads(update.callback_query.data)
+    Juagador = PlayerDB[str(user.id)]
+    weapons = False
+
+    if(len(Juagador["bolso_arm"]) >= 15):
+        text = "\n<b>Tienes lleno el inventario!!!</b>"
+        reply_markup = None
+
+    else:
+        text = "<b>Aquí, algunas mercancías:</b>\n"
+        for w in list(sorted(TiendaDB.keys())):
+            # if(int(w < 100):
+                # print(str(TiendaDB[w]["g_type"]))
+                if(TiendaDB[w]["g_type"] == data["d1"]):
+                    text += "\n\n<b>{name}</b> ".format( name=TiendaDB[w]["nombre"], id=TiendaDB[w]["id"])
+                    if(TiendaDB[w]["atributos"]["ataque"] > 0):
+                        text += "<b>+{actaque}</b>⚔️".format(actaque=TiendaDB[w]["atributos"]["ataque"])
+                    if(TiendaDB[w]["atributos"]["defensa"] > 0):
+                        text += "<b>+{defensa}</b>🛡".format(defensa=TiendaDB[w]["atributos"]["defensa"])
+                    if(TiendaDB[w]["tier"] == 1):
+                        text += "\nRequerido: 📕"
+                    text += "\n{precio}💰 \n/buy_{id}".format(precio=TiendaDB[w]["precio"], id=w)
+                    weapons = True
+
+        if(weapons == False):
+            text += "\n<b>((Vacio))</b>"
+
+        reply_markup = InlineKeyboardMarkup(
+            kb.kb("wtypes", ("bsmith|na", "null")))
+
+    context.bot.edit_message_text(
+        text=text,
+        chat_id=user.id,
+        message_id=update.callback_query.message.message_id,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML
+    )
+    return

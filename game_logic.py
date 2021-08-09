@@ -1,3 +1,4 @@
+from datetime import datetime
 import random
 import json
 import math
@@ -104,11 +105,10 @@ def recuperar(v_max,v_min):
     sleep(0.3)
 
 
-def climas():
-    
+def climas_1():
+
     climas= ["Soleado☀️ ","Nublado🌤 ","Lluvioso🌧 " ,"Nieblina🌫 "]
     clima1 = climas[random.randint(0, 3)]
-    clima2 = climas[random.randint(0, 3)]
-    Cambio = str(clima1) + ' → ' + str(clima2)
     
-    return Cambio
+    return clima1
+
