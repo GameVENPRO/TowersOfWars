@@ -1,6 +1,7 @@
 # Logging, para empezar a monitorear el desmadre desde el principio
 import os
 from re import I
+import re
 import sys
 from random import randint as rng, choice
 from html import escape
@@ -190,6 +191,15 @@ class kb:
 
         return keyboard
 
+    def stock_kb():
+        IKB = KeyboardButton
+        keyboard =[
+                    [IKB("🎒Bolso"),    IKB("📦Recursos"),IKB("🗃Varios")],
+                    [IKB("⚗️Alquimia"), IKB("⚒Elaboración")],
+                    [IKB("🏷Equipo"),    IKB("↩️Volver")]
+                ]
+        
+        return keyboard
 
     def armas_kb():
         IKB = KeyboardButton
@@ -2534,38 +2544,38 @@ def buy_tiend(update: Update, context: CallbackContext):
     weapon = update.message.text.replace("/buy_", "")
     tipo_compra = ["lujos"]
     tienda_normal = ["Espadas","Dagas","Desafilados","Arcos","Botas","Armaduras","Guantes","Lanzas","Escudos","Cascos"]
-    try:
-        if TiendaDB[weapon]["g_type"] in tienda_normal:
-            if(weapon not in player["bolso_arm"]):
+    # try:
+    if TiendaDB[weapon]["g_type"] in tienda_normal:
+        if(weapon not in player["bolso_arm"]):
                                
-                if(int(player["oro"]) >= int(TiendaDB[weapon]["precio"])):
-                    oro = str(int(PlayerDB[str(user.id)]["oro"]) - int(TiendaDB[weapon]["precio"]))    
-                    Newcompra(user=user.id, items=weapon)
-                    reducir_almc(user,weapon)
-                    aumentar_bolso(user)
-                    upload(player=str(user.id), concept=("oro"), value=(oro))
-                    text = "✅Artículo añadido a tu bolso. Para revisar su inventario haga click en /inv"
-                else:
-                    text = "No tienes suficiente oro vete a trabajar."
-        elif TiendaDB[weapon]["g_type"] in tipo_compra:
-            if(weapon not in player["almacen"]):
+            if(int(player["oro"]) >= int(TiendaDB[weapon]["precio"])):
+                oro = str(int(PlayerDB[str(user.id)]["oro"]) - int(TiendaDB[weapon]["precio"]))    
+                Newcompra(user=user.id, items=weapon)
+                reducir_almc(user,weapon)
+                aumentar_bolso(user)
+                upload(player=str(user.id), concept=("oro"), value=(oro))
+                text = "✅Artículo añadido a tu bolso. Para revisar su inventario haga click en /inv"
+        else:
+                text = "No tienes suficiente oro vete a trabajar."
+    elif TiendaDB[weapon]["g_type"] in tipo_compra:
+        if(weapon not in player["almacen"]):
                 
-                if(int(player["gemas"]) >= int(TiendaDB[weapon]["precio"])):
-                    oro = str(int(PlayerDB[str(user.id)]["gemas"]) - int(TiendaDB[weapon]["precio"]))    
-                    Newpremium(user=user.id, items=weapon)
-                    reducir_almc(user,weapon)
-                    upload(player=str(user.id), concept=("gemas"), value=(oro))
-                    text = "✅Artículo añadido a tu bolso. Para revisar su inventario haga click en /inv"
-                else:
-                    text = "❌Fondos insuficientes. Para obtener más  💎 gemas visita ."
+            if(int(player["gemas"]) >= int(TiendaDB[weapon]["precio"])):
+                oro = str(int(PlayerDB[str(user.id)]["gemas"]) - int(TiendaDB[weapon]["precio"]))    
+                Newpremium(user=user.id, items=weapon)
+                reducir_almc(user,weapon)
+                upload(player=str(user.id), concept=("gemas"), value=(oro))
+                text = "✅Artículo añadido a tu bolso. Para revisar su inventario haga click en /inv"
+            else:
+                text = "❌Fondos insuficientes. Para obtener más  💎 gemas visita ."
             
             
-        update.message.reply_text(text=text,parse_mode=ParseMode.HTML)
-    except Exception as e:
-        error(update, e)
-    else:
-        return
-    return
+    update.message.reply_text(text=text,parse_mode=ParseMode.HTML)
+    # except Exception as e:
+    #     error(update, e)
+    # else:
+    #     return
+    # return
 
 def tienda(update: Update, context: CallbackContext):
     text=  "Bienvenido, PlayerName. Aquí encontrará lo que necesita.\n\n"
@@ -3023,28 +3033,28 @@ def sell(update: Update, context: CallbackContext):
     BolsoJG = Juagador["bolso_arm"]
     weapon = update.message.text.replace("/sell_", "")
   
-    try:
-        if weapon in BolsoJG.keys():
-            if BolsoJG[weapon]["estatus"] == 0:
-                print("ss1")                
-                reducir_bolso(user)
-                venta = int(BolsoJG[weapon]["venta"]) * int(BolsoJG[weapon]["cantidad"])   
-                venta_total = venta + int(Juagador["oro"])
-                text= "Artículo vendido. Oro recibido {re}💰".format(re=venta)
-                upload(player=str(user.id), concept=("oro"), value=(venta_total))
-                Fire.delete("/players/"+str(user.id)+"/bolso_arm",weapon)
-            else:
-                text="¡Tienes el articulo equipado!"
-                    
+    # try:
+    if weapon in BolsoJG.keys():
+        if BolsoJG[weapon]["estatus"] == 0:
+            print("ss1")                
+            reducir_bolso(user)
+            venta = int(BolsoJG[weapon]["venta"]) * int(BolsoJG[weapon]["cantidad"])   
+            venta_total = venta + int(Juagador["oro"])
+            text= "Artículo vendido. Oro recibido {re}💰".format(re=venta)
+            upload(player=str(user.id), concept=("oro"), value=(venta_total))
+            Fire.delete("/players/"+str(user.id)+"/bolso_arm",weapon)
         else:
+            text="¡Tienes el articulo equipado!"
+                    
+    else:
             text= "[ACCIÓN INVALIDAD]"
             
         
-        update.message.reply_text(text=text,parse_mode=ParseMode.HTML)
-    except Exception as e:
-        error(update, e)
-    else:
-        return
+    update.message.reply_text(text=text,parse_mode=ParseMode.HTML)
+    # except Exception as e:
+    #     error(update, e)
+    # else:
+    #     return
     return
 
 
@@ -3058,12 +3068,7 @@ def tienda_premium(update: Update, context: CallbackContext):
         if(TiendaDB[w]["g_type"] == "lujos"):            
              text += "\n\n<b>{name}</b>".format( name=TiendaDB[w]["nombre"])    
              text += "\n{precio}💎 \n/buy_{id}".format(precio=TiendaDB[w]["precio"], id=w)
-             text += "\n<i>{historia}</i>".format(historia=TiendaDB[w]["historia"])
-               
-
-                        
-
-        
+             text += "\n<i>{historia}</i>".format(historia=TiendaDB[w]["historia"])      
 
     update.message.reply_text(text=text,reply_markup=None,parse_mode=ParseMode.HTML)
     # except Exception as e:
@@ -3929,7 +3934,6 @@ def misiones_clan(update: Update, context: CallbackContext):
 
 # Almacen
 
-
 def almc(update: Update, context: CallbackContext):
     global PlayerDB,RecursosDB
     user = update.message.from_user
@@ -3944,29 +3948,7 @@ def almc(update: Update, context: CallbackContext):
         if AlmaceJG[w]["tipo"] == "Recurso":
             text+="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
 
-    IKB = KeyboardButton
-
-    reply_markup = ReplyKeyboardMarkup(
-        [
-
-            [
-                IKB("🎒Bolso"),
-                IKB("📦Recursos"),
-                IKB("🗃Varios")
-            ],
-
-            [
-                IKB("⚗️Alquimia"),
-                IKB("⚒Elaboración")
-            ],
-            [
-                IKB("🏷Equipo"),
-                IKB("↩️Volver")
-            ]
-        ],
-        resize_keyboard=True,
-    )
-
+    reply_markup = ReplyKeyboardMarkup(kb.stock_kb(), resize_keyboard=True)
     update.message.reply_text(
         text=text,
         reply_markup=reply_markup,
@@ -3989,29 +3971,8 @@ def recursos(update: Update, context: CallbackContext):
         if AlmaceJG[w]["tipo"] == "Recurso":
             text+="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
 
-    IKB = KeyboardButton
 
-    reply_markup = ReplyKeyboardMarkup(
-        [
-
-            [
-                IKB("🎒Bolso"),
-                IKB("📦Recursos"),
-                IKB("🗃Varios")
-            ],
-
-            [
-                IKB("⚗️Alquimia"),
-                IKB("⚒Elaboración")
-            ],
-            [
-                IKB("🏷Equipo"),
-                IKB("↩️Volver")
-            ]
-        ],
-        resize_keyboard=True,
-    )
-
+    reply_markup = ReplyKeyboardMarkup(kb.stock_kb(), resize_keyboard=True)
     update.message.reply_text(
         text=text,
         reply_markup=reply_markup,
@@ -4023,36 +3984,14 @@ def recursos(update: Update, context: CallbackContext):
 def varios(update: Update, context: CallbackContext):
     global PlayerDB,RecursosDB
     user = update.message.from_user
-    Jugador = PlayerDB[str(user.id)]
-    AlmaceJG = Jugador["almacen"]
+    player = PlayerDB[str(user.id)]
+    AlmaceJG = player["almacen"]
 
-    for w in list(set(AlmaceJG.keys()) - set(AlmaceJG["00"])):  
-        if AlmaceJG[w]["tipo"] == "Varios":      
-            text="\n{name} ({cant}) usar_{id}".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"],id=AlmaceJG[w]["id"])
+    for w in list(set(AlmaceJG.keys()) - set(AlmaceJG["00"])):
+        if AlmaceJG[w]["tipo"] == "Varios":
+            text+="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
 
-    IKB = KeyboardButton
-
-    reply_markup = ReplyKeyboardMarkup(
-        [
-
-            [
-                IKB("🎒Bolso"),
-                IKB("📦Recursos"),
-                IKB("🗃Varios")
-            ],
-
-            [
-                IKB("⚗️Alquimia"),
-                IKB("⚒Elaboración")
-            ],
-            [
-                IKB("🏷Equipo"),
-                IKB("↩️Volver")
-            ]
-        ],
-        resize_keyboard=True,
-    )
-
+    reply_markup = ReplyKeyboardMarkup(kb.stock_kb(), resize_keyboard=True)
     update.message.reply_text(
         text=text,
         reply_markup=reply_markup,
@@ -4073,31 +4012,8 @@ def alquimia(update: Update, context: CallbackContext):
     text += "/{bolso})".format(bolso=StockTotal)
     for w in list(set(AlmaceJG.keys()) - set(AlmaceJG["00"])):
                 text+="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
-    IKB = KeyboardButton
 
-    reply_markup = ReplyKeyboardMarkup(
-        [
-
-            [
-                IKB("🎒Bolso"),
-                IKB("📦Recursos"),
-                IKB("🗃Varios")
-            ],
-
-            [
-                IKB("⚗️Alquimia"),
-                IKB("⚒Elaboración")
-            ],
-            [
-                IKB("🏷Equipo"),
-                IKB("↩️Volver")
-            ]
-
-
-        ],
-        resize_keyboard=True,
-    )
-
+    reply_markup = ReplyKeyboardMarkup(kb.stock_kb(), resize_keyboard=True)
     update.message.reply_text(
         text=text,
         reply_markup=reply_markup,
@@ -4118,39 +4034,15 @@ def elaboracion(update: Update, context: CallbackContext):
     text += "/{bolso})".format(bolso=StockTotal)
     for w in list(set(AlmaceJG.keys()) - set(AlmaceJG["00"])):
                 text+="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
-    IKB = KeyboardButton
-
-    reply_markup = ReplyKeyboardMarkup(
-        [
-
-            [
-                IKB("🎒Bolso"),
-                IKB("📦Recursos"),
-                IKB("🗃Varios")
-            ],
-
-            [
-                IKB("⚗️Alquimia"),
-                IKB("⚒Elaboración")
-            ],
-            [
-                IKB("🏷Equipo"),
-                IKB("↩️Volver")
-            ]
 
 
-        ],
-        resize_keyboard=True,
-    )
-
+    reply_markup = ReplyKeyboardMarkup(kb.stock_kb(), resize_keyboard=True)
     update.message.reply_text(
         text=text,
         reply_markup=reply_markup,
         parse_mode=ParseMode.HTML
     )
     return
-
-
 
 def bolso(update: Update, context: CallbackContext):
     global PlayerDB
@@ -4446,16 +4338,7 @@ def inspeccionar(update: Update, context: CallbackContext):
                 text += " /i_{id}".format(id=w)
 
                 
-        IKB = KeyboardButton
-
-        reply_markup = ReplyKeyboardMarkup(
-            [[IKB("🎒Bolso"),IKB("📦Recursos"),IKB("🗃Varios")],
-                [IKB("⚗️Alquimia"),IKB("⚒Elaboración")],
-                [ IKB("🏷Equipo"),IKB("↩️Volver")]],
-            
-            resize_keyboard=True,
-        )
-
+        reply_markup = ReplyKeyboardMarkup(kb.stock_kb(), resize_keyboard=True)
     try:
         context.bot.send_message(chat_id=user.id, text=text, parse_mode=ParseMode.HTML, reply_markup=None)
 
@@ -4476,31 +4359,8 @@ def equipo_envuelto(update: Update, context: CallbackContext):
     text += "/{bolso})".format(bolso=StockTotal)
     for w in list(set(AlmaceJG.keys()) - set(AlmaceJG["00"])):
                 text+="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
-    IKB = KeyboardButton
 
-    reply_markup = ReplyKeyboardMarkup(
-        [
-
-            [
-                IKB("🎒Bolso"),
-                IKB("📦Recursos"),
-                IKB("🗃Varios")
-            ],
-
-            [
-                IKB("⚗️Alquimia"),
-                IKB("⚒Elaboración")
-            ],
-            [
-                IKB("🏷Equipo"),
-                IKB("↩️Volver")
-            ]
-
-
-        ],
-        resize_keyboard=True,
-    )
-
+    reply_markup = ReplyKeyboardMarkup(kb.stock_kb(), resize_keyboard=True)
     update.message.reply_text(
         text=text,
         reply_markup=reply_markup,
