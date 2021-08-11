@@ -3450,15 +3450,12 @@ def Newpremium(user, items):
 
     info = {
         "id": TiendaDB[items]["id"],
-        "estatus": 0,
-        "nombre": TiendaDB[items]["nombre"],
         "historia": TiendaDB[items]["historia"],
-        "tipo": TiendaDB[items]["tipo"],
-        "g_type": TiendaDB[items]["g_type"],
         "peso": TiendaDB[items]["peso"],
-        "envolver": TiendaDB[items]["envolver"],
+        "tipo": TiendaDB[items]["tipo"],
         "precio": TiendaDB[items]["precio"],
         "venta": TiendaDB[items]["venta"],
+        "nombre": TiendaDB[items]["nombre"],
         "cantidad": 1
 
     }
@@ -3472,8 +3469,7 @@ def Newpremium(user, items):
 def Newrecursos(user, items, cantidad):
     global PlayerDB, RecursosDB
     Jugador = PlayerDB[str(user)]
-
-
+    
     info = {       
             "id": RecursosDB[items]["id"],
             "elaboracion": RecursosDB[items]["elaboracion"],
@@ -3987,9 +3983,11 @@ def varios(update: Update, context: CallbackContext):
     player = PlayerDB[str(user.id)]
     AlmaceJG = player["almacen"]
 
-    for w in list(set(AlmaceJG.keys()) - set(AlmaceJG["00"])):
+    for w in list(AlmaceJG.keys() - AlmaceJG["00"]):
         if AlmaceJG[w]["tipo"] == "Varios":
-            text+="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
+            text="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
+        else:
+            text="[vacio]"
 
     reply_markup = ReplyKeyboardMarkup(kb.stock_kb(), resize_keyboard=True)
     update.message.reply_text(
@@ -4440,11 +4438,12 @@ def reload(update: Update, context: CallbackContext):
     user = update.message.from_user
     if(user.id == 622952731):
         def reloadTask():
-            global PlayerDB, NivelesBD, TiendaDB
+            global PlayerDB, NivelesBD, TiendaDB,RecursosDB
             PlayerDB = Fire.get("/players", None)
-            NivelesBD = Fire.get("/niveles_exp", None)
-            TiendaDB = Fire.get("/tienda", None)
             RecursosDB = Fire.get("/recursos", None)
+            TiendaDB = Fire.get("/tienda", None)
+            NivelesBD = Fire.get("/niveles_exp", None)
+            
             context.bot.send_message(
                 chat_id=user.id,
                 text="<code>¡Recargado!</code>",
