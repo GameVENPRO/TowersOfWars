@@ -3984,7 +3984,7 @@ def varios(update: Update, context: CallbackContext):
     AlmaceJG = player["almacen"]
 
     for w in list(AlmaceJG.keys() - AlmaceJG["00"]):
-        if AlmaceJG[w]["tipo"] == "Varios":
+        if AlmaceJG[w]["g_type"] == "lujos":
             text="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
         else:
             text="[vacio]"
