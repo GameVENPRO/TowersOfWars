@@ -2569,8 +2569,8 @@ def buy_tiend(update: Update, context: CallbackContext):
             else:
                 text = "❌Fondos insuficientes. Para obtener más  💎 gemas visita ."
             
-            
-    update.message.reply_text(text=text,parse_mode=ParseMode.HTML)
+    reply_markup = ReplyKeyboardMarkup(kb.tienda_basic(), resize_keyboard=True)      
+    update.message.reply_text(text=text,reply_markup=reply_markup,parse_mode=ParseMode.HTML)
     # except Exception as e:
     #     error(update, e)
     # else:
