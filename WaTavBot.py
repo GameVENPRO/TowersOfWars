@@ -2570,7 +2570,7 @@ def buy_tiend(update: Update, context: CallbackContext):
                 text = "❌Fondos insuficientes. Para obtener más  💎 gemas visita ."
             
     reply_markup = ReplyKeyboardMarkup(kb.tienda_basic(), resize_keyboard=True)      
-    update.message.reply_text(text=text,reply_markup=reply_markup,parse_mode=ParseMode.HTML)
+    context.bot.send_message(chat_id=update.message.chat_id, text=text,parse_mode=ParseMode.HTML)
     # except Exception as e:
     #     error(update, e)
     # else:
