@@ -2545,9 +2545,9 @@ def buy_tiend(update: Update, context: CallbackContext):
     tipo_compra = ["lujos"]
     tienda_normal = ["Espadas","Dagas","Desafilados","Arcos","Botas","Armaduras","Guantes","Lanzas","Escudos","Cascos"]
     # try:
-    if TiendaDB[weapon]["g_type"] in tienda_normal:
+    if TiendaDB[weapon]["g_type"] in ["Espadas","Dagas","Desafilados","Arcos","Botas","Armaduras","Guantes","Lanzas","Escudos","Cascos"]:
+    # try:
         if(weapon not in player["bolso_arm"]):
-                               
             if(int(player["oro"]) >= int(TiendaDB[weapon]["precio"])):
                 oro = str(int(PlayerDB[str(user.id)]["oro"]) - int(TiendaDB[weapon]["precio"]))    
                 Newcompra(user=user.id, items=weapon)
@@ -2556,21 +2556,9 @@ def buy_tiend(update: Update, context: CallbackContext):
                 upload(player=str(user.id), concept=("oro"), value=(oro))
                 text = "✅Artículo añadido a tu bolso. Para revisar su inventario haga click en /inv"
         else:
-                text = "No tienes suficiente oro vete a trabajar."
-    elif TiendaDB[weapon]["g_type"] in tipo_compra:
-        if(weapon not in player["almacen"]):
-                
-            if(int(player["gemas"]) >= int(TiendaDB[weapon]["precio"])):
-                oro = str(int(PlayerDB[str(user.id)]["gemas"]) - int(TiendaDB[weapon]["precio"]))    
-                Newpremium(user=user.id, items=weapon)
-                reducir_almc(user,weapon)
-                upload(player=str(user.id), concept=("gemas"), value=(oro))
-                text = "✅Artículo añadido a tu bolso. Para revisar su inventario haga click en /inv"
-            else:
-                text = "❌Fondos insuficientes. Para obtener más  💎 gemas visita ."
+            text = "No tienes suficiente oro vete a trabajar."
             
-    reply_markup = ReplyKeyboardMarkup(kb.tienda_basic(), resize_keyboard=True)      
-    update.message.reply_text(text=text,reply_markup=reply_markup,parse_mode=ParseMode.HTML)
+    update.message.reply_text(text=text,parse_mode=ParseMode.HTML)
     # except Exception as e:
     #     error(update, e)
     # else:
@@ -3983,11 +3971,9 @@ def varios(update: Update, context: CallbackContext):
     player = PlayerDB[str(user.id)]
     AlmaceJG = player["almacen"]
 
-    for w in list(AlmaceJG.keys() - AlmaceJG["00"]):
-        if AlmaceJG[w]["g_type"] == "lujos":
+    for w in list(set(AlmaceJG.keys()) - set(AlmaceJG["00"])):
+        if AlmaceJG[w]["tipo"] == "Varios":
             text="\n{name} ({cant})".format(name=AlmaceJG[w]["nombre"],cant=AlmaceJG[w]["cantidad"])
-        else:
-            text="[vacio]"
 
     reply_markup = ReplyKeyboardMarkup(kb.stock_kb(), resize_keyboard=True)
     update.message.reply_text(
